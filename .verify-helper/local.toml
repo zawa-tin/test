@@ -1,0 +1,4 @@
+[[languages.cpp.environments]]
+CXX = "g++"
+
+# oj-verify --config-file ./.verify-helper/local.toml run
