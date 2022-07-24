@@ -25,7 +25,7 @@ namespace zawa {
             int front_idx = 0, back_idx = 0;
             for (int i = left ; i < right ; i++) {
                 if (front_idx < (int)fronts.size() and 
-                        (back_idx == (int)backs.size() or fronts[front_idx] < backs[back_idx])) {
+                        (back_idx == (int)backs.size() or fronts[front_idx] <= backs[back_idx])) {
                     arr[i] = fronts[front_idx++];
                 }
                 else {
