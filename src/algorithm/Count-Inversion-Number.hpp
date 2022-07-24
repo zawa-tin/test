@@ -5,13 +5,13 @@
 namespace zawa {
 
     template <typename T>
-    class Count-Inversion-Number {
+    class Count_Inversion_Number {
     private:
         std::vector<T> arr;
         long long count_inversion_number = 0;
 
         long long sort(int left, int right) {
-            if (right - left == 1) return;
+            if (right - left == 1) return 0LL;
 
             long long res = 0;
             int mid = left + (right - left) / 2;
@@ -38,7 +38,7 @@ namespace zawa {
         }
     
     public:
-        Count-Inversion-Number(vector<T>& arr) : this.arr(arr.begin(), arr.end()) {}
+        Count_Inversion_Number(std::vector<T>& arr) : arr(arr.begin(), arr.end()) {}
 
         void build() {
             count_inversion_number = sort(0, arr.size());
@@ -48,7 +48,7 @@ namespace zawa {
             return count_inversion_number;
         }
 
-        vector<T> getSorted() {
+        std::vector<T> getSorted() {
             return arr;
         }
     };
