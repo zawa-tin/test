@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_5_D"
 
-#include "//src/algorithm/Count-Inversion-Number.hpp"
+#include "../src/algorithm/Count-Inversion-Number.hpp"
 #include <iostream>
 
 int main() {

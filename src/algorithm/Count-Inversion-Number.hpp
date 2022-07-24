@@ -24,8 +24,8 @@ namespace zawa {
 
             int front_idx = 0, back_idx = 0;
             for (int i = left ; i < right ; i++) {
-                if (front_idx < fronts.size() and 
-                        (back_idx == backs.size() or fronts[front_idx] < backs[back_idx])) {
+                if (front_idx < (int)fronts.size() and 
+                        (back_idx == (int)backs.size() or fronts[front_idx] < backs[back_idx])) {
                     arr[i] = fronts[front_idx++];
                 }
                 else {
@@ -41,7 +41,7 @@ namespace zawa {
         Count_Inversion_Number(std::vector<T>& arr) : arr(arr.begin(), arr.end()) {}
 
         void build() {
-            count_inversion_number = sort(0, arr.size());
+            count_inversion_number = sort(0, (int)arr.size());
         }
 
         long long get() {
