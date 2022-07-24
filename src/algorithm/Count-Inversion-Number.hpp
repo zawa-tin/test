@@ -19,8 +19,8 @@ namespace zawa {
             res += sort(left, mid);
             res += sort(mid, right);
 
-            std::vector<int> fronts(arr.begin() + left, arr.begin() + mid);
-            std::vector<int> backs(arr.begin() + mid, arr.begin() + right);
+            std::vector<T> fronts(arr.begin() + left, arr.begin() + mid);
+            std::vector<T> backs(arr.begin() + mid, arr.begin() + right);
 
             int front_idx = 0, back_idx = 0;
             for (int i = left ; i < right ; i++) {
