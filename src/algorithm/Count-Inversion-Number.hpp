@@ -48,7 +48,7 @@ namespace zawa {
             return count_inversion_number;
         }
 
-        std::vector<T> getSorted() {
+        std::vector<T> get_sorted() {
             return arr;
         }
     };
