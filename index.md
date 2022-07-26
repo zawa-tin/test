@@ -1,0 +1,36 @@
+---
+data:
+  libraryCategories:
+  - name: src/algorithm
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/Count-Inversion-Number.hpp
+      title: "Count-Inversion-Number(\u30DE\u30FC\u30B8\u30BD\u30FC\u30C8\u306B\u3088\
+        \u308B\u8EE2\u5012\u6570\u306E\u6570\u3048\u4E0A\u3052)"
+  - name: src/math
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/math/divisor.hpp
+      title: Divisor
+    - icon: ':heavy_check_mark:'
+      path: src/math/factorize.hpp
+      title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
+  verificationCategories:
+  - name: .
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: example.test.cpp
+      title: example.test.cpp
+  - name: test
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_alds_5_d.test.cpp
+      title: test/aoj_alds_5_d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_itp1_3_d.test.cpp
+      title: test/aoj_itp1_3_d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_ntl_1_a.test.cpp
+      title: test/aoj_ntl_1_a.test.cpp
+layout: toppage
+---
