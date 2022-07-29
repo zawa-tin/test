@@ -10,6 +10,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/algorithm/Kadane.hpp
       title: "Kadane's Algorithm (\u6700\u5927\u9023\u7D9A\u90E8\u5206\u548C)"
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/LCS.hpp
+      title: "LCS(\u6700\u9577\u5171\u901A\u90E8\u5206\u5217)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -26,6 +29,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_alds_10_c.test.cpp
+      title: test/aoj_alds_10_c.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_5_d.test.cpp
       title: test/aoj_alds_5_d.test.cpp
