@@ -8,6 +8,9 @@ data:
       title: "Count-Inversion-Number(\u30DE\u30FC\u30B8\u30BD\u30FC\u30C8\u306B\u3088\
         \u308B\u8EE2\u5012\u6570\u306E\u6570\u3048\u4E0A\u3052)"
     - icon: ':heavy_check_mark:'
+      path: src/algorithm/Cyclic-Permutation.hpp
+      title: Cyclic Permutation
+    - icon: ':heavy_check_mark:'
       path: src/algorithm/Kadane.hpp
       title: "Kadane's Algorithm (\u6700\u5927\u9023\u7D9A\u90E8\u5206\u548C)"
     - icon: ':heavy_check_mark:'
@@ -35,6 +38,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_5_d.test.cpp
       title: test/aoj_alds_5_d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_alds_6_D.test.cpp
+      title: test/aoj_alds_6_D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_itp1_3_d.test.cpp
       title: test/aoj_itp1_3_d.test.cpp
