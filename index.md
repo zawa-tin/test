@@ -20,7 +20,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: src/math/divisor.hpp
-      title: Divisor
+      title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
