@@ -9,7 +9,7 @@ data:
         \u308B\u8EE2\u5012\u6570\u306E\u6570\u3048\u4E0A\u3052)"
     - icon: ':heavy_check_mark:'
       path: src/algorithm/Cyclic-Permutation.hpp
-      title: Cyclic Permutation
+      title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
       path: src/algorithm/Kadane.hpp
       title: "Kadane's Algorithm (\u6700\u5927\u9023\u7D9A\u90E8\u5206\u548C)"
