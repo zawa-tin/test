@@ -24,6 +24,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
+    - icon: ':heavy_check_mark:'
+      path: src/math/modint.hpp
+      title: modint
   verificationCategories:
   - name: .
     pages:
@@ -42,6 +45,9 @@ data:
       path: test/aoj_alds_6_D.test.cpp
       title: test/aoj_alds_6_D.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/aoj_dpl_5_a.test.cpp
+      title: test/aoj_dpl_5_a.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/aoj_itp1_3_d.test.cpp
       title: test/aoj_itp1_3_d.test.cpp
     - icon: ':heavy_check_mark:'
@@ -50,5 +56,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/modint.test.cpp
+      title: test/modint.test.cpp
 layout: toppage
 ---
