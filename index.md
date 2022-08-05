@@ -31,11 +31,6 @@ data:
       path: src/math/modint.hpp
       title: modint
   verificationCategories:
-  - name: .
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
   - name: test
     pages:
     - icon: ':heavy_check_mark:'
