@@ -11,6 +11,9 @@ data:
       path: src/algorithm/Cyclic-Permutation.hpp
       title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
+      path: src/algorithm/Ear-DP.hpp
+      title: "Ear-DP (\u8033DP)"
+    - icon: ':heavy_check_mark:'
       path: src/algorithm/Kadane.hpp
       title: "Kadane's Algorithm (\u6700\u5927\u9023\u7D9A\u90E8\u5206\u548C)"
     - icon: ':heavy_check_mark:'
@@ -35,6 +38,9 @@ data:
       title: example.test.cpp
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/Ear-DP.test.cpp
+      title: test/Ear-DP.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_10_c.test.cpp
       title: test/aoj_alds_10_c.test.cpp
