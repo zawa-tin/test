@@ -22,6 +22,9 @@ data:
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/math/Euler-Function.hpp
+      title: "Euler Function(\u30AA\u30A4\u30E9\u30FC\u95A2\u6570)"
+    - icon: ':heavy_check_mark:'
       path: src/math/divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
@@ -54,6 +57,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_a.test.cpp
       title: test/aoj_ntl_1_a.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_ntl_1_d.test.cpp
+      title: test/aoj_ntl_1_d.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp

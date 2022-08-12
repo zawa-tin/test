@@ -1,11 +1,17 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':heavy_check_mark:'
+    path: src/math/Euler-Function.hpp
+    title: "Euler Function(\u30AA\u30A4\u30E9\u30FC\u95A2\u6570)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/aoj_ntl_1_a.test.cpp
     title: test/aoj_ntl_1_a.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/aoj_ntl_1_d.test.cpp
+    title: test/aoj_ntl_1_d.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -29,11 +35,13 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/math/factorize.hpp
-  requiredBy: []
+  requiredBy:
+  - src/math/Euler-Function.hpp
   timestamp: '2022-07-25 23:24:05+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj_ntl_1_a.test.cpp
+  - test/aoj_ntl_1_d.test.cpp
 documentation_of: src/math/factorize.hpp
 layout: document
 title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
