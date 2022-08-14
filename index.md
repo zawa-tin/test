@@ -25,6 +25,10 @@ data:
       path: src/math/Euler-Function.hpp
       title: "Euler Function(\u30AA\u30A4\u30E9\u30FC\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Extend-GCD.hpp
+      title: "Extend GCD (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\
+        \u9664\u6CD5)"
+    - icon: ':heavy_check_mark:'
       path: src/math/divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
@@ -60,6 +64,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_d.test.cpp
       title: test/aoj_ntl_1_d.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_ntl_1_e.test.cpp
+      title: test/aoj_ntl_1_e.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
