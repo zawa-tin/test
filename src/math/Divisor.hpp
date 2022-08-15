@@ -5,10 +5,10 @@
 
 namespace zawa {
 
-    std::vector<int> divisor(int x) {
-        std::vector<int> res;
+    std::vector<long long> divisor(long long x) {
+        std::vector<long long> res;
 
-        for (int i = 1 ; i * i <= x ; i++) {
+        for (long long i = 1 ; i * i <= x ; i++) {
             if (x % i) continue;
             res.emplace_back(i);
             if (i * i != x) res.emplace_back(x / i);
