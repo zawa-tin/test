@@ -1,5 +1,5 @@
 ---
-title: Accum 2D (二次元累積和)
+title: Accum 2D (2次元累積和)
 documentation_of: //src/dataStructure/Accum-2D.hpp
 ---
 
