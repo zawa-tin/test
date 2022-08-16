@@ -15,34 +15,40 @@ data:
     namespace zawa {\n\n    template <class T>\n    class Accum_1D {\n    private:\n\
     \        std::vector<T> container;\n        std::vector<T> accum;\n\n    public:\n\
     \        Accum_1D(const std::vector<T>& arr) \n            : container(arr.begin(),\
-    \ arr.end())\n            , accum(std::vector<T>(arr.size() + 1)) {\n\n      \
-    \          for (int i = 0 ; i < (int)arr.size() ; i++) {\n                   \
-    \ accum[i + 1] = accum[i] + container[i];\n                }\n        }\n    \
-    \    \n        Accum_1D(const std::vector<T>& arr, T elem)\n            : container(arr.begin(),\
-    \ arr.end())\n            , accum(std::vector<T>(arr.size() + 1, elem)) {\n  \
-    \              \n                for (int i = 0 ; i < (int)arr.size() ; i++) {\n\
-    \                    accum[i + 1] = accum[i] + container[i];\n               \
-    \ }\n        }\n\n        T get(int idx) {\n            return container[idx];\n\
-    \        }\n\n        T query(int l, int r) {\n            return accum[r] - accum[l];\n\
-    \        }\n        \n    };\n\n}// namespace zawa\n"
+    \ arr.end())\n            , accum(std::vector<T>(arr.size() + 1)) {}\n       \
+    \ \n        Accum_1D(const std::vector<T>& arr, T elem)\n            : container(arr.begin(),\
+    \ arr.end())\n            , accum(std::vector<T>(arr.size() + 1, elem)) {}\n\n\
+    \        Accum_1D(int n)\n            : container(n)\n            , accum(n +\
+    \ 1) {}\n\n        Accum_1D(int n, T elem)\n            : container(n)\n     \
+    \       , accum(n + 1, elem) {}\n\n        void set(int idx, T val) {\n      \
+    \      container[idx] = val;\n        }\n\n        void add(int idx, T val) {\n\
+    \            container[idx] += val;\n        }\n\n        void build() {\n   \
+    \         for (int i = 0 ; i < (int)container.size() ; i++) {\n              \
+    \  accum[i + 1] = accum[i] + container[i];\n            }\n        }\n\n     \
+    \   T get(int idx) {\n            return container[idx];\n        }\n\n      \
+    \  T query(int l, int r) {\n            return accum[r] - accum[l];\n        }\n\
+    \        \n    };\n\n}// namespace zawa\n"
   code: "#pragma once\n\n#include <vector>\n\nnamespace zawa {\n\n    template <class\
     \ T>\n    class Accum_1D {\n    private:\n        std::vector<T> container;\n\
     \        std::vector<T> accum;\n\n    public:\n        Accum_1D(const std::vector<T>&\
     \ arr) \n            : container(arr.begin(), arr.end())\n            , accum(std::vector<T>(arr.size()\
-    \ + 1)) {\n\n                for (int i = 0 ; i < (int)arr.size() ; i++) {\n \
-    \                   accum[i + 1] = accum[i] + container[i];\n                }\n\
-    \        }\n        \n        Accum_1D(const std::vector<T>& arr, T elem)\n  \
+    \ + 1)) {}\n        \n        Accum_1D(const std::vector<T>& arr, T elem)\n  \
     \          : container(arr.begin(), arr.end())\n            , accum(std::vector<T>(arr.size()\
-    \ + 1, elem)) {\n                \n                for (int i = 0 ; i < (int)arr.size()\
-    \ ; i++) {\n                    accum[i + 1] = accum[i] + container[i];\n    \
-    \            }\n        }\n\n        T get(int idx) {\n            return container[idx];\n\
-    \        }\n\n        T query(int l, int r) {\n            return accum[r] - accum[l];\n\
-    \        }\n        \n    };\n\n}// namespace zawa\n"
+    \ + 1, elem)) {}\n\n        Accum_1D(int n)\n            : container(n)\n    \
+    \        , accum(n + 1) {}\n\n        Accum_1D(int n, T elem)\n            : container(n)\n\
+    \            , accum(n + 1, elem) {}\n\n        void set(int idx, T val) {\n \
+    \           container[idx] = val;\n        }\n\n        void add(int idx, T val)\
+    \ {\n            container[idx] += val;\n        }\n\n        void build() {\n\
+    \            for (int i = 0 ; i < (int)container.size() ; i++) {\n           \
+    \     accum[i + 1] = accum[i] + container[i];\n            }\n        }\n\n  \
+    \      T get(int idx) {\n            return container[idx];\n        }\n\n   \
+    \     T query(int l, int r) {\n            return accum[r] - accum[l];\n     \
+    \   }\n        \n    };\n\n}// namespace zawa\n"
   dependsOn: []
   isVerificationFile: false
   path: src/dataStructure/Accum-1D.hpp
   requiredBy: []
-  timestamp: '2022-08-16 09:38:56+09:00'
+  timestamp: '2022-08-16 15:43:51+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj_dsl_5_a.test.cpp
@@ -62,7 +68,15 @@ Accum_1D(const std::vector<T>& arr)
 
 
 ### 機能
-* `コンストラクタ`: 累積和を構築したい配列`A`を引数に取ります。第二引数に初期値 $S_0$ を指定することも可能です。
+* `コンストラクタ`: 累積和をとりたい配列の参照をとる、もしくはサイズのみを指定します。第二引数を入れると $S_0$ を指定することが可能です。
+
+* `set(int idx, T val)`: `idx`番目の値を`val`にします。
+
+* `add(int idx, T val)`: `idx`番目の値に`val`を可算します。
+
+  * `set, add`は`build`前に行ってください。
+
+* `build()`: 累積和を構築します。
 
 * `get(int idx)`: 元の列の`idx`番目の要素を取得します。
 
@@ -70,8 +84,5 @@ Accum_1D(const std::vector<T>& arr)
 
 
 ### 計算量
-* `コンストラクタ`・・・ 配列の長さを $N$ として、 $O(N)$
-
-* `get()`・・・定数時間
-
-* `query()`・・・定数時間
+* `build`・・・ 配列の長さを $N$ として、 $O(N)$
+* 他・・・定数時間

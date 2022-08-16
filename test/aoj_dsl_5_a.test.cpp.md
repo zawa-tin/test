@@ -20,41 +20,54 @@ data:
     \ Accum_1D {\n    private:\n        std::vector<T> container;\n        std::vector<T>\
     \ accum;\n\n    public:\n        Accum_1D(const std::vector<T>& arr) \n      \
     \      : container(arr.begin(), arr.end())\n            , accum(std::vector<T>(arr.size()\
-    \ + 1)) {\n\n                for (int i = 0 ; i < (int)arr.size() ; i++) {\n \
-    \                   accum[i + 1] = accum[i] + container[i];\n                }\n\
-    \        }\n        \n        Accum_1D(const std::vector<T>& arr, T elem)\n  \
+    \ + 1)) {}\n        \n        Accum_1D(const std::vector<T>& arr, T elem)\n  \
     \          : container(arr.begin(), arr.end())\n            , accum(std::vector<T>(arr.size()\
-    \ + 1, elem)) {\n                \n                for (int i = 0 ; i < (int)arr.size()\
-    \ ; i++) {\n                    accum[i + 1] = accum[i] + container[i];\n    \
-    \            }\n        }\n\n        T get(int idx) {\n            return container[idx];\n\
-    \        }\n\n        T query(int l, int r) {\n            return accum[r] - accum[l];\n\
-    \        }\n        \n    };\n\n}// namespace zawa\n#line 6 \"test/aoj_dsl_5_a.test.cpp\"\
+    \ + 1, elem)) {}\n\n        Accum_1D(int n)\n            : container(n)\n    \
+    \        , accum(n + 1) {}\n\n        Accum_1D(int n, T elem)\n            : container(n)\n\
+    \            , accum(n + 1, elem) {}\n\n        void set(int idx, T val) {\n \
+    \           container[idx] = val;\n        }\n\n        void add(int idx, T val)\
+    \ {\n            container[idx] += val;\n        }\n\n        void build() {\n\
+    \            for (int i = 0 ; i < (int)container.size() ; i++) {\n           \
+    \     accum[i + 1] = accum[i] + container[i];\n            }\n        }\n\n  \
+    \      T get(int idx) {\n            return container[idx];\n        }\n\n   \
+    \     T query(int l, int r) {\n            return accum[r] - accum[l];\n     \
+    \   }\n        \n    };\n\n}// namespace zawa\n#line 6 \"test/aoj_dsl_5_a.test.cpp\"\
     \n\nint main() {\n    int n, t;\n    std::cin >> n >> t;\n    std::vector<int>\
-    \ customers(t + 1);\n    for (int i = 0 ; i < n ; i++) {\n        int l, r;\n\
-    \        std::cin >> l >> r;\n        customers[l]++;\n        customers[r]--;\n\
-    \    }\n\n    zawa::Accum_1D<int> accum(customers);\n    int ans = 0;\n    for\
-    \ (int i = 1 ; i <= t + 1 ; i++) {\n        ans = std::max(ans, accum.query(0,\
-    \ i));\n    }\n    std::cout << ans << std::endl;\n\n\n    // unit test?\n   \
-    \ zawa::Accum_1D<int> acm(customers, 0);\n    int a = 0;\n    for (int i = 1 ;\
-    \ i <= t + 1 ; i++) {\n        a = std::max(a, acm.query(0, i));\n    }\n    assert(a\
-    \ == ans);\n}\n"
+    \ ls(n), rs(n);\n    for (int i = 0 ; i < n ; i++) std::cin >> ls[i] >> rs[i];\n\
+    \n    zawa::Accum_1D<int> test1(t + 1), test2(t + 1, 0);\n    std::vector<int>\
+    \ customers(t + 1);\n\n    for (int i = 0 ; i < n ; i++) {\n        test1.add(ls[i],\
+    \ 1);\n        test1.add(rs[i], -1);\n\n        test2.set(ls[i], test2.get(ls[i])\
+    \ + 1);\n        test2.set(rs[i], test2.get(rs[i]) - 1);\n\n        customers[ls[i]]++;\n\
+    \        customers[rs[i]]--;\n    }\n\n    zawa::Accum_1D<int> test3(customers),\
+    \ test4(customers, 0);\n\n    test1.build();\n    test2.build();\n    test3.build();\n\
+    \    test4.build();\n\n    int ans1 = 0, ans2 = 0, ans3 = 0, ans4 = 0;\n    for\
+    \ (int i = 0 ; i <= t + 1 ; i++) {\n        ans1 = std::max(ans1, test1.query(0,\
+    \ i));\n        ans2 = std::max(ans2, test2.query(0, i));\n        ans3 = std::max(ans3,\
+    \ test3.query(0, i));\n        ans4 = std::max(ans4, test4.query(0, i));\n   \
+    \ }\n\n    assert(ans1 == ans2 and ans2 == ans3 and ans3 == ans4);\n\n    std::cout\
+    \ << ans1 << std::endl;\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/5/DSL_5_A\"\
     \n\n#include <iostream>\n#include <cassert>\n#include \"../src/dataStructure/Accum-1D.hpp\"\
     \n\nint main() {\n    int n, t;\n    std::cin >> n >> t;\n    std::vector<int>\
-    \ customers(t + 1);\n    for (int i = 0 ; i < n ; i++) {\n        int l, r;\n\
-    \        std::cin >> l >> r;\n        customers[l]++;\n        customers[r]--;\n\
-    \    }\n\n    zawa::Accum_1D<int> accum(customers);\n    int ans = 0;\n    for\
-    \ (int i = 1 ; i <= t + 1 ; i++) {\n        ans = std::max(ans, accum.query(0,\
-    \ i));\n    }\n    std::cout << ans << std::endl;\n\n\n    // unit test?\n   \
-    \ zawa::Accum_1D<int> acm(customers, 0);\n    int a = 0;\n    for (int i = 1 ;\
-    \ i <= t + 1 ; i++) {\n        a = std::max(a, acm.query(0, i));\n    }\n    assert(a\
-    \ == ans);\n}\n"
+    \ ls(n), rs(n);\n    for (int i = 0 ; i < n ; i++) std::cin >> ls[i] >> rs[i];\n\
+    \n    zawa::Accum_1D<int> test1(t + 1), test2(t + 1, 0);\n    std::vector<int>\
+    \ customers(t + 1);\n\n    for (int i = 0 ; i < n ; i++) {\n        test1.add(ls[i],\
+    \ 1);\n        test1.add(rs[i], -1);\n\n        test2.set(ls[i], test2.get(ls[i])\
+    \ + 1);\n        test2.set(rs[i], test2.get(rs[i]) - 1);\n\n        customers[ls[i]]++;\n\
+    \        customers[rs[i]]--;\n    }\n\n    zawa::Accum_1D<int> test3(customers),\
+    \ test4(customers, 0);\n\n    test1.build();\n    test2.build();\n    test3.build();\n\
+    \    test4.build();\n\n    int ans1 = 0, ans2 = 0, ans3 = 0, ans4 = 0;\n    for\
+    \ (int i = 0 ; i <= t + 1 ; i++) {\n        ans1 = std::max(ans1, test1.query(0,\
+    \ i));\n        ans2 = std::max(ans2, test2.query(0, i));\n        ans3 = std::max(ans3,\
+    \ test3.query(0, i));\n        ans4 = std::max(ans4, test4.query(0, i));\n   \
+    \ }\n\n    assert(ans1 == ans2 and ans2 == ans3 and ans3 == ans4);\n\n    std::cout\
+    \ << ans1 << std::endl;\n}\n"
   dependsOn:
   - src/dataStructure/Accum-1D.hpp
   isVerificationFile: true
   path: test/aoj_dsl_5_a.test.cpp
   requiredBy: []
-  timestamp: '2022-08-16 09:38:56+09:00'
+  timestamp: '2022-08-16 15:43:51+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/aoj_dsl_5_a.test.cpp
