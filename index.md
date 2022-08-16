@@ -24,6 +24,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Accum-1D.hpp
       title: "Accum 1D (1\u6B21\u5143\u7D2F\u7A4D\u548C)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/Accum-2D.hpp
+      title: "Accum 2D (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -63,6 +66,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_dsl_5_a.test.cpp
       title: test/aoj_dsl_5_a.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj_dsl_5_b.test.cpp
+      title: test/aoj_dsl_5_b.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_itp1_3_d.test.cpp
       title: test/aoj_itp1_3_d.test.cpp
