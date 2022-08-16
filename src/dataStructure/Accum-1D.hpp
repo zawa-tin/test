@@ -11,7 +11,7 @@ namespace zawa {
         std::vector<T> accum;
 
     public:
-        Accum_1D(std::vector<T> arr) 
+        Accum_1D(const std::vector<T>& arr) 
             : container(arr.begin(), arr.end())
             , accum(std::vector<T>(arr.size() + 1)) {
 
@@ -20,7 +20,7 @@ namespace zawa {
                 }
         }
         
-        Accum_1D(std::vector<T> arr, T elem)
+        Accum_1D(const std::vector<T>& arr, T elem)
             : container(arr.begin(), arr.end())
             , accum(std::vector<T>(arr.size() + 1, elem)) {
                 
