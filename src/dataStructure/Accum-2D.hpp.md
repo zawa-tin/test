@@ -78,7 +78,7 @@ data:
   - test/aoj_dsl_5_b.test.cpp
 documentation_of: src/dataStructure/Accum-2D.hpp
 layout: document
-title: "Accum 2D (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
+title: "Accum 2D (2\u6B21\u5143\u7D2F\u7A4D\u548C)"
 ---
 
 ## 概要
