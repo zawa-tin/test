@@ -68,8 +68,8 @@ data:
   timestamp: '2022-08-03 12:30:08+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Ear-DP.test.cpp
   - test/aoj_dpl_5_a.test.cpp
+  - test/Ear-DP.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document
 title: modint
