@@ -12,6 +12,8 @@ $ax + by = gcd(a, b)$の解を`std::pair<long long>`型で返します。
 
 $gcd(a, b)$ は $a$ と $b$ の最大公約数を指します。
 
+[もっと詳しく(ライブラリノート)](../../notes/Extend-GCD-note.md)
+
 
 ## 機能
 ```
