@@ -26,4 +26,4 @@ LCS(std::vector<T>& a, std::vector<T>& b)
 
   
 ### 計算量
-* `build()` ・・・$O(NM)$ ($N,\  M$はそれぞれの列の長さ)
+* `build()` ・・・ $O(NM)$ ( $N,\  M$ はそれぞれの列の長さ)
