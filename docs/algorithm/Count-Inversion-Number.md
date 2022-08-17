@@ -23,4 +23,4 @@ Count_Inversion_Number(std::vector< T >& as)
 
 
 ### 計算量
-* `build()`・・・$O(NlogN)$ ($N$は配列の要素数)
+* `build()`・・・ $O(NlogN)$ ( $N$ は配列の要素数)
