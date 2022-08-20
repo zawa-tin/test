@@ -48,6 +48,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/modint.hpp
       title: modint
+    - icon: ':heavy_check_mark:'
+      path: src/math/osa_k.hpp
+      title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
+        \u56E0\u6570\u5206\u89E3)"
   verificationCategories:
   - name: test
     pages:
@@ -93,5 +97,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/modint.test.cpp
       title: test/modint.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/osa_k.test.cpp
+      title: test/osa_k.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/osa_k2.test.cpp
+      title: test/osa_k2.test.cpp
 layout: toppage
 ---
