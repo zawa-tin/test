@@ -1,5 +1,5 @@
 ---
-title: Etatosthenes Sieve (素数テーブル)
+title: Eratosthenes Sieve (素数テーブル)
 documentation_of: //src/math/Eratosthenes-Sieve.hpp
 ---
 
