@@ -40,7 +40,7 @@ data:
   - test/Eratosthenes-Sieve.test.cpp
 documentation_of: src/math/Eratosthenes-Sieve.hpp
 layout: document
-title: "Etatosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
+title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
 ---
 
 ## 概要

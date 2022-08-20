@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/math/Eratosthenes-Sieve.hpp
-    title: "Etatosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
+    title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
