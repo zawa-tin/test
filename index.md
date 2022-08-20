@@ -33,6 +33,9 @@ data:
       path: src/math/Divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Eratosthenes-Sieve.hpp
+      title: "Etatosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
+    - icon: ':heavy_check_mark:'
       path: src/math/Euler-Function.hpp
       title: "Euler Function(\u30AA\u30A4\u30E9\u30FC\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
@@ -51,6 +54,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Ear-DP.test.cpp
       title: test/Ear-DP.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Eratosthenes-Sieve.test.cpp
+      title: test/Eratosthenes-Sieve.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_10_c.test.cpp
       title: test/aoj_alds_10_c.test.cpp
