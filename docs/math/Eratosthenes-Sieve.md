@@ -8,7 +8,7 @@ documentation_of: //src/math/Eratosthenes-Sieve.hpp
 Eratosthenes_Sieve(int n)
 ```
 
- $N$ 以下の正の整数全てについて素数であるかの是非を求めます。
+ $N$ 以下の正の整数全てについて素数であるかの正否を求めます。
 
 ## 機能
 * `コンストラクタ`: $N$ を引数に入れます。素数テーブルを構築します。
