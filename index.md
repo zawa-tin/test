@@ -43,6 +43,9 @@ data:
       title: "Extend GCD (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\
         \u9664\u6CD5)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Mobius-Function.hpp
+      title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
+    - icon: ':heavy_check_mark:'
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
@@ -61,6 +64,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Eratosthenes-Sieve.test.cpp
       title: test/Eratosthenes-Sieve.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Mobius-Function.test.cpp
+      title: test/Mobius-Function.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_10_c.test.cpp
       title: test/aoj_alds_10_c.test.cpp
