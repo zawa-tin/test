@@ -62,7 +62,7 @@ title: "Accum 1D (1\u6B21\u5143\u7D2F\u7A4D\u548C)"
 Accum_1D(const std::vector<T>& arr)
 ```
 
-一次元配列に対して累積和を構築します。数列`A`の累積和`S`とは、 $\displaystyle S_i\ =\ \sum_{i = 1}^{i - 1} A_i$ を満たす数列のことです。
+一次元配列に対して累積和を構築します。数列`A`の累積和`S`とは、 $\displaystyle S_i\ =\ \sum_{j = 1}^{i - 1} A_j$ を満たす数列のことです。
 
 ~正直自分で書いたほうが早いです~
 
