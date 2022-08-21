@@ -17,21 +17,19 @@ namespace zawa {
             for (int i = 2 ; i <= n ; i++) {
                 if (!siv.is_prime(i)) continue;
 
-                for (long long j = (long long)i * i ; j <= n ; j += i) {
-                    if (!(j % ((long long)i * i))) table[j] = 0;
-                    else table[j] *= -1;
+                for (long long j = i ; j <= n ; j += i) {
+                    if (!(j % ((long long)i * i))) {
+                        table[j] = 0;
+                    }
+                    else {
+                        table[j] *= -1;
+                    }
                 }
             }
         }
 
-        void get(int x) {
+        int get(int x) {
             return table[x];
-        }
-
-        void print(int l, int r) {
-            for (int i = l ; i < r ; i++) {
-                std::cout << table[i] << (i + 1 == r ? '\n' : ' ');
-            }
         }
     };
 
