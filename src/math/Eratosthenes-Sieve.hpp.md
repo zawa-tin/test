@@ -3,12 +3,18 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: src/math/GCD-Convolution.hpp
+    title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F)"
+  - icon: ':heavy_check_mark:'
     path: src/math/Mobius-Function.hpp
     title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/Eratosthenes-Sieve.test.cpp
     title: test/Eratosthenes-Sieve.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/GCD-Convolution.test.cpp
+    title: test/GCD-Convolution.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/Mobius-Function.test.cpp
     title: test/Mobius-Function.test.cpp
@@ -41,11 +47,13 @@ data:
   path: src/math/Eratosthenes-Sieve.hpp
   requiredBy:
   - src/math/Mobius-Function.hpp
+  - src/math/GCD-Convolution.hpp
   timestamp: '2022-08-20 16:08:57+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/Eratosthenes-Sieve.test.cpp
   - test/Mobius-Function.test.cpp
+  - test/GCD-Convolution.test.cpp
 documentation_of: src/math/Eratosthenes-Sieve.hpp
 layout: document
 title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"

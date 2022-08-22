@@ -10,6 +10,9 @@ data:
     path: test/Ear-DP.test.cpp
     title: test/Ear-DP.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/GCD-Convolution.test.cpp
+    title: test/GCD-Convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/aoj_dpl_5_a.test.cpp
     title: test/aoj_dpl_5_a.test.cpp
   _isVerificationFailed: false
@@ -70,6 +73,7 @@ data:
   verifiedWith:
   - test/aoj_dpl_5_a.test.cpp
   - test/Ear-DP.test.cpp
+  - test/GCD-Convolution.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document
 title: modint

@@ -43,6 +43,9 @@ data:
       title: "Extend GCD (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\
         \u9664\u6CD5)"
     - icon: ':heavy_check_mark:'
+      path: src/math/GCD-Convolution.hpp
+      title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F)"
+    - icon: ':heavy_check_mark:'
       path: src/math/Mobius-Function.hpp
       title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
@@ -64,6 +67,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Eratosthenes-Sieve.test.cpp
       title: test/Eratosthenes-Sieve.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/GCD-Convolution.test.cpp
+      title: test/GCD-Convolution.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Mobius-Function.test.cpp
       title: test/Mobius-Function.test.cpp
