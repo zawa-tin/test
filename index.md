@@ -44,7 +44,9 @@ data:
         \u9664\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: src/math/GCD-Convolution.hpp
-      title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F)"
+      title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u3001\u7D04\u6570\
+        \u96C6\u5408\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\
+        \u63DB)"
     - icon: ':heavy_check_mark:'
       path: src/math/Mobius-Function.hpp
       title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"

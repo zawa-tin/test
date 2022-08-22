@@ -6,7 +6,9 @@ data:
     title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
   - icon: ':heavy_check_mark:'
     path: src/math/GCD-Convolution.hpp
-    title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F)"
+    title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u3001\u7D04\u6570\
+      \u96C6\u5408\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\
+      \u63DB)"
   - icon: ':heavy_check_mark:'
     path: src/math/modint.hpp
     title: modint
