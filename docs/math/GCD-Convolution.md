@@ -1,5 +1,5 @@
 ---
-title: GCD Convlution (添字gcd畳み込み)
+title: GCD Convlution (添字gcd畳み込み、約数集合の高速ゼータ/メビウス変換)
 documentation_of: //src/math/GCD-Convolution.hpp
 ---
 
@@ -21,9 +21,9 @@ GCD_Convolution<T>
 
 - `コンストラクタ`: 内部で使用するエラトステネスの篩を初期化します。変換したい列のサイズの最大数を超える値を引数に入れてください(32bit)
 
-- `fast_zeta_transform`: 高速ゼータ変換を行います。変換後の列が`std::vector<T>`の型で返されます。変換を行いたい`std::vector`の参照を引数にとります。
+- `fast_zeta_transform`: 約数集合の高速ゼータ変換を行います。変換後の列が`std::vector<T>`の型で返されます。変換を行いたい`std::vector`の参照を引数にとります。
 
-- `fast_mobius_transform`: 高速メビウス変換を行います。変換後の列が`std::vector<T>`の型で返されます。変換を行いたい`std::vector`の参照を引数にとります。
+- `fast_mobius_transform`: 約数集合の高速メビウス変換を行います。変換後の列が`std::vector<T>`の型で返されます。変換を行いたい`std::vector`の参照を引数にとります。
 
 - `convolution`: 添字gcd畳み込みを行います。結果を`std::vector<T>`の型で返します。畳み込みを行いたい二つの列の参照を引数にとります。
 
