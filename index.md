@@ -119,3 +119,6 @@ data:
       title: test/osa_k2.test.cpp
 layout: toppage
 ---
+[テンプレート一覧](./templates/index-template.md)
+
+[ライブラリノート一覧](./notes/index-note.md)
