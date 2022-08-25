@@ -109,7 +109,7 @@ GCD_Convolution<T>
 
 - `コンストラクタ`: 引数 $N$ に対して $O(N log(log\ N))$
 - `fast_zeta_transform、fast_mobius_transform`: 列の長さを $N$ として $O(Nlog(log\ N))$
-- `convolution`: 列の長さをそれぞれ $N, M$ として $O(min(N, M) log (log\ min(N, M)))$
+- `convolution`: 列の長さをそれぞれ $N, M$ として $O(max(N, M) log (log\ max(N, M)))$
 
 ## これは結局なんなの
 TODO:: NOTE
