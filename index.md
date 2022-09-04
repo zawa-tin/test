@@ -4,6 +4,9 @@ data:
   - name: src/algorithm
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/algorithm/Binary-Search.hpp
+      title: "Binary Search (\u4E8C\u5206\u63A2\u7D22)"
+    - icon: ':heavy_check_mark:'
       path: src/algorithm/Count-Inversion-Number.hpp
       title: "Count-Inversion-Number(\u30DE\u30FC\u30B8\u30BD\u30FC\u30C8\u306B\u3088\
         \u308B\u8EE2\u5012\u6570\u306E\u6570\u3048\u4E0A\u3052)"
@@ -63,6 +66,9 @@ data:
   verificationCategories:
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/Binary-Search.test.cpp
+      title: test/Binary-Search.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Ear-DP.test.cpp
       title: test/Ear-DP.test.cpp
