@@ -30,6 +30,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Accum-2D.hpp
       title: "Accum 2D (2\u6B21\u5143\u7D2F\u7A4D\u548C)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/Fenwick-Tree.hpp
+      title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
+        \u5F97)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -75,6 +79,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Eratosthenes-Sieve.test.cpp
       title: test/Eratosthenes-Sieve.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Fenwick-Tree.test.cpp
+      title: test/Fenwick-Tree.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Fenwick-Tree_lower_bound.test.cpp
+      title: test/Fenwick-Tree_lower_bound.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/GCD-Convolution.test.cpp
       title: test/GCD-Convolution.test.cpp
