@@ -25,6 +25,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/algorithm/LCS.hpp
       title: "LCS(\u6700\u9577\u5171\u901A\u90E8\u5206\u5217)"
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/RLE.hpp
+      title: "RLE (\u9023\u9577\u5727\u7E2E)"
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -97,6 +100,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Mobius-Function.test.cpp
       title: test/Mobius-Function.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/RLE.test.cpp
+      title: test/RLE.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_10_c.test.cpp
       title: test/aoj_alds_10_c.test.cpp
