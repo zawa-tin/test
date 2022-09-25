@@ -7,6 +7,7 @@
 "test/Fenwick-Tree_lower_bound.test.cpp": "2022-09-06 00:26:25 +0900",
 "test/GCD-Convolution.test.cpp": "2022-08-22 15:46:17 +0900",
 "test/Mobius-Function.test.cpp": "2022-08-21 19:26:55 +0900",
+"test/RLE.test.cpp": "2022-09-26 05:14:11 +0900",
 "test/aoj_alds_10_c.test.cpp": "2022-07-30 03:20:50 +0900",
 "test/aoj_alds_5_d.test.cpp": "2022-07-25 00:17:07 +0900",
 "test/aoj_alds_6_D.test.cpp": "2022-07-30 20:12:45 +0900",
