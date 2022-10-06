@@ -5,6 +5,7 @@
 "test/Eratosthenes-Sieve.test.cpp": "2022-08-20 16:09:26 +0900",
 "test/Fenwick-Tree.test.cpp": "2022-09-06 00:26:25 +0900",
 "test/Fenwick-Tree_lower_bound.test.cpp": "2022-09-06 00:26:25 +0900",
+"test/Floyd-Cycle-Detection.test.cpp": "2022-10-07 03:05:33 +0900",
 "test/GCD-Convolution.test.cpp": "2022-08-22 15:46:17 +0900",
 "test/Miller-Rabin.test.cpp": "2022-10-06 11:58:58 +0900",
 "test/Mobius-Function.test.cpp": "2022-08-21 19:26:55 +0900",
