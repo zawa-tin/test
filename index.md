@@ -61,6 +61,9 @@ data:
         \u96C6\u5408\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\
         \u63DB)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Miller-Rabin.hpp
+      title: "Miller-Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
+    - icon: ':heavy_check_mark:'
       path: src/math/Mobius-Function.hpp
       title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
@@ -97,6 +100,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/GCD-Convolution.test.cpp
       title: test/GCD-Convolution.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Miller-Rabin.test.cpp
+      title: test/Miller-Rabin.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Mobius-Function.test.cpp
       title: test/Mobius-Function.test.cpp
