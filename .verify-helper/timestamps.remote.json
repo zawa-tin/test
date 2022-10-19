@@ -10,6 +10,7 @@
 "test/Miller-Rabin.test.cpp": "2022-10-06 11:58:58 +0900",
 "test/Mobius-Function.test.cpp": "2022-08-21 19:26:55 +0900",
 "test/RLE.test.cpp": "2022-09-26 05:14:11 +0900",
+"test/Sparse-Table.test.cpp": "2022-10-20 01:06:56 +0900",
 "test/aoj_alds_10_c.test.cpp": "2022-07-30 03:20:50 +0900",
 "test/aoj_alds_5_d.test.cpp": "2022-07-25 00:17:07 +0900",
 "test/aoj_alds_6_D.test.cpp": "2022-07-30 20:12:45 +0900",
