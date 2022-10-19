@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/dataStructure/Sparse-Table.cpp"
+#include "../src/dataStructure/Sparse-Table.hpp"
 
 #include <iostream>
 #include <algorithm>
