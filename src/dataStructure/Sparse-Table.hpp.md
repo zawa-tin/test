@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/Sparse-Table.test.cpp
+    title: test/Sparse-Table.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/dataStructure/Sparse-Table.hpp\"\n#include <vector>\n\
@@ -38,8 +41,9 @@ data:
   path: src/dataStructure/Sparse-Table.hpp
   requiredBy: []
   timestamp: '2022-10-20 01:04:24+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/Sparse-Table.test.cpp
 documentation_of: src/dataStructure/Sparse-Table.hpp
 layout: document
 title: "Sparse-Table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\u89E3\
