@@ -44,9 +44,10 @@ data:
       path: src/dataStructure/Fenwick-Tree.hpp
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
-    - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Sparse-Table.cpp
-      title: src/dataStructure/Sparse-Table.cpp
+    - icon: ':warning:'
+      path: src/dataStructure/Sparse-Table.hpp
+      title: "Sparse-Table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
+        \u89E3\u7B54 )"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -119,7 +120,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/RLE.test.cpp
       title: test/RLE.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/Sparse-Table.test.cpp
       title: test/Sparse-Table.test.cpp
     - icon: ':heavy_check_mark:'

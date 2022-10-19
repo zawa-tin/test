@@ -68,8 +68,8 @@ data:
   timestamp: '2022-08-20 22:48:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/osa_k2.test.cpp
   - test/osa_k.test.cpp
+  - test/osa_k2.test.cpp
 documentation_of: src/math/osa_k.hpp
 layout: document
 title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\u56E0\
