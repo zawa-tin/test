@@ -1,14 +1,8 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
-    path: src/algorithm/Ear-DP.hpp
-    title: "Ear-DP (\u8033DP)"
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/Ear-DP.test.cpp
-    title: test/Ear-DP.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/GCD-Convolution.test.cpp
     title: test/GCD-Convolution.test.cpp
@@ -66,12 +60,10 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/math/modint.hpp
-  requiredBy:
-  - src/algorithm/Ear-DP.hpp
+  requiredBy: []
   timestamp: '2022-08-03 12:30:08+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Ear-DP.test.cpp
   - test/aoj_dpl_5_a.test.cpp
   - test/GCD-Convolution.test.cpp
 documentation_of: src/math/modint.hpp
