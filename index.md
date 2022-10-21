@@ -51,6 +51,9 @@ data:
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/math/Arithmetic-Progression.hpp
+      title: "Arithmetic Progression (\u7B49\u5DEE\u6570\u5217)"
+    - icon: ':heavy_check_mark:'
       path: src/math/Divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
@@ -87,6 +90,9 @@ data:
   verificationCategories:
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/Arithmetic-Progression.test.cpp
+      title: test/Arithmetic-Progression.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Binary-Search.test.cpp
       title: test/Binary-Search.test.cpp
