@@ -5,7 +5,7 @@ documentation_of: //src/algorithm/Ear-DP.hpp
 
 ## 概要
 ```
-zawa::modint<1000000007> ear_dp(std::vector<T> as, std::vector<T> bs)
+RES ear_dp<T, RES>(std::vector<T> as, std::vector<T> bs)
 ```
 
 
@@ -13,8 +13,8 @@ zawa::modint<1000000007> ear_dp(std::vector<T> as, std::vector<T> bs)
 
 
 ### 機能
-modを変えたいなら実装の
-`using mint = zawa::modint<1000000007>`を書き換えてください
+- テンプレート引数は、引数の型、返り値の型の順番です
+    - `std::string`の時は一つ目はいらないです
 
 ### 計算量
 asの長さを $N$ 、bsの長さを $M$ として $O(NM)$
