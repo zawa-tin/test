@@ -1,25 +1,42 @@
 #pragma once
 
 #include <vector>
-#include "../math/modint.hpp"
+#include <string>
+
+namespace zawa::impl {
+
+template<typename T, typename RES>
+RES ear_dp(const std::vector<T>& a, const std::vector<T>& b) {
+    std::vector<std::vector<RES>> dp(a.size() + 1, std::vector<RES>(b.size() + 1));
+    for (std::size_t i = 0 ; i < a.size() + 1 ; i++) {
+        dp[i][0] = 1;
+    }
+
+    for (size_t i = 1 ; i < a.size() + 1 ; i++) {
+        for (size_t j = 1 ; j < b.size() + 1 ; j++) {
+            dp[i][j] += dp[i - 1][j];
+            if (a[i - 1] == b[j - 1]) {
+                dp[i][j] += dp[i][j - 1];
+            }
+        }
+    }
+
+    return dp.back().back();
+}
+
+} // namespace zawa::impl
 
 namespace zawa {
 
-    using mint = zawa::modint<1000000007>;
-    
-    template<typename T>
-    mint ear_dp(std::vector<T> as, std::vector<T> bs) {
-        std::vector dp(as.size() + 1, std::vector<mint>(bs.size() + 1));
-        for (int i = 0 ; i < as.size() + 1 ; i++) dp[i][0] = 1;
+template<typename T, typename RES>
+RES ear_dp(const std::vector<T>& a, const std::vector<T>& b) {
+    return impl::ear_dp<T, RES>(a, b);
+}
 
-        for (int i = 1 ; i < as.size() + 1 ; i++) {
-            for (int j = 1 ; j < bs.size() + 1 ; j++) {
-                dp[i][j] += dp[i - 1][j];
-                if (as[i - 1] == bs[j - 1]) dp[i][j] += dp[i][j - 1];
-            }
-        }
+template<typename RES>
+RES ear_dp(const std::string& a, const std::string& b) {
+    std::vector<char> newa(a.begin(), a.end()), newb(b.begin(), b.end());
+    return impl::ear_dp<char, RES>(newa, newb);
+}
 
-        return dp.back().back();
-    }
-
-} // namespace zawa
+}
