@@ -1,71 +1,55 @@
 #pragma once
-
+#include <string>
 #include <vector>
+#include <algorithm>
+
+namespace zawa::impl {
+
+template <class T>
+std::vector<T> lcs(const std::vector<T>& a, const std::vector<T>& b) {
+    std::vector dp(a.size() + 1, std::vector(b.size() + 1, 0));
+    for (std::size_t i = 0 ; i < a.size() ; i++) {
+        for (std::size_t j = 0 ; j < b.size() ; j++) {
+            if (a[i] == b[j]) {
+                dp[i + 1][j + 1] = dp[i][j] + 1;
+            }
+            else {
+                dp[i + 1][j + 1] = std::max(dp[i + 1][j], dp[i][j + 1]);
+            }
+        }
+    }
+    std::vector<T> res;
+    std::size_t i = a.size(), j = b.size();
+    while (dp[i][j] > 0) {
+        if (dp[i - 1][j] == dp[i][j]) {
+            i--;
+        }
+        else if (dp[i][j - 1] == dp[i][j]) {
+            j--;
+        }
+        else {
+            i--;
+            j--;
+            res.emplace_back(a[i]);
+        }
+    }
+    std::reverse(res.begin(), res.end());
+    return res;
+}
+
+}
 
 namespace zawa {
 
-    template <typename T>
-    class LCS {
+template <class T>
+std::vector<T> lcs(const std::vector<T>& a, const std::vector<T>& b) {
+    return impl::lcs(a, b);
+}
 
-    private:
-        std::vector<T> a, b;
-        std::vector<T> res;
-        std::vector<std::vector<int>> dp;
-        std::vector<std::vector<int>> dir;
+std::string lcs(const std::string& a, const std::string& b) {
+    std::vector<char> newa(a.begin(), a.end()), newb(b.begin(), b.end());
+    std::vector<char> reschar = impl::lcs(newa, newb);
+    return std::string(reschar.begin(), reschar.end());
+}
 
-        void make(int i, int j) {
-            if (i == 0 or j == 0) {
-                return;
-            }
-
-            if (dir[i][j] == 3) {
-                make(i - 1, j - 1);
-                res.emplace_back(a[i - 1]);
-            }
-            else if (dir[i][j] == 2) {
-                make(i - 1, j);
-            }
-            else {
-                make(i, j - 1);
-            }
-        }
-
-    public:
-        LCS(std::vector<T>& a, std::vector<T>& b)
-            : a(a.begin(), a.end()), 
-              b(b.begin(), b.end()), 
-              dp(a.size() + 1, std::vector<int>(b.size() + 1)), 
-              dir(a.size() + 1, std::vector<int>(b.size() + 1)) {}
-
-        void build() {
-            for (int i = 1 ; i < (int)a.size() + 1 ; i++) {
-                for (int j = 1 ; j < (int)b.size() + 1 ; j++) {
-                    if (a[i - 1] == b[j - 1]) {
-                        dp[i][j] = dp[i - 1][j - 1] + 1;
-                        dir[i][j] = 3;
-                    }
-                    else if (dp[i - 1][j] >= dp[i][j - 1]) {
-                        dp[i][j] = dp[i - 1][j];
-                        dir[i][j] = 2;
-                    }
-                    else {
-                        dp[i][j] = dp[i][j - 1];
-                        dir[i][j] = 1;
-                    }
-                }
-            }
-
-            make((int)a.size(), (int)b.size());
-        }
-
-        std::vector<T> get() {
-            return res;
-        }
-
-        int get_size() {
-            return dp[a.size()][b.size()];
-        }
-
-    };
-
-}// namespace zawa
+} // namespace zawa
