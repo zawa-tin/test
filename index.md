@@ -78,6 +78,10 @@ data:
       path: src/math/Mobius-Function.hpp
       title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Pascal-Triangle.hpp
+      title: "Pascal's Triangle (\u30CA\u30A4\u30FC\u30D6\u306A\u4E8C\u9805\u4FC2\u6570\
+        \u30C6\u30FC\u30D6\u30EB)"
+    - icon: ':heavy_check_mark:'
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
@@ -126,6 +130,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Mobius-Function.test.cpp
       title: test/Mobius-Function.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Pascal-Triangle.test.cpp
+      title: test/Pascal-Triangle.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/RLE.test.cpp
       title: test/RLE.test.cpp
