@@ -112,6 +112,9 @@ data:
       path: test/GCD-Convolution.test.cpp
       title: test/GCD-Convolution.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/LCS.test.cpp
+      title: test/LCS.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/Miller-Rabin.test.cpp
       title: test/Miller-Rabin.test.cpp
     - icon: ':heavy_check_mark:'
@@ -123,9 +126,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Sparse-Table.test.cpp
       title: test/Sparse-Table.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/aoj_alds_10_c.test.cpp
-      title: test/aoj_alds_10_c.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_5_d.test.cpp
       title: test/aoj_alds_5_d.test.cpp

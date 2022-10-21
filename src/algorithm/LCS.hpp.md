@@ -4,70 +4,58 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/aoj_alds_10_c.test.cpp
-    title: test/aoj_alds_10_c.test.cpp
+    path: test/LCS.test.cpp
+    title: test/LCS.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/algorithm/LCS.hpp\"\n\n#include <vector>\n\nnamespace\
-    \ zawa {\n\n    template <typename T>\n    class LCS {\n\n    private:\n     \
-    \   std::vector<T> a, b;\n        std::vector<T> res;\n        std::vector<std::vector<int>>\
-    \ dp;\n        std::vector<std::vector<int>> dir;\n\n        void make(int i,\
-    \ int j) {\n            if (i == 0 or j == 0) {\n                return;\n   \
-    \         }\n\n            if (dir[i][j] == 3) {\n                make(i - 1,\
-    \ j - 1);\n                res.emplace_back(a[i - 1]);\n            }\n      \
-    \      else if (dir[i][j] == 2) {\n                make(i - 1, j);\n         \
-    \   }\n            else {\n                make(i, j - 1);\n            }\n  \
-    \      }\n\n    public:\n        LCS(std::vector<T>& a, std::vector<T>& b)\n \
-    \           : a(a.begin(), a.end()), \n              b(b.begin(), b.end()), \n\
-    \              dp(a.size() + 1, std::vector<int>(b.size() + 1)), \n          \
-    \    dir(a.size() + 1, std::vector<int>(b.size() + 1)) {}\n\n        void build()\
-    \ {\n            for (int i = 1 ; i < (int)a.size() + 1 ; i++) {\n           \
-    \     for (int j = 1 ; j < (int)b.size() + 1 ; j++) {\n                    if\
-    \ (a[i - 1] == b[j - 1]) {\n                        dp[i][j] = dp[i - 1][j - 1]\
-    \ + 1;\n                        dir[i][j] = 3;\n                    }\n      \
-    \              else if (dp[i - 1][j] >= dp[i][j - 1]) {\n                    \
-    \    dp[i][j] = dp[i - 1][j];\n                        dir[i][j] = 2;\n      \
-    \              }\n                    else {\n                        dp[i][j]\
-    \ = dp[i][j - 1];\n                        dir[i][j] = 1;\n                  \
-    \  }\n                }\n            }\n\n            make((int)a.size(), (int)b.size());\n\
-    \        }\n\n        std::vector<T> get() {\n            return res;\n      \
-    \  }\n\n        int get_size() {\n            return dp[a.size()][b.size()];\n\
-    \        }\n\n    };\n\n}// namespace zawa\n"
-  code: "#pragma once\n\n#include <vector>\n\nnamespace zawa {\n\n    template <typename\
-    \ T>\n    class LCS {\n\n    private:\n        std::vector<T> a, b;\n        std::vector<T>\
-    \ res;\n        std::vector<std::vector<int>> dp;\n        std::vector<std::vector<int>>\
-    \ dir;\n\n        void make(int i, int j) {\n            if (i == 0 or j == 0)\
-    \ {\n                return;\n            }\n\n            if (dir[i][j] == 3)\
-    \ {\n                make(i - 1, j - 1);\n                res.emplace_back(a[i\
-    \ - 1]);\n            }\n            else if (dir[i][j] == 2) {\n            \
-    \    make(i - 1, j);\n            }\n            else {\n                make(i,\
-    \ j - 1);\n            }\n        }\n\n    public:\n        LCS(std::vector<T>&\
-    \ a, std::vector<T>& b)\n            : a(a.begin(), a.end()), \n             \
-    \ b(b.begin(), b.end()), \n              dp(a.size() + 1, std::vector<int>(b.size()\
-    \ + 1)), \n              dir(a.size() + 1, std::vector<int>(b.size() + 1)) {}\n\
-    \n        void build() {\n            for (int i = 1 ; i < (int)a.size() + 1 ;\
-    \ i++) {\n                for (int j = 1 ; j < (int)b.size() + 1 ; j++) {\n  \
-    \                  if (a[i - 1] == b[j - 1]) {\n                        dp[i][j]\
-    \ = dp[i - 1][j - 1] + 1;\n                        dir[i][j] = 3;\n          \
-    \          }\n                    else if (dp[i - 1][j] >= dp[i][j - 1]) {\n \
-    \                       dp[i][j] = dp[i - 1][j];\n                        dir[i][j]\
-    \ = 2;\n                    }\n                    else {\n                  \
-    \      dp[i][j] = dp[i][j - 1];\n                        dir[i][j] = 1;\n    \
-    \                }\n                }\n            }\n\n            make((int)a.size(),\
-    \ (int)b.size());\n        }\n\n        std::vector<T> get() {\n            return\
-    \ res;\n        }\n\n        int get_size() {\n            return dp[a.size()][b.size()];\n\
-    \        }\n\n    };\n\n}// namespace zawa\n"
+  bundledCode: "#line 2 \"src/algorithm/LCS.hpp\"\n#include <string>\n#include <vector>\n\
+    #include <algorithm>\n\nnamespace zawa::impl {\n\ntemplate <class T>\nstd::vector<T>\
+    \ lcs(const std::vector<T>& a, const std::vector<T>& b) {\n    std::vector dp(a.size()\
+    \ + 1, std::vector(b.size() + 1, 0));\n    for (std::size_t i = 0 ; i < a.size()\
+    \ ; i++) {\n        for (std::size_t j = 0 ; j < b.size() ; j++) {\n         \
+    \   if (a[i] == b[j]) {\n                dp[i + 1][j + 1] = dp[i][j] + 1;\n  \
+    \          }\n            else {\n                dp[i + 1][j + 1] = std::max(dp[i\
+    \ + 1][j], dp[i][j + 1]);\n            }\n        }\n    }\n    std::vector<T>\
+    \ res;\n    std::size_t i = a.size(), j = b.size();\n    while (dp[i][j] > 0)\
+    \ {\n        if (dp[i - 1][j] == dp[i][j]) {\n            i--;\n        }\n  \
+    \      else if (dp[i][j - 1] == dp[i][j]) {\n            j--;\n        }\n   \
+    \     else {\n            i--;\n            j--;\n            res.emplace_back(a[i]);\n\
+    \        }\n    }\n    std::reverse(res.begin(), res.end());\n    return res;\n\
+    }\n\n}\n\nnamespace zawa {\n\ntemplate <class T>\nstd::vector<T> lcs(const std::vector<T>&\
+    \ a, const std::vector<T>& b) {\n    return impl::lcs(a, b);\n}\n\nstd::string\
+    \ lcs(const std::string& a, const std::string& b) {\n    std::vector<char> newa(a.begin(),\
+    \ a.end()), newb(b.begin(), b.end());\n    std::vector<char> reschar = impl::lcs(newa,\
+    \ newb);\n    return std::string(reschar.begin(), reschar.end());\n}\n\n} // namespace\
+    \ zawa\n"
+  code: "#pragma once\n#include <string>\n#include <vector>\n#include <algorithm>\n\
+    \nnamespace zawa::impl {\n\ntemplate <class T>\nstd::vector<T> lcs(const std::vector<T>&\
+    \ a, const std::vector<T>& b) {\n    std::vector dp(a.size() + 1, std::vector(b.size()\
+    \ + 1, 0));\n    for (std::size_t i = 0 ; i < a.size() ; i++) {\n        for (std::size_t\
+    \ j = 0 ; j < b.size() ; j++) {\n            if (a[i] == b[j]) {\n           \
+    \     dp[i + 1][j + 1] = dp[i][j] + 1;\n            }\n            else {\n  \
+    \              dp[i + 1][j + 1] = std::max(dp[i + 1][j], dp[i][j + 1]);\n    \
+    \        }\n        }\n    }\n    std::vector<T> res;\n    std::size_t i = a.size(),\
+    \ j = b.size();\n    while (dp[i][j] > 0) {\n        if (dp[i - 1][j] == dp[i][j])\
+    \ {\n            i--;\n        }\n        else if (dp[i][j - 1] == dp[i][j]) {\n\
+    \            j--;\n        }\n        else {\n            i--;\n            j--;\n\
+    \            res.emplace_back(a[i]);\n        }\n    }\n    std::reverse(res.begin(),\
+    \ res.end());\n    return res;\n}\n\n}\n\nnamespace zawa {\n\ntemplate <class\
+    \ T>\nstd::vector<T> lcs(const std::vector<T>& a, const std::vector<T>& b) {\n\
+    \    return impl::lcs(a, b);\n}\n\nstd::string lcs(const std::string& a, const\
+    \ std::string& b) {\n    std::vector<char> newa(a.begin(), a.end()), newb(b.begin(),\
+    \ b.end());\n    std::vector<char> reschar = impl::lcs(newa, newb);\n    return\
+    \ std::string(reschar.begin(), reschar.end());\n}\n\n} // namespace zawa\n"
   dependsOn: []
   isVerificationFile: false
   path: src/algorithm/LCS.hpp
   requiredBy: []
-  timestamp: '2022-07-30 03:20:50+09:00'
+  timestamp: '2022-10-21 15:10:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj_alds_10_c.test.cpp
+  - test/LCS.test.cpp
 documentation_of: src/algorithm/LCS.hpp
 layout: document
 title: "LCS(\u6700\u9577\u5171\u901A\u90E8\u5206\u5217)"
@@ -86,14 +74,11 @@ LCS(std::vector<T>& a, std::vector<T>& b)
 
 
 ### 機能
-* `コンストラクタ`: 最大共通部分列を求めたい二つの列の参照を引数にとります。(`string`は`vector<char>`にしなければならないことに注意してください)
-  
-* `build()`: 最大共通部分列を計算し、`res`に結果を保存します
-  
-* `get()`: 最大共通部分列を返します。`build()`を先に実行してください
-  
-* `get_size()`: 最大共通部分列の長さを返します
+
+* 関数に二つぶちこみましょう。`std::string`にも対応しています。
+* 共通部分列の中で長さが最大のものを一つ返します
+    * 一般に最大共通部分列は一つに定まらないことに注意してください
 
   
 ### 計算量
-* `build()` ・・・ $O(NM)$ ( $N,\  M$ はそれぞれの列の長さ)
+* $O(NM)$ ( $N,\  M$ はそれぞれの列の長さ)

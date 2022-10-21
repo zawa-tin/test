@@ -72,8 +72,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/Ear-DP.test.cpp
-  - test/GCD-Convolution.test.cpp
   - test/aoj_dpl_5_a.test.cpp
+  - test/GCD-Convolution.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document
 title: modint

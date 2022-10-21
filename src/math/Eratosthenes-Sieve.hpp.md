@@ -48,14 +48,14 @@ data:
   isVerificationFile: false
   path: src/math/Eratosthenes-Sieve.hpp
   requiredBy:
-  - src/math/GCD-Convolution.hpp
   - src/math/Mobius-Function.hpp
+  - src/math/GCD-Convolution.hpp
   timestamp: '2022-08-20 16:08:57+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Eratosthenes-Sieve.test.cpp
   - test/Mobius-Function.test.cpp
   - test/GCD-Convolution.test.cpp
+  - test/Eratosthenes-Sieve.test.cpp
 documentation_of: src/math/Eratosthenes-Sieve.hpp
 layout: document
 title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
