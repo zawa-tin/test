@@ -91,6 +91,11 @@ data:
       path: src/math/osa_k.hpp
       title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
         \u56E0\u6570\u5206\u89E3)"
+  - name: src/query
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/query/Square-Decomposition.hpp
+      title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
   verificationCategories:
   - name: test
     pages:
@@ -139,6 +144,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Sparse-Table.test.cpp
       title: test/Sparse-Table.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Square-Decomposition-RSQ.test.cpp
+      title: test/Square-Decomposition-RSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Square-Decomposition-RmQ.test.cpp
+      title: test/Square-Decomposition-RmQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_alds_5_d.test.cpp
       title: test/aoj_alds_5_d.test.cpp
