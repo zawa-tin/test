@@ -50,7 +50,7 @@ data:
         \u89E3\u7B54 )"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Square-Decomposition.hpp
-      title: src/dataStructure/Square-Decomposition.hpp
+      title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
