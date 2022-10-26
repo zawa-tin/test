@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/graph/Read-Graph.hpp
-    title: src/graph/Read-Graph.hpp
+    title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

@@ -55,7 +55,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: src/graph/Read-Graph.hpp
-      title: src/graph/Read-Graph.hpp
+      title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"
     - icon: ':heavy_check_mark:'
       path: src/graph/Read-Weighted-Graph.hpp
       title: "Read Weighted Graph (\u91CD\u307F\u4ED8\u304D\u30B0\u30E9\u30D5\u5165\
