@@ -48,6 +48,9 @@ data:
       path: src/dataStructure/Sparse-Table.hpp
       title: "Sparse-Table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
         \u89E3\u7B54 )"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/Square-Decomposition.hpp
+      title: src/dataStructure/Square-Decomposition.hpp
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -91,11 +94,6 @@ data:
       path: src/math/osa_k.hpp
       title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
         \u56E0\u6570\u5206\u89E3)"
-  - name: src/query
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: src/query/Square-Decomposition.hpp
-      title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
   verificationCategories:
   - name: test
     pages:
