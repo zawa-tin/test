@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_B"
 
-#include "../src/query/Square-Decomposition.hpp"
+#include "../src/dataStructure/Square-Decomposition.hpp"
 
 namespace monoid {
 
@@ -14,7 +14,7 @@ int e() {
 
 }
 
-using RSQ = zawa::Sqrt_Decomposition<int, monoid::op, monoid::e>;
+using RSQ = zawa::Square_Decomposition<int, monoid::op, monoid::e>;
 
 #include <iostream>
 

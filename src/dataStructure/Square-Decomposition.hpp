@@ -8,7 +8,7 @@
 namespace zawa {
 
 template <class T, T (*op)(T, T), T (*e)()>
-class Sqrt_Decomposition {
+class Square_Decomposition {
 
 private:
     int square;
@@ -26,13 +26,13 @@ private:
     }
 
 public:
-    Sqrt_Decomposition(int n)
+    Square_Decomposition(int n)
         : square(std::sqrt(n + 1))
         , size((n + square - 1) / square)
         , data(n, e())
         , bucket(size, e()) {}
 
-    Sqrt_Decomposition(std::vector<T> as)
+    Square_Decomposition(std::vector<T> as)
         : square(std::sqrt((int)as.size() + 1))
         , size(((int)as.size() + square - 1) / square)
         , data(as.begin(), as.end())
@@ -73,7 +73,7 @@ public:
         }
     }
 
-    void print_date(int l, int r) {
+    void print_data(int l, int r) {
         for (int i = l ; i < r ; i++) {
             std::cout << data.at(i) << (i == r - 1 ? '\n' : ' ');
         }

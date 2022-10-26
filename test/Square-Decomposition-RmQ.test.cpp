@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A"
 
-#include "../src/query/Square-Decomposition.hpp"
+#include "../src/dataStructure/Square-Decomposition.hpp"
 
 namespace sqrtDecomp {
 
@@ -14,7 +14,7 @@ int e() {
 
 }
 
-using RmQ = zawa::Sqrt_Decomposition<int, sqrtDecomp::op, sqrtDecomp::e>;
+using RmQ = zawa::Square_Decomposition<int, sqrtDecomp::op, sqrtDecomp::e>;
 
 #include <iostream>
 
