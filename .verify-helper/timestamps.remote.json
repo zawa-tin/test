@@ -31,8 +31,5 @@
 "test/kadane.test.cpp": "2022-07-30 02:10:28 +0900",
 "test/modint.test.cpp": "2022-08-03 12:30:31 +0900",
 "test/osa_k.test.cpp": "2022-08-20 22:48:53 +0900",
-"test/osa_k2.test.cpp": "2022-08-20 22:48:53 +0900",
-"test/readGraph-atcoder.test.cpp": "2022-10-26 15:00:12 +0900",
-"test/readGraph.test.cpp": "2022-10-26 15:00:12 +0900",
-"test/readWeightedGraph.test.cpp": "2022-10-26 15:00:12 +0900"
+"test/osa_k2.test.cpp": "2022-08-20 22:48:53 +0900"
 }
