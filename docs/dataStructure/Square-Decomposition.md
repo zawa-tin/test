@@ -1,6 +1,6 @@
 ---
 title: Square Decomposition (平方分割)
-documentation_of: //src/query/Square-Decomposition.hpp
+documentation_of: //src/dataStructure/Square-Decomposition.hpp
 ---
 
 ## 概要
