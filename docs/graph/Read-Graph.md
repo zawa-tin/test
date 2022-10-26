@@ -1,6 +1,6 @@
 ---
 title: readGraph (グラフ入力)
-documentation_of: //src/Graph/Read-Graph.hpp"
+documentation_of: //src/graph/Read-Graph.hpp"
 ---
 
 ## 概要
