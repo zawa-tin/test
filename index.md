@@ -1,6 +1,14 @@
 ---
 data:
   libraryCategories:
+  - name: src/Graph
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/Graph/readGraph.hpp
+      title: src/Graph/readGraph.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/Graph/readWeightedGraph.hpp
+      title: src/Graph/readWeightedGraph.hpp
   - name: src/algorithm
     pages:
     - icon: ':heavy_check_mark:'
@@ -51,6 +59,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Square-Decomposition.hpp
       title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
+  - name: src/graph
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/graph/Read-Graph.hpp
+      title: src/graph/Read-Graph.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/graph/Read-Weighted-Graph.hpp
+      title: "Read Weighted Graph (\u91CD\u307F\u4ED8\u304D\u30B0\u30E9\u30D5\u5165\
+        \u529B)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -140,6 +157,15 @@ data:
       path: test/RLE.test.cpp
       title: test/RLE.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/Read-Graph-AtCoder.test.cpp
+      title: test/Read-Graph-AtCoder.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Read-Graph.test.cpp
+      title: test/Read-Graph.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Read-Weighted-Graph.test.cpp
+      title: test/Read-Weighted-Graph.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/Sparse-Table.test.cpp
       title: test/Sparse-Table.test.cpp
     - icon: ':heavy_check_mark:'
@@ -187,6 +213,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/osa_k2.test.cpp
       title: test/osa_k2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/readGraph-atcoder.test.cpp
+      title: test/readGraph-atcoder.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/readGraph.test.cpp
+      title: test/readGraph.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/readWeightedGraph.test.cpp
+      title: test/readWeightedGraph.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
