@@ -1,5 +1,5 @@
 ---
-title: ReadvGraph (グラフ入力)
+title: Read-Graph (グラフ入力)
 documentation_of: //src/graph/Read-Graph.hpp"
 ---
 
