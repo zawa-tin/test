@@ -66,6 +66,9 @@ data:
       path: src/math/Arithmetic-Progression.hpp
       title: "Arithmetic Progression (\u7B49\u5DEE\u6570\u5217)"
     - icon: ':heavy_check_mark:'
+      path: src/math/Binary-Coeff-Mod.hpp
+      title: "Binary-Coeff (\u4E8C\u9805\u4FC2\u6570 Mod)"
+    - icon: ':heavy_check_mark:'
       path: src/math/Divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
@@ -109,6 +112,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Arithmetic-Progression.test.cpp
       title: test/Arithmetic-Progression.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Binary-Coeff.test.cpp
+      title: test/Binary-Coeff.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Binary-Search.test.cpp
       title: test/Binary-Search.test.cpp
