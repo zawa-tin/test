@@ -54,6 +54,9 @@ data:
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/graph/Dijkstra.hpp
+      title: "Dijkstra (\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/Read-Graph.hpp
       title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"
     - icon: ':heavy_check_mark:'
@@ -121,6 +124,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Compression.test.cpp
       title: test/Compression.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Dijkstra1.test.cpp
+      title: test/Dijkstra1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Dijkstra2.test.cpp
+      title: test/Dijkstra2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Dijkstra3.test.cpp
+      title: test/Dijkstra3.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Ear-DP.test.cpp
       title: test/Ear-DP.test.cpp
