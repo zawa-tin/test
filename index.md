@@ -57,6 +57,9 @@ data:
       path: src/graph/Dijkstra.hpp
       title: "Dijkstra (\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5)"
     - icon: ':heavy_check_mark:'
+      path: src/graph/Functional-Graph.hpp
+      title: "Functional Graph (\u30C0\u30D6\u30EA\u30F3\u30B0K\u56DE\u884C\u52D5)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/Read-Graph.hpp
       title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"
     - icon: ':heavy_check_mark:'
@@ -148,6 +151,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Floyd-Cycle-Detection.test.cpp
       title: test/Floyd-Cycle-Detection.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/Functional_Graph.test.cpp
+      title: test/Functional_Graph.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/GCD-Convolution.test.cpp
       title: test/GCD-Convolution.test.cpp
