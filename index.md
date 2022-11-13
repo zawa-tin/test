@@ -54,6 +54,9 @@ data:
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/graph/BFS.hpp
+      title: "BFS (\u5E45\u512A\u5148\u63A2\u7D22)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/Dijkstra.hpp
       title: "Dijkstra (\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5)"
     - icon: ':heavy_check_mark:'
@@ -118,6 +121,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Arithmetic-Progression.test.cpp
       title: test/Arithmetic-Progression.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/BFS.test.cpp
+      title: test/BFS.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Binary-Coeff.test.cpp
       title: test/Binary-Coeff.test.cpp
