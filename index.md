@@ -54,6 +54,9 @@ data:
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/graph/01BFS.hpp
+      title: "01BFS (\u5E45\u512A\u5148\u63A2\u7D22)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/BFS.hpp
       title: "BFS (\u5E45\u512A\u5148\u63A2\u7D22)"
     - icon: ':heavy_check_mark:'
@@ -118,6 +121,9 @@ data:
   verificationCategories:
   - name: test
     pages:
+    - icon: ':heavy_check_mark:'
+      path: test/01BFS.test.cpp
+      title: test/01BFS.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Arithmetic-Progression.test.cpp
       title: test/Arithmetic-Progression.test.cpp
