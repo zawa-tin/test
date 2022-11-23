@@ -41,6 +41,9 @@ data:
       path: src/dataStructure/Accum-2D.hpp
       title: "Accum 2D (2\u6B21\u5143\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/DSU.hpp
+      title: "DSU (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/Fenwick-Tree.hpp
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
@@ -139,6 +142,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Compression.test.cpp
       title: test/Compression.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/DSU-unitTest.test.cpp
+      title: test/DSU-unitTest.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/DSU1.test.cpp
+      title: test/DSU1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/DSU2.test.cpp
+      title: test/DSU2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Dijkstra1.test.cpp
       title: test/Dijkstra1.test.cpp
