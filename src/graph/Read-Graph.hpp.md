@@ -9,6 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/Read-Graph.test.cpp
     title: test/Read-Graph.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/simple-bfs2.test.cpp
+    title: test/simple-bfs2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -39,6 +42,7 @@ data:
   timestamp: '2022-10-26 15:07:24+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/simple-bfs2.test.cpp
   - test/Read-Graph-AtCoder.test.cpp
   - test/Read-Graph.test.cpp
 documentation_of: src/graph/Read-Graph.hpp

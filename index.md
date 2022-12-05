@@ -82,6 +82,9 @@ data:
   - name: src/graph/simple
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/graph/simple/bfs.hpp
+      title: bfs (simple ver)
+    - icon: ':heavy_check_mark:'
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
   - name: src/math
@@ -271,6 +274,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-bfs1.test.cpp
+      title: test/simple-bfs1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-bfs2.test.cpp
+      title: test/simple-bfs2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra1.test.cpp
       title: test/simple-dijkstra1.test.cpp
