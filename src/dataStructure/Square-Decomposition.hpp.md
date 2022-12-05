@@ -80,8 +80,8 @@ data:
   timestamp: '2022-10-26 10:25:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Square-Decomposition-RmQ.test.cpp
   - test/Square-Decomposition-RSQ.test.cpp
+  - test/Square-Decomposition-RmQ.test.cpp
 documentation_of: src/dataStructure/Square-Decomposition.hpp
 layout: document
 title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"

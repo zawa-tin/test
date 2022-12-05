@@ -54,6 +54,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Square-Decomposition.hpp
       title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/potentialized_unionfind.hpp
+      title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
+        Union Find\u6728)"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -253,6 +257,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/osa_k2.test.cpp
       title: test/osa_k2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/potentialized_unionfind1.test.cpp
+      title: test/potentialized_unionfind1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/potentialized_unionfind2.test.cpp
+      title: test/potentialized_unionfind2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/potentialized_unionfind3.test.cpp
+      title: test/potentialized_unionfind3.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)

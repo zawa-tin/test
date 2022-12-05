@@ -59,9 +59,9 @@ data:
   timestamp: '2022-11-24 06:24:00+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/DSU-unitTest.test.cpp
   - test/DSU1.test.cpp
   - test/DSU2.test.cpp
-  - test/DSU-unitTest.test.cpp
 documentation_of: src/dataStructure/DSU.hpp
 layout: document
 title: "DSU (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"
