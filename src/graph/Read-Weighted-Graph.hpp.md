@@ -6,6 +6,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/Read-Weighted-Graph.test.cpp
     title: test/Read-Weighted-Graph.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/simple-dijkstra1.test.cpp
+    title: test/simple-dijkstra1.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/simple-dijkstra2.test.cpp
+    title: test/simple-dijkstra2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -41,6 +47,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/Read-Weighted-Graph.test.cpp
+  - test/simple-dijkstra2.test.cpp
+  - test/simple-dijkstra1.test.cpp
 documentation_of: src/graph/Read-Weighted-Graph.hpp
 layout: document
 title: "Read Weighted Graph (\u91CD\u307F\u4ED8\u304D\u30B0\u30E9\u30D5\u5165\u529B\

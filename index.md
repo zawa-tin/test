@@ -79,6 +79,11 @@ data:
       path: src/graph/Read-Weighted-Graph.hpp
       title: "Read Weighted Graph (\u91CD\u307F\u4ED8\u304D\u30B0\u30E9\u30D5\u5165\
         \u529B)"
+  - name: src/graph/simple
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/graph/simple/dijkstra.hpp
+      title: dijkstra (simple ver)
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -266,6 +271,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-dijkstra1.test.cpp
+      title: test/simple-dijkstra1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-dijkstra2.test.cpp
+      title: test/simple-dijkstra2.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
