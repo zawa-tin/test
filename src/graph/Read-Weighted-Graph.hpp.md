@@ -12,6 +12,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/simple-dijkstra2.test.cpp
     title: test/simple-dijkstra2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/simple-wf1.test.cpp
+    title: test/simple-wf1.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -46,6 +49,7 @@ data:
   timestamp: '2022-10-26 15:07:24+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/simple-wf1.test.cpp
   - test/Read-Weighted-Graph.test.cpp
   - test/simple-dijkstra2.test.cpp
   - test/simple-dijkstra1.test.cpp

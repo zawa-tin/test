@@ -87,6 +87,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
+    - icon: ':heavy_check_mark:'
+      path: src/graph/simple/wf.hpp
+      title: "wf (\u30EF\u30FC\u30B7\u30E3\u30EB\u30D5\u30ED\u30A4\u30C9 simple ver)"
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
@@ -286,6 +289,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra2.test.cpp
       title: test/simple-dijkstra2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-wf1.test.cpp
+      title: test/simple-wf1.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
