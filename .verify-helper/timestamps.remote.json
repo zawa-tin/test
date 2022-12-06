@@ -48,5 +48,6 @@
 "test/simple-bfs1.test.cpp": "2022-12-06 05:52:19 +0900",
 "test/simple-bfs2.test.cpp": "2022-12-06 05:52:19 +0900",
 "test/simple-dijkstra1.test.cpp": "2022-12-06 04:57:49 +0900",
-"test/simple-dijkstra2.test.cpp": "2022-12-06 05:18:16 +0900"
+"test/simple-dijkstra2.test.cpp": "2022-12-06 05:18:16 +0900",
+"test/simple-wf1.test.cpp": "2022-12-07 03:14:09 +0900"
 }
