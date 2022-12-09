@@ -58,6 +58,10 @@ data:
       path: src/dataStructure/potentialized_unionfind.hpp
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/segment-tree.hpp
+      title: "segment tree (\u4E00\u70B9\u5909\u66F4\u30FB\u533A\u9593\u6F14\u7B97\
+        )"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -278,6 +282,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree-rmq.test.cpp
+      title: test/segment-tree-rmq.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree-rsq.test.cpp
+      title: test/segment-tree-rsq.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree1.test.cpp
+      title: test/segment-tree1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree2.test.cpp
+      title: test/segment-tree2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-bfs1.test.cpp
       title: test/simple-bfs1.test.cpp
