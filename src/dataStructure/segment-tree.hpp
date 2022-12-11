@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+#include <cassert>
+#include <functional>
 
 namespace zawa {
 
@@ -31,18 +33,22 @@ public:
     }
 
     void set(int pos, T val) {
+        assert(0 <= pos and pos < (int)n);
         pos += (int)n;
         dat[pos] = val;  
         update(pos);
     }
 
     void apply(int pos, T val) {
+        assert(0 <= pos and pos < (int)n);
         pos += (int)n;
         dat[pos] = op(dat[pos], val);
         update(pos);
     }
 
     T query(int l, int r) {
+        assert(0 <= l and l < (int)n);
+        assert(l <= r and r <= (int)n);
         l += n;
         r += n;
         T ans = e();
@@ -57,6 +63,30 @@ public:
             r >>= 1;
         }
         return ans;
+    }
+
+    T all_prod() {
+        return dat[1];
+    }
+
+    int max_right(int l, const std::function<bool(int)>& f) {
+        assert(0 <= l and l < (int)n);
+        assert(f(e()));
+        l += n;
+        T sum = e();
+        while (1) {
+            if (!f(op(sum, dat[l]))) {
+            }
+            else {
+                l++;
+                if ((l & (-l)) == l) {
+                    break;
+                }
+                if (l >= (i32)dat.size()) {
+                    break;
+                }
+            }
+        }
     }
 
     T debug(int pos) {
