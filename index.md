@@ -295,6 +295,15 @@ data:
       path: test/segment-tree2.test.cpp
       title: test/segment-tree2.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/segment-tree3.test.cpp
+      title: test/segment-tree3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree4.test.cpp
+      title: test/segment-tree4.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/segment-tree5.test.cpp
+      title: test/segment-tree5.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/simple-bfs1.test.cpp
       title: test/simple-bfs1.test.cpp
     - icon: ':heavy_check_mark:'

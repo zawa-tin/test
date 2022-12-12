@@ -11,11 +11,12 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/staticrmq
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
     links:
-    - https://judge.yosupo.jp/problem/staticrmq
-  bundledCode: "#line 1 \"test/segment-tree2.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\
-    \n\n#line 2 \"src/dataStructure/segment-tree.hpp\"\n\n#include <vector>\n#include\
+    - https://atcoder.jp/contests/practice2/submissions/37230528
+    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
+  bundledCode: "#line 1 \"test/segment-tree3.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+    \n#line 2 \"src/dataStructure/segment-tree.hpp\"\n\n#include <vector>\n#include\
     \ <cassert>\n#include <functional>\n\nnamespace zawa {\n\ntemplate <class T, T\
     \ (*op)(T, T), T (*e)()>\nclass segment_tree {\nprivate:\n    int n;\n    std::vector<T>\
     \ dat;\n\n    void update(int pos) {\n        while (pos > 1) {\n            pos\
@@ -51,33 +52,50 @@ data:
     \          return down_tree(r);\n                }\n                else {\n \
     \                   sum = op(sum, dat[r++]);\n                }\n            }\n\
     \        }\n        return n;\n    }\n\n    T debug(int pos) {\n        return\
-    \ dat[pos];\n    }\n};\n\n} // namespace zawa\n#line 4 \"test/segment-tree2.test.cpp\"\
-    \n\n#include <iostream>\n#include <algorithm>\n#line 8 \"test/segment-tree2.test.cpp\"\
-    \n\nint op(int x, int y) {\n    return std::min(x, y);\n}\n\nint e() {\n    return\
-    \ (int)2e9;\n}\n\nint main() {\n    int n, q; std::cin >> n >> q;\n    std::vector\
-    \ as(n, 0);\n    for (auto& a : as) {\n        std::cin >> a;\n    }\n    zawa::segment_tree<int,\
-    \ op, e> seg(as);\n    for (int _ = 0 ; _ < q ; _++) {\n        int l, r; std::cin\
-    \ >> l >> r;\n        std::cout << seg.query(l, r) << std::endl;\n    }\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n\n#include\
-    \ \"../src/dataStructure/segment-tree.hpp\"\n\n#include <iostream>\n#include <algorithm>\n\
-    #include <vector>\n\nint op(int x, int y) {\n    return std::min(x, y);\n}\n\n\
-    int e() {\n    return (int)2e9;\n}\n\nint main() {\n    int n, q; std::cin >>\
-    \ n >> q;\n    std::vector as(n, 0);\n    for (auto& a : as) {\n        std::cin\
-    \ >> a;\n    }\n    zawa::segment_tree<int, op, e> seg(as);\n    for (int _ =\
-    \ 0 ; _ < q ; _++) {\n        int l, r; std::cin >> l >> r;\n        std::cout\
-    \ << seg.query(l, r) << std::endl;\n    }\n}\n"
+    \ dat[pos];\n    }\n};\n\n} // namespace zawa\n#line 3 \"test/segment-tree3.test.cpp\"\
+    \n\n#include <iostream>\n#include <algorithm>\n\n// int op(int a, int b) {\n//\
+    \     return std::max(a, b);\n// }\n// \n// int e() {\n//     return -1;\n// }\n\
+    \nint main() {\n    // int n, q; std::cin >> n >> q;\n    // std::vector as(n,\
+    \ 0);\n    // for (auto& a : as) std::cin >> a;\n    // zawa::segment_tree<int,\
+    \ op, e> seg(as);\n    // for (int _ = 0 ; _ < q ; _++) {\n    //     int t; std::cin\
+    \ >> t;\n    //     if (t == 1) {\n    //         int x, v; std::cin >> x >> v;\n\
+    \    //         seg.set(x - 1, v);\n    //     }\n    //     if (t == 2) {\n \
+    \   //         int l, r; std::cin >> l >> r;\n    //         std::cout << seg.query(l\
+    \ - 1, r) << std::endl;\n    //     }\n    //     if (t == 3) {\n    //      \
+    \   int x, v; std::cin >> x >> v;\n    //         auto f = [&](int p) -> bool\
+    \ {\n    //             return p < v;\n    //         };\n    //         std::cout\
+    \ << seg.max_right(x - 1, f) + 1 << std::endl;\n    //     }\n    // }\n\n   \
+    \ std::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Library Practice\
+    \ Contest J Segment Tree\n * https://atcoder.jp/contests/practice2/submissions/37230528\n\
+    \ */\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+    \n#include \"../src/dataStructure/segment-tree.hpp\"\n\n#include <iostream>\n\
+    #include <algorithm>\n\n// int op(int a, int b) {\n//     return std::max(a, b);\n\
+    // }\n// \n// int e() {\n//     return -1;\n// }\n\nint main() {\n    // int n,\
+    \ q; std::cin >> n >> q;\n    // std::vector as(n, 0);\n    // for (auto& a :\
+    \ as) std::cin >> a;\n    // zawa::segment_tree<int, op, e> seg(as);\n    // for\
+    \ (int _ = 0 ; _ < q ; _++) {\n    //     int t; std::cin >> t;\n    //     if\
+    \ (t == 1) {\n    //         int x, v; std::cin >> x >> v;\n    //         seg.set(x\
+    \ - 1, v);\n    //     }\n    //     if (t == 2) {\n    //         int l, r; std::cin\
+    \ >> l >> r;\n    //         std::cout << seg.query(l - 1, r) << std::endl;\n\
+    \    //     }\n    //     if (t == 3) {\n    //         int x, v; std::cin >>\
+    \ x >> v;\n    //         auto f = [&](int p) -> bool {\n    //             return\
+    \ p < v;\n    //         };\n    //         std::cout << seg.max_right(x - 1,\
+    \ f) + 1 << std::endl;\n    //     }\n    // }\n\n    std::cout << \"Hello World\"\
+    \ << std::endl;\n}\n\n/*\n * AtCoder Library Practice Contest J Segment Tree\n\
+    \ * https://atcoder.jp/contests/practice2/submissions/37230528\n */\n"
   dependsOn:
   - src/dataStructure/segment-tree.hpp
   isVerificationFile: true
-  path: test/segment-tree2.test.cpp
+  path: test/segment-tree3.test.cpp
   requiredBy: []
-  timestamp: '2022-12-12 17:22:38+09:00'
+  timestamp: '2022-12-12 17:22:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/segment-tree2.test.cpp
+documentation_of: test/segment-tree3.test.cpp
 layout: document
 redirect_from:
-- /verify/test/segment-tree2.test.cpp
-- /verify/test/segment-tree2.test.cpp.html
-title: test/segment-tree2.test.cpp
+- /verify/test/segment-tree3.test.cpp
+- /verify/test/segment-tree3.test.cpp.html
+title: test/segment-tree3.test.cpp
 ---

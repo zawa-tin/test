@@ -11,10 +11,11 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/staticrmq
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
     links:
-    - https://judge.yosupo.jp/problem/staticrmq
-  bundledCode: "#line 1 \"test/segment-tree2.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\
+    - https://atcoder.jp/contests/arc033/submissions/37231181
+    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
+  bundledCode: "#line 1 \"test/segment-tree5.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
     \n\n#line 2 \"src/dataStructure/segment-tree.hpp\"\n\n#include <vector>\n#include\
     \ <cassert>\n#include <functional>\n\nnamespace zawa {\n\ntemplate <class T, T\
     \ (*op)(T, T), T (*e)()>\nclass segment_tree {\nprivate:\n    int n;\n    std::vector<T>\
@@ -51,33 +52,45 @@ data:
     \          return down_tree(r);\n                }\n                else {\n \
     \                   sum = op(sum, dat[r++]);\n                }\n            }\n\
     \        }\n        return n;\n    }\n\n    T debug(int pos) {\n        return\
-    \ dat[pos];\n    }\n};\n\n} // namespace zawa\n#line 4 \"test/segment-tree2.test.cpp\"\
-    \n\n#include <iostream>\n#include <algorithm>\n#line 8 \"test/segment-tree2.test.cpp\"\
-    \n\nint op(int x, int y) {\n    return std::min(x, y);\n}\n\nint e() {\n    return\
-    \ (int)2e9;\n}\n\nint main() {\n    int n, q; std::cin >> n >> q;\n    std::vector\
-    \ as(n, 0);\n    for (auto& a : as) {\n        std::cin >> a;\n    }\n    zawa::segment_tree<int,\
-    \ op, e> seg(as);\n    for (int _ = 0 ; _ < q ; _++) {\n        int l, r; std::cin\
-    \ >> l >> r;\n        std::cout << seg.query(l, r) << std::endl;\n    }\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/staticrmq\"\n\n#include\
-    \ \"../src/dataStructure/segment-tree.hpp\"\n\n#include <iostream>\n#include <algorithm>\n\
-    #include <vector>\n\nint op(int x, int y) {\n    return std::min(x, y);\n}\n\n\
-    int e() {\n    return (int)2e9;\n}\n\nint main() {\n    int n, q; std::cin >>\
-    \ n >> q;\n    std::vector as(n, 0);\n    for (auto& a : as) {\n        std::cin\
-    \ >> a;\n    }\n    zawa::segment_tree<int, op, e> seg(as);\n    for (int _ =\
-    \ 0 ; _ < q ; _++) {\n        int l, r; std::cin >> l >> r;\n        std::cout\
-    \ << seg.query(l, r) << std::endl;\n    }\n}\n"
+    \ dat[pos];\n    }\n};\n\n} // namespace zawa\n#line 4 \"test/segment-tree5.test.cpp\"\
+    \n\n#include <iostream>\n#line 7 \"test/segment-tree5.test.cpp\"\n\n// int op(int\
+    \ a, int b) {\n//     return a + b;\n// }\n// \n// int e() {\n//     return 0;\n\
+    // }\n\nint main() {\n    // int q; std::cin >> q;\n    // const int sz = 200010;\n\
+    \    // zawa::segment_tree<int, op, e> seg(sz);\n    // for (int _ = 0 ; _ < q\
+    \ ; _++) {\n    //     int t, x; std::cin >> t >> x;\n    //     if (t == 1) {\n\
+    \    //         seg.apply(x, 1);\n    //     }\n    //     if (t == 2) {\n   \
+    \ //         auto f = [&](int p) -> bool {\n    //             return p < x;\n\
+    \    //         };\n    //         int it = seg.max_right(0, f);\n    //     \
+    \    std::cout << it << std::endl;\n    //         seg.apply(it, -1);\n    //\
+    \     }\n    // }\n\n    std::cout << \"Hello World\" << std::endl;\n}\n\n/*\n\
+    \ * AtCoder Regular Contest 033 C \u30C7\u30FC\u30BF\u69CB\u9020\n * https://atcoder.jp/contests/arc033/submissions/37231181\n\
+    \ */\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+    \n\n#include \"../src/dataStructure/segment-tree.hpp\"\n\n#include <iostream>\n\
+    #include <vector>\n\n// int op(int a, int b) {\n//     return a + b;\n// }\n//\
+    \ \n// int e() {\n//     return 0;\n// }\n\nint main() {\n    // int q; std::cin\
+    \ >> q;\n    // const int sz = 200010;\n    // zawa::segment_tree<int, op, e>\
+    \ seg(sz);\n    // for (int _ = 0 ; _ < q ; _++) {\n    //     int t, x; std::cin\
+    \ >> t >> x;\n    //     if (t == 1) {\n    //         seg.apply(x, 1);\n    //\
+    \     }\n    //     if (t == 2) {\n    //         auto f = [&](int p) -> bool\
+    \ {\n    //             return p < x;\n    //         };\n    //         int it\
+    \ = seg.max_right(0, f);\n    //         std::cout << it << std::endl;\n    //\
+    \         seg.apply(it, -1);\n    //     }\n    // }\n\n    std::cout << \"Hello\
+    \ World\" << std::endl;\n}\n\n/*\n * AtCoder Regular Contest 033 C \u30C7\u30FC\
+    \u30BF\u69CB\u9020\n * https://atcoder.jp/contests/arc033/submissions/37231181\n\
+    \ */\n"
   dependsOn:
   - src/dataStructure/segment-tree.hpp
   isVerificationFile: true
-  path: test/segment-tree2.test.cpp
+  path: test/segment-tree5.test.cpp
   requiredBy: []
-  timestamp: '2022-12-12 17:22:38+09:00'
+  timestamp: '2022-12-12 17:22:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/segment-tree2.test.cpp
+documentation_of: test/segment-tree5.test.cpp
 layout: document
 redirect_from:
-- /verify/test/segment-tree2.test.cpp
-- /verify/test/segment-tree2.test.cpp.html
-title: test/segment-tree2.test.cpp
+- /verify/test/segment-tree5.test.cpp
+- /verify/test/segment-tree5.test.cpp.html
+title: test/segment-tree5.test.cpp
 ---
