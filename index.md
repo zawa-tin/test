@@ -83,6 +83,10 @@ data:
       path: src/graph/Read-Weighted-Graph.hpp
       title: "Read Weighted Graph (\u91CD\u307F\u4ED8\u304D\u30B0\u30E9\u30D5\u5165\
         \u529B)"
+    - icon: ':heavy_check_mark:'
+      path: src/graph/range-edge-graph.hpp
+      title: "range edge graph (\u533A\u9593\u306B\u8FBA\u3092\u8CBC\u308B\u30C6\u30AF\
+        )"
   - name: src/graph/simple
     pages:
     - icon: ':heavy_check_mark:'
@@ -282,6 +286,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/range-edge-graph1.test.cpp
+      title: test/range-edge-graph1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/range-edge-graph2.test.cpp
+      title: test/range-edge-graph2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/segment-tree-rmq.test.cpp
       title: test/segment-tree-rmq.test.cpp

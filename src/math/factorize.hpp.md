@@ -40,8 +40,8 @@ data:
   timestamp: '2022-07-25 23:24:05+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj_ntl_1_a.test.cpp
   - test/aoj_ntl_1_d.test.cpp
+  - test/aoj_ntl_1_a.test.cpp
 documentation_of: src/math/factorize.hpp
 layout: document
 title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
