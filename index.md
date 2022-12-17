@@ -135,9 +135,8 @@ data:
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
-      path: src/math/mod-inverses.hpp
-      title: "mod-inverses (mod\u9006\u5143\u5217\u6319\u3001\u4E8C\u9805\u4FC2\u6570\
-        )"
+      path: src/math/mod-combinations.hpp
+      title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"
     - icon: ':heavy_check_mark:'
       path: src/math/modint.hpp
       title: modint
@@ -266,8 +265,8 @@ data:
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/mod-inverses.test.cpp
-      title: test/mod-inverses.test.cpp
+      path: test/mod-combinations1.test.cpp
+      title: test/mod-combinations1.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/modint.test.cpp
       title: test/modint.test.cpp
