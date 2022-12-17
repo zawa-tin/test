@@ -93,6 +93,10 @@ data:
       path: src/graph/simple/bfs.hpp
       title: bfs (simple ver)
     - icon: ':heavy_check_mark:'
+      path: src/graph/simple/bipartite-judge.hpp
+      title: "bipartite graph judge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A simple\
+        \ ver\uFF09"
+    - icon: ':heavy_check_mark:'
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
     - icon: ':heavy_check_mark:'
@@ -235,6 +239,9 @@ data:
       path: test/Square-Decomposition-RmQ.test.cpp
       title: test/Square-Decomposition-RmQ.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/abc282_d.test.cpp
+      title: test/abc282_d.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/aoj_alds_5_d.test.cpp
       title: test/aoj_alds_5_d.test.cpp
     - icon: ':heavy_check_mark:'
@@ -318,6 +325,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-bfs2.test.cpp
       title: test/simple-bfs2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-bipartite-judge1.test.cpp
+      title: test/simple-bipartite-judge1.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra1.test.cpp
       title: test/simple-dijkstra1.test.cpp

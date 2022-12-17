@@ -12,6 +12,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/DSU2.test.cpp
     title: test/DSU2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/abc282_d.test.cpp
+    title: test/abc282_d.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -61,6 +64,7 @@ data:
   verifiedWith:
   - test/DSU-unitTest.test.cpp
   - test/DSU2.test.cpp
+  - test/abc282_d.test.cpp
   - test/DSU1.test.cpp
 documentation_of: src/dataStructure/DSU.hpp
 layout: document
