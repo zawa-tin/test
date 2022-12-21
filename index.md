@@ -97,6 +97,9 @@ data:
       title: "bipartite graph judge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A simple\
         \ ver\uFF09"
     - icon: ':heavy_check_mark:'
+      path: src/graph/simple/connected-components.hpp
+      title: "connected components (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
     - icon: ':heavy_check_mark:'
@@ -328,6 +331,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-bipartite-judge1.test.cpp
       title: test/simple-bipartite-judge1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/simple-cc1.test.cpp
+      title: test/simple-cc1.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra1.test.cpp
       title: test/simple-dijkstra1.test.cpp
