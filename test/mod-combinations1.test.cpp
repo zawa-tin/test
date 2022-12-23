@@ -20,7 +20,7 @@
 // }
 
 int main() {
-    // zawa::mod_conbinations<1000000007LL> mc(1000000);
+    // zawa::mod_combinations<1000000007LL> mc(1000000);
     // int t; std::cin >> t;
     // for (int _ = 0 ; _ < t ; _++) {
     //     char c; std::cin >> c;
@@ -43,5 +43,5 @@ int main() {
 
 /*
  * yukicoder No.117 組み合わせの数
- * https://yukicoder.me/submissions/826376
+ * https://yukicoder.me/submissions/828055
  */
