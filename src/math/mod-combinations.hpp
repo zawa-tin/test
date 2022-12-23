@@ -5,12 +5,12 @@
 namespace zawa {
 
 template <long long mod>
-class mod_conbinations {
+class mod_combinations {
 private:
     std::vector<long long> facs, inv_facs;
 
 public:
-    mod_conbinations(std::size_t n) : facs(2 * n + 1, 1LL), inv_facs(2 * n + 1) {
+    mod_combinations(std::size_t n) : facs(2 * n + 1, 1LL), inv_facs(2 * n + 1) {
         for (std::size_t i = 0 ; i + 1 < facs.size() ; i++) {
             facs[i + 1] = facs[i] * (i + 1);
             facs[i + 1] %= mod;
@@ -55,6 +55,14 @@ public:
             return 0LL;
         }
         return C(n + r - 1, r);
+    }
+
+    long long F(std::size_t n) {
+        return facs[n];
+    }
+
+    long long invF(std::size_t n) {
+        return inv_facs[n];
     }
 };
 
