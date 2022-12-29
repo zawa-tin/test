@@ -1,8 +1,10 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_C"
 
 #include "../src/template/input.hpp"
-
 using namespace zawa::input;
+
+#include "../src/template/output.hpp"
+using namespace zawa::output;
 
 #include <set>
 #include <string>
@@ -17,7 +19,7 @@ int main() {
             st.insert(s);
         }
         else {
-            std::cout << (st.count(s) ? "yes" : "no") << std::endl;
+            yesno(st.count(s), "yes", "no"); 
         }
     }
 }
