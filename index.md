@@ -151,6 +151,11 @@ data:
       path: src/math/osa_k.hpp
       title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
         \u56E0\u6570\u5206\u89E3)"
+  - name: src/template
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/template/input.hpp
+      title: "input (\u6A19\u6E96\u5165\u529B)"
   verificationCategories:
   - name: test
     pages:
@@ -271,6 +276,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_e.test.cpp
       title: test/aoj_ntl_1_e.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/input1.test.cpp
+      title: test/input1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/input2.test.cpp
+      title: test/input2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/input3.test.cpp
+      title: test/input3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/input4.test.cpp
+      title: test/input4.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
