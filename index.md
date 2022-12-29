@@ -156,6 +156,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/input.hpp
       title: "input (\u6A19\u6E96\u5165\u529B)"
+    - icon: ':heavy_check_mark:'
+      path: src/template/output.hpp
+      title: "output (\u6A19\u6E96\u51FA\u529B)"
   verificationCategories:
   - name: test
     pages:
@@ -303,6 +306,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/osa_k2.test.cpp
       title: test/osa_k2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/output1.test.cpp
+      title: test/output1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/output2.test.cpp
+      title: test/output2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/output3.test.cpp
+      title: test/output3.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind1.test.cpp
       title: test/potentialized_unionfind1.test.cpp

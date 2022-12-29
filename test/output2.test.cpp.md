@@ -14,17 +14,17 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_C
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/6/ALDS1_6_A
     links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_C
-  bundledCode: "#line 1 \"test/input3.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_C\"\
+    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/6/ALDS1_6_A
+  bundledCode: "#line 1 \"test/output2.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/6/ALDS1_6_A\"\
     \n\n#line 2 \"src/template/input.hpp\"\n\n#include <iostream>\n#include <utility>\n\
     #include <vector>\n\nnamespace zawa::input {\n\ntemplate <typename T> \nvoid in(T&\
     \ res) { std::cin >> res; }\n\ntemplate <typename Head, typename... Tail>\nvoid\
     \ in(Head& head, Tail&... tail) { in(head); in(tail...); }\n\ntemplate <typename\
     \ T, typename U>\nvoid in(std::pair<T, U>& res) { in(res.first); in(res.second);\
     \ }\n\ntemplate <typename T>\nvoid in(std::vector<T>& res) { for (auto& r : res)\
-    \ { in(r); } }\n\n} // namespace zawa::input\n#line 4 \"test/input3.test.cpp\"\
+    \ { in(r); } }\n\n} // namespace zawa::input\n#line 4 \"test/output2.test.cpp\"\
     \nusing namespace zawa::input;\n\n#line 2 \"src/template/output.hpp\"\n\n#line\
     \ 5 \"src/template/output.hpp\"\n#include <string>\n\nnamespace zawa::output {\n\
     \nvoid out() { \n    std::cout << std::endl; \n}\n\ntemplate <class T>\nvoid out(const\
@@ -35,32 +35,32 @@ data:
     \ Tail&... tail) { \n    std::cout << head; \n    if (sizeof...(tail)) { \n  \
     \      std::cout << ' '; \n    } \n    out(tail...);\n}\n\nvoid yesno(bool flag,\
     \ std::string yes = \"Yes\", std::string no = \"No\") {\n    std::cout << (flag\
-    \ ? yes : no) << std::endl;\n}\n\n} // namespace zawa::output\n#line 7 \"test/input3.test.cpp\"\
-    \nusing namespace zawa::output;\n\n#include <set>\n#line 11 \"test/input3.test.cpp\"\
-    \n\nint main() {\n    int n;\n    in(n);\n    std::set<std::string> st;\n    for\
-    \ (int _ = 0 ; _ < n ; _++) {\n        std::string q, s; in(q, s);\n        if\
-    \ (q[0] == 'i') {\n            st.insert(s);\n        }\n        else {\n    \
-    \        yesno(st.count(s), \"yes\", \"no\"); \n        }\n    }\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_C\"\
+    \ ? yes : no) << std::endl;\n}\n\n} // namespace zawa::output\n#line 7 \"test/output2.test.cpp\"\
+    \nusing namespace zawa::output;\n\nint main() {\n    int n; in(n);\n    std::vector\
+    \ as(n, 0); in(as);\n    std::vector buc(10001, 0);\n    for (auto a : as) {\n\
+    \        buc[a]++;\n    }\n    std::vector bs(0, 0);\n    for (int i = 0 ; i <\
+    \ 10001 ; i++) {\n        for (int j = 0 ; j < buc[i] ; j++) {\n            bs.push_back(i);\n\
+    \        }\n    }\n    out(bs);\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/6/ALDS1_6_A\"\
     \n\n#include \"../src/template/input.hpp\"\nusing namespace zawa::input;\n\n#include\
-    \ \"../src/template/output.hpp\"\nusing namespace zawa::output;\n\n#include <set>\n\
-    #include <string>\n\nint main() {\n    int n;\n    in(n);\n    std::set<std::string>\
-    \ st;\n    for (int _ = 0 ; _ < n ; _++) {\n        std::string q, s; in(q, s);\n\
-    \        if (q[0] == 'i') {\n            st.insert(s);\n        }\n        else\
-    \ {\n            yesno(st.count(s), \"yes\", \"no\"); \n        }\n    }\n}\n"
+    \ \"../src/template/output.hpp\"\nusing namespace zawa::output;\n\nint main()\
+    \ {\n    int n; in(n);\n    std::vector as(n, 0); in(as);\n    std::vector buc(10001,\
+    \ 0);\n    for (auto a : as) {\n        buc[a]++;\n    }\n    std::vector bs(0,\
+    \ 0);\n    for (int i = 0 ; i < 10001 ; i++) {\n        for (int j = 0 ; j < buc[i]\
+    \ ; j++) {\n            bs.push_back(i);\n        }\n    }\n    out(bs);\n}\n"
   dependsOn:
   - src/template/input.hpp
   - src/template/output.hpp
   isVerificationFile: true
-  path: test/input3.test.cpp
+  path: test/output2.test.cpp
   requiredBy: []
   timestamp: '2022-12-29 22:41:14+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/input3.test.cpp
+documentation_of: test/output2.test.cpp
 layout: document
 redirect_from:
-- /verify/test/input3.test.cpp
-- /verify/test/input3.test.cpp.html
-title: test/input3.test.cpp
+- /verify/test/output2.test.cpp
+- /verify/test/output2.test.cpp.html
+title: test/output2.test.cpp
 ---

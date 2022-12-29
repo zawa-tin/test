@@ -15,6 +15,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/input4.test.cpp
     title: test/input4.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/output2.test.cpp
+    title: test/output2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/output3.test.cpp
+    title: test/output3.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -44,7 +50,9 @@ data:
   - test/input4.test.cpp
   - test/input3.test.cpp
   - test/input2.test.cpp
+  - test/output2.test.cpp
   - test/input1.test.cpp
+  - test/output3.test.cpp
 documentation_of: src/template/input.hpp
 layout: document
 title: "input (\u6A19\u6E96\u5165\u529B)"
