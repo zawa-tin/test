@@ -292,6 +292,9 @@ data:
       path: test/input4.test.cpp
       title: test/input4.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/input5.test.cpp
+      title: test/input5.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
     - icon: ':heavy_check_mark:'

@@ -7,6 +7,9 @@ data:
     path: test/input3.test.cpp
     title: test/input3.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/input5.test.cpp
+    title: test/input5.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/output1.test.cpp
     title: test/output1.test.cpp
   - icon: ':heavy_check_mark:'
@@ -50,6 +53,7 @@ data:
   verifiedWith:
   - test/output1.test.cpp
   - test/input3.test.cpp
+  - test/input5.test.cpp
   - test/output2.test.cpp
   - test/output3.test.cpp
 documentation_of: src/template/output.hpp

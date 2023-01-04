@@ -16,6 +16,9 @@ data:
     path: test/input4.test.cpp
     title: test/input4.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/input5.test.cpp
+    title: test/input5.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/output2.test.cpp
     title: test/output2.test.cpp
   - icon: ':heavy_check_mark:'
@@ -50,6 +53,7 @@ data:
   - test/input4.test.cpp
   - test/input3.test.cpp
   - test/input2.test.cpp
+  - test/input5.test.cpp
   - test/output2.test.cpp
   - test/input1.test.cpp
   - test/output3.test.cpp
