@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <stack>
 
 namespace zawa {
 
@@ -9,41 +10,65 @@ private:
     std::vector<int> ids;
     std::vector<std::vector<int>> groups;    
 
-    void dfs(std::size_t v, int id, std::vector<bool>& used, const std::vector<std::vector<int>>& G) {
-        used[v] = true;
-        ids[v] = id;
-        for (auto x : G[v]) {
-            if (!used[x]) {
-                dfs(x, id, used, G);
-            }
-        }
-    }
+	void build(const std::vector<std::vector<int>>& G) {
+		int id = 0;
+		for (int i = 0 ; i < (int)G.size() ; i++) {
+			if (ids[i] == -1) {
+				ids[i] = id;
+				std::stack<int> stk({ i });		
+				while (stk.size()) {
+					int v = stk.top();
+					stk.pop();
+					for (auto x : G[v]) {
+						if (ids[x] == -1) {
+							ids[x] = id;
+							stk.push(x);
+						}
+					}
+				}
+				id++;
+			}
+		}
+		groups = std::vector(id, std::vector(0, 0));
+		for (int i = 0 ; i < (int)ids.size() ; i++) {
+			groups[ids[i]].push_back(i);
+		}
+	}
 
 public:
 
     connected_components(const std::vector<std::vector<int>>& G) : ids(G.size(), -1) {
-        std::vector used(G.size(), false);
-        int id = -1;
-        for (std::size_t i = 0 ; i < G.size() ; i++) {
-            if (!used[i]) {
-                dfs(i, ++id, used, G);
-            }
-        }
-        groups = std::vector(id + 1, std::vector(0, 0));
-        for (std::size_t i = 0 ; i < G.size() ; i++) {
-            groups[ids[i]].push_back((int)i);
-        }
+		build(G);
     }
+
+	template <class cost_type>
+	connected_components(const std::vector<std::vector<std::pair<int, cost_type>>>& G) : ids(G.size(), -1) {
+		std::vector tmp_G(G.size(), std::vector(0, 0));
+		for (int i = 0 ; i < (int)G.size() ; i++) {
+			for (auto [x, _] : G[i]) {
+				tmp_G[i].push_back(x);
+			}
+		}
+		build(tmp_G);
+	}
 
     int &operator [](int i) {
         return ids[i];
     }
 
-    inline std::vector<std::vector<int>> &comps() {
+	std::size_t size() {
+		return groups.size();
+	}
+
+	std::size_t size(int x) {
+		return groups[ids[x]].size();
+	}
+
+    const std::vector<std::vector<int>> &comps() {
         return groups;
     }
 
-    inline std::vector<int> &comp(int id) {
+    const std::vector<int> &comp(int id) {
         return groups[id];
     }
 
