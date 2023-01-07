@@ -18,7 +18,7 @@ int main() {
         G2[t].emplace_back(s, 0);
     }
     zawa::connected_components cc1(G1);
-    auto cc2 = zawa::weighted_cc(G2);
+	zawa::connected_components cc2(G2);
     int q; std::cin >> q;
     for (int _ = 0 ; _ < q ; _++) {
         int s, t; std::cin >> s >> t;
