@@ -12,6 +12,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/simple-bfs2.test.cpp
     title: test/simple-bfs2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/simple-cc2.test.cpp
+    title: test/simple-cc2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -43,6 +46,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/Read-Graph.test.cpp
+  - test/simple-cc2.test.cpp
   - test/simple-bfs2.test.cpp
   - test/Read-Graph-AtCoder.test.cpp
 documentation_of: src/graph/Read-Graph.hpp

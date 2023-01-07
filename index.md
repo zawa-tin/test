@@ -367,6 +367,9 @@ data:
       path: test/simple-cc1.test.cpp
       title: test/simple-cc1.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/simple-cc2.test.cpp
+      title: test/simple-cc2.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra1.test.cpp
       title: test/simple-dijkstra1.test.cpp
     - icon: ':heavy_check_mark:'
