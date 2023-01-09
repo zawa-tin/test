@@ -143,7 +143,7 @@ data:
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
       path: src/math/miller-rabin.hpp
-      title: "Miller Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
+      title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: src/math/mod-combinations.hpp
       title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"

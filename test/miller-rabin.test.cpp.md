@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/math/miller-rabin.hpp
-    title: "Miller Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
+    title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

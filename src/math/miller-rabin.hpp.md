@@ -51,7 +51,7 @@ data:
   - test/miller-rabin.test.cpp
 documentation_of: src/math/miller-rabin.hpp
 layout: document
-title: "Miller Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
+title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
 ---
 
 ## 概要
