@@ -132,9 +132,6 @@ data:
         \u96C6\u5408\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\
         \u63DB)"
     - icon: ':heavy_check_mark:'
-      path: src/math/Miller-Rabin.hpp
-      title: "Miller-Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
-    - icon: ':heavy_check_mark:'
       path: src/math/Mobius-Function.hpp
       title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
@@ -144,6 +141,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
+    - icon: ':heavy_check_mark:'
+      path: src/math/miller-rabin.hpp
+      title: "Miller Rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
     - icon: ':heavy_check_mark:'
       path: src/math/mod-combinations.hpp
       title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"
@@ -223,9 +223,6 @@ data:
       path: test/LCS.test.cpp
       title: test/LCS.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Miller-Rabin.test.cpp
-      title: test/Miller-Rabin.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/Mobius-Function.test.cpp
       title: test/Mobius-Function.test.cpp
     - icon: ':heavy_check_mark:'
@@ -300,6 +297,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/miller-rabin.test.cpp
+      title: test/miller-rabin.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/mod-combinations1.test.cpp
       title: test/mod-combinations1.test.cpp
