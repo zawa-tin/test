@@ -13,13 +13,6 @@ data:
       path: src/algorithm/Cyclic-Permutation.hpp
       title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
-      path: src/algorithm/Ear-DP.hpp
-      title: "Ear-DP (\u8033DP)"
-    - icon: ':heavy_check_mark:'
-      path: src/algorithm/Floyd-Cycle-Detection.hpp
-      title: "Floyd's Cycle Detection (\u30D5\u30ED\u30A4\u30C9\u306E\u5FAA\u74B0\u691C\
-        \u51FA\u6CD5)"
-    - icon: ':heavy_check_mark:'
       path: src/algorithm/Kadane.hpp
       title: "Kadane's Algorithm (\u6700\u5927\u9023\u7D9A\u90E8\u5206\u548C)"
     - icon: ':heavy_check_mark:'
@@ -111,9 +104,6 @@ data:
   - name: src/math
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/math/Arithmetic-Progression.hpp
-      title: "Arithmetic Progression (\u7B49\u5DEE\u6570\u5217)"
-    - icon: ':heavy_check_mark:'
       path: src/math/Divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
@@ -169,9 +159,6 @@ data:
       path: test/01BFS.test.cpp
       title: test/01BFS.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Arithmetic-Progression.test.cpp
-      title: test/Arithmetic-Progression.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
     - icon: ':heavy_check_mark:'
@@ -199,9 +186,6 @@ data:
       path: test/Dijkstra3.test.cpp
       title: test/Dijkstra3.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Ear-DP.test.cpp
-      title: test/Ear-DP.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/Eratosthenes-Sieve.test.cpp
       title: test/Eratosthenes-Sieve.test.cpp
     - icon: ':heavy_check_mark:'
@@ -210,9 +194,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Fenwick-Tree_lower_bound.test.cpp
       title: test/Fenwick-Tree_lower_bound.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Floyd-Cycle-Detection.test.cpp
-      title: test/Floyd-Cycle-Detection.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Functional_Graph.test.cpp
       title: test/Functional_Graph.test.cpp
