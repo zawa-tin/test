@@ -1,5 +1,5 @@
 ---
-title: Miller Rabin (素数判定法)
+title: miller-rabin (素数判定法)
 documentation_of: //src/math/miller-rabin.hpp
 ---
 
