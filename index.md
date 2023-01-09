@@ -10,10 +10,6 @@ data:
       path: src/algorithm/Compression.hpp
       title: "Compression (\u5EA7\u6A19\u5727\u7E2E)"
     - icon: ':heavy_check_mark:'
-      path: src/algorithm/Count-Inversion-Number.hpp
-      title: "Count-Inversion-Number(\u30DE\u30FC\u30B8\u30BD\u30FC\u30C8\u306B\u3088\
-        \u308B\u8EE2\u5012\u6570\u306E\u6570\u3048\u4E0A\u3052)"
-    - icon: ':heavy_check_mark:'
       path: src/algorithm/Cyclic-Permutation.hpp
       title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
@@ -32,6 +28,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/algorithm/RLE.hpp
       title: "RLE (\u9023\u9577\u5727\u7E2E)"
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/count-inv.hpp
+      title: "count-inv (\u8EE2\u5012\u6570)"
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -257,9 +256,6 @@ data:
       path: test/abc282_d.test.cpp
       title: test/abc282_d.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/aoj_alds_5_d.test.cpp
-      title: test/aoj_alds_5_d.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/aoj_alds_6_D.test.cpp
       title: test/aoj_alds_6_D.test.cpp
     - icon: ':heavy_check_mark:'
@@ -283,6 +279,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_e.test.cpp
       title: test/aoj_ntl_1_e.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/count-inv.test.cpp
+      title: test/count-inv.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/input1.test.cpp
       title: test/input1.test.cpp
