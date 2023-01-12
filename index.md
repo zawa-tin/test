@@ -40,10 +40,6 @@ data:
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Sparse-Table.hpp
-      title: "Sparse-Table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
-        \u89E3\u7B54 )"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/Square-Decomposition.hpp
       title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
     - icon: ':heavy_check_mark:'
@@ -54,6 +50,10 @@ data:
       path: src/dataStructure/segment-tree.hpp
       title: "segment tree (\u4E00\u70B9\u5909\u66F4\u30FB\u533A\u9593\u6F14\u7B97\
         )"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/sparse-table.hpp
+      title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
+        \u89E3\u7B54 )"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -222,9 +222,6 @@ data:
       path: test/Read-Weighted-Graph.test.cpp
       title: test/Read-Weighted-Graph.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Sparse-Table.test.cpp
-      title: test/Sparse-Table.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/Square-Decomposition-RSQ.test.cpp
       title: test/Square-Decomposition-RSQ.test.cpp
     - icon: ':heavy_check_mark:'
@@ -365,6 +362,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-wf1.test.cpp
       title: test/simple-wf1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/sparse-table.test.cpp
+      title: test/sparse-table.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
