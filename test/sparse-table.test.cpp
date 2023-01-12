@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/staticrmq"
 
 #include "../src/dataStructure/sparse-table.hpp"
-#include "../utility/sparse-table/min_structure.hpp"
+#include "../utility/sparse-table/min.hpp"
 
 #include <iostream>
 
