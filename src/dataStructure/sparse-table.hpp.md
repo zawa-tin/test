@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC125C.test.cpp
+    title: test/ABC125C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/sparse-table.test.cpp
     title: test/sparse-table.test.cpp
   _isVerificationFailed: false
@@ -43,6 +46,7 @@ data:
   timestamp: '2023-01-12 12:07:47+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC125C.test.cpp
   - test/sparse-table.test.cpp
 documentation_of: src/dataStructure/sparse-table.hpp
 layout: document

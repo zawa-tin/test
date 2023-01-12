@@ -152,12 +152,32 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
+  - name: src/utility/sparse-table
+    pages:
+    - icon: ':warning:'
+      path: src/utility/sparse-table/bitwise_and.hpp
+      title: src/utility/sparse-table/bitwise_and.hpp
+    - icon: ':warning:'
+      path: src/utility/sparse-table/bitwise_or.hpp
+      title: sparsetable bitwise_or-structure
+    - icon: ':heavy_check_mark:'
+      path: src/utility/sparse-table/gcd.hpp
+      title: sparsetable gcd-structure
+    - icon: ':warning:'
+      path: src/utility/sparse-table/max.hpp
+      title: sparsetable max-structure
+    - icon: ':heavy_check_mark:'
+      path: src/utility/sparse-table/min.hpp
+      title: sparsetable min-structure
   verificationCategories:
   - name: test
     pages:
     - icon: ':heavy_check_mark:'
       path: test/01BFS.test.cpp
       title: test/01BFS.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC125C.test.cpp
+      title: test/ABC125C.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
