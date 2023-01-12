@@ -1,6 +1,6 @@
 ---
 title: sparsetable bitwise_and-structure
-documentation_of: //src/utility/sparse-table/bit.hpp
+documentation_of: //src/utility/sparse-table/bitwise_and.hpp
 ---
 
 ## 概要
