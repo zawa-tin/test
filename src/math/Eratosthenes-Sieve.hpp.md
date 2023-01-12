@@ -53,9 +53,9 @@ data:
   timestamp: '2022-08-20 16:08:57+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Mobius-Function.test.cpp
   - test/Eratosthenes-Sieve.test.cpp
   - test/GCD-Convolution.test.cpp
+  - test/Mobius-Function.test.cpp
 documentation_of: src/math/Eratosthenes-Sieve.hpp
 layout: document
 title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"

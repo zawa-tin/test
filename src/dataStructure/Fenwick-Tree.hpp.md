@@ -52,8 +52,8 @@ data:
   timestamp: '2022-09-06 00:26:00+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/Fenwick-Tree_lower_bound.test.cpp
   - test/Fenwick-Tree.test.cpp
+  - test/Fenwick-Tree_lower_bound.test.cpp
 documentation_of: src/dataStructure/Fenwick-Tree.hpp
 layout: document
 title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\u5F97\

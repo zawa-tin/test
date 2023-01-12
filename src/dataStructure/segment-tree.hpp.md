@@ -110,13 +110,13 @@ data:
   timestamp: '2022-12-12 17:22:38+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/segment-tree4.test.cpp
+  - test/segment-tree-rsq.test.cpp
   - test/segment-tree5.test.cpp
   - test/segment-tree-rmq.test.cpp
   - test/segment-tree2.test.cpp
-  - test/segment-tree3.test.cpp
-  - test/segment-tree-rsq.test.cpp
   - test/segment-tree1.test.cpp
+  - test/segment-tree4.test.cpp
+  - test/segment-tree3.test.cpp
 documentation_of: src/dataStructure/segment-tree.hpp
 layout: document
 title: "segment tree (\u4E00\u70B9\u5909\u66F4\u30FB\u533A\u9593\u6F14\u7B97)"

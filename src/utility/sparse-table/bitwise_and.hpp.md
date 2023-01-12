@@ -24,8 +24,16 @@ data:
   verifiedWith: []
 documentation_of: src/utility/sparse-table/bitwise_and.hpp
 layout: document
-redirect_from:
-- /library/src/utility/sparse-table/bitwise_and.hpp
-- /library/src/utility/sparse-table/bitwise_and.hpp.html
-title: src/utility/sparse-table/bitwise_and.hpp
+title: sparsetable bitwise_and-structure
 ---
+
+## 概要
+
+Sparse Tableで区間bitwise andクエリを処理したい時に、`zawa::sparse_table<structure>`の`structure`に入れる構造体です。
+
+## 機能
+
+`zawa::bitwise_or_structure<dat_type>`
+- `dat_type`
+	- `int`や`long long`など、`operator &`が定義されているもの
+- **単体テストをまだしていません**

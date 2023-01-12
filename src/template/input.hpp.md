@@ -50,13 +50,13 @@ data:
   timestamp: '2022-12-29 21:37:53+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/input4.test.cpp
-  - test/input3.test.cpp
-  - test/input2.test.cpp
-  - test/input5.test.cpp
-  - test/output2.test.cpp
-  - test/input1.test.cpp
   - test/output3.test.cpp
+  - test/input2.test.cpp
+  - test/input1.test.cpp
+  - test/output2.test.cpp
+  - test/input5.test.cpp
+  - test/input3.test.cpp
+  - test/input4.test.cpp
 documentation_of: src/template/input.hpp
 layout: document
 title: "input (\u6A19\u6E96\u5165\u529B)"

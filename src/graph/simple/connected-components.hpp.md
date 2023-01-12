@@ -76,8 +76,8 @@ data:
   timestamp: '2023-01-08 00:30:27+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/simple-cc2.test.cpp
   - test/simple-cc1.test.cpp
+  - test/simple-cc2.test.cpp
 documentation_of: src/graph/simple/connected-components.hpp
 layout: document
 title: "connected components (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"

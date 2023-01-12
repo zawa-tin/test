@@ -156,7 +156,7 @@ data:
     pages:
     - icon: ':warning:'
       path: src/utility/sparse-table/bitwise_and.hpp
-      title: src/utility/sparse-table/bitwise_and.hpp
+      title: sparsetable bitwise_and-structure
     - icon: ':warning:'
       path: src/utility/sparse-table/bitwise_or.hpp
       title: sparsetable bitwise_or-structure
