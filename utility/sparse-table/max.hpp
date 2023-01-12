@@ -5,10 +5,10 @@
 namespace zawa {
 
 template <class dat_type>
-struct min_structure {
+struct max_structure {
 	using T = dat_type;
-	static T op(int a, int b) {
-		return std::min(a, b);
+	static T op(T a, T b) {
+		return std::max(a, b);
 	}
 };
 
