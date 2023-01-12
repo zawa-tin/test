@@ -7,9 +7,6 @@ data:
       path: src/algorithm/Binary-Search.hpp
       title: "Binary Search (\u4E8C\u5206\u63A2\u7D22)"
     - icon: ':heavy_check_mark:'
-      path: src/algorithm/Compression.hpp
-      title: "Compression (\u5EA7\u6A19\u5727\u7E2E)"
-    - icon: ':heavy_check_mark:'
       path: src/algorithm/Cyclic-Permutation.hpp
       title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
@@ -21,6 +18,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/algorithm/RLE.hpp
       title: "RLE (\u9023\u9577\u5727\u7E2E)"
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/compression.hpp
+      title: "compression (\u5EA7\u6A19\u5727\u7E2E)"
     - icon: ':heavy_check_mark:'
       path: src/algorithm/count-inv.hpp
       title: "count-inv (\u8EE2\u5012\u6570)"
@@ -185,9 +185,6 @@ data:
       path: test/Binary-Search.test.cpp
       title: test/Binary-Search.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Compression.test.cpp
-      title: test/Compression.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/DSU-unitTest.test.cpp
       title: test/DSU-unitTest.test.cpp
     - icon: ':heavy_check_mark:'
@@ -274,6 +271,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_e.test.cpp
       title: test/aoj_ntl_1_e.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/compression.test.cpp
+      title: test/compression.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
