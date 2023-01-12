@@ -1,5 +1,6 @@
 {
 "test/01BFS.test.cpp": "2022-11-14 21:43:27 +0900",
+"test/ABC125C.test.cpp": "2023-01-12 13:45:58 +0900",
 "test/BFS.test.cpp": "2022-11-13 19:29:53 +0900",
 "test/Binary-Search.test.cpp": "2022-09-04 21:33:15 +0900",
 "test/Compression.test.cpp": "2022-09-06 15:47:14 +0900",
@@ -67,6 +68,5 @@
 "test/simple-dijkstra1.test.cpp": "2022-12-06 04:57:49 +0900",
 "test/simple-dijkstra2.test.cpp": "2022-12-06 05:18:16 +0900",
 "test/simple-toposo.test.cpp": "2023-01-08 01:45:54 +0900",
-"test/simple-wf1.test.cpp": "2022-12-07 03:14:09 +0900",
-"test/sparse-table.test.cpp": "2023-01-12 12:07:47 +0900"
+"test/simple-wf1.test.cpp": "2022-12-07 03:14:09 +0900"
 }
