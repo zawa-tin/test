@@ -132,6 +132,9 @@ data:
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
+      path: src/math/matrix.hpp
+      title: "matrix (\u884C\u5217)"
+    - icon: ':heavy_check_mark:'
       path: src/math/miller-rabin.hpp
       title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
     - icon: ':heavy_check_mark:'
@@ -295,6 +298,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/matrix1.test.cpp
+      title: test/matrix1.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/miller-rabin.test.cpp
       title: test/miller-rabin.test.cpp
