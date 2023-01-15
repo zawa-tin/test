@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC285D.test.cpp
+    title: test/ABC285D.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/simple-toposo.test.cpp
     title: test/simple-toposo.test.cpp
   _isVerificationFailed: false
@@ -53,6 +56,7 @@ data:
   timestamp: '2023-01-08 01:45:38+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC285D.test.cpp
   - test/simple-toposo.test.cpp
 documentation_of: src/graph/simple/topo-sort.hpp
 layout: document
