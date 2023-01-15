@@ -13,7 +13,7 @@ max演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 - `dat_type`: `int` `long long` など`std::numeric_limits`が定義されているもの
 
 `static constexpr dat_type zawa::max_monoid<dat_type>::id`
-- 単位元、`std::numeric_limits<T>::max()`
+- 単位元、`std::numeric_limits<T>::min()`
 
 `static dat_type zawa::max_monoid<dat_type>::op(const dat_type& a, const dat_type& b)`
 - `std::max(a, b)`
