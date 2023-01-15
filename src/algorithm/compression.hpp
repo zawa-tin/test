@@ -8,33 +8,25 @@ namespace zawa {
 template <class T>
 class compression {
 private:
-	std::vector<T> arr;
-	std::vector<int> dat;
-	std::vector<T> invs;
+	std::vector<T> as;
+	std::vector<T> uniqued;
 
 public:
-	compression(const std::vector<T>& arr) : arr(arr), dat(arr.size()), invs(arr.size()) {
-		std::vector cp = arr;
-		std::sort(cp.begin(), cp.end());	
-		cp.erase(std::unique(cp.begin(), cp.end()), cp.end());
-		for (std::size_t i = 0 ; i < arr.size() ; i++) {
-			dat[i] = std::lower_bound(cp.begin(), cp.end(), arr[i]) - cp.begin();
-		}
-		for (std::size_t i = 0 ; i < arr.size() ; i++) {
-			invs[dat[i]] = arr[i];
-		}
+	compression(const std::vector<T>& as) : as(as), uniqued(as) {
+		std::sort(uniqued.begin(), uniqued.end());
+		uniqued.erase(std::unique(uniqued.begin(), uniqued.end()), uniqued.end());
 	}
 
-	int operator [](int i) {
-		return dat[i];
+	int operator[](const T& val) {
+		return std::lower_bound(uniqued.begin(), uniqued.end(), val) - uniqued.begin();
 	}
 
-	T inv(int i) {
-		return invs[i];
+	int get(std::size_t i) {
+		return (*this)[as[i]];
 	}
 
-	std::vector<int> get() {
-		return dat;
+	std::size_t size() {
+		return uniqued.size();
 	}
 };
 
