@@ -22,8 +22,6 @@
 "test/Read-Graph-AtCoder.test.cpp": "2022-10-26 15:07:24 +0900",
 "test/Read-Graph.test.cpp": "2022-10-26 15:07:24 +0900",
 "test/Read-Weighted-Graph.test.cpp": "2022-10-26 15:07:24 +0900",
-"test/Square-Decomposition-RSQ.test.cpp": "2022-10-26 10:25:30 +0900",
-"test/Square-Decomposition-RmQ.test.cpp": "2022-10-26 10:25:30 +0900",
 "test/abc282_d.test.cpp": "2022-12-18 01:01:06 +0900",
 "test/aoj_alds_6_D.test.cpp": "2022-07-30 20:12:45 +0900",
 "test/aoj_dpl_5_a.test.cpp": "2022-08-03 12:30:31 +0900",
@@ -71,5 +69,7 @@
 "test/simple-dijkstra2.test.cpp": "2022-12-06 05:18:16 +0900",
 "test/simple-toposo.test.cpp": "2023-01-08 01:45:54 +0900",
 "test/simple-wf1.test.cpp": "2022-12-07 03:14:09 +0900",
-"test/sparse-table.test.cpp": "2023-01-12 14:36:43 +0900"
+"test/sparse-table.test.cpp": "2023-01-12 14:36:43 +0900",
+"test/sq-decomp-RSQ.test.cpp": "2023-01-16 02:42:54 +0900",
+"test/sq-decomp-RmQ.test.cpp": "2023-01-16 02:42:54 +0900"
 }
