@@ -155,6 +155,20 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
+  - name: src/utility/monoid
+    pages:
+    - icon: ':warning:'
+      path: src/utility/monoid/add.hpp
+      title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
+    - icon: ':warning:'
+      path: src/utility/monoid/max.hpp
+      title: "max\u30E2\u30CE\u30A4\u30C9"
+    - icon: ':warning:'
+      path: src/utility/monoid/min.hpp
+      title: "min\u30E2\u30CE\u30A4\u30C9"
+    - icon: ':warning:'
+      path: src/utility/monoid/xor.hpp
+      title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"
   - name: src/utility/semiring
     pages:
     - icon: ':warning:'
