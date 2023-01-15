@@ -9,17 +9,17 @@ data:
   attributes:
     links: []
   bundledCode: "#line 2 \"src/utility/monoid/xor.hpp\"\n\nnamespace zawa {\n\ntemplate\
-    \ <class dat_type>\nclass xor_monoid {\n\tusing T = dat_type\n\tstatic constexpr\
+    \ <class dat_type>\nstruct xor_monoid {\n\tusing T = dat_type\n\tstatic constexpr\
     \ T id = 0;\n\tstatic T op(const T& a, const T& b) {\n\t\treturn (a ^ b);\n\t\
     }\n};\n\n};\n"
-  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class dat_type>\nclass xor_monoid\
+  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class dat_type>\nstruct xor_monoid\
     \ {\n\tusing T = dat_type\n\tstatic constexpr T id = 0;\n\tstatic T op(const T&\
     \ a, const T& b) {\n\t\treturn (a ^ b);\n\t}\n};\n\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: src/utility/monoid/xor.hpp
   requiredBy: []
-  timestamp: '2023-01-16 01:23:48+09:00'
+  timestamp: '2023-01-16 02:41:41+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: src/utility/monoid/xor.hpp

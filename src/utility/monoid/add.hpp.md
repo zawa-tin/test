@@ -2,26 +2,30 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/sq-decomp-RSQ.test.cpp
+    title: test/sq-decomp-RSQ.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/utility/monoid/add.hpp\"\n\nnamespace zawa {\n\ntemplate\
-    \ <class dat_type>\nclass add_monoid {\n\tusing T = dat_type\n\tstatic constexpr\
+    \ <class dat_type>\nstruct add_monoid {\n\tusing T = dat_type;\n\tstatic constexpr\
     \ T id = 0;\n\tstatic T op(const T& a, const T& b) {\n\t\treturn a + b;\n\t}\n\
     };\n\n};\n"
-  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class dat_type>\nclass add_monoid\
-    \ {\n\tusing T = dat_type\n\tstatic constexpr T id = 0;\n\tstatic T op(const T&\
-    \ a, const T& b) {\n\t\treturn a + b;\n\t}\n};\n\n};\n"
+  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class dat_type>\nstruct add_monoid\
+    \ {\n\tusing T = dat_type;\n\tstatic constexpr T id = 0;\n\tstatic T op(const\
+    \ T& a, const T& b) {\n\t\treturn a + b;\n\t}\n};\n\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: src/utility/monoid/add.hpp
   requiredBy: []
-  timestamp: '2023-01-16 01:23:48+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2023-01-16 02:41:41+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/sq-decomp-RSQ.test.cpp
 documentation_of: src/utility/monoid/add.hpp
 layout: document
 title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"

@@ -40,9 +40,6 @@ data:
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Square-Decomposition.hpp
-      title: "Square Decomposition (\u5E73\u65B9\u5206\u5272)"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/potentialized_unionfind.hpp
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
@@ -54,6 +51,10 @@ data:
       path: src/dataStructure/sparse-table.hpp
       title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
         \u89E3\u7B54 )"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/sq-decomp.hpp
+      title: "sq-decomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
+        \u30A8\u30EA)"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -157,13 +158,13 @@ data:
       title: "output (\u6A19\u6E96\u51FA\u529B)"
   - name: src/utility/monoid
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: src/utility/monoid/add.hpp
       title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
     - icon: ':warning:'
       path: src/utility/monoid/max.hpp
       title: "max\u30E2\u30CE\u30A4\u30C9"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: src/utility/monoid/min.hpp
       title: "min\u30E2\u30CE\u30A4\u30C9"
     - icon: ':warning:'
@@ -272,12 +273,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Read-Weighted-Graph.test.cpp
       title: test/Read-Weighted-Graph.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Square-Decomposition-RSQ.test.cpp
-      title: test/Square-Decomposition-RSQ.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Square-Decomposition-RmQ.test.cpp
-      title: test/Square-Decomposition-RmQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/abc282_d.test.cpp
       title: test/abc282_d.test.cpp
@@ -422,6 +417,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/sparse-table.test.cpp
       title: test/sparse-table.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/sq-decomp-RSQ.test.cpp
+      title: test/sq-decomp-RSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/sq-decomp-RmQ.test.cpp
+      title: test/sq-decomp-RmQ.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
