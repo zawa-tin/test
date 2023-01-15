@@ -155,6 +155,20 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
+  - name: src/utility/semiring
+    pages:
+    - icon: ':warning:'
+      path: src/utility/semiring/max-plus-semiring.hpp
+      title: max-plus-semiring (max+)
+    - icon: ':warning:'
+      path: src/utility/semiring/min-plus-semiring.hpp
+      title: min-plus-semiring (min+)
+    - icon: ':warning:'
+      path: src/utility/semiring/normal-semiring.hpp
+      title: normal-semiring (+x)
+    - icon: ':warning:'
+      path: src/utility/semiring/xor-and-semiring.hpp
+      title: xor-and-semiring (^&)
   - name: src/utility/sparse-table
     pages:
     - icon: ':warning:'
