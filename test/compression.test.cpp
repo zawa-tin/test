@@ -13,12 +13,12 @@ int main() {
 	// }
 	// zawa::compression comp(as);
 	// for (int i = 0 ; i < n ; i++) {
-	// 	std::cout << comp[i] << std::endl;
+	// 	std::cout << comp.get(i) << std::endl;
 	// }
 	std::cout << "Hello World" << std::endl;
 }
 
 /*
  * AtCoder Beginner Contest 036 - C 座圧
- * https://atcoder.jp/contests/abc036/submissions/37955739
+ * https://atcoder.jp/contests/abc036/submissions/38081572
  */
