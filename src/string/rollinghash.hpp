@@ -9,7 +9,7 @@ namespace zawa {
 
 template <std::size_t max_length>
 class rollinghash {
-public:
+private:
 	using hash_type = long long;
 
 	std::random_device seed_gen;
