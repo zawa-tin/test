@@ -3,6 +3,7 @@
 #include <random>
 #include <iostream>
 #include <algorithm>
+#include <string>
 
 namespace zawa {
 
@@ -10,6 +11,7 @@ template <std::size_t max_length>
 class rollinghash {
 public:
 	using hash_type = long long;
+
 	std::random_device seed_gen;
 	std::mt19937_64 mt;
 	hash_type base;
@@ -17,6 +19,7 @@ public:
 	std::vector<hash_type> pows;
 
 public:
+
 	struct info {
 		std::size_t len;
 		hash_type hash;
@@ -56,6 +59,14 @@ public:
 		}
 		return res;
 	}
+
+	info concate(const info& h1, const info& h2) { 
+		info res;
+		res.len = h1.len + h2.len;
+		res.hash = ((((__int128_t)h1.hash * pows[h2.len]) % mod) + h2.hash) % mod;
+		return res;
+	}
+
 };
 
 } // namespace zawa
