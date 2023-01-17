@@ -148,6 +148,11 @@ data:
       path: src/math/osa_k.hpp
       title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
         \u56E0\u6570\u5206\u89E3)"
+  - name: src/string
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/string/rollinghash.hpp
+      title: "rollinghash (\u30ED\u30EA\u30CF)"
   - name: src/template
     pages:
     - icon: ':heavy_check_mark:'
@@ -210,6 +215,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC125C.test.cpp
       title: test/ABC125C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC284f.test.cpp
+      title: test/ABC284f.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC285D.test.cpp
       title: test/ABC285D.test.cpp
@@ -366,6 +374,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/range-edge-graph2.test.cpp
       title: test/range-edge-graph2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/rollinghash.test.cpp
+      title: test/rollinghash.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/segment-tree-rmq.test.cpp
       title: test/segment-tree-rmq.test.cpp
