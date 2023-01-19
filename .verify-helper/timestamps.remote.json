@@ -49,6 +49,7 @@
 "test/output1.test.cpp": "2022-12-29 22:41:14 +0900",
 "test/output2.test.cpp": "2022-12-29 22:41:14 +0900",
 "test/output3.test.cpp": "2022-12-29 22:41:14 +0900",
+"test/persistent-array.test.cpp": "2023-01-19 08:52:18 +0900",
 "test/potentialized_unionfind1.test.cpp": "2022-12-05 12:46:25 +0900",
 "test/potentialized_unionfind2.test.cpp": "2022-12-05 12:46:25 +0900",
 "test/potentialized_unionfind3.test.cpp": "2022-12-05 12:46:25 +0900",
