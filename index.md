@@ -27,9 +27,6 @@ data:
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Accum-1D.hpp
-      title: "Accum 1D (1\u6B21\u5143\u7D2F\u7A4D\u548C)"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/Accum-2D.hpp
       title: "Accum 2D (2\u6B21\u5143\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
@@ -159,6 +156,9 @@ data:
   - name: src/template
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/template/accum1d.hpp
+      title: "accum1d (\u7D2F\u7A4D\u548C)"
+    - icon: ':heavy_check_mark:'
       path: src/template/input.hpp
       title: "input (\u6A19\u6E96\u5165\u529B)"
     - icon: ':heavy_check_mark:'
@@ -218,6 +218,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC125C.test.cpp
       title: test/ABC125C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC267-C.test.cpp
+      title: test/ABC267-C.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC284f.test.cpp
       title: test/ABC284f.test.cpp
@@ -291,14 +294,14 @@ data:
       path: test/abc282_d.test.cpp
       title: test/abc282_d.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/accum1d.test.cpp
+      title: test/accum1d.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/aoj_alds_6_D.test.cpp
       title: test/aoj_alds_6_D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_dpl_5_a.test.cpp
       title: test/aoj_dpl_5_a.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/aoj_dsl_5_a.test.cpp
-      title: test/aoj_dsl_5_a.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_dsl_5_b.test.cpp
       title: test/aoj_dsl_5_b.test.cpp
