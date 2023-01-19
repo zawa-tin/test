@@ -249,6 +249,9 @@ data:
       path: test/Dijkstra3.test.cpp
       title: test/Dijkstra3.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/EDPC-R.test.cpp
+      title: test/EDPC-R.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/Eratosthenes-Sieve.test.cpp
       title: test/Eratosthenes-Sieve.test.cpp
     - icon: ':heavy_check_mark:'
@@ -336,8 +339,8 @@ data:
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/matrix1.test.cpp
-      title: test/matrix1.test.cpp
+      path: test/matrix.test.cpp
+      title: test/matrix.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/miller-rabin.test.cpp
       title: test/miller-rabin.test.cpp

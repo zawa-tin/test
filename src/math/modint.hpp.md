@@ -4,14 +4,17 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/EDPC-R.test.cpp
+    title: test/EDPC-R.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/GCD-Convolution.test.cpp
     title: test/GCD-Convolution.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/aoj_dpl_5_a.test.cpp
     title: test/aoj_dpl_5_a.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/matrix1.test.cpp
-    title: test/matrix1.test.cpp
+    path: test/matrix.test.cpp
+    title: test/matrix.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -67,9 +70,10 @@ data:
   timestamp: '2022-08-03 12:30:08+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/EDPC-R.test.cpp
   - test/aoj_dpl_5_a.test.cpp
+  - test/matrix.test.cpp
   - test/GCD-Convolution.test.cpp
-  - test/matrix1.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document
 title: modint
