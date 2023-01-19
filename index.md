@@ -38,7 +38,7 @@ data:
         \u5F97)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/persistent-array.hpp
-      title: persistent array
+      title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/potentialized_unionfind.hpp
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\

@@ -67,12 +67,12 @@ data:
   - test/persistent-array.test.cpp
 documentation_of: src/dataStructure/persistent-array.hpp
 layout: document
-title: persistent array
+title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
 ---
 
 ## 概要
 
-$M$ 分木によって実装された完全永続配列です。
+$M$ 分木によって実装された全永続配列です。
 
 列 $A$ に対して、 $i$ 番目のバージョンを $A^i$ と表現するとして、
 - $A^t_i$ を $p$ に変更したものを新バージョンとする

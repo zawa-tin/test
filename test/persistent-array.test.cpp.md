@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/dataStructure/persistent-array.hpp
-    title: persistent array
+    title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
