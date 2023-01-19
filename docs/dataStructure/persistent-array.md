@@ -1,11 +1,11 @@
 ---
-title: persistent array
+title: persistent array (全永続配列)
 documentation_of: //src/dataStructure/persistent-array.hpp
 ---
 
 ## 概要
 
-$M$ 分木によって実装された完全永続配列です。
+$M$ 分木によって実装された全永続配列です。
 
 列 $A$ に対して、 $i$ 番目のバージョンを $A^i$ と表現するとして、
 - $A^t_i$ を $p$ に変更したものを新バージョンとする
