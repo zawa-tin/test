@@ -57,7 +57,7 @@ public:
 		matrix res(r, mat.c);
 		for (std::size_t i = 0 ; i < r ; i++) {
 			for (std::size_t j = 0 ; j < mat.c ; j++) {
-				for (std::size_t k = 0 ; k < r ; k++) {
+				for (std::size_t k = 0 ; k < c ; k++) {
 					res[i][j] += dat[i][k] * mat[k][j];
 				}
 			}
