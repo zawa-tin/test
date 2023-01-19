@@ -40,6 +40,9 @@ data:
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/persistent-array.hpp
+      title: persistent array
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/potentialized_unionfind.hpp
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
@@ -359,6 +362,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/output3.test.cpp
       title: test/output3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/persistent-array.test.cpp
+      title: test/persistent-array.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind1.test.cpp
       title: test/potentialized_unionfind1.test.cpp
