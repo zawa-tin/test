@@ -28,6 +28,7 @@
 "test/Read-Weighted-Graph.test.cpp": "2022-10-26 15:07:24 +0900",
 "test/abc282_d.test.cpp": "2022-12-18 01:01:06 +0900",
 "test/accum1d.test.cpp": "2023-01-19 16:07:02 +0900",
+"test/accum1d2.test.cpp": "2023-01-20 11:39:06 +0900",
 "test/accum2d.test.cpp": "2023-01-20 10:35:01 +0900",
 "test/aoj_alds_6_D.test.cpp": "2022-07-30 20:12:45 +0900",
 "test/aoj_dpl_5_a.test.cpp": "2022-08-03 12:30:31 +0900",
