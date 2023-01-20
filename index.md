@@ -27,15 +27,15 @@ data:
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Accum-2D.hpp
-      title: "Accum 2D (2\u6B21\u5143\u7D2F\u7A4D\u548C)"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/DSU.hpp
       title: "DSU (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/Fenwick-Tree.hpp
       title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
         \u5F97)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/accum2d.hpp
+      title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/persistent-array.hpp
       title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
@@ -222,6 +222,9 @@ data:
       path: test/ABC267-C.test.cpp
       title: test/ABC267-C.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC278-E.test.cpp
+      title: test/ABC278-E.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC284f.test.cpp
       title: test/ABC284f.test.cpp
     - icon: ':heavy_check_mark:'
@@ -297,14 +300,14 @@ data:
       path: test/accum1d.test.cpp
       title: test/accum1d.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/accum2d.test.cpp
+      title: test/accum2d.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/aoj_alds_6_D.test.cpp
       title: test/aoj_alds_6_D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_dpl_5_a.test.cpp
       title: test/aoj_dpl_5_a.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/aoj_dsl_5_b.test.cpp
-      title: test/aoj_dsl_5_b.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/aoj_itp1_3_d.test.cpp
       title: test/aoj_itp1_3_d.test.cpp

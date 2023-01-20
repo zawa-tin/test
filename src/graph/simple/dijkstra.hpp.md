@@ -45,8 +45,8 @@ data:
   timestamp: '2022-12-06 04:57:33+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/simple-dijkstra1.test.cpp
   - test/simple-dijkstra2.test.cpp
+  - test/simple-dijkstra1.test.cpp
 documentation_of: src/graph/simple/dijkstra.hpp
 layout: document
 title: dijkstra (simple ver)

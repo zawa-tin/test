@@ -51,8 +51,8 @@ data:
   timestamp: '2022-12-29 22:40:47+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/output3.test.cpp
   - test/output2.test.cpp
+  - test/output3.test.cpp
   - test/input5.test.cpp
   - test/input3.test.cpp
   - test/output1.test.cpp
