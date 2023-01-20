@@ -9,6 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/accum1d.test.cpp
     title: test/accum1d.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/accum1d2.test.cpp
+    title: test/accum1d2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -39,6 +42,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/accum1d.test.cpp
+  - test/accum1d2.test.cpp
   - test/ABC267-C.test.cpp
 documentation_of: src/template/accum1d.hpp
 layout: document

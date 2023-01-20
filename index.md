@@ -300,6 +300,9 @@ data:
       path: test/accum1d.test.cpp
       title: test/accum1d.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/accum1d2.test.cpp
+      title: test/accum1d2.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/accum2d.test.cpp
       title: test/accum2d.test.cpp
     - icon: ':heavy_check_mark:'
