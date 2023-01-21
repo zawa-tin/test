@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC203-E.test.cpp
+    title: test/ABC203-E.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/ABC278-E.test.cpp
     title: test/ABC278-E.test.cpp
   - icon: ':heavy_check_mark:'
@@ -45,6 +48,7 @@ data:
   timestamp: '2023-01-20 10:34:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC203-E.test.cpp
   - test/accum2d.test.cpp
   - test/ABC278-E.test.cpp
 documentation_of: src/dataStructure/accum2d.hpp

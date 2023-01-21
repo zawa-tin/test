@@ -156,6 +156,10 @@ data:
       path: src/template/accum1d.hpp
       title: "accum1d (\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
+      path: src/template/binary-search-ld.hpp
+      title: "binary-seach-ld (\u6D6E\u52D5\u5C0F\u6570\u70B9\u6570\u4E8C\u5206\u63A2\
+        \u7D22)"
+    - icon: ':heavy_check_mark:'
       path: src/template/binary-search.hpp
       title: "binary-seach (\u6574\u6570\u4E8C\u5206\u63A2\u7D22)"
     - icon: ':heavy_check_mark:'
@@ -218,6 +222,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC125C.test.cpp
       title: test/ABC125C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC203-E.test.cpp
+      title: test/ABC203-E.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC236-E.test.cpp
+      title: test/ABC236-E.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC267-C.test.cpp
       title: test/ABC267-C.test.cpp
