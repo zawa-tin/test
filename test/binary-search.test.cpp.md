@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/template/binary-search.hpp
-    title: src/template/binary-search.hpp
+    title: "binary-seach (\u6574\u6570\u4E8C\u5206\u63A2\u7D22)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

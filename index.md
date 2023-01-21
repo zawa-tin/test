@@ -157,7 +157,7 @@ data:
       title: "accum1d (\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
       path: src/template/binary-search.hpp
-      title: src/template/binary-search.hpp
+      title: "binary-seach (\u6574\u6570\u4E8C\u5206\u63A2\u7D22)"
     - icon: ':heavy_check_mark:'
       path: src/template/input.hpp
       title: "input (\u6A19\u6E96\u5165\u529B)"
