@@ -17,6 +17,9 @@ documentation_of: //src/template/binary-search.hpp
 - `F`: `std::function<bool(T)>` が入ることになる。 $p$ を引数にとり、`false`か`true`を返す関数。以下の条件を満たす必要がある。
 	- $\text{ok}\ <\ \text{ng}$ の場合、 $\text{ok}\ \le\ p\ \le\ x$ なる $p$ について $f(p)\ =\ \text{true}$ が成り立つかつ $x\ <\ p\ \le\ \text{ng}$ なる $p$ について $f(p)\ =\ \text{false}$ となる $x$ が存在する
 	- $\text{ok}\ >\ \text{ng}$ の場合、 $\text{ng}\ \le\ p\ \le\ x$ なる $p$ について $f(p)\ =\ \text{false}$ となりかつ、 $x\ <\ p\ \le\ \text{ok}$ となる $p$ について $f(p)\ =\ \text{true}$ となる $x$ が存在する
+- `ok`: $f(p)\ =\ \text{true}$ となる値なら良い
+- `ng`: $f(p)\ =\ \text{false}$ となる値なら良い
+- `f` : $f$
 - 上の条件式にでてくる $x$ の値を返します。
 - **計算量** : $f(p)$ をおおよそ $\log_2 \mid \text{ok}\ -\ \text{ng}\ \mid$ 回呼び出す。
 
