@@ -1,6 +1,6 @@
 ---
-title: binary-seach (二分探索)
-documentation_of: //src/template/binary_search.hpp
+title: binary-seach (整数二分探索)
+documentation_of: //src/template/binary-search.hpp
 ---
 
 ## 概要
