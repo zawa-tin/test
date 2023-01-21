@@ -4,9 +4,6 @@ data:
   - name: src/algorithm
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/algorithm/Binary-Search.hpp
-      title: "Binary Search (\u4E8C\u5206\u63A2\u7D22)"
-    - icon: ':heavy_check_mark:'
       path: src/algorithm/Cyclic-Permutation.hpp
       title: "Cyclic Permutation(\u5DE1\u56DE\u7F6E\u63DB\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
@@ -159,6 +156,9 @@ data:
       path: src/template/accum1d.hpp
       title: "accum1d (\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
+      path: src/template/binary-search.hpp
+      title: src/template/binary-search.hpp
+    - icon: ':heavy_check_mark:'
       path: src/template/input.hpp
       title: "input (\u6A19\u6E96\u5165\u529B)"
     - icon: ':heavy_check_mark:'
@@ -233,9 +233,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Binary-Search.test.cpp
-      title: test/Binary-Search.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/DSU-unitTest.test.cpp
       title: test/DSU-unitTest.test.cpp
@@ -323,6 +320,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj_ntl_1_e.test.cpp
       title: test/aoj_ntl_1_e.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/binary-search.test.cpp
+      title: test/binary-search.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/compression.test.cpp
       title: test/compression.test.cpp
