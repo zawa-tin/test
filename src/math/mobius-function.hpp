@@ -11,6 +11,7 @@ private:
 	std::vector<int> table;
 
 public:
+	mobius_function() {}
 	mobius_function(std::size_t n) : table(std::vector(n + 1, 1)) {
 		prime_sieve siv(n);
 		for (std::size_t i = 2 ; i <= n ; i++) {
