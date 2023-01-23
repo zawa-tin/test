@@ -124,6 +124,10 @@ data:
         \u7CFB\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\u63DB\
         )"
     - icon: ':heavy_check_mark:'
+      path: src/math/linear-sieve.hpp
+      title: "linear-sieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3\
+        /\u7D04\u6570\u5217\u6319)"
+    - icon: ':heavy_check_mark:'
       path: src/math/matrix.hpp
       title: "matrix (\u884C\u5217)"
     - icon: ':heavy_check_mark:'
@@ -138,10 +142,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/modint.hpp
       title: modint
-    - icon: ':heavy_check_mark:'
-      path: src/math/osa_k.hpp
-      title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
-        \u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
       path: src/math/prime-sieve.hpp
       title: "prime-sieve (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9)"
@@ -223,11 +223,23 @@ data:
       path: test/ABC125C.test.cpp
       title: test/ABC125C.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC170-D.test.cpp
+      title: test/ABC170-D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC177-E.test.cpp
+      title: test/ABC177-E.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC203-E.test.cpp
       title: test/ABC203-E.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC236-E.test.cpp
       title: test/ABC236-E.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC250.test.cpp
+      title: test/ABC250.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC254-D.test.cpp
+      title: test/ABC254-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC267-C.test.cpp
       title: test/ABC267-C.test.cpp
@@ -366,12 +378,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/modint.test.cpp
       title: test/modint.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/osa_k.test.cpp
-      title: test/osa_k.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/osa_k2.test.cpp
-      title: test/osa_k2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/output1.test.cpp
       title: test/output1.test.cpp
