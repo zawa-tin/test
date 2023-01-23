@@ -1,8 +1,9 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/gcd_convolution"
 
-#include <iostream>
-#include "../src/math/GCD-Convolution.hpp"
+#include "../src/math/gcd-convolution.hpp"
 #include "../src/math/modint.hpp"
+
+#include <iostream>
 
 using mint = zawa::modint<998244353>;
 
@@ -20,8 +21,7 @@ int main() {
         std::cin >> t;
         b = mint(t);
     }
-
-    zawa::GCD_Convolution<mint> conv(n);
+    zawa::gcd_convolution<mint> conv(n);
     auto ans = conv.convolution(as, bs);
     for (int i = 0 ; i < (int)(ans.size()) ; i++) {
         std::cout << ans[i].val() << (i + 1 == (int)ans.size() ? '\n' : ' ');
