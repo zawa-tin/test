@@ -1,14 +1,11 @@
 ---
-title: GCD Convlution (添字gcd畳み込み、約数集合の高速ゼータ/メビウス変換)
-documentation_of: //src/math/GCD-Convolution.hpp
+title: gcd-convlution (添字gcd畳み込み・約数系の高速ゼータ/メビウス変換)
+documentation_of: //src/math/gcd-convolution.hpp
 ---
 
 ## 概要
-```
-GCD_Convolution<T>
-```
 
-列`f`、`g`に対して $\displaystyle h_i\ =\ \sum_{gcd(j, k)=i} f_j\times g_k$ を満たす列 $h$ を求めます。
+列`f`、`g`に対して $\displaystyle h_i\ =\ \sum_{\gcd(j, k)=i} f_j\times g_k$ を満たす列 $h$ を求めます。
 
 内部で約数集合の高速ゼータ変換、約数集合における高速メビウス変換をしているのでそちらを使いたい際もこれをincludeしてください。
 
@@ -29,13 +26,15 @@ GCD_Convolution<T>
 
 ## 計算量
 
-- `コンストラクタ`: 引数 $N$ に対して $O(N log(log\ N))$
-- `fast_zeta_transform、fast_mobius_transform`: 列の長さを $N$ として $O(Nlog(log\ N))$
-- `convolution`: 列の長さをそれぞれ $N, M$ として $O(max(N, M) log (log\ max(N, M)))$
+- `コンストラクタ`: 引数 $N$ に対して $O(N \log(\log\ N))$
+- `fast_zeta_transform、fast_mobius_transform`: 列の長さを $N$ として $O(N\log(\log\ N))$
+- `convolution`: 列の長さをそれぞれ $N, M$ として $O(\max(N, M) \log( \log\max(N, M)))$
 
 ## これは結局なんなの
-TODO:: NOTE
+TODO: NOTE
 
 
 ## 参考
-[https://qiita.com/drken/items/3beb679e54266f20ab63]
+
+
+[# エラトステネスの篩の活用法を総特集！ 〜 高速素因数分解・メビウスの反転公式 〜](https://qiita.com/drken/items/3beb679e54266f20ab63)
