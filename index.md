@@ -105,23 +105,12 @@ data:
       path: src/math/Divisor.hpp
       title: "Divisor(\u7D04\u6570\u5217\u6319)"
     - icon: ':heavy_check_mark:'
-      path: src/math/Eratosthenes-Sieve.hpp
-      title: "Eratosthenes Sieve (\u7D20\u6570\u30C6\u30FC\u30D6\u30EB)"
-    - icon: ':heavy_check_mark:'
       path: src/math/Euler-Function.hpp
       title: "Euler Function(\u30AA\u30A4\u30E9\u30FC\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
       path: src/math/Extend-GCD.hpp
       title: "Extend GCD (\u62E1\u5F35\u30E6\u30FC\u30AF\u30EA\u30C3\u30C9\u306E\u4E92\
         \u9664\u6CD5)"
-    - icon: ':heavy_check_mark:'
-      path: src/math/GCD-Convolution.hpp
-      title: "GCD Convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u3001\u7D04\u6570\
-        \u96C6\u5408\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\
-        \u63DB)"
-    - icon: ':heavy_check_mark:'
-      path: src/math/Mobius-Function.hpp
-      title: "Mobius Function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
       path: src/math/Pascal-Triangle.hpp
       title: "Pascal's Triangle (\u30CA\u30A4\u30FC\u30D6\u306A\u4E8C\u9805\u4FC2\u6570\
@@ -130,11 +119,19 @@ data:
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
+      path: src/math/gcd-convolution.hpp
+      title: "gcd-convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u30FB\u7D04\u6570\
+        \u7CFB\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\u63DB\
+        )"
+    - icon: ':heavy_check_mark:'
       path: src/math/matrix.hpp
       title: "matrix (\u884C\u5217)"
     - icon: ':heavy_check_mark:'
       path: src/math/miller-rabin.hpp
       title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
+    - icon: ':heavy_check_mark:'
+      path: src/math/mobius-function.hpp
+      title: "mobius-function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
     - icon: ':heavy_check_mark:'
       path: src/math/mod-combinations.hpp
       title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"
@@ -145,6 +142,9 @@ data:
       path: src/math/osa_k.hpp
       title: "osa_k (\u8907\u6570\u8981\u7D20\u306E\u7D04\u6570\u5217\u6319\u30FB\u7D20\
         \u56E0\u6570\u5206\u89E3)"
+    - icon: ':heavy_check_mark:'
+      path: src/math/prime-sieve.hpp
+      title: "prime-sieve (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9)"
   - name: src/string
     pages:
     - icon: ':heavy_check_mark:'
@@ -265,9 +265,6 @@ data:
       path: test/EDPC-R.test.cpp
       title: test/EDPC-R.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/Eratosthenes-Sieve.test.cpp
-      title: test/Eratosthenes-Sieve.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/Fenwick-Tree.test.cpp
       title: test/Fenwick-Tree.test.cpp
     - icon: ':heavy_check_mark:'
@@ -277,14 +274,8 @@ data:
       path: test/Functional_Graph.test.cpp
       title: test/Functional_Graph.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/GCD-Convolution.test.cpp
-      title: test/GCD-Convolution.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/LCS.test.cpp
       title: test/LCS.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Mobius-Function.test.cpp
-      title: test/Mobius-Function.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Pascal-Triangle.test.cpp
       title: test/Pascal-Triangle.test.cpp
@@ -340,6 +331,9 @@ data:
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/gcd-convolution.test.cpp
+      title: test/gcd-convolution.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/input1.test.cpp
       title: test/input1.test.cpp
     - icon: ':heavy_check_mark:'
@@ -363,6 +357,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/miller-rabin.test.cpp
       title: test/miller-rabin.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/mobius-function.test.cpp
+      title: test/mobius-function.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/mod-combinations1.test.cpp
       title: test/mod-combinations1.test.cpp
@@ -396,6 +393,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/prime-sieve.test.cpp
+      title: test/prime-sieve.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/range-edge-graph1.test.cpp
       title: test/range-edge-graph1.test.cpp
