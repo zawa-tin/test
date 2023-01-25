@@ -166,6 +166,9 @@ data:
       path: src/template/input.hpp
       title: "input (\u6A19\u6E96\u5165\u529B)"
     - icon: ':heavy_check_mark:'
+      path: src/template/makebuc.hpp
+      title: "makebuc (\u30D0\u30B1\u30C3\u30C8)"
+    - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
   - name: src/utility/monoid
@@ -363,6 +366,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/makebuc.test.cpp
+      title: test/makebuc.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/matrix.test.cpp
       title: test/matrix.test.cpp
