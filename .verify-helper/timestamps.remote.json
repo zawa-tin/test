@@ -48,6 +48,7 @@
 "test/input4.test.cpp": "2022-12-29 21:38:14 +0900",
 "test/input5.test.cpp": "2023-01-04 23:17:08 +0900",
 "test/kadane.test.cpp": "2022-07-30 02:10:28 +0900",
+"test/makebuc.test.cpp": "2023-01-26 05:44:41 +0900",
 "test/matrix.test.cpp": "2023-01-19 10:12:43 +0900",
 "test/miller-rabin.test.cpp": "2023-01-09 22:14:04 +0900",
 "test/mobius-function.test.cpp": "2023-01-23 11:44:50 +0900",
