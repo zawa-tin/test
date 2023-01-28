@@ -27,12 +27,12 @@ data:
       path: src/dataStructure/DSU.hpp
       title: "DSU (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/Fenwick-Tree.hpp
-      title: "Fenwick Tree (\u4E00\u70B9\u53EF\u7B97\u30FB\u533A\u9593\u548C\u53D6\
-        \u5F97)"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/accum2d.hpp
       title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/fenwick_tree.hpp
+      title: "fenwick_tree (\u4E00\u70B9\u52A0\u7B97\u3001\u533A\u9593\u548C\u53D6\
+        \u5F97)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/persistent-array.hpp
       title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
@@ -171,6 +171,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
+  - name: src/utility/fenwick_tree
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/utility/fenwick_tree/add.hpp
+      title: fenwick tree add structure
+    - icon: ':heavy_check_mark:'
+      path: src/utility/fenwick_tree/xor.hpp
+      title: fenwick tree xor structure
   - name: src/utility/monoid
     pages:
     - icon: ':heavy_check_mark:'
@@ -232,6 +240,9 @@ data:
       path: test/ABC177-E.test.cpp
       title: test/ABC177-E.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC185-E.test.cpp
+      title: test/ABC185-E.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC203-E.test.cpp
       title: test/ABC203-E.test.cpp
     - icon: ':heavy_check_mark:'
@@ -256,6 +267,9 @@ data:
       path: test/ABC285D.test.cpp
       title: test/ABC285D.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ARC033-C.test.cpp
+      title: test/ARC033-C.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
     - icon: ':heavy_check_mark:'
@@ -279,12 +293,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/EDPC-R.test.cpp
       title: test/EDPC-R.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Fenwick-Tree.test.cpp
-      title: test/Fenwick-Tree.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/Fenwick-Tree_lower_bound.test.cpp
-      title: test/Fenwick-Tree_lower_bound.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Functional_Graph.test.cpp
       title: test/Functional_Graph.test.cpp
@@ -345,6 +353,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/fenwick_tree.test.cpp
+      title: test/fenwick_tree.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/gcd-convolution.test.cpp
       title: test/gcd-convolution.test.cpp
