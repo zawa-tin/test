@@ -1,11 +1,17 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':heavy_check_mark:'
+    path: src/dataStructure/fenwick_set.hpp
+    title: "fenwick_set (\u52D5\u7684\u96C6\u5408)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/ABC185-E.test.cpp
     title: test/ABC185-E.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ABC186-F.test.cpp
+    title: test/ABC186-F.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/ARC033-C.test.cpp
     title: test/ARC033-C.test.cpp
@@ -54,11 +60,13 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: src/dataStructure/fenwick_tree.hpp
-  requiredBy: []
+  requiredBy:
+  - src/dataStructure/fenwick_set.hpp
   timestamp: '2023-01-29 05:23:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/fenwick_tree.test.cpp
+  - test/ABC186-F.test.cpp
   - test/ARC033-C.test.cpp
   - test/ABC185-E.test.cpp
 documentation_of: src/dataStructure/fenwick_tree.hpp
