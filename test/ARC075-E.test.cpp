@@ -1,4 +1,4 @@
-#include "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A" 
 
 #include "../src/dataStructure/fenwick_multiset.hpp"
 #include "../src/template/accum1d.hpp"
