@@ -7,6 +7,9 @@ data:
     path: test/ABC267-C.test.cpp
     title: test/ABC267-C.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/ARC075-E.test.cpp
+    title: test/ARC075-E.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/accum1d.test.cpp
     title: test/accum1d.test.cpp
   - icon: ':heavy_check_mark:'
@@ -42,6 +45,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/accum1d.test.cpp
+  - test/ARC075-E.test.cpp
   - test/accum1d2.test.cpp
   - test/ABC267-C.test.cpp
 documentation_of: src/template/accum1d.hpp

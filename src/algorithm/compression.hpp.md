@@ -7,6 +7,9 @@ data:
     path: test/ABC285D.test.cpp
     title: test/ABC285D.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/ARC075-E.test.cpp
+    title: test/ARC075-E.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/compression.test.cpp
     title: test/compression.test.cpp
   _isVerificationFailed: false
@@ -40,6 +43,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/ABC285D.test.cpp
+  - test/ARC075-E.test.cpp
   - test/compression.test.cpp
 documentation_of: src/algorithm/compression.hpp
 layout: document

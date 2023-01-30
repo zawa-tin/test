@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: src/dataStructure/fenwick_multiset.hpp
+    title: "fenwick_multiset (\u52D5\u7684\u591A\u91CD\u96C6\u5408)"
+  - icon: ':heavy_check_mark:'
     path: src/dataStructure/fenwick_set.hpp
     title: "fenwick_set (\u52D5\u7684\u96C6\u5408)"
   _extendedVerifiedWith:
@@ -15,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/ARC033-C.test.cpp
     title: test/ARC033-C.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ARC075-E.test.cpp
+    title: test/ARC075-E.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/fenwick_tree.test.cpp
     title: test/fenwick_tree.test.cpp
@@ -61,12 +67,14 @@ data:
   isVerificationFile: false
   path: src/dataStructure/fenwick_tree.hpp
   requiredBy:
+  - src/dataStructure/fenwick_multiset.hpp
   - src/dataStructure/fenwick_set.hpp
   timestamp: '2023-01-29 05:23:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/fenwick_tree.test.cpp
   - test/ABC186-F.test.cpp
+  - test/ARC075-E.test.cpp
   - test/ARC033-C.test.cpp
   - test/ABC185-E.test.cpp
 documentation_of: src/dataStructure/fenwick_tree.hpp

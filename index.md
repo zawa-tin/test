@@ -30,6 +30,9 @@ data:
       path: src/dataStructure/accum2d.hpp
       title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/fenwick_multiset.hpp
+      title: "fenwick_multiset (\u52D5\u7684\u591A\u91CD\u96C6\u5408)"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/fenwick_set.hpp
       title: "fenwick_set (\u52D5\u7684\u96C6\u5408)"
     - icon: ':heavy_check_mark:'
@@ -275,6 +278,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ARC075-E.test.cpp
+      title: test/ARC075-E.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
