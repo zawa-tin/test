@@ -369,6 +369,9 @@ data:
       path: test/fenwick_tree.test.cpp
       title: test/fenwick_tree.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/fenwick_tree2.test.cpp
+      title: test/fenwick_tree2.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/gcd-convolution.test.cpp
       title: test/gcd-convolution.test.cpp
     - icon: ':heavy_check_mark:'

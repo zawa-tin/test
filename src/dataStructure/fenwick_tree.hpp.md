@@ -24,6 +24,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/fenwick_tree.test.cpp
     title: test/fenwick_tree.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/fenwick_tree2.test.cpp
+    title: test/fenwick_tree2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -72,6 +75,7 @@ data:
   timestamp: '2023-01-29 05:23:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/fenwick_tree2.test.cpp
   - test/fenwick_tree.test.cpp
   - test/ABC186-F.test.cpp
   - test/ARC075-E.test.cpp
