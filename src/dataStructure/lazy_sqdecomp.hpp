@@ -4,8 +4,6 @@
 #include <cmath>
 #include <algorithm>
 
-#include <iostream>
-
 namespace zawa {
 
 template <class structure>
@@ -108,22 +106,6 @@ public:
 			}
 		}
 		return res;
-	}
-
-
-	void debug() {
-		std::cout << "dat" << std::endl;
-		for (auto v : dat) {
-			std::cout << v.value << ' ';
-		}
-		std::cout << std::endl;
-		std::cout << "square = " << square << std::endl;
-		std::cout << "bucket" << std::endl;
-		for (auto v : bucket) {
-			std::cout << "(" << v.value.value << "," << v.value.size << "," << v.lazy << ") ";
-		}
-		std::cout << std::endl;
-		std::cout << std::endl;
 	}
 };
 
