@@ -9,17 +9,17 @@ data:
   attributes:
     links: []
   bundledCode: "#line 2 \"src/utility/monoid/xor.hpp\"\n\nnamespace zawa {\n\ntemplate\
-    \ <class dat_type>\nstruct xor_monoid {\n\tusing T = dat_type\n\tstatic constexpr\
-    \ T id = 0;\n\tstatic T op(const T& a, const T& b) {\n\t\treturn (a ^ b);\n\t\
-    }\n};\n\n};\n"
-  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class dat_type>\nstruct xor_monoid\
-    \ {\n\tusing T = dat_type\n\tstatic constexpr T id = 0;\n\tstatic T op(const T&\
-    \ a, const T& b) {\n\t\treturn (a ^ b);\n\t}\n};\n\n};\n"
+    \ <class T>\nstruct xor_monoid {\n\tusing value_type = T;\n\tstatic constexpr\
+    \ T identity{};\n\tstatic T operation(const T& a, const T& b) {\n\t\treturn (a\
+    \ ^ b);\n\t}\n};\n\n};\n"
+  code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class T>\nstruct xor_monoid\
+    \ {\n\tusing value_type = T;\n\tstatic constexpr T identity{};\n\tstatic T operation(const\
+    \ T& a, const T& b) {\n\t\treturn (a ^ b);\n\t}\n};\n\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: src/utility/monoid/xor.hpp
   requiredBy: []
-  timestamp: '2023-01-16 02:41:41+09:00'
+  timestamp: '2023-02-06 18:33:55+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: src/utility/monoid/xor.hpp
@@ -33,11 +33,16 @@ xor演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 
 ## 機能
 
-`zawa::xor_monoid<dat_type>`
-- `dat_type`: `int` `long long` など`operator ^`が定義されているもの、0が代入できるもの
+`zawa::xor_monoid<T>`
+- `T`: `int` `long long` など`operator ^`が定義されているもの、0が代入できるもの
 
-`static constexpr dat_type zawa::xor_monoid<dat_type>::id`
+**メンバなど**
+
+`using value_type = T`
+- データ構造で利用するために必要なエイリアス
+
+`static constexpr T identity`
 - 単位元、0
 
-`static dat_type zawa::xor_monoid<dat_type>::op(const dat_type& a, const dat_type& b)`
+`static value_type operation(const value_type& a, const value_type& b)`
 - `a ^ b`

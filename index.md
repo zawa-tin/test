@@ -40,6 +40,10 @@ data:
       title: "fenwick_tree (\u4E00\u70B9\u52A0\u7B97\u3001\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/lazy_sqdecomp.hpp
+      title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\
+        \u5272)"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/persistent-array.hpp
       title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
     - icon: ':heavy_check_mark:'
@@ -55,8 +59,8 @@ data:
       title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
         \u89E3\u7B54 )"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/sq-decomp.hpp
-      title: "sq-decomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
+      path: src/dataStructure/sqdecomp.hpp
+      title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
         \u30A8\u30EA)"
   - name: src/graph
     pages:
@@ -196,6 +200,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/utility/monoid/min.hpp
       title: "min\u30E2\u30CE\u30A4\u30C9"
+    - icon: ':heavy_check_mark:'
+      path: src/utility/monoid/range_add.hpp
+      title: "\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9"
     - icon: ':warning:'
       path: src/utility/monoid/xor.hpp
       title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"
@@ -393,6 +400,18 @@ data:
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+      title: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
+      title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
+      title: test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
+      title: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/makebuc.test.cpp
       title: test/makebuc.test.cpp
     - icon: ':heavy_check_mark:'
@@ -495,11 +514,14 @@ data:
       path: test/sparse-table.test.cpp
       title: test/sparse-table.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sq-decomp-RSQ.test.cpp
-      title: test/sq-decomp-RSQ.test.cpp
+      path: test/sqdecomp-AOJRSQ.test.cpp
+      title: test/sqdecomp-AOJRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sq-decomp-RmQ.test.cpp
-      title: test/sq-decomp-RmQ.test.cpp
+      path: test/sqdecomp-AOJRmQ.test.cpp
+      title: test/sqdecomp-AOJRmQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/sqdecomp-LCRSQ.test.cpp
+      title: test/sqdecomp-LCRSQ.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)
