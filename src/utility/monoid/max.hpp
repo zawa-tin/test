@@ -5,11 +5,11 @@
 
 namespace zawa {
 
-template <class dat_type>
+template <class T>
 struct max_monoid {
-	using T = dat_type;
-	static constexpr T id = std::numeric_limits<T>::min();
-	static T op(const T& a, const T& b) {
+	using value_type = T;
+	static constexpr T identity = std::numeric_limits<T>::min();
+	static T operation(const T& a, const T& b) {
 		return std::max(a, b);
 	}
 };

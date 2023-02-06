@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A"
 
-#include "../src/dataStructure/sq-decomp.hpp"
+#include "../src/dataStructure/sqdecomp.hpp"
 #include "../src/utility/monoid/min.hpp"
 
 #include <iostream>
@@ -9,7 +9,7 @@
 int main() {
 	int n, q; std::cin >> n >> q;
 	std::vector as(n, (int)((1LL << 31) - 1));
-	zawa::sq_decomp<zawa::min_monoid<int>> sq(as);
+	zawa::sqdecomp<zawa::min_monoid<int>> sq(as);
 	for (int _ = 0 ; _ < q ; _++) {
 		int com, x, y; std::cin >> com >> x >> y;
 		if (com == 0) {

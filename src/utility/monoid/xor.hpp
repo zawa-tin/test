@@ -2,11 +2,11 @@
 
 namespace zawa {
 
-template <class dat_type>
+template <class T>
 struct xor_monoid {
-	using T = dat_type
-	static constexpr T id = 0;
-	static T op(const T& a, const T& b) {
+	using value_type = T;
+	static constexpr T identity{};
+	static T operation(const T& a, const T& b) {
 		return (a ^ b);
 	}
 };
