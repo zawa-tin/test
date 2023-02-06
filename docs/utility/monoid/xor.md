@@ -9,11 +9,16 @@ xor演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 
 ## 機能
 
-`zawa::xor_monoid<dat_type>`
-- `dat_type`: `int` `long long` など`operator ^`が定義されているもの、0が代入できるもの
+`zawa::xor_monoid<T>`
+- `T`: `int` `long long` など`operator ^`が定義されているもの、0が代入できるもの
 
-`static constexpr dat_type zawa::xor_monoid<dat_type>::id`
+**メンバなど**
+
+`using value_type = T`
+- データ構造で利用するために必要なエイリアス
+
+`static constexpr T identity`
 - 単位元、0
 
-`static dat_type zawa::xor_monoid<dat_type>::op(const dat_type& a, const dat_type& b)`
+`static value_type operation(const value_type& a, const value_type& b)`
 - `a ^ b`
