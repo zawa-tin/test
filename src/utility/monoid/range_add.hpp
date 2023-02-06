@@ -8,7 +8,7 @@ template <class T>
 struct dat {
 	T value;
 	std::size_t size;
-	constexpr dat(const T& value = 0LL, const std::size_t& size = 0ULL) : value(value), size(size) {}
+	constexpr dat(const T& value = 0, const std::size_t& size = 0ULL) : value(value), size(size) {}
 };
 
 template <class T>
