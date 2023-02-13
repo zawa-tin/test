@@ -1,5 +1,5 @@
 ---
-title: reachablity (到達可能性)
+title: reachability (到達可能性)
 documentation_of: //src/graph/simple/reachability.hpp
 ---
 
