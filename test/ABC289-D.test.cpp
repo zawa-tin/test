@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/graph/simple/reachablity.hpp"
+#include "../src/graph/simple/reachability.hpp"
 
 #include <iostream>
 #include <vector>
@@ -35,5 +35,5 @@ int main() {
 
 /*
  * AtCoder Beginner Contest 289-D Step Up Robot
- * https://atcoder.jp/contests/abc289/submissions/38853951
+ * https://atcoder.jp/contests/abc289/submissions/38854333
  */
