@@ -103,7 +103,7 @@ data:
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
     - icon: ':heavy_check_mark:'
-      path: src/graph/simple/reachablity.hpp
+      path: src/graph/simple/reachability.hpp
       title: "reachablity (\u5230\u9054\u53EF\u80FD\u6027)"
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/topo-sort.hpp
