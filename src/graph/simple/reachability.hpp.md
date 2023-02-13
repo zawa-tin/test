@@ -45,7 +45,7 @@ data:
   - test/ABC289-D.test.cpp
 documentation_of: src/graph/simple/reachability.hpp
 layout: document
-title: "reachablity (\u5230\u9054\u53EF\u80FD\u6027)"
+title: "reachability (\u5230\u9054\u53EF\u80FD\u6027)"
 ---
 
 ## 概要

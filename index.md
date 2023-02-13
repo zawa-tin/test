@@ -104,7 +104,7 @@ data:
       title: dijkstra (simple ver)
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/reachability.hpp
-      title: "reachablity (\u5230\u9054\u53EF\u80FD\u6027)"
+      title: "reachability (\u5230\u9054\u53EF\u80FD\u6027)"
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/topo-sort.hpp
       title: "topo-sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8 simple\

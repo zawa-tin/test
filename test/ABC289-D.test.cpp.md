@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/graph/simple/reachability.hpp
-    title: "reachablity (\u5230\u9054\u53EF\u80FD\u6027)"
+    title: "reachability (\u5230\u9054\u53EF\u80FD\u6027)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
