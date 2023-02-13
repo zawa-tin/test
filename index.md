@@ -103,6 +103,9 @@ data:
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
     - icon: ':heavy_check_mark:'
+      path: src/graph/simple/reachablity.hpp
+      title: "reachablity (\u5230\u9054\u53EF\u80FD\u6027)"
+    - icon: ':heavy_check_mark:'
       path: src/graph/simple/topo-sort.hpp
       title: "topo-sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8 simple\
         \ ver)"
@@ -282,6 +285,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC285D.test.cpp
       title: test/ABC285D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC289-D.test.cpp
+      title: test/ABC289-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
