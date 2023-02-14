@@ -97,8 +97,8 @@ data:
       title: "bipartite graph judge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A simple\
         \ ver\uFF09"
     - icon: ':heavy_check_mark:'
-      path: src/graph/simple/connected-components.hpp
-      title: "connected components (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"
+      path: src/graph/simple/connectedComponents.hpp
+      title: "connectedComponents (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/dijkstra.hpp
       title: dijkstra (simple ver)
@@ -280,11 +280,17 @@ data:
       path: test/ABC278-E.test.cpp
       title: test/ABC278-E.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC284-C.test.cpp
+      title: test/ABC284-C.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC284f.test.cpp
       title: test/ABC284f.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC285D.test.cpp
       title: test/ABC285D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC289-B.test.cpp
+      title: test/ABC289-B.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC289-D.test.cpp
       title: test/ABC289-D.test.cpp
@@ -375,6 +381,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/compression.test.cpp
       title: test/compression.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/connectedComponents1.test.cpp
+      title: test/connectedComponents1.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
@@ -498,12 +507,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-bipartite-judge1.test.cpp
       title: test/simple-bipartite-judge1.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/simple-cc1.test.cpp
-      title: test/simple-cc1.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/simple-cc2.test.cpp
-      title: test/simple-cc2.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-dijkstra1.test.cpp
       title: test/simple-dijkstra1.test.cpp

@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC284-C.test.cpp
+    title: test/ABC284-C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/Read-Graph-AtCoder.test.cpp
     title: test/Read-Graph-AtCoder.test.cpp
   - icon: ':heavy_check_mark:'
@@ -12,9 +15,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/simple-bfs2.test.cpp
     title: test/simple-bfs2.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/simple-cc2.test.cpp
-    title: test/simple-cc2.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -47,8 +47,8 @@ data:
   verifiedWith:
   - test/Read-Graph.test.cpp
   - test/simple-bfs2.test.cpp
+  - test/ABC284-C.test.cpp
   - test/Read-Graph-AtCoder.test.cpp
-  - test/simple-cc2.test.cpp
 documentation_of: src/graph/Read-Graph.hpp
 layout: document
 title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"
