@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/11/ALDS1_11_D"
 
-#include "../src/graph/simple/connected-components.hpp"
+#include "../src/graph/simple/connectedComponents.hpp"
 
 #include <cassert>
 #include <vector>
@@ -17,8 +17,8 @@ int main() {
         G2[s].emplace_back(t, 0);
         G2[t].emplace_back(s, 0);
     }
-    zawa::connected_components cc1(G1);
-	zawa::connected_components cc2(G2);
+    zawa::connectedComponents cc1(G1);
+	zawa::connectedComponents cc2(G2);
     int q; std::cin >> q;
     for (int _ = 0 ; _ < q ; _++) {
         int s, t; std::cin >> s >> t;
