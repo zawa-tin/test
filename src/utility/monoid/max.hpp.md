@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/ALPC-J.test.cpp
+    title: test/ALPC-J.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/utility/monoid/max.hpp\"\n\n#include <algorithm>\n#include\
@@ -22,8 +25,9 @@ data:
   path: src/utility/monoid/max.hpp
   requiredBy: []
   timestamp: '2023-02-06 18:33:55+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/ALPC-J.test.cpp
 documentation_of: src/utility/monoid/max.hpp
 layout: document
 title: "max\u30E2\u30CE\u30A4\u30C9"

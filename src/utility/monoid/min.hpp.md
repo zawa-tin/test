@@ -4,11 +4,17 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/AGC005-B.test.cpp
+    title: test/AGC005-B.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/segmentTree-AOJRmQ.test.cpp
+    title: test/segmentTree-AOJRmQ.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/sqdecomp-AOJRmQ.test.cpp
     title: test/sqdecomp-AOJRmQ.test.cpp
@@ -33,8 +39,10 @@ data:
   timestamp: '2023-02-06 18:33:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/segmentTree-AOJRmQ.test.cpp
   - test/sqdecomp-AOJRmQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
+  - test/AGC005-B.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
 documentation_of: src/utility/monoid/min.hpp
 layout: document

@@ -51,9 +51,9 @@ data:
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/segment-tree.hpp
-      title: "segment tree (\u4E00\u70B9\u5909\u66F4\u30FB\u533A\u9593\u6F14\u7B97\
-        )"
+      path: src/dataStructure/segmentTree.hpp
+      title: "segmentTree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\u30B0\
+        \u6728)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/sparse-table.hpp
       title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
@@ -197,7 +197,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/utility/monoid/add.hpp
       title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: src/utility/monoid/max.hpp
       title: "max\u30E2\u30CE\u30A4\u30C9"
     - icon: ':heavy_check_mark:'
@@ -206,7 +206,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/utility/monoid/range_add.hpp
       title: "\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: src/utility/monoid/xor.hpp
       title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"
   - name: src/utility/semiring
@@ -294,6 +294,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC289-D.test.cpp
       title: test/ABC289-D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AGC005-B.test.cpp
+      title: test/AGC005-B.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ALPC-J.test.cpp
+      title: test/ALPC-J.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
@@ -478,26 +484,14 @@ data:
       path: test/rollinghash.test.cpp
       title: test/rollinghash.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment-tree-rmq.test.cpp
-      title: test/segment-tree-rmq.test.cpp
+      path: test/segmentTree-AOJRSQ.test.cpp
+      title: test/segmentTree-AOJRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment-tree-rsq.test.cpp
-      title: test/segment-tree-rsq.test.cpp
+      path: test/segmentTree-AOJRmQ.test.cpp
+      title: test/segmentTree-AOJRmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment-tree1.test.cpp
-      title: test/segment-tree1.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/segment-tree2.test.cpp
-      title: test/segment-tree2.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/segment-tree3.test.cpp
-      title: test/segment-tree3.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/segment-tree4.test.cpp
-      title: test/segment-tree4.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/segment-tree5.test.cpp
-      title: test/segment-tree5.test.cpp
+      path: test/segmentTree-RXORQ.test.cpp
+      title: test/segmentTree-RXORQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-bfs1.test.cpp
       title: test/simple-bfs1.test.cpp

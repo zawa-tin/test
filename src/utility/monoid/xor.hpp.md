@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/segmentTree-RXORQ.test.cpp
+    title: test/segmentTree-RXORQ.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/utility/monoid/xor.hpp\"\n\nnamespace zawa {\n\ntemplate\
@@ -20,8 +23,9 @@ data:
   path: src/utility/monoid/xor.hpp
   requiredBy: []
   timestamp: '2023-02-06 18:33:55+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/segmentTree-RXORQ.test.cpp
 documentation_of: src/utility/monoid/xor.hpp
 layout: document
 title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"

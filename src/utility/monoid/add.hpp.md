@@ -10,6 +10,9 @@ data:
     path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/segmentTree-AOJRSQ.test.cpp
+    title: test/segmentTree-AOJRSQ.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/sqdecomp-AOJRSQ.test.cpp
     title: test/sqdecomp-AOJRSQ.test.cpp
   - icon: ':heavy_check_mark:'
@@ -36,6 +39,7 @@ data:
   verifiedWith:
   - test/sqdecomp-LCRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+  - test/segmentTree-AOJRSQ.test.cpp
   - test/sqdecomp-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
 documentation_of: src/utility/monoid/add.hpp
