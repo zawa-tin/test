@@ -1,6 +1,6 @@
 ---
-title: segmentTree (一点更新・区間和セグ木)
-documentation_of: //src/dataStructure/segmentTree.hpp
+title: segment_tree (一点更新・区間和セグ木)
+documentation_of: //src/dataStructure/segment_tree.hpp
 ---
 
 ## 概要
@@ -32,14 +32,14 @@ documentation_of: //src/dataStructure/segmentTree.hpp
 	- `static constexpr value_type identity` : モノイドの単位元 $\text{id}$
 	- `static value_type operation(const value_type& a, const value_type& b)`: $a\oplus b$ を返す関数
 
-`zawa::segmentTree<monoid>()`:
+`zawa::segment_tree<monoid>()`:
 - 何もしない
 
-`zawa::segmentTree<monoid>(int _N)`:
+`zawa::segment_tree<monoid>(int _N)`:
 - $A$ を長さ $N$ で各要素を`monoid::identity`で初期化する
 - **計算量** $O(N)$
 
-`zawa::segmentTree<monoid>(const std::vector<monoid::value_type>& A)`
+`zawa::segment_tree<monoid>(const std::vector<monoid::value_type>& A)`
 - $A$ を引数に与えた `std::vector`で初期化する
 
 #### メンバ関数
@@ -63,16 +63,16 @@ documentation_of: //src/dataStructure/segmentTree.hpp
 	- $l\ \le\ r\ \le\ N$
 - **計算量**: $O(\log N)$
 
-`int maxRight<func>(int l, const func& f) const`
+`int max_right<function_type>(int l, const function_type& f) const`
 - 単調性を持つブール関数 $f$ について、 $\displaystyle f(\bigoplus_{i = l}^r A_i)\ =\ \text{false}$ となる最小の $r$ を返す。
-- `f`は`std::function<bool(monoid::value_type)>`
+- `function_type`は`std::function<bool(monoid::value_type)>`
 - **制約**
 	- $0\ \le\ l\ <\ N$
 - **計算量** : $O(\log N)$
 
-`int minLeft<func>(int r, const func& f) const`
+`int min_left<function_type>(int r, const function_type& f) const`
 - 単調性を持つブール関数 $f$ について、 $\displaystyle f(\bigoplus_{i = l}^r A_i)\ =\ \text{false}$ となる最大の $l$ を返す。
-- `f`は`std::function<bool(monoid::value_type)>`
+- `function_type`は`std::function<bool(monoid::value_type)>`
 - **制約**
 	- $0\ \le\ r\ <\ N$
 - **計算量** : $O(\log N)$

@@ -1,6 +1,6 @@
 ---
-title: 加法モノイド
-documentation_of: //src/utility/monoid/add.hpp
+title: add_monoid (加法モノイド)
+documentation_of: //src/utility/monoid/add_monoid.hpp
 ---
 
 ## 概要

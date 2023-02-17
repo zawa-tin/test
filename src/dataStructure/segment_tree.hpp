@@ -1,20 +1,21 @@
 #pragma once
 
 #include <vector>
+#include <functional>
 
 namespace zawa {
 
 template <class monoid>
-class segmentTree {
+class segment_tree {
 private:
 	using T = typename monoid::value_type;
 	std::size_t N;
 	std::vector<T> dat;
 
 public:
-	segmentTree() {}
-	segmentTree(int _N) : N(_N), dat(2 * _N, monoid::identity) {}
-	segmentTree(const std::vector<T>& A) : N(A.size()), dat(2 * N, monoid::identity) {
+	segment_tree() {}
+	segment_tree(int _N) : N(_N), dat(2 * _N, monoid::identity) {}
+	segment_tree(const std::vector<T>& A) : N(A.size()), dat(2 * N, monoid::identity) {
 		for (std::size_t i = 0 ; i < A.size() ; i++) {
 			dat[i + N] = A[i];
 		}
@@ -52,8 +53,8 @@ public:
 		return monoid::operation(left, right);
 	}
 
-	template <class func>
-	int maxRight(int l, const func& f) const {
+	template <class function_type>
+	int max_right(int l, const function_type& f) const {
 		int L = l + N, w = 1;
 		T v = monoid::identity;
 		for ( ; l + w <= (int)N ; L >>= 1, w <<= 1) {
@@ -76,8 +77,8 @@ public:
 		return l;
 	}
 
-	template <class func>
-	int minLeft(int r, const func& f) const {	
+	template <class function_type>
+	int min_left(int r, const function_type& f) const {	
 		int R = r + N, w = 1;
 		T v = monoid::identity;
 		for ( ; r - w >= 0 ; R >>= 1, w <<= 1) {

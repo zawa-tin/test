@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/utility/monoid/max.hpp"
-#include "../src/dataStructure/segmentTree.hpp"
+#include "../src/utility/monoid/max_monoid.hpp"
+#include "../src/dataStructure/segment_tree.hpp"
 
 #include <iostream>
 #include <vector>
@@ -15,7 +15,7 @@ int main() {
 	// for (auto& Ai : A) {
 	// 	std::cin >> Ai;
 	// }
-	// zawa::segmentTree<zawa::max_monoid<int>> seg(A);
+	// zawa::segment_tree<zawa::max_monoid<int>> seg(A);
 	// for (int _ = 0 ; _ < Q ; _++) {
 	// 	int T; std::cin >> T;
 	// 	if (T == 1) {
@@ -31,7 +31,7 @@ int main() {
 	// 		auto f = [&](int p) -> bool {
 	// 			return p < V;
 	// 		};
-	// 		std::cout << seg.maxRight(X - 1, f) + 1 << std::endl;
+	// 		std::cout << seg.max_right(X - 1, f) + 1 << std::endl;
 	// 	}
 	// }
 	std::cout << "Hello World" << std::endl;
@@ -39,5 +39,5 @@ int main() {
 
 /*
  * AtCoder Library Practice Contest - J Segment Tree
- * https://atcoder.jp/contests/practice2/submissions/38935945
+ * https://atcoder.jp/contests/practice2/submissions/38952066
  */

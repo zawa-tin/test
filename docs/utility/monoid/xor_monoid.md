@@ -1,6 +1,6 @@
 ---
-title: 排他的論理和モノイド
-documentation_of: //src/utility/monoid/xor.hpp
+title: xor_monoid (排他的論理和モノイド)
+documentation_of: //src/utility/monoid/xor_monoid.hpp
 ---
 
 ## 概要

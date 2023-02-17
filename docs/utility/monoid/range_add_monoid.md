@@ -1,6 +1,6 @@
 ---
-title: 区間和モノイド
-documentation_of: //src/utility/monoid/range_add.hpp
+title: range_add_monoid (区間和モノイド)
+documentation_of: //src/utility/monoid/range_add_monoid.hpp
 ---
 
 ## 概要

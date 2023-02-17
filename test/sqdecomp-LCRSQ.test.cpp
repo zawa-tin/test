@@ -1,6 +1,6 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
 
-#include "../src/utility/monoid/add.hpp"
+#include "../src/utility/monoid/add_monoid.hpp"
 #include "../src/dataStructure/sqdecomp.hpp"
 
 #include <iostream>

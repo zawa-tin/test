@@ -1,6 +1,6 @@
 ---
-title: maxモノイド
-documentation_of: //src/utility/monoid/max.hpp
+title: max_monoid (最大値モノイド)
+documentation_of: //src/utility/monoid/max_monoid.hpp
 ---
 
 ## 概要
