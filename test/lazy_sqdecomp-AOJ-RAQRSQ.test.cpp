@@ -1,8 +1,8 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G"
 
 #include "../src/dataStructure/lazy_sqdecomp.hpp"
-#include "../src/utility/monoid/range_add.hpp"
-#include "../src/utility/monoid/add.hpp"
+#include "../src/utility/monoid/range_add_monoid.hpp"
+#include "../src/utility/monoid/add_monoid.hpp"
 
 struct add_action {
 	using value_monoid = zawa::range_add_monoid<long long>;

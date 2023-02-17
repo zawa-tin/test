@@ -1,6 +1,6 @@
 ---
-title: minモノイド
-documentation_of: //src/utility/monoid/min.hpp
+title: min_monoid (最小値モノイド)
+documentation_of: //src/utility/monoid/min_monoid.hpp
 ---
 
 ## 概要

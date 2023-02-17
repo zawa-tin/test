@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H"
 
-#include "../src/utility/monoid/min.hpp"
-#include "../src/utility/monoid/add.hpp"
+#include "../src/utility/monoid/min_monoid.hpp"
+#include "../src/utility/monoid/add_monoid.hpp"
 
 struct action {
 	using value_monoid = zawa::min_monoid<long long>;

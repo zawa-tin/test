@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_I"
 
-#include "../src/utility/monoid/range_add.hpp"
+#include "../src/utility/monoid/range_add_monoid.hpp"
 
 struct o_m {
 	using value_type = long long;
