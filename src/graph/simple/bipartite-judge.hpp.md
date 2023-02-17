@@ -58,8 +58,8 @@ data:
   timestamp: '2022-12-18 01:00:52+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/abc282_d.test.cpp
   - test/simple-bipartite-judge1.test.cpp
+  - test/abc282_d.test.cpp
 documentation_of: src/graph/simple/bipartite-judge.hpp
 layout: document
 title: "bipartite graph judge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A simple ver\uFF09"

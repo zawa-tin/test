@@ -4,15 +4,15 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/segmentTree-RXORQ.test.cpp
-    title: test/segmentTree-RXORQ.test.cpp
+    path: test/segment_tree-RXORQ.test.cpp
+    title: test/segment_tree-RXORQ.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/utility/monoid/xor.hpp\"\n\nnamespace zawa {\n\ntemplate\
-    \ <class T>\nstruct xor_monoid {\n\tusing value_type = T;\n\tstatic constexpr\
+  bundledCode: "#line 2 \"src/utility/monoid/xor_monoid.hpp\"\n\nnamespace zawa {\n\
+    \ntemplate <class T>\nstruct xor_monoid {\n\tusing value_type = T;\n\tstatic constexpr\
     \ T identity{};\n\tstatic T operation(const T& a, const T& b) {\n\t\treturn (a\
     \ ^ b);\n\t}\n};\n\n};\n"
   code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class T>\nstruct xor_monoid\
@@ -20,15 +20,15 @@ data:
     \ T& a, const T& b) {\n\t\treturn (a ^ b);\n\t}\n};\n\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: src/utility/monoid/xor.hpp
+  path: src/utility/monoid/xor_monoid.hpp
   requiredBy: []
-  timestamp: '2023-02-06 18:33:55+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/segmentTree-RXORQ.test.cpp
-documentation_of: src/utility/monoid/xor.hpp
+  - test/segment_tree-RXORQ.test.cpp
+documentation_of: src/utility/monoid/xor_monoid.hpp
 layout: document
-title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"
+title: "xor_monoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9)"
 ---
 
 ## 概要

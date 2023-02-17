@@ -51,9 +51,9 @@ data:
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/segmentTree.hpp
-      title: "segmentTree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\u30B0\
-        \u6728)"
+      path: src/dataStructure/segment_tree.hpp
+      title: "segment_tree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
+        \u30B0\u6728)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/sparse-table.hpp
       title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
@@ -195,20 +195,21 @@ data:
   - name: src/utility/monoid
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/add.hpp
-      title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
+      path: src/utility/monoid/add_monoid.hpp
+      title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/max.hpp
-      title: "max\u30E2\u30CE\u30A4\u30C9"
+      path: src/utility/monoid/max_monoid.hpp
+      title: "max_monoid (\u6700\u5927\u5024\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/min.hpp
-      title: "min\u30E2\u30CE\u30A4\u30C9"
+      path: src/utility/monoid/min_monoid.hpp
+      title: "min_monoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/range_add.hpp
-      title: "\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9"
+      path: src/utility/monoid/range_add_monoid.hpp
+      title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/xor.hpp
-      title: "\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9"
+      path: src/utility/monoid/xor_monoid.hpp
+      title: "xor_monoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9\
+        )"
   - name: src/utility/semiring
     pages:
     - icon: ':warning:'
@@ -484,14 +485,14 @@ data:
       path: test/rollinghash.test.cpp
       title: test/rollinghash.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segmentTree-AOJRSQ.test.cpp
-      title: test/segmentTree-AOJRSQ.test.cpp
+      path: test/segment_tree-AOJRSQ.test.cpp
+      title: test/segment_tree-AOJRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segmentTree-AOJRmQ.test.cpp
-      title: test/segmentTree-AOJRmQ.test.cpp
+      path: test/segment_tree-AOJRmQ.test.cpp
+      title: test/segment_tree-AOJRmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segmentTree-RXORQ.test.cpp
-      title: test/segmentTree-RXORQ.test.cpp
+      path: test/segment_tree-RXORQ.test.cpp
+      title: test/segment_tree-RXORQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-bfs1.test.cpp
       title: test/simple-bfs1.test.cpp

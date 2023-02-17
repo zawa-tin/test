@@ -6,8 +6,8 @@ data:
     title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
       \u30A8\u30EA)"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/add.hpp
-    title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
+    path: src/utility/monoid/add_monoid.hpp
+    title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -41,7 +41,7 @@ data:
     \ q, r }) ; j++) {\n\t\t\t\t\tres = monoid::operation(res, dat[j]);\n\t\t\t\t\
     }\n\t\t\t}\n\t\t}\n\t\treturn res;\n\t}\n\n\tstd::vector<T> get_dat() {\n\t\t\
     return dat;\n\t}\n\t\n\tstd::vector<T> get_bucket(std::size_t i) {\n\t\treturn\
-    \ bucket[i];\n\t}\n\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/add.hpp\"\
+    \ bucket[i];\n\t}\n\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/add_monoid.hpp\"\
     \n\nnamespace zawa {\n\ntemplate <class T>\nstruct add_monoid {\n\tusing value_type\
     \ = T;\n\tstatic constexpr T identity{};\n\tstatic T operation(const T& a, const\
     \ T& b) {\n\t\treturn a + b;\n\t}\n};\n\n} // namespace zawa\n#line 5 \"test/sqdecomp-AOJRSQ.test.cpp\"\
@@ -50,18 +50,18 @@ data:
     \ >> x >> y;\n\t\tif (com == 0) {\n\t\t\tsq.action(x - 1, y);\n\t\t}\n\t\tif (com\
     \ == 1) {\n\t\t\tstd::cout << sq.prod(x - 1, y) << std::endl;\n\t\t}\n\t}\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_B\"\
-    \n\n#include \"../src/dataStructure/sqdecomp.hpp\"\n#include \"../src/utility/monoid/add.hpp\"\
+    \n\n#include \"../src/dataStructure/sqdecomp.hpp\"\n#include \"../src/utility/monoid/add_monoid.hpp\"\
     \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::sqdecomp<zawa::add_monoid<int>>\
     \ sq(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint com, x, y; std::cin >> com\
     \ >> x >> y;\n\t\tif (com == 0) {\n\t\t\tsq.action(x - 1, y);\n\t\t}\n\t\tif (com\
     \ == 1) {\n\t\t\tstd::cout << sq.prod(x - 1, y) << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
   - src/dataStructure/sqdecomp.hpp
-  - src/utility/monoid/add.hpp
+  - src/utility/monoid/add_monoid.hpp
   isVerificationFile: true
   path: test/sqdecomp-AOJRSQ.test.cpp
   requiredBy: []
-  timestamp: '2023-02-06 18:33:55+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/sqdecomp-AOJRSQ.test.cpp

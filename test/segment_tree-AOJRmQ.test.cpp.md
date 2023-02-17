@@ -15,17 +15,17 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A
     links:
-    - https://atcoder.jp/contests/agc005/submissions/38952052
-    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
-  bundledCode: "#line 1 \"test/AGC005-B.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n\n#line 2 \"src/utility/monoid/min_monoid.hpp\"\n\n#include <algorithm>\n#include\
-    \ <limits>\n\nnamespace zawa {\n\ntemplate <class T>\nstruct min_monoid {\n\t\
-    using value_type = T;\n\tstatic constexpr T identity = std::numeric_limits<T>::max();\n\
-    \tstatic T operation(const T& a, const T& b) {\n\t\treturn std::min(a, b);\n\t\
-    }\n};\n\n};\n#line 2 \"src/dataStructure/segment_tree.hpp\"\n\n#include <vector>\n\
-    #include <functional>\n\nnamespace zawa {\n\ntemplate <class monoid>\nclass segment_tree\
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A
+  bundledCode: "#line 1 \"test/segment_tree-AOJRmQ.test.cpp\"\n#define PROBLEM \"\
+    https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A\"\n\n#line 2\
+    \ \"src/utility/monoid/min_monoid.hpp\"\n\n#include <algorithm>\n#include <limits>\n\
+    \nnamespace zawa {\n\ntemplate <class T>\nstruct min_monoid {\n\tusing value_type\
+    \ = T;\n\tstatic constexpr T identity = std::numeric_limits<T>::max();\n\tstatic\
+    \ T operation(const T& a, const T& b) {\n\t\treturn std::min(a, b);\n\t}\n};\n\
+    \n};\n#line 2 \"src/dataStructure/segment_tree.hpp\"\n\n#include <vector>\n#include\
+    \ <functional>\n\nnamespace zawa {\n\ntemplate <class monoid>\nclass segment_tree\
     \ {\nprivate:\n\tusing T = typename monoid::value_type;\n\tstd::size_t N;\n\t\
     std::vector<T> dat;\n\npublic:\n\tsegment_tree() {}\n\tsegment_tree(int _N) :\
     \ N(_N), dat(2 * _N, monoid::identity) {}\n\tsegment_tree(const std::vector<T>&\
@@ -56,42 +56,32 @@ data:
     \ w;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\
     \t\twhile (R <<= 1, w >>= 1) {\n\t\t\tif (r - w >= 0 and f(monoid::operation(dat[R\
     \ - 1], v))) {\n\t\t\t\tv = monoid::operation(dat[--R], v);\n\t\t\t\tr -= w;\n\
-    \t\t\t}\n\t\t}\n\t\treturn r;\n\t}\t\n};\n\n} // namespace zawa\n#line 5 \"test/AGC005-B.test.cpp\"\
-    \n\n#include <iostream>\n#line 9 \"test/AGC005-B.test.cpp\"\n\nint main() {\n\t\
-    // int N; std::cin >> N;\n\t// std::vector a(N, 0);\n\t// for (auto& ai : a) {\n\
-    \t// \tstd::cin >> ai;\n\t// }\n\t// zawa::segment_tree<zawa::min_monoid<int>>\
-    \ seg(a);\n\t// long long ans = 0LL;\n\t// for (int i = 0 ; i < N ; i++) {\n\t\
-    // \tauto f = [&](int p) -> bool {\n\t// \t\treturn p >= a[i];\n\t// \t};\n\t\
-    // \tint l = seg.min_left(i, f), r = seg.max_right(i, f);\n\t// \tans += (long\
-    \ long)(i - l + 1) * (r - i) * a[i];\n\t// }\n\t// std::cout << ans << std::endl;\n\
-    \tstd::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Grand Contest\
-    \ 005 - B Minimum Sum\n * https://atcoder.jp/contests/agc005/submissions/38952052\n\
-    \ */\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+    \t\t\t}\n\t\t}\n\t\treturn r;\n\t}\t\n};\n\n} // namespace zawa\n#line 5 \"test/segment_tree-AOJRmQ.test.cpp\"\
+    \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::segment_tree<zawa::min_monoid<int>>\
+    \ seg(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint com; std::cin >> com;\n\t\
+    \tif (com == 0) {\n\t\t\tint x, y; std::cin >> x >> y;\n\t\t\tseg.set(x, y);\n\
+    \t\t}\n\t\tif (com == 1) {\n\t\t\tint x, y; std::cin >> x >> y;\n\t\t\tstd::cout\
+    \ << seg.prod(x, y + 1) << std::endl;\n\t\t}\n\t}\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A\"\
     \n\n#include \"../src/utility/monoid/min_monoid.hpp\"\n#include \"../src/dataStructure/segment_tree.hpp\"\
-    \n\n#include <iostream>\n#include <vector>\n#include <functional>\n\nint main()\
-    \ {\n\t// int N; std::cin >> N;\n\t// std::vector a(N, 0);\n\t// for (auto& ai\
-    \ : a) {\n\t// \tstd::cin >> ai;\n\t// }\n\t// zawa::segment_tree<zawa::min_monoid<int>>\
-    \ seg(a);\n\t// long long ans = 0LL;\n\t// for (int i = 0 ; i < N ; i++) {\n\t\
-    // \tauto f = [&](int p) -> bool {\n\t// \t\treturn p >= a[i];\n\t// \t};\n\t\
-    // \tint l = seg.min_left(i, f), r = seg.max_right(i, f);\n\t// \tans += (long\
-    \ long)(i - l + 1) * (r - i) * a[i];\n\t// }\n\t// std::cout << ans << std::endl;\n\
-    \tstd::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Grand Contest\
-    \ 005 - B Minimum Sum\n * https://atcoder.jp/contests/agc005/submissions/38952052\n\
-    \ */\n"
+    \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::segment_tree<zawa::min_monoid<int>>\
+    \ seg(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint com; std::cin >> com;\n\t\
+    \tif (com == 0) {\n\t\t\tint x, y; std::cin >> x >> y;\n\t\t\tseg.set(x, y);\n\
+    \t\t}\n\t\tif (com == 1) {\n\t\t\tint x, y; std::cin >> x >> y;\n\t\t\tstd::cout\
+    \ << seg.prod(x, y + 1) << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
   - src/utility/monoid/min_monoid.hpp
   - src/dataStructure/segment_tree.hpp
   isVerificationFile: true
-  path: test/AGC005-B.test.cpp
+  path: test/segment_tree-AOJRmQ.test.cpp
   requiredBy: []
   timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/AGC005-B.test.cpp
+documentation_of: test/segment_tree-AOJRmQ.test.cpp
 layout: document
 redirect_from:
-- /verify/test/AGC005-B.test.cpp
-- /verify/test/AGC005-B.test.cpp.html
-title: test/AGC005-B.test.cpp
+- /verify/test/segment_tree-AOJRmQ.test.cpp
+- /verify/test/segment_tree-AOJRmQ.test.cpp.html
+title: test/segment_tree-AOJRmQ.test.cpp
 ---

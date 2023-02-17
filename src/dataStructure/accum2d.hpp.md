@@ -48,9 +48,9 @@ data:
   timestamp: '2023-01-20 10:34:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC203-E.test.cpp
   - test/accum2d.test.cpp
   - test/ABC278-E.test.cpp
+  - test/ABC203-E.test.cpp
 documentation_of: src/dataStructure/accum2d.hpp
 layout: document
 title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"

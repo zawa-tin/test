@@ -109,9 +109,9 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
+  - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
-  - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
 documentation_of: src/dataStructure/lazy_sqdecomp.hpp
 layout: document
 title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\u5272\

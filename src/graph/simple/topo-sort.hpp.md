@@ -56,8 +56,8 @@ data:
   timestamp: '2023-01-08 01:45:38+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC285D.test.cpp
   - test/simple-toposo.test.cpp
+  - test/ABC285D.test.cpp
 documentation_of: src/graph/simple/topo-sort.hpp
 layout: document
 title: "topo-sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8 simple ver)"

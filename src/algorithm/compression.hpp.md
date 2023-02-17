@@ -42,9 +42,9 @@ data:
   timestamp: '2023-01-16 00:44:12+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC285D.test.cpp
   - test/ARC075-E.test.cpp
   - test/compression.test.cpp
+  - test/ABC285D.test.cpp
 documentation_of: src/algorithm/compression.hpp
 layout: document
 title: "compression (\u5EA7\u6A19\u5727\u7E2E)"

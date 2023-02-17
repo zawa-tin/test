@@ -63,9 +63,9 @@ data:
   timestamp: '2023-01-23 14:32:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC170-D.test.cpp
-  - test/ABC177-E.test.cpp
   - test/ABC254-D.test.cpp
+  - test/ABC177-E.test.cpp
+  - test/ABC170-D.test.cpp
   - test/ABC250.test.cpp
 documentation_of: src/math/linear-sieve.hpp
 layout: document

@@ -6,8 +6,8 @@ data:
     title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
       \u30A8\u30EA)"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/min.hpp
-    title: "min\u30E2\u30CE\u30A4\u30C9"
+    path: src/utility/monoid/min_monoid.hpp
+    title: "min_monoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -41,10 +41,10 @@ data:
     \ q, r }) ; j++) {\n\t\t\t\t\tres = monoid::operation(res, dat[j]);\n\t\t\t\t\
     }\n\t\t\t}\n\t\t}\n\t\treturn res;\n\t}\n\n\tstd::vector<T> get_dat() {\n\t\t\
     return dat;\n\t}\n\t\n\tstd::vector<T> get_bucket(std::size_t i) {\n\t\treturn\
-    \ bucket[i];\n\t}\n\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/min.hpp\"\
-    \n\n#line 4 \"src/utility/monoid/min.hpp\"\n#include <limits>\n\nnamespace zawa\
-    \ {\n\ntemplate <class T>\nstruct min_monoid {\n\tusing value_type = T;\n\tstatic\
-    \ constexpr T identity = std::numeric_limits<T>::max();\n\tstatic T operation(const\
+    \ bucket[i];\n\t}\n\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/min_monoid.hpp\"\
+    \n\n#line 4 \"src/utility/monoid/min_monoid.hpp\"\n#include <limits>\n\nnamespace\
+    \ zawa {\n\ntemplate <class T>\nstruct min_monoid {\n\tusing value_type = T;\n\
+    \tstatic constexpr T identity = std::numeric_limits<T>::max();\n\tstatic T operation(const\
     \ T& a, const T& b) {\n\t\treturn std::min(a, b);\n\t}\n};\n\n};\n#line 5 \"test/sqdecomp-AOJRmQ.test.cpp\"\
     \n\n#include <iostream>\n#line 8 \"test/sqdecomp-AOJRmQ.test.cpp\"\n\nint main()\
     \ {\n\tint n, q; std::cin >> n >> q;\n\tstd::vector as(n, (int)((1LL << 31) -\
@@ -53,7 +53,7 @@ data:
     \ 0) {\n\t\t\tas[x] = y;\n\t\t\tsq.update(x, as[x]);\n\t\t}\n\t\tif (com == 1)\
     \ {\n\t\t\tstd::cout << sq.prod(x, y + 1) << std::endl;\n\t\t}\n\t}\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_A\"\
-    \n\n#include \"../src/dataStructure/sqdecomp.hpp\"\n#include \"../src/utility/monoid/min.hpp\"\
+    \n\n#include \"../src/dataStructure/sqdecomp.hpp\"\n#include \"../src/utility/monoid/min_monoid.hpp\"\
     \n\n#include <iostream>\n#include <vector>\n\nint main() {\n\tint n, q; std::cin\
     \ >> n >> q;\n\tstd::vector as(n, (int)((1LL << 31) - 1));\n\tzawa::sqdecomp<zawa::min_monoid<int>>\
     \ sq(as);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint com, x, y; std::cin >> com\
@@ -62,11 +62,11 @@ data:
     \t\t}\n\t}\n}\n"
   dependsOn:
   - src/dataStructure/sqdecomp.hpp
-  - src/utility/monoid/min.hpp
+  - src/utility/monoid/min_monoid.hpp
   isVerificationFile: true
   path: test/sqdecomp-AOJRmQ.test.cpp
   requiredBy: []
-  timestamp: '2023-02-06 18:33:55+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/sqdecomp-AOJRmQ.test.cpp

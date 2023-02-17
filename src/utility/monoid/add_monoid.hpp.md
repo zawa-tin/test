@@ -10,8 +10,8 @@ data:
     path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/segmentTree-AOJRSQ.test.cpp
-    title: test/segmentTree-AOJRSQ.test.cpp
+    path: test/segment_tree-AOJRSQ.test.cpp
+    title: test/segment_tree-AOJRSQ.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/sqdecomp-AOJRSQ.test.cpp
     title: test/sqdecomp-AOJRSQ.test.cpp
@@ -23,8 +23,8 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/utility/monoid/add.hpp\"\n\nnamespace zawa {\n\ntemplate\
-    \ <class T>\nstruct add_monoid {\n\tusing value_type = T;\n\tstatic constexpr\
+  bundledCode: "#line 2 \"src/utility/monoid/add_monoid.hpp\"\n\nnamespace zawa {\n\
+    \ntemplate <class T>\nstruct add_monoid {\n\tusing value_type = T;\n\tstatic constexpr\
     \ T identity{};\n\tstatic T operation(const T& a, const T& b) {\n\t\treturn a\
     \ + b;\n\t}\n};\n\n} // namespace zawa\n"
   code: "#pragma once\n\nnamespace zawa {\n\ntemplate <class T>\nstruct add_monoid\
@@ -32,19 +32,19 @@ data:
     \ T& a, const T& b) {\n\t\treturn a + b;\n\t}\n};\n\n} // namespace zawa\n"
   dependsOn: []
   isVerificationFile: false
-  path: src/utility/monoid/add.hpp
+  path: src/utility/monoid/add_monoid.hpp
   requiredBy: []
-  timestamp: '2023-02-06 18:33:55+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/sqdecomp-LCRSQ.test.cpp
-  - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
-  - test/segmentTree-AOJRSQ.test.cpp
-  - test/sqdecomp-AOJRSQ.test.cpp
+  - test/segment_tree-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
-documentation_of: src/utility/monoid/add.hpp
+  - test/sqdecomp-AOJRSQ.test.cpp
+  - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+documentation_of: src/utility/monoid/add_monoid.hpp
 layout: document
-title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
+title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
 ---
 
 ## 概要

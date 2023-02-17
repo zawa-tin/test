@@ -14,7 +14,7 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/utility/monoid/range_add.hpp\"\n\n#include <cstddef>\n\
+  bundledCode: "#line 2 \"src/utility/monoid/range_add_monoid.hpp\"\n\n#include <cstddef>\n\
     \nnamespace zawa {\n\ntemplate <class T>\nstruct dat {\n\tT value;\n\tstd::size_t\
     \ size;\n\tconstexpr dat(const T& value = 0, const std::size_t& size = 0ULL) :\
     \ value(value), size(size) {}\n};\n\ntemplate <class T>\nstruct range_add_monoid\
@@ -31,16 +31,16 @@ data:
     \ a.size + b.size);\n\t}\n};\n\n} // namespace zawa\n"
   dependsOn: []
   isVerificationFile: false
-  path: src/utility/monoid/range_add.hpp
+  path: src/utility/monoid/range_add_monoid.hpp
   requiredBy: []
-  timestamp: '2023-02-07 01:01:09+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
-documentation_of: src/utility/monoid/range_add.hpp
+documentation_of: src/utility/monoid/range_add_monoid.hpp
 layout: document
-title: "\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9"
+title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
 ---
 
 ## 概要

@@ -6,11 +6,11 @@ data:
     title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\u5272\
       )"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/add.hpp
-    title: "\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9"
+    path: src/utility/monoid/add_monoid.hpp
+    title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/range_add.hpp
-    title: "\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9"
+    path: src/utility/monoid/range_add_monoid.hpp
+    title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -64,13 +64,13 @@ data:
     \tfor (int j = std::max(l, p) ; j < std::min({ q, r, (int)dat.size() }) ; j++)\
     \ {\n\t\t\t\t\tres = structure::value_monoid::operation(res, dat[j]);\n\t\t\t\t\
     }\n\t\t\t}\n\t\t}\n\t\treturn res;\n\t}\n};\n\n} // namespace zawa\n#line 2 \"\
-    src/utility/monoid/range_add.hpp\"\n\n#include <cstddef>\n\nnamespace zawa {\n\
-    \ntemplate <class T>\nstruct dat {\n\tT value;\n\tstd::size_t size;\n\tconstexpr\
+    src/utility/monoid/range_add_monoid.hpp\"\n\n#include <cstddef>\n\nnamespace zawa\
+    \ {\n\ntemplate <class T>\nstruct dat {\n\tT value;\n\tstd::size_t size;\n\tconstexpr\
     \ dat(const T& value = 0, const std::size_t& size = 0ULL) : value(value), size(size)\
     \ {}\n};\n\ntemplate <class T>\nstruct range_add_monoid {\n\tusing value_type\
     \ = dat<T>;\n\tstatic constexpr value_type identity{};\n\tstatic value_type operation(const\
     \ value_type& a, const value_type& b) {\n\t\treturn value_type(a.value + b.value,\
-    \ a.size + b.size);\n\t}\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/add.hpp\"\
+    \ a.size + b.size);\n\t}\n};\n\n} // namespace zawa\n#line 2 \"src/utility/monoid/add_monoid.hpp\"\
     \n\nnamespace zawa {\n\ntemplate <class T>\nstruct add_monoid {\n\tusing value_type\
     \ = T;\n\tstatic constexpr T identity{};\n\tstatic T operation(const T& a, const\
     \ T& b) {\n\t\treturn a + b;\n\t}\n};\n\n} // namespace zawa\n#line 6 \"test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp\"\
@@ -87,27 +87,27 @@ data:
     \ (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\t\t\tstd::cout << sq.prod(s\
     \ - 1, t).value << std::endl;\n\t\t}\n\t}\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_G\"\
-    \n\n#include \"../src/dataStructure/lazy_sqdecomp.hpp\"\n#include \"../src/utility/monoid/range_add.hpp\"\
-    \n#include \"../src/utility/monoid/add.hpp\"\n\nstruct add_action {\n\tusing value_monoid\
-    \ = zawa::range_add_monoid<long long>;\n\tusing operator_monoid = zawa::add_monoid<long\
-    \ long>;\n\tstatic value_monoid::value_type mapping(const value_monoid::value_type&\
-    \ a, const operator_monoid::value_type& b) {\n\t\treturn value_monoid::value_type(a.value\
-    \ + a.size * b, a.size);\n\t}\n};\n\n#include <iostream>\n#include <vector>\n\n\
-    int main() {\n\tstd::cin.tie(nullptr);\n\tstd::ios::sync_with_stdio(false);\n\t\
-    int N, Q; std::cin >> N >> Q;\n\tzawa::lazy_sqdecomp<add_action> sq(std::vector(N,\
-    \ add_action::value_monoid::value_type(0LL, 1ULL)));\n\tfor (int _ = 0 ; _ < Q\
-    \ ; _++) {\n\t\tint type; std::cin >> type;\n\t\tif (type == 0) {\n\t\t\tint s,\
-    \ t, x; std::cin >> s >> t >> x;\n\t\t\tsq.update(s - 1, t, x);\n\t\t}\n\t\tif\
-    \ (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\t\t\tstd::cout << sq.prod(s\
-    \ - 1, t).value << std::endl;\n\t\t}\n\t}\n}\n"
+    \n\n#include \"../src/dataStructure/lazy_sqdecomp.hpp\"\n#include \"../src/utility/monoid/range_add_monoid.hpp\"\
+    \n#include \"../src/utility/monoid/add_monoid.hpp\"\n\nstruct add_action {\n\t\
+    using value_monoid = zawa::range_add_monoid<long long>;\n\tusing operator_monoid\
+    \ = zawa::add_monoid<long long>;\n\tstatic value_monoid::value_type mapping(const\
+    \ value_monoid::value_type& a, const operator_monoid::value_type& b) {\n\t\treturn\
+    \ value_monoid::value_type(a.value + a.size * b, a.size);\n\t}\n};\n\n#include\
+    \ <iostream>\n#include <vector>\n\nint main() {\n\tstd::cin.tie(nullptr);\n\t\
+    std::ios::sync_with_stdio(false);\n\tint N, Q; std::cin >> N >> Q;\n\tzawa::lazy_sqdecomp<add_action>\
+    \ sq(std::vector(N, add_action::value_monoid::value_type(0LL, 1ULL)));\n\tfor\
+    \ (int _ = 0 ; _ < Q ; _++) {\n\t\tint type; std::cin >> type;\n\t\tif (type ==\
+    \ 0) {\n\t\t\tint s, t, x; std::cin >> s >> t >> x;\n\t\t\tsq.update(s - 1, t,\
+    \ x);\n\t\t}\n\t\tif (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\t\t\t\
+    std::cout << sq.prod(s - 1, t).value << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
   - src/dataStructure/lazy_sqdecomp.hpp
-  - src/utility/monoid/range_add.hpp
-  - src/utility/monoid/add.hpp
+  - src/utility/monoid/range_add_monoid.hpp
+  - src/utility/monoid/add_monoid.hpp
   isVerificationFile: true
   path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
   requiredBy: []
-  timestamp: '2023-02-07 01:01:09+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp

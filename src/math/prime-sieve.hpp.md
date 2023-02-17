@@ -45,13 +45,13 @@ data:
   isVerificationFile: false
   path: src/math/prime-sieve.hpp
   requiredBy:
-  - src/math/mobius-function.hpp
   - src/math/gcd-convolution.hpp
+  - src/math/mobius-function.hpp
   timestamp: '2023-01-23 10:31:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/mobius-function.test.cpp
   - test/gcd-convolution.test.cpp
+  - test/mobius-function.test.cpp
   - test/prime-sieve.test.cpp
 documentation_of: src/math/prime-sieve.hpp
 layout: document

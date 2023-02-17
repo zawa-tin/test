@@ -6,8 +6,8 @@ data:
     title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\u5272\
       )"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/min.hpp
-    title: "min\u30E2\u30CE\u30A4\u30C9"
+    path: src/utility/monoid/min_monoid.hpp
+    title: "min_monoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -20,7 +20,7 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
   bundledCode: "#line 1 \"test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\"\n\n#line\
-    \ 2 \"src/utility/monoid/min.hpp\"\n\n#include <algorithm>\n#include <limits>\n\
+    \ 2 \"src/utility/monoid/min_monoid.hpp\"\n\n#include <algorithm>\n#include <limits>\n\
     \nnamespace zawa {\n\ntemplate <class T>\nstruct min_monoid {\n\tusing value_type\
     \ = T;\n\tstatic constexpr T identity = std::numeric_limits<T>::max();\n\tstatic\
     \ T operation(const T& a, const T& b) {\n\t\treturn std::min(a, b);\n\t}\n};\n\
@@ -78,25 +78,25 @@ data:
     \ 1, x);\n\t\t}\n\t\tif (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\t\
     \t\tstd::cout << sq.prod(s, t + 1) << std::endl;\n\t\t}\n\t}\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\"\
-    \n\n#include \"../src/utility/monoid/min.hpp\"\n\nstruct o_m {\n\tusing value_type\
-    \ = int;\n\tstatic constexpr value_type identity = -1;\n\tstatic value_type operation(const\
-    \ value_type& a, const value_type& b) {\n\t\treturn b;\n\t}\n};\n\nstruct action\
-    \ {\n\tusing value_monoid = zawa::min_monoid<int>;\n\tusing operator_monoid =\
-    \ o_m;\n\tstatic const value_monoid::value_type mapping(const value_monoid::value_type&\
-    \ a, const operator_monoid::value_type& b) {\n\t\treturn (value_monoid::value_type)b;\n\
-    \t}\n};\n\n#include \"../src/dataStructure/lazy_sqdecomp.hpp\"\n\n#include <iostream>\n\
-    \nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::lazy_sqdecomp<action>\
+    \n\n#include \"../src/utility/monoid/min_monoid.hpp\"\n\nstruct o_m {\n\tusing\
+    \ value_type = int;\n\tstatic constexpr value_type identity = -1;\n\tstatic value_type\
+    \ operation(const value_type& a, const value_type& b) {\n\t\treturn b;\n\t}\n\
+    };\n\nstruct action {\n\tusing value_monoid = zawa::min_monoid<int>;\n\tusing\
+    \ operator_monoid = o_m;\n\tstatic const value_monoid::value_type mapping(const\
+    \ value_monoid::value_type& a, const operator_monoid::value_type& b) {\n\t\treturn\
+    \ (value_monoid::value_type)b;\n\t}\n};\n\n#include \"../src/dataStructure/lazy_sqdecomp.hpp\"\
+    \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::lazy_sqdecomp<action>\
     \ sq(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint type; std::cin >> type;\n\
     \t\tif (type == 0) {\n\t\t\tint s, t, x; std::cin >> s >> t >> x;\n\t\t\tsq.update(s,\
     \ t + 1, x);\n\t\t}\n\t\tif (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\
     \t\t\tstd::cout << sq.prod(s, t + 1) << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
-  - src/utility/monoid/min.hpp
+  - src/utility/monoid/min_monoid.hpp
   - src/dataStructure/lazy_sqdecomp.hpp
   isVerificationFile: true
   path: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
   requiredBy: []
-  timestamp: '2023-02-06 23:27:59+09:00'
+  timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp

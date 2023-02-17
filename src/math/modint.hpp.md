@@ -71,8 +71,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/aoj_dpl_5_a.test.cpp
-  - test/matrix.test.cpp
   - test/gcd-convolution.test.cpp
+  - test/matrix.test.cpp
   - test/EDPC-R.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document
