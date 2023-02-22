@@ -1,3 +1,4 @@
+
 ---
 title: monotone_CHT (追加直線の傾きが単調であることを仮定したCHT)
 documentation_of: //src/dataStructure/monotone_CHT.hpp
@@ -81,7 +82,7 @@ $S$ に $f(x)\ =\ ax + b$ を追加します
 
 **制約**
 
-全ての $(a'x\ +\ b')\in S$ について $a\ \le\ a'$ 、または $a\ \ge\ a'$ のどちらかが成り立つこと
+**全ての $(a'x\ +\ b')\in S$ について $a\ \le\ a'$ が成り立つ、または全ての $(a'x\ +\ b')\in S$ について $a\ \ge\ a'$ が成り立つ。**
 
 **計算量**: $O(1)$ (ならし計算量? 作った当時の自分はよく分かってないです)
 
@@ -119,6 +120,8 @@ $\displaystyle \min_{f\in S} (f(x))$ を得ます
 - `incremental_query`を呼び出していない
 	- どちらかでも満たされない場合、正しい値を返すとは限りません
 
+**このメンバはまだ未テストです**
+
 **計算量** : ならし $O(1)$ ?
 
 <br />
@@ -135,5 +138,7 @@ $\displaystyle \min_{f\in S} (f(x))$ を得ます
 	- そうでないと $S\ =\phi$ より最小値が定義できないので`assert`に引っかかって死にます
 - `incremental_query`、`decremental_query`を呼び出していない
 	- 呼び出していると正しい値を返すとは限りません
+
+`ABC289-G`で`incremental_query`ではなく`query`を用いた場合でもACすることを確認しています。
 
 **計算量** : $O(\log \mid S\mid)$
