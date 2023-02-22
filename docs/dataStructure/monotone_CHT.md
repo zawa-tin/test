@@ -1,4 +1,3 @@
-
 ---
 title: monotone_CHT (追加直線の傾きが単調であることを仮定したCHT)
 documentation_of: //src/dataStructure/monotone_CHT.hpp
