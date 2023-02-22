@@ -3,7 +3,8 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/dataStructure/monotone_CHT.hpp
-    title: src/dataStructure/monotone_CHT.hpp
+    title: "monotone_CHT (\u8FFD\u52A0\u76F4\u7DDA\u306E\u50BE\u304D\u304C\u5358\u8ABF\
+      \u3067\u3042\u308B\u3053\u3068\u3092\u4EEE\u5B9A\u3057\u305FCHT)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
