@@ -44,6 +44,10 @@ data:
       title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\
         \u5272)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/monotone_CHT.hpp
+      title: "monotone_CHT (\u8FFD\u52A0\u76F4\u7DDA\u306E\u50BE\u304D\u304C\u5358\
+        \u8ABF\u3067\u3042\u308B\u3053\u3068\u3092\u4EEE\u5B9A\u3057\u305FCHT)"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/persistent-array.hpp
       title: "persistent array (\u5168\u6C38\u7D9A\u914D\u5217)"
     - icon: ':heavy_check_mark:'
@@ -296,6 +300,9 @@ data:
       path: test/ABC289-D.test.cpp
       title: test/ABC289-D.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC289-G.test.cpp
+      title: test/ABC289-G.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/AGC005-B.test.cpp
       title: test/AGC005-B.test.cpp
     - icon: ':heavy_check_mark:'
@@ -331,6 +338,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/EDPC-R.test.cpp
       title: test/EDPC-R.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/EDPC-Z.test.cpp
+      title: test/EDPC-Z.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/Functional_Graph.test.cpp
       title: test/Functional_Graph.test.cpp
