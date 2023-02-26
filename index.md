@@ -110,9 +110,9 @@ data:
       path: src/graph/simple/reachability.hpp
       title: "reachability (\u5230\u9054\u53EF\u80FD\u6027)"
     - icon: ':heavy_check_mark:'
-      path: src/graph/simple/topo-sort.hpp
-      title: "topo-sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8 simple\
-        \ ver)"
+      path: src/graph/simple/topological_sort.hpp
+      title: "topological_sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8\
+        )"
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/wf.hpp
       title: "wf (\u30EF\u30FC\u30B7\u30E3\u30EB\u30D5\u30ED\u30A4\u30C9 simple ver)"
@@ -291,8 +291,8 @@ data:
       path: test/ABC284f.test.cpp
       title: test/ABC284f.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/ABC285D.test.cpp
-      title: test/ABC285D.test.cpp
+      path: test/ABC285-D.test.cpp
+      title: test/ABC285-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC289-B.test.cpp
       title: test/ABC289-B.test.cpp
@@ -308,6 +308,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ALPC-J.test.cpp
       title: test/ALPC-J.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ0519.test.cpp
+      title: test/AOJ0519.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
@@ -519,8 +522,8 @@ data:
       path: test/simple-dijkstra2.test.cpp
       title: test/simple-dijkstra2.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/simple-toposo.test.cpp
-      title: test/simple-toposo.test.cpp
+      path: test/simple-topological_sort.test.cpp
+      title: test/simple-topological_sort.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-wf1.test.cpp
       title: test/simple-wf1.test.cpp

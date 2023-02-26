@@ -4,8 +4,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/ABC285D.test.cpp
-    title: test/ABC285D.test.cpp
+    path: test/ABC285-D.test.cpp
+    title: test/ABC285-D.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/ARC075-E.test.cpp
     title: test/ARC075-E.test.cpp
@@ -43,8 +43,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/ARC075-E.test.cpp
+  - test/ABC285-D.test.cpp
   - test/compression.test.cpp
-  - test/ABC285D.test.cpp
 documentation_of: src/algorithm/compression.hpp
 layout: document
 title: "compression (\u5EA7\u6A19\u5727\u7E2E)"
