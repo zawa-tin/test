@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/graph/simple/topo-sort.hpp"
+#include "../src/graph/simple/topological_sort.hpp"
 #include "../src/algorithm/compression.hpp"
 
 #include <iostream>
@@ -22,11 +22,11 @@ int main() {
 	// for (const auto& [s, t] : ps) {
 	// 	G[comp[s]].emplace_back(comp[t]);
 	// }
-	// std::cout << (zawa::topo_sort(G).ok() ? "Yes" : "No") << std::endl;
+	// std::cout << (zawa::topological_sort(G).ok() ? "Yes" : "No") << std::endl;
 	std::cout << "Hello World" << std::endl;
 }
 
 /*
  * AtCoder Beginner Contest 285 - D Change Usernames
- * https://atcoder.jp/contests/abc285/submissions/38081790
+ * https://atcoder.jp/contests/abc285/submissions/39274306
  */
