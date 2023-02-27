@@ -40,6 +40,10 @@ data:
       title: "fenwick_tree (\u4E00\u70B9\u52A0\u7B97\u3001\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/lazy_segtree.hpp
+      title: "lazy_segtree (\u533A\u9593\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
+        \u30B0\u6728)"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/lazy_sqdecomp.hpp
       title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\
         \u5272)"
@@ -309,6 +313,9 @@ data:
       path: test/ALPC-J.test.cpp
       title: test/ALPC-J.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ALPC-L.test.cpp
+      title: test/ALPC-L.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/AOJ0519.test.cpp
       title: test/AOJ0519.test.cpp
     - icon: ':heavy_check_mark:'
@@ -434,6 +441,18 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+      title: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+      title: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+      title: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+      title: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
       title: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp

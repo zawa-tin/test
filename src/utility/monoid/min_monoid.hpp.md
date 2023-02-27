@@ -7,6 +7,12 @@ data:
     path: test/AGC005-B.test.cpp
     title: test/AGC005-B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+    title: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+    title: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - icon: ':heavy_check_mark:'
@@ -43,6 +49,8 @@ data:
   - test/AGC005-B.test.cpp
   - test/sqdecomp-AOJRmQ.test.cpp
   - test/segment_tree-AOJRmQ.test.cpp
+  - test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+  - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
 documentation_of: src/utility/monoid/min_monoid.hpp
 layout: document

@@ -4,6 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+    title: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+    title: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
   - icon: ':heavy_check_mark:'
@@ -37,6 +43,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
+  - test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+  - test/lazy_segtree-AOJ-RUQRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
 documentation_of: src/utility/monoid/range_add_monoid.hpp
 layout: document

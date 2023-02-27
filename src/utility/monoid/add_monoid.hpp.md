@@ -4,6 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+    title: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+    title: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
     title: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
   - icon: ':heavy_check_mark:'
@@ -40,8 +46,10 @@ data:
   - test/sqdecomp-LCRSQ.test.cpp
   - test/segment_tree-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
+  - test/lazy_segtree-AOJ-RAQRSQ.test.cpp
   - test/sqdecomp-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+  - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
 documentation_of: src/utility/monoid/add_monoid.hpp
 layout: document
 title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
