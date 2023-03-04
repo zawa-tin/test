@@ -144,9 +144,8 @@ data:
         \u7CFB\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\u63DB\
         )"
     - icon: ':heavy_check_mark:'
-      path: src/math/linear-sieve.hpp
-      title: "linear-sieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3\
-        /\u7D04\u6570\u5217\u6319)"
+      path: src/math/linearSieve.hpp
+      title: src/math/linearSieve.hpp
     - icon: ':heavy_check_mark:'
       path: src/math/matrix.hpp
       title: "matrix (\u884C\u5217)"
@@ -279,8 +278,8 @@ data:
       path: test/ABC236-E.test.cpp
       title: test/ABC236-E.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/ABC250.test.cpp
-      title: test/ABC250.test.cpp
+      path: test/ABC250-D.test.cpp
+      title: test/ABC250-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC254-D.test.cpp
       title: test/ABC254-D.test.cpp
@@ -311,6 +310,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC289-G.test.cpp
       title: test/ABC289-G.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC292-C.test.cpp
+      title: test/ABC292-C.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AGC005-B.test.cpp
       title: test/AGC005-B.test.cpp

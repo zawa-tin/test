@@ -13,9 +13,9 @@ data:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
     links:
-    - https://atcoder.jp/contests/abc254/submissions/39448339
+    - https://atcoder.jp/contests/abc292/submissions/39448436
     - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
-  bundledCode: "#line 1 \"test/ABC254-D.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
+  bundledCode: "#line 1 \"test/ABC292-C.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
     \n\n#line 2 \"src/math/linearSieve.hpp\"\n\n#include <vector>\n#include <utility>\n\
     \nnamespace zawa {\n\nclass linearSieve {\nprivate:\n\tstd::vector<int> divs;\n\
     \tstd::vector<int> primes;\n\npublic:\n\tlinearSieve() {}\n\tlinearSieve(std::size_t\
@@ -34,42 +34,33 @@ data:
     }\n\n\tstd::vector<int> enumPrime() {\n\t\treturn primes;\n\t}\n\n\tint numPrime()\
     \ {\n\t\treturn (int)primes.size();\n\t}\n\n\tbool isPrime(int x) {\n\t\treturn\
     \ (x != 0 and x != 1 and divs[x] == x);\n\t}\n\n\tint operator[](int x) {\n\t\t\
-    return divs[x];\n\t}\n};\n\n}\n#line 4 \"test/ABC254-D.test.cpp\"\n\n#include\
+    return divs[x];\n\t}\n};\n\n}\n#line 4 \"test/ABC292-C.test.cpp\"\n\n#include\
     \ <iostream>\n\nint main() {\n\t// int N; std::cin >> N;\n\t// zawa::linearSieve\
-    \ siv(N);\n\t// std::vector<int> dp(N + 1, 1);\n\t// for (int i = 2 ; i < N +\
-    \ 1 ; i++) {\n\t// \tint lpf = siv[i];\n\t// \tdp[i] = dp[i / lpf];\n\t// \tif\
-    \ (dp[i] % lpf == 0) {\n\t// \t\tdp[i] /= lpf;\n\t// \t}\n\t// \telse {\n\t//\
-    \ \t\tdp[i] *= lpf;\n\t// \t}\n\t// }\n\t// std::vector bucket(N + 1, 0);\n\t\
-    // for (int i = 1 ; i < N + 1 ; i++) {\n\t// \tbucket[dp[i]]++;\n\t// }\n\t//\
-    \ long long ans = 0LL;\n\t// for (int i = 0 ; i < N + 1 ; i++) {\n\t// \tans +=\
-    \ (long long)bucket[i] * bucket[i];\n\t// }\n\t// std::cout << ans << std::endl;\n\
-    \t\n\tstd::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Beginner\
-    \ Contest 254 - D Together Square\n * https://atcoder.jp/contests/abc254/submissions/39448339\n\
+    \ siv(N);\n\t// long long ans = 0;\n\t// for (int i = 1 ; i < N ; i++) {\n\t//\
+    \ \tans += siv.divisor(i).size() * siv.divisor(N - i).size();\n\t// }\n\t// std::cout\
+    \ << ans << std::endl;\n\n\tstd::cout << \"Hello World\" << std::endl;\n}\n\n\
+    /*\n * AtCoder Beginner Contest 292 C - Four Variables\n * https://atcoder.jp/contests/abc292/submissions/39448436\n\
     \ */\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
     \n\n#include \"../src/math/linearSieve.hpp\"\n\n#include <iostream>\n\nint main()\
-    \ {\n\t// int N; std::cin >> N;\n\t// zawa::linearSieve siv(N);\n\t// std::vector<int>\
-    \ dp(N + 1, 1);\n\t// for (int i = 2 ; i < N + 1 ; i++) {\n\t// \tint lpf = siv[i];\n\
-    \t// \tdp[i] = dp[i / lpf];\n\t// \tif (dp[i] % lpf == 0) {\n\t// \t\tdp[i] /=\
-    \ lpf;\n\t// \t}\n\t// \telse {\n\t// \t\tdp[i] *= lpf;\n\t// \t}\n\t// }\n\t\
-    // std::vector bucket(N + 1, 0);\n\t// for (int i = 1 ; i < N + 1 ; i++) {\n\t\
-    // \tbucket[dp[i]]++;\n\t// }\n\t// long long ans = 0LL;\n\t// for (int i = 0\
-    \ ; i < N + 1 ; i++) {\n\t// \tans += (long long)bucket[i] * bucket[i];\n\t//\
-    \ }\n\t// std::cout << ans << std::endl;\n\t\n\tstd::cout << \"Hello World\" <<\
-    \ std::endl;\n}\n\n/*\n * AtCoder Beginner Contest 254 - D Together Square\n *\
-    \ https://atcoder.jp/contests/abc254/submissions/39448339\n */\n"
+    \ {\n\t// int N; std::cin >> N;\n\t// zawa::linearSieve siv(N);\n\t// long long\
+    \ ans = 0;\n\t// for (int i = 1 ; i < N ; i++) {\n\t// \tans += siv.divisor(i).size()\
+    \ * siv.divisor(N - i).size();\n\t// }\n\t// std::cout << ans << std::endl;\n\n\
+    \tstd::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Beginner Contest\
+    \ 292 C - Four Variables\n * https://atcoder.jp/contests/abc292/submissions/39448436\n\
+    \ */\n"
   dependsOn:
   - src/math/linearSieve.hpp
   isVerificationFile: true
-  path: test/ABC254-D.test.cpp
+  path: test/ABC292-C.test.cpp
   requiredBy: []
-  timestamp: '2023-03-04 23:54:34+09:00'
+  timestamp: '2023-03-04 23:58:02+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/ABC254-D.test.cpp
+documentation_of: test/ABC292-C.test.cpp
 layout: document
 redirect_from:
-- /verify/test/ABC254-D.test.cpp
-- /verify/test/ABC254-D.test.cpp.html
-title: test/ABC254-D.test.cpp
+- /verify/test/ABC292-C.test.cpp
+- /verify/test/ABC292-C.test.cpp.html
+title: test/ABC292-C.test.cpp
 ---
