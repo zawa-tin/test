@@ -1,6 +1,6 @@
 ---
 title: linear-sieve (線形篩・素因数分解/約数列挙)
-documentation_of: //src/math/linear-sieve.hpp
+documentation_of: //src/math/linearSieve.hpp
 ---
 
 ## 概要
