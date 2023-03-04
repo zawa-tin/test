@@ -1,5 +1,5 @@
 ---
-title: linear-sieve (線形篩・素因数分解/約数列挙)
+title: linearSieve (線形篩・素因数分解/約数列挙)
 documentation_of: //src/math/linearSieve.hpp
 ---
 
