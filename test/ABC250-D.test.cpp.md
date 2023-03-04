@@ -3,7 +3,8 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: src/math/linearSieve.hpp
-    title: src/math/linearSieve.hpp
+    title: "linear-sieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3/\u7D04\
+      \u6570\u5217\u6319)"
   - icon: ':heavy_check_mark:'
     path: src/template/binary-search.hpp
     title: "binary-seach (\u6574\u6570\u4E8C\u5206\u63A2\u7D22)"
