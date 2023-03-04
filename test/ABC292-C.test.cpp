@@ -1,3 +1,5 @@
+#define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
+
 #include "../src/math/linearSieve.hpp"
 
 #include <iostream>
@@ -10,6 +12,8 @@ int main() {
 	// 	ans += siv.divisor(i).size() * siv.divisor(N - i).size();
 	// }
 	// std::cout << ans << std::endl;
+
+	std::cout << "Hello World" << std::endl;
 }
 
 /*
