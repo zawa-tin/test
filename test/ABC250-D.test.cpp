@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/math/linear-sieve.hpp"
+#include "../src/math/linearSieve.hpp"
 #include "../src/template/binary-search.hpp"
 
 #include <iostream>
@@ -8,7 +8,7 @@
 #include <functional>
 
 int main() {
-	// std::vector primes = zawa::linear_sieve(1000000).enumprime();
+	// std::vector primes = zawa::linearSieve(1000000).enumPrime();
 	// long long N; std::cin >> N;
 	// std::size_t ans = 0;
 	// for (std::size_t i = 0 ; i < primes.size() ; i++) {
@@ -34,5 +34,5 @@ int main() {
 
 /*
  * AtCoder Beginner Contest 250 - D 250-like Number
- * https://atcoder.jp/contests/abc250/submissions/38277527
+ * https://atcoder.jp/contests/abc250/submissions/39448263
  */

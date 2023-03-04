@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/math/linear-sieve.hpp"
+#include "../src/math/linearSieve.hpp"
 
 #include <iostream>
 #include <vector>
@@ -15,7 +15,7 @@ int main() {
 	// 	std::cin >> a;
 	// }
 	// int setwise_gcd = A.front();
-	// zawa::linear_sieve siv(*std::max_element(A.begin(), A.end()));
+	// zawa::linearSieve siv(*std::max_element(A.begin(), A.end()));
 	// std::set<int> st;
 	// bool pairwise = true;
 	// for (const auto& a : A) {
@@ -40,5 +40,5 @@ int main() {
 
 /*
  * AtCoder Beginner Contest 177 - E Coprime
- * https://atcoder.jp/contests/abc177/submissions/38277157
+ * https://atcoder.jp/contests/abc177/submissions/39448187
  */

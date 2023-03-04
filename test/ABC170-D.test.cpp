@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/math/linear-sieve.hpp"
+#include "../src/math/linearSieve.hpp"
 
 #include <iostream>
 #include <vector>
@@ -16,7 +16,7 @@ int main() {
 	// 	mp[a]++;
 	// }
 	// std::sort(A.begin(), A.end());	
-	// zawa::linear_sieve siv(A.back());
+	// zawa::linearSieve siv(A.back());
 	// int ans = 0;
 	// for (auto a : A) {
 	// 	if (mp[a] == 1) {
@@ -36,5 +36,5 @@ int main() {
 
 /*
  * AtCoder Beginner Contest 170 - D Not Divisible
- * https://atcoder.jp/contests/abc170/submissions/38277126
+ * https://atcoder.jp/contests/abc170/submissions/39448056
  */

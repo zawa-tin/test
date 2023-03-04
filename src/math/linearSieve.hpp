@@ -5,14 +5,14 @@
 
 namespace zawa {
 
-class linear_sieve {
+class linearSieve {
 private:
 	std::vector<int> divs;
 	std::vector<int> primes;
 
 public:
-	linear_sieve() {}
-	linear_sieve(std::size_t n) : divs(n + 1, 1) {
+	linearSieve() {}
+	linearSieve(std::size_t n) : divs(n + 1, 1) {
 		for (std::size_t i = 2 ; i < n + 1 ; i++) {
 			if (divs[i] == 1) {
 				divs[i] = i;
@@ -54,11 +54,15 @@ public:
 		return res;
 	}
 
-	std::vector<int> enumprime() {
+	std::vector<int> enumPrime() {
 		return primes;
 	}
 
-	bool isprime(int x) {
+	int numPrime() {
+		return (int)primes.size();
+	}
+
+	bool isPrime(int x) {
 		return (x != 0 and x != 1 and divs[x] == x);
 	}
 
