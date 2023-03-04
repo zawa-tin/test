@@ -4,6 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC199-D.test.cpp
+    title: test/ABC199-D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ABC282-D.test.cpp
+    title: test/ABC282-D.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/ABC284-C.test.cpp
     title: test/ABC284-C.test.cpp
   - icon: ':heavy_check_mark:'
@@ -70,8 +76,10 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/ABC289-B.test.cpp
+  - test/ABC199-D.test.cpp
   - test/connectedComponents1.test.cpp
   - test/ABC284-C.test.cpp
+  - test/ABC282-D.test.cpp
 documentation_of: src/graph/simple/connectedComponents.hpp
 layout: document
 title: "connectedComponents (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"

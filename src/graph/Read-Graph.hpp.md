@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC282-D.test.cpp
+    title: test/ABC282-D.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/ABC284-C.test.cpp
     title: test/ABC284-C.test.cpp
   - icon: ':heavy_check_mark:'
@@ -49,6 +52,7 @@ data:
   - test/simple-bfs2.test.cpp
   - test/Read-Graph.test.cpp
   - test/ABC284-C.test.cpp
+  - test/ABC282-D.test.cpp
 documentation_of: src/graph/Read-Graph.hpp
 layout: document
 title: "Read-Graph (\u30B0\u30E9\u30D5\u5165\u529B)"

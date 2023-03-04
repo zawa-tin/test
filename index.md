@@ -101,9 +101,8 @@ data:
       path: src/graph/simple/bfs.hpp
       title: bfs (simple ver)
     - icon: ':heavy_check_mark:'
-      path: src/graph/simple/bipartite-judge.hpp
-      title: "bipartite graph judge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A simple\
-        \ ver\uFF09"
+      path: src/graph/simple/bipartiteJudge.hpp
+      title: "bipartiteJudge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A)"
     - icon: ':heavy_check_mark:'
       path: src/graph/simple/connectedComponents.hpp
       title: "connectedComponents (\u9023\u7D50\u6210\u5206\u5206\u89E3 simple ver)"
@@ -271,6 +270,9 @@ data:
       path: test/ABC186-F.test.cpp
       title: test/ABC186-F.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC199-D.test.cpp
+      title: test/ABC199-D.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC203-E.test.cpp
       title: test/ABC203-E.test.cpp
     - icon: ':heavy_check_mark:'
@@ -288,6 +290,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC278-E.test.cpp
       title: test/ABC278-E.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC282-D.test.cpp
+      title: test/ABC282-D.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC284-C.test.cpp
       title: test/ABC284-C.test.cpp
@@ -372,9 +377,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/Read-Weighted-Graph.test.cpp
       title: test/Read-Weighted-Graph.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/abc282_d.test.cpp
-      title: test/abc282_d.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/accum1d.test.cpp
       title: test/accum1d.test.cpp
