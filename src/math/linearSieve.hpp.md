@@ -75,7 +75,7 @@ data:
   - test/ABC292-C.test.cpp
 documentation_of: src/math/linearSieve.hpp
 layout: document
-title: "linear-sieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3/\u7D04\
+title: "linearSieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3/\u7D04\
   \u6570\u5217\u6319)"
 ---
 
