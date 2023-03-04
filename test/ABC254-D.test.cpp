@@ -1,12 +1,12 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/math/linear-sieve.hpp"
+#include "../src/math/linearSieve.hpp"
 
 #include <iostream>
 
 int main() {
 	// int N; std::cin >> N;
-	// zawa::linear_sieve siv(N);
+	// zawa::linearSieve siv(N);
 	// std::vector<int> dp(N + 1, 1);
 	// for (int i = 2 ; i < N + 1 ; i++) {
 	// 	int lpf = siv[i];
@@ -33,5 +33,5 @@ int main() {
 
 /*
  * AtCoder Beginner Contest 254 - D Together Square
- * https://atcoder.jp/contests/abc254/submissions/38277309
+ * https://atcoder.jp/contests/abc254/submissions/39448339
  */
