@@ -4,13 +4,13 @@
 
 namespace zawa {
 
-class prime_sieve {
+class primeSieve {
 private:
 	std::vector<bool> sieve;
 
 public:
-	prime_sieve() {}
-	prime_sieve(std::size_t n) : sieve(n + 1, true) {
+	primeSieve() {}
+	primeSieve(std::size_t n) : sieve(n + 1, true) {
 		if (n >= 0) {
 			sieve[0] = false;
 		}
@@ -19,14 +19,19 @@ public:
 		}
 		for (std::size_t i = 2 ; i <= n ; i++) {
 			if (sieve[i]) {
-				for (std::size_t j = i * i ; j <= n ; j += i) {
+				for (std::size_t j = i * 2 ; j <= n ; j += i) {
 					sieve[j] = false;
 				}
 			}
 		}
 	}
-	bool operator[](std::size_t i) {
+
+	inline bool operator[](std::size_t i) const {
 		return sieve[i];
+	}
+
+	inline std::size_t size() const {
+		return sieve.size();
 	}
 };
 

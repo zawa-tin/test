@@ -1,6 +1,6 @@
 #pragma once
 
-#include "./prime-sieve.hpp"
+#include "./primeSieve.hpp"
 
 #include <vector>
 #include <algorithm>
@@ -8,14 +8,14 @@
 namespace zawa {
 
 template <typename T>
-class gcd_convolution {
+class gcdConvolution {
 private: 
-	prime_sieve sieve;
+	primeSieve sieve;
 
 public:
-	gcd_convolution(std::size_t n) : sieve(n) {}
+	gcdConvolution(std::size_t n) : sieve(n) {}
 	
-	std::vector<T> fast_zeta_transform(const std::vector<T>& f) {
+	std::vector<T> fastZetaTransform(const std::vector<T>& f) const {
 		std::vector<T> res(f.begin(), f.end());
 		for (int i = 1 ; i <= (int)(f.size()) ; i++) {
 			if (sieve[i]) {
@@ -27,7 +27,7 @@ public:
 		return res;
 	}
 
-	std::vector<T> fast_mobius_transform(const std::vector<T>& F) {
+	std::vector<T> fastMobiusTransform(const std::vector<T>& F) const {
 		std::vector<T> res(F.begin(), F.end());
 		for (int i = 1 ; i <= (int)(F.size()) ; i++) {
 			if (sieve[i]) {
@@ -39,14 +39,14 @@ public:
 		return res;
 	}
 
-	std::vector<T> convolution(const std::vector<T>& f, const std::vector<T>& g) {
-		std::vector<T> F = fast_zeta_transform(f);
-		std::vector<T> G = fast_zeta_transform(g);
+	std::vector<T> convolution(const std::vector<T>& f, const std::vector<T>& g) const {
+		std::vector<T> F = fastZetaTransform(f);
+		std::vector<T> G = fastZetaTransform(g);
 		std::vector<T> H(std::min(F.size(), G.size()));
 		for (int i = 0 ; i < (int)(H.size()) ; i++) {
 			H[i] = F[i] * G[i];
 		}
-		return fast_mobius_transform(H);
+		return fastMobiusTransform(H);
 	}
 };
 
