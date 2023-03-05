@@ -4,6 +4,12 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/ABC179-F.test.cpp
+    title: test/ABC179-F.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ABC291-F.test.cpp
+    title: test/ABC291-F.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/AGC005-B.test.cpp
     title: test/AGC005-B.test.cpp
   - icon: ':heavy_check_mark:'
@@ -45,11 +51,13 @@ data:
   timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC291-F.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - test/AGC005-B.test.cpp
   - test/sqdecomp-AOJRmQ.test.cpp
   - test/segment_tree-AOJRmQ.test.cpp
   - test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+  - test/ABC179-F.test.cpp
   - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
 documentation_of: src/utility/monoid/min_monoid.hpp

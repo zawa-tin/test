@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/ALPC-J.test.cpp
     title: test/ALPC-J.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/practice90-037.test.cpp
+    title: test/practice90-037.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -27,6 +30,7 @@ data:
   timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/practice90-037.test.cpp
   - test/ALPC-J.test.cpp
 documentation_of: src/utility/monoid/max_monoid.hpp
 layout: document

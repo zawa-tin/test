@@ -30,6 +30,10 @@ data:
       path: src/dataStructure/accum2d.hpp
       title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
     - icon: ':heavy_check_mark:'
+      path: src/dataStructure/dualSegmentTree.hpp
+      title: "dualSegmentTree (\u533A\u9593\u66F4\u65B0\u4E00\u70B9\u53D6\u5F97\u30BB\
+        \u30B0\u6728)"
+    - icon: ':heavy_check_mark:'
       path: src/dataStructure/fenwick_multiset.hpp
       title: "fenwick_multiset (\u52D5\u7684\u591A\u91CD\u96C6\u5408)"
     - icon: ':heavy_check_mark:'
@@ -265,6 +269,9 @@ data:
       path: test/ABC177-E.test.cpp
       title: test/ABC177-E.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC179-F.test.cpp
+      title: test/ABC179-F.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC185-E.test.cpp
       title: test/ABC185-E.test.cpp
     - icon: ':heavy_check_mark:'
@@ -312,6 +319,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC289-G.test.cpp
       title: test/ABC289-G.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC291-F.test.cpp
+      title: test/ABC291-F.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC292-C.test.cpp
       title: test/ABC292-C.test.cpp
@@ -424,6 +434,9 @@ data:
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/dualSegmentTree-AOJRAQ.test.cpp
+      title: test/dualSegmentTree-AOJRAQ.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/fenwick_tree.test.cpp
       title: test/fenwick_tree.test.cpp
     - icon: ':heavy_check_mark:'
@@ -513,6 +526,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/practice90-037.test.cpp
+      title: test/practice90-037.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/primeSieve.test.cpp
       title: test/primeSieve.test.cpp

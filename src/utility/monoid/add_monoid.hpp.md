@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/dualSegmentTree-AOJRAQ.test.cpp
+    title: test/dualSegmentTree-AOJRAQ.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
     title: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
   - icon: ':heavy_check_mark:'
@@ -47,6 +50,7 @@ data:
   - test/segment_tree-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+  - test/dualSegmentTree-AOJRAQ.test.cpp
   - test/sqdecomp-AOJRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
   - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
