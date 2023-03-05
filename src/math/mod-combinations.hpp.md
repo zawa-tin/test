@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/CF856-D.test.cpp
+    title: test/CF856-D.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/mod-combinations1.test.cpp
     title: test/mod-combinations1.test.cpp
   _isVerificationFailed: false
@@ -62,6 +65,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/mod-combinations1.test.cpp
+  - test/CF856-D.test.cpp
 documentation_of: src/math/mod-combinations.hpp
 layout: document
 title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"

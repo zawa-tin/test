@@ -139,8 +139,8 @@ data:
       path: src/math/factorize.hpp
       title: "Factorize(\u7D20\u56E0\u6570\u5206\u89E3)"
     - icon: ':heavy_check_mark:'
-      path: src/math/gcd-convolution.hpp
-      title: "gcd-convlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u30FB\u7D04\u6570\
+      path: src/math/gcdConvolution.hpp
+      title: "gcdConvlution (\u6DFB\u5B57gcd\u7573\u307F\u8FBC\u307F\u30FB\u7D04\u6570\
         \u7CFB\u306E\u9AD8\u901F\u30BC\u30FC\u30BF/\u30E1\u30D3\u30A6\u30B9\u5909\u63DB\
         )"
     - icon: ':heavy_check_mark:'
@@ -154,8 +154,9 @@ data:
       path: src/math/miller-rabin.hpp
       title: "miller-rabin (\u7D20\u6570\u5224\u5B9A\u6CD5)"
     - icon: ':heavy_check_mark:'
-      path: src/math/mobius-function.hpp
-      title: "mobius-function (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570)"
+      path: src/math/mobiusFunction.hpp
+      title: "mobiusFunction (\u30E1\u30D3\u30A6\u30B9\u95A2\u6570\u5024\u306E\u5217\
+        \u6319)"
     - icon: ':heavy_check_mark:'
       path: src/math/mod-combinations.hpp
       title: "mod combinations (\u7D44\u307F\u5408\u308F\u305B\u306E\u6570 mod)"
@@ -163,8 +164,8 @@ data:
       path: src/math/modint.hpp
       title: modint
     - icon: ':heavy_check_mark:'
-      path: src/math/prime-sieve.hpp
-      title: "prime-sieve (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9)"
+      path: src/math/primeSieve.hpp
+      title: "primeSieve (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9\uFF09"
   - name: src/string
     pages:
     - icon: ':heavy_check_mark:'
@@ -336,6 +337,9 @@ data:
       path: test/BFS.test.cpp
       title: test/BFS.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/CF856-D.test.cpp
+      title: test/CF856-D.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/DSU-unitTest.test.cpp
       title: test/DSU-unitTest.test.cpp
     - icon: ':heavy_check_mark:'
@@ -426,8 +430,8 @@ data:
       path: test/fenwick_tree2.test.cpp
       title: test/fenwick_tree2.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/gcd-convolution.test.cpp
-      title: test/gcd-convolution.test.cpp
+      path: test/gcdConvolution.test.cpp
+      title: test/gcdConvolution.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/input1.test.cpp
       title: test/input1.test.cpp
@@ -480,8 +484,8 @@ data:
       path: test/miller-rabin.test.cpp
       title: test/miller-rabin.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/mobius-function.test.cpp
-      title: test/mobius-function.test.cpp
+      path: test/mobiusFunction.test.cpp
+      title: test/mobiusFunction.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/mod-combinations1.test.cpp
       title: test/mod-combinations1.test.cpp
@@ -510,8 +514,8 @@ data:
       path: test/potentialized_unionfind3.test.cpp
       title: test/potentialized_unionfind3.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/prime-sieve.test.cpp
-      title: test/prime-sieve.test.cpp
+      path: test/primeSieve.test.cpp
+      title: test/primeSieve.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/range-edge-graph1.test.cpp
       title: test/range-edge-graph1.test.cpp
