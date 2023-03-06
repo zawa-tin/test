@@ -67,8 +67,8 @@ data:
       title: "segment_tree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
         \u30B0\u6728)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/sparse-table.hpp
-      title: "sparse-table ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
+      path: src/dataStructure/sparseTable.hpp
+      title: "sparseTable ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
         \u89E3\u7B54 )"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/sqdecomp.hpp
@@ -236,23 +236,23 @@ data:
     - icon: ':warning:'
       path: src/utility/semiring/xor-and-semiring.hpp
       title: xor-and-semiring (^&)
-  - name: src/utility/sparse-table
+  - name: src/utility/sparseTable
     pages:
     - icon: ':warning:'
-      path: src/utility/sparse-table/bitwise_and.hpp
-      title: sparsetable bitwise_and-structure
+      path: src/utility/sparseTable/bitwiseAndStructure.hpp
+      title: sparsetable bitwiseAndStructure (Sparse Table)
     - icon: ':warning:'
-      path: src/utility/sparse-table/bitwise_or.hpp
-      title: sparsetable bitwise_or-structure
+      path: src/utility/sparseTable/bitwiseOrStructure.hpp
+      title: bitwiseOrStructure (Sparse Table)
     - icon: ':heavy_check_mark:'
-      path: src/utility/sparse-table/gcd.hpp
-      title: sparsetable gcd-structure
+      path: src/utility/sparseTable/gcdStructure.hpp
+      title: gcdStructure (Sparse Table)
     - icon: ':warning:'
-      path: src/utility/sparse-table/max.hpp
-      title: sparsetable max-structure
+      path: src/utility/sparseTable/maxStructure.hpp
+      title: maxStructure (Sparse Table)
     - icon: ':heavy_check_mark:'
-      path: src/utility/sparse-table/min.hpp
-      title: sparsetable min-structure
+      path: src/utility/sparseTable/minStructure.hpp
+      title: minStructure (Sparse Table)
   verificationCategories:
   - name: test
     pages:
@@ -260,8 +260,8 @@ data:
       path: test/01BFS.test.cpp
       title: test/01BFS.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/ABC125C.test.cpp
-      title: test/ABC125C.test.cpp
+      path: test/ABC125-C.test.cpp
+      title: test/ABC125-C.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC170-D.test.cpp
       title: test/ABC170-D.test.cpp
@@ -572,8 +572,8 @@ data:
       path: test/simple-wf1.test.cpp
       title: test/simple-wf1.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sparse-table.test.cpp
-      title: test/sparse-table.test.cpp
+      path: test/sparseTable.test.cpp
+      title: test/sparseTable.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/sqdecomp-AOJRSQ.test.cpp
       title: test/sqdecomp-AOJRSQ.test.cpp
