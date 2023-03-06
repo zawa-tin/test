@@ -24,7 +24,7 @@ data:
   verifiedWith: []
 documentation_of: src/utility/sparseTable/bitwiseAndStructure.hpp
 layout: document
-title: sparsetable bitwiseAndStructure (Sparse Table)
+title: bitwiseAndStructure (Sparse Table)
 ---
 
 ## 概要

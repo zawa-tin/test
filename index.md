@@ -240,7 +240,7 @@ data:
     pages:
     - icon: ':warning:'
       path: src/utility/sparseTable/bitwiseAndStructure.hpp
-      title: sparsetable bitwiseAndStructure (Sparse Table)
+      title: bitwiseAndStructure (Sparse Table)
     - icon: ':warning:'
       path: src/utility/sparseTable/bitwiseOrStructure.hpp
       title: bitwiseOrStructure (Sparse Table)
