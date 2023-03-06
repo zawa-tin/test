@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
-#include "../src/utility/monoid/xor_monoid.hpp"
+#include "../src/utility/monoid/xorMonoid.hpp"
 #include "../src/dataStructure/segment_tree.hpp"
 
 #include <iostream>
@@ -12,7 +12,7 @@ int main() {
 	// for (auto& a : A) {
 	// 	std::cin >> a;
 	// }
-	// zawa::segment_tree<zawa::xor_monoid<int>> seg(A);
+	// zawa::segment_tree<zawa::xorMonoid<int>> seg(A);
 	// for (int _ = 0 ; _ < Q ; _++) {
 	// 	int T, X, Y; std::cin >> T >> X >> Y;
 	// 	if (T == 1) {
@@ -22,10 +22,11 @@ int main() {
 	// 		std::cout << seg.prod(X - 1, Y) << std::endl;
 	// 	}
 	// }
+	
 	std::cout << "Hello World" << std::endl;
 }
 
 /*
  * AtCoder Beginner Contest 185 - F Range Xor Query
- * https://atcoder.jp/contests/abc185/submissions/38952086
+ * https://atcoder.jp/contests/abc185/submissions/39482512
  */

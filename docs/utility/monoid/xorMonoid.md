@@ -1,6 +1,6 @@
 ---
-title: xor_monoid (排他的論理和モノイド)
-documentation_of: //src/utility/monoid/xor_monoid.hpp
+title: xorMonoid (排他的論理和モノイド)
+documentation_of: //src/utility/monoid/xorMonoid.hpp
 ---
 
 ## 概要
@@ -9,10 +9,10 @@ xor演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 
 ## 機能
 
-`zawa::xor_monoid<T>`
+`zawa::xorMonoid<T>`
 - `T`: `int` `long long` など`operator ^`が定義されているもの、0が代入できるもの
 
-**メンバなど**
+**メンバ**
 
 `using value_type = T`
 - データ構造で利用するために必要なエイリアス
