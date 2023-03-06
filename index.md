@@ -219,8 +219,8 @@ data:
       path: src/utility/monoid/range_add_monoid.hpp
       title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/xor_monoid.hpp
-      title: "xor_monoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9\
+      path: src/utility/monoid/xorMonoid.hpp
+      title: "xorMonoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9\
         )"
   - name: src/utility/semiring
     pages:
