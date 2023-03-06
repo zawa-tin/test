@@ -1,5 +1,5 @@
 ---
-title: sparsetable bitwiseAndStructure (Sparse Table)
+title: bitwiseAndStructure (Sparse Table)
 documentation_of: //src/utility/sparseTable/bitwiseAndStructure.hpp
 ---
 
