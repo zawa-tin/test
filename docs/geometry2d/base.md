@@ -1,5 +1,5 @@
 ---
-title base (ベース)
+title: base (ベース)
 documentaion_of: //src/geometry2d/base.hpp
 ---
 
