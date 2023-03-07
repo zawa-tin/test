@@ -74,6 +74,20 @@ data:
       path: src/dataStructure/sqdecomp.hpp
       title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
         \u30A8\u30EA)"
+  - name: src/geometry2d
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: src/geometry2d/base.hpp
+      title: src/geometry2d/base.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/geometry2d/line.hpp
+      title: "line (\u76F4\u7DDA)"
+    - icon: ':heavy_check_mark:'
+      path: src/geometry2d/point.hpp
+      title: "point (\u70B9)"
+    - icon: ':heavy_check_mark:'
+      path: src/geometry2d/projection.hpp
+      title: "projection (\u5C04\u5F71)"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -292,6 +306,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC254-D.test.cpp
       title: test/ABC254-D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC259-B.test.cpp
+      title: test/ABC259-B.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC267-C.test.cpp
       title: test/ABC267-C.test.cpp
@@ -532,6 +549,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/primeSieve.test.cpp
       title: test/primeSieve.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/projection.test.cpp
+      title: test/projection.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/range-edge-graph1.test.cpp
       title: test/range-edge-graph1.test.cpp
