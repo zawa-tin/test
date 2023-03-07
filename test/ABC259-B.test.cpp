@@ -16,5 +16,5 @@ int main() {
 
 /*
  * AtCoder Beginnet Contest 259 - B Counterclockwise Rotation
- * https://atcoder.jp/contests/abc259/submissions/39520494
+ * https://atcoder.jp/contests/abc259/submissions/39521262
  */

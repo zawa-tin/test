@@ -6,7 +6,7 @@ namespace geo2d {
 
 using realType = long double;
 
-constexpr realType PI = acosl(-1);
+const realType PI = acosl(-1);
 
 inline realType &eps() {
 	static realType EPS = 1e-14;
