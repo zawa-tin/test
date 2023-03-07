@@ -11,6 +11,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/geometry2d/projection.hpp
     title: "projection (\u5C04\u5F71)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometry2d/reflection.hpp
+    title: "reflection (\u53CD\u5C04)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/ABC259-B.test.cpp
@@ -18,6 +21,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/projection.test.cpp
     title: test/projection.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/reflection.test.cpp
+    title: test/reflection.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -68,10 +74,12 @@ data:
   requiredBy:
   - src/geometry2d/line.hpp
   - src/geometry2d/projection.hpp
+  - src/geometry2d/reflection.hpp
   timestamp: '2023-03-08 02:25:05+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/projection.test.cpp
+  - test/reflection.test.cpp
   - test/ABC259-B.test.cpp
 documentation_of: src/geometry2d/point.hpp
 layout: document

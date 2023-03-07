@@ -88,6 +88,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/geometry2d/projection.hpp
       title: "projection (\u5C04\u5F71)"
+    - icon: ':heavy_check_mark:'
+      path: src/geometry2d/reflection.hpp
+      title: "reflection (\u53CD\u5C04)"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -558,6 +561,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/range-edge-graph2.test.cpp
       title: test/range-edge-graph2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/reflection.test.cpp
+      title: test/reflection.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/rollinghash.test.cpp
       title: test/rollinghash.test.cpp
