@@ -2,10 +2,10 @@
 
 #include "./projection.hpp"
 
-namespace geo2d {
+namespace geoR2 {
 
 point reflection(const point& p, const line& l) {
-	return -p + static_cast<realType>(2) * projection(p, l);
+	return -p + static_cast<real>(2) * projection(p, l);
 }
 
-} // namespace geo2d
+} // namespace geoR2
