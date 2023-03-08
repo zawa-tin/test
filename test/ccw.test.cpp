@@ -1,6 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C"
 
 #include "../src/geometryR2/point.hpp"
+#include "../src/geometryR2/ccw.hpp"
 
 #include <iostream>
 #include <iomanip>
@@ -11,18 +12,17 @@ int main() {
 	int q; std::cin >> q;
 	for (int _ = 0 ; _ < q ; _++) {
 		point p2; std::cin >> p2;
-		real outer = cross(p1 - p0, p2 - p0);
-		real inner = dot(p1 - p0, p2 - p0);
-		if (sgn(outer) == 1) {
+		auto value = ccw(p1 - p0, p2 - p0);
+		if (value == CCW::COUNTER_CLOCKWISE) {
 			std::cout << "COUNTER_CLOCKWISE" << std::endl;
 		}
-		else if (sgn(outer) == -1) {
+		else if (value == CCW::CLOCKWISE) {
 			std::cout << "CLOCKWISE" << std::endl;
 		}
-		else if (sgn(inner) == -1) {
+		else if (value == CCW::ONLINE_BACK) {
 			std::cout << "ONLINE_BACK" << std::endl;
 		}
-		else if (point(p1 - p0).squareDistance() < point(p2 - p0).squareDistance()) {
+		else if (value == CCW::ONLINE_FRONT) {
 			std::cout << "ONLINE_FRONT" << std::endl;
 		}
 		else {
