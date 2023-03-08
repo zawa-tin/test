@@ -74,22 +74,22 @@ data:
       path: src/dataStructure/sqdecomp.hpp
       title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
         \u30A8\u30EA)"
-  - name: src/geometry2d
+  - name: src/geometryR2
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/geometry2d/base.hpp
-      title: src/geometry2d/base.hpp
+      path: src/geometryR2/base.hpp
+      title: "base (\u30D9\u30FC\u30B9)"
     - icon: ':heavy_check_mark:'
-      path: src/geometry2d/line.hpp
+      path: src/geometryR2/line.hpp
       title: "line (\u76F4\u7DDA)"
     - icon: ':heavy_check_mark:'
-      path: src/geometry2d/point.hpp
+      path: src/geometryR2/point.hpp
       title: "point (\u70B9)"
     - icon: ':heavy_check_mark:'
-      path: src/geometry2d/projection.hpp
+      path: src/geometryR2/projection.hpp
       title: "projection (\u5C04\u5F71)"
     - icon: ':heavy_check_mark:'
-      path: src/geometry2d/reflection.hpp
+      path: src/geometryR2/reflection.hpp
       title: "reflection (\u53CD\u5C04)"
   - name: src/graph
     pages:

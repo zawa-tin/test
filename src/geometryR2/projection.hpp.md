@@ -10,28 +10,25 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/point.hpp
     title: "point (\u70B9)"
-  - icon: ':heavy_check_mark:'
-    path: src/geometryR2/projection.hpp
-    title: "projection (\u5C04\u5F71)"
+  _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/reflection.hpp
     title: "reflection (\u53CD\u5C04)"
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/projection.test.cpp
+    title: test/projection.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/reflection.test.cpp
+    title: test/reflection.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    '*NOT_SPECIAL_COMMENTS*': ''
-    ERROR: '0.00000001'
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B
-    links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B
-  bundledCode: "#line 1 \"test/reflection.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B\"\
-    \n#define ERROR 0.00000001\n\n#line 2 \"src/geometryR2/reflection.hpp\"\n\n#line\
-    \ 2 \"src/geometryR2/projection.hpp\"\n\n#line 2 \"src/geometryR2/line.hpp\"\n\
-    \n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\n\
-    \n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
+    links: []
+  bundledCode: "#line 2 \"src/geometryR2/projection.hpp\"\n\n#line 2 \"src/geometryR2/line.hpp\"\
+    \n\n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\
+    \n\n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
     \ real PI = acosl(-1);\n\ninline real &eps() {\n\tstatic real EPS = 1e-14;\n\t\
     return EPS;\n}\n\ninline void setEps(const real& EPS = 1e-14) {\n\teps() = EPS;\n\
     }\n\ninline int sgn(const real& value) {\n\treturn (value < -eps() ? -1 : (value\
@@ -71,36 +68,42 @@ data:
     #include <cassert>\n\nnamespace geoR2 {\n\npoint projection(const point& p, const\
     \ line& l) {\n\tassert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) /\
     \ vec2(l.b - l.a).squareDistance();\n\treturn coeff * l.b + (static_cast<real>(1)\
-    \ - coeff) * l.a;\n}\n\n} // namespace geoR2\n#line 4 \"src/geometryR2/reflection.hpp\"\
-    \n\nnamespace geoR2 {\n\npoint reflection(const point& p, const line& l) {\n\t\
-    return -p + static_cast<real>(2) * projection(p, l);\n}\n\n} // namespace geoR2\n\
-    #line 5 \"test/reflection.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\
-    \nint main() {\n\tusing namespace geoR2;\n\tline l; std::cin >> l.a >> l.b;\n\t\
-    int q; std::cin >> q;\n\tstd::cout << std::fixed << std::setprecision(10);\n\t\
-    for (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p; std::cin >> p;\n\t\tstd::cout <<\
-    \ reflection(p, l) << std::endl;\n\t}\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B\"\
-    \n#define ERROR 0.00000001\n\n#include \"../src/geometryR2/reflection.hpp\"\n\n\
-    #include <iostream>\n#include <iomanip>\n\nint main() {\n\tusing namespace geoR2;\n\
-    \tline l; std::cin >> l.a >> l.b;\n\tint q; std::cin >> q;\n\tstd::cout << std::fixed\
-    \ << std::setprecision(10);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p; std::cin\
-    \ >> p;\n\t\tstd::cout << reflection(p, l) << std::endl;\n\t}\n}\n"
+    \ - coeff) * l.a;\n}\n\n} // namespace geoR2\n"
+  code: "#pragma once\n\n#include \"./line.hpp\"\n#include \"./point.hpp\"\n\n#include\
+    \ <cassert>\n\nnamespace geoR2 {\n\npoint projection(const point& p, const line&\
+    \ l) {\n\tassert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) / vec2(l.b\
+    \ - l.a).squareDistance();\n\treturn coeff * l.b + (static_cast<real>(1) - coeff)\
+    \ * l.a;\n}\n\n} // namespace geoR2\n"
   dependsOn:
-  - src/geometryR2/reflection.hpp
-  - src/geometryR2/projection.hpp
   - src/geometryR2/line.hpp
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
-  isVerificationFile: true
-  path: test/reflection.test.cpp
-  requiredBy: []
+  isVerificationFile: false
+  path: src/geometryR2/projection.hpp
+  requiredBy:
+  - src/geometryR2/reflection.hpp
   timestamp: '2023-03-08 17:47:08+09:00'
-  verificationStatus: TEST_ACCEPTED
-  verifiedWith: []
-documentation_of: test/reflection.test.cpp
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/projection.test.cpp
+  - test/reflection.test.cpp
+documentation_of: src/geometryR2/projection.hpp
 layout: document
-redirect_from:
-- /verify/test/reflection.test.cpp
-- /verify/test/reflection.test.cpp.html
-title: test/reflection.test.cpp
+title: "projection (\u5C04\u5F71)"
 ---
+
+## 概要
+
+点 $p$ から直線 $l$ に垂線を引いた交点を求める
+
+## 機能
+
+```
+geoR2::point geoR2::projection(const geoR2::point& p, const geoR2::line& l)
+```
+
+`l` に対する`p`の射影を求める
+
+## 導出
+
+TODO
