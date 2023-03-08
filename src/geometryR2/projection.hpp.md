@@ -59,7 +59,8 @@ data:
     \ sqrtl(x * x + y + y);\n\t}\n\n\tpoint rotated(const real& theta) const {\n\t\
     \treturn point(x * cosl(theta) - y * sinl(theta), x * sinl(theta) + y * cosl(theta));\n\
     \t}\n};\n\nreal dot(const point& a, const point& b) {\n\treturn a.x * b.x + a.y\
-    \ * b.y;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
+    \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
+    \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
     #line 4 \"src/geometryR2/line.hpp\"\n\nnamespace geoR2 {\n\nstruct line {\n\t\
     point a, b;\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const point& _a, const point&\
@@ -82,7 +83,7 @@ data:
   path: src/geometryR2/projection.hpp
   requiredBy:
   - src/geometryR2/reflection.hpp
-  timestamp: '2023-03-08 17:47:08+09:00'
+  timestamp: '2023-03-08 19:12:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/projection.test.cpp

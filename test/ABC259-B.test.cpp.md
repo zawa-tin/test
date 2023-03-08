@@ -51,7 +51,8 @@ data:
     \ sqrtl(x * x + y + y);\n\t}\n\n\tpoint rotated(const real& theta) const {\n\t\
     \treturn point(x * cosl(theta) - y * sinl(theta), x * sinl(theta) + y * cosl(theta));\n\
     \t}\n};\n\nreal dot(const point& a, const point& b) {\n\treturn a.x * b.x + a.y\
-    \ * b.y;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
+    \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
+    \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
     #line 6 \"test/ABC259-B.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\
     \nint main() {\n\tusing namespace geoR2;\n\tpoint p; std::cin >> p;\n\tint d;\
@@ -69,7 +70,7 @@ data:
   isVerificationFile: true
   path: test/ABC259-B.test.cpp
   requiredBy: []
-  timestamp: '2023-03-08 17:47:08+09:00'
+  timestamp: '2023-03-08 19:12:48+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/ABC259-B.test.cpp

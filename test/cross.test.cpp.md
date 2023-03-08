@@ -5,17 +5,8 @@ data:
     path: src/geometryR2/base.hpp
     title: "base (\u30D9\u30FC\u30B9)"
   - icon: ':heavy_check_mark:'
-    path: src/geometryR2/line.hpp
-    title: "line (\u76F4\u7DDA)"
-  - icon: ':heavy_check_mark:'
     path: src/geometryR2/point.hpp
     title: "point (\u70B9)"
-  - icon: ':heavy_check_mark:'
-    path: src/geometryR2/projection.hpp
-    title: "projection (\u5C04\u5F71)"
-  - icon: ':heavy_check_mark:'
-    path: src/geometryR2/reflection.hpp
-    title: "reflection (\u53CD\u5C04)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -23,15 +14,12 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    ERROR: '0.00000001'
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C
     links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B
-  bundledCode: "#line 1 \"test/reflection.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B\"\
-    \n#define ERROR 0.00000001\n\n#line 2 \"src/geometryR2/reflection.hpp\"\n\n#line\
-    \ 2 \"src/geometryR2/projection.hpp\"\n\n#line 2 \"src/geometryR2/line.hpp\"\n\
-    \n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\n\
-    \n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C
+  bundledCode: "#line 1 \"test/cross.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C\"\
+    \n\n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\
+    \n\n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
     \ real PI = acosl(-1);\n\ninline real &eps() {\n\tstatic real EPS = 1e-14;\n\t\
     return EPS;\n}\n\ninline void setEps(const real& EPS = 1e-14) {\n\teps() = EPS;\n\
     }\n\ninline int sgn(const real& value) {\n\treturn (value < -eps() ? -1 : (value\
@@ -65,43 +53,42 @@ data:
     \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
     \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
-    #line 4 \"src/geometryR2/line.hpp\"\n\nnamespace geoR2 {\n\nstruct line {\n\t\
-    point a, b;\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const point& _a, const point&\
-    \ _b) : a(_a), b(_b) {}\n\tbool isValid() const {\n\t\treturn !equals(a, b);\n\
-    \t}\n};\n\n} // namespace geo2d\n#line 5 \"src/geometryR2/projection.hpp\"\n\n\
-    #include <cassert>\n\nnamespace geoR2 {\n\npoint projection(const point& p, const\
-    \ line& l) {\n\tassert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) /\
-    \ vec2(l.b - l.a).squareDistance();\n\treturn coeff * l.b + (static_cast<real>(1)\
-    \ - coeff) * l.a;\n}\n\n} // namespace geoR2\n#line 4 \"src/geometryR2/reflection.hpp\"\
-    \n\nnamespace geoR2 {\n\npoint reflection(const point& p, const line& l) {\n\t\
-    return -p + static_cast<real>(2) * projection(p, l);\n}\n\n} // namespace geoR2\n\
-    #line 5 \"test/reflection.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\
-    \nint main() {\n\tusing namespace geoR2;\n\tline l; std::cin >> l.a >> l.b;\n\t\
-    int q; std::cin >> q;\n\tstd::cout << std::fixed << std::setprecision(10);\n\t\
-    for (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p; std::cin >> p;\n\t\tstd::cout <<\
-    \ reflection(p, l) << std::endl;\n\t}\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_B\"\
-    \n#define ERROR 0.00000001\n\n#include \"../src/geometryR2/reflection.hpp\"\n\n\
-    #include <iostream>\n#include <iomanip>\n\nint main() {\n\tusing namespace geoR2;\n\
-    \tline l; std::cin >> l.a >> l.b;\n\tint q; std::cin >> q;\n\tstd::cout << std::fixed\
-    \ << std::setprecision(10);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p; std::cin\
-    \ >> p;\n\t\tstd::cout << reflection(p, l) << std::endl;\n\t}\n}\n"
+    #line 4 \"test/cross.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\n\
+    int main() {\n\tusing namespace geoR2;\n\tpoint p0, p1; std::cin >> p0 >> p1;\n\
+    \tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p2; std::cin\
+    \ >> p2;\n\t\treal outer = cross(p1 - p0, p2 - p0);\n\t\treal inner = dot(p1 -\
+    \ p0, p2 - p0);\n\t\tif (sgn(outer) == 1) {\n\t\t\tstd::cout << \"COUNTER_CLOCKWISE\"\
+    \ << std::endl;\n\t\t}\n\t\telse if (sgn(outer) == -1) {\n\t\t\tstd::cout << \"\
+    CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(inner) == -1) {\n\t\t\tstd::cout\
+    \ << \"ONLINE_BACK\" << std::endl;\n\t\t}\n\t\telse if (point(p1 - p0).squareDistance()\
+    \ < point(p2 - p0).squareDistance()) {\n\t\t\tstd::cout << \"ONLINE_FRONT\" <<\
+    \ std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout << \"ON_SEGMENT\" << std::endl;\n\
+    \t\t}\n\t}\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C\"\
+    \n\n#include \"../src/geometryR2/point.hpp\"\n\n#include <iostream>\n#include\
+    \ <iomanip>\n\nint main() {\n\tusing namespace geoR2;\n\tpoint p0, p1; std::cin\
+    \ >> p0 >> p1;\n\tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\
+    \tpoint p2; std::cin >> p2;\n\t\treal outer = cross(p1 - p0, p2 - p0);\n\t\treal\
+    \ inner = dot(p1 - p0, p2 - p0);\n\t\tif (sgn(outer) == 1) {\n\t\t\tstd::cout\
+    \ << \"COUNTER_CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(outer) == -1)\
+    \ {\n\t\t\tstd::cout << \"CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(inner)\
+    \ == -1) {\n\t\t\tstd::cout << \"ONLINE_BACK\" << std::endl;\n\t\t}\n\t\telse\
+    \ if (point(p1 - p0).squareDistance() < point(p2 - p0).squareDistance()) {\n\t\
+    \t\tstd::cout << \"ONLINE_FRONT\" << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout\
+    \ << \"ON_SEGMENT\" << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
-  - src/geometryR2/reflection.hpp
-  - src/geometryR2/projection.hpp
-  - src/geometryR2/line.hpp
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
   isVerificationFile: true
-  path: test/reflection.test.cpp
+  path: test/cross.test.cpp
   requiredBy: []
   timestamp: '2023-03-08 19:12:48+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/reflection.test.cpp
+documentation_of: test/cross.test.cpp
 layout: document
 redirect_from:
-- /verify/test/reflection.test.cpp
-- /verify/test/reflection.test.cpp.html
-title: test/reflection.test.cpp
+- /verify/test/cross.test.cpp
+- /verify/test/cross.test.cpp.html
+title: test/cross.test.cpp
 ---

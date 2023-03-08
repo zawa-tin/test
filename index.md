@@ -457,6 +457,9 @@ data:
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/cross.test.cpp
+      title: test/cross.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/dualSegmentTree-AOJRAQ.test.cpp
       title: test/dualSegmentTree-AOJRAQ.test.cpp
     - icon: ':heavy_check_mark:'

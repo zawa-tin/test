@@ -19,6 +19,9 @@ data:
     path: test/ABC259-B.test.cpp
     title: test/ABC259-B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/cross.test.cpp
+    title: test/cross.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/projection.test.cpp
     title: test/projection.test.cpp
   - icon: ':heavy_check_mark:'
@@ -61,7 +64,8 @@ data:
     \ sqrtl(x * x + y + y);\n\t}\n\n\tpoint rotated(const real& theta) const {\n\t\
     \treturn point(x * cosl(theta) - y * sinl(theta), x * sinl(theta) + y * cosl(theta));\n\
     \t}\n};\n\nreal dot(const point& a, const point& b) {\n\treturn a.x * b.x + a.y\
-    \ * b.y;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
+    \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
+    \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n"
   code: "#pragma once\n\n#include \"./base.hpp\"\n\n#include <cmath>\n#include <istream>\n\
     #include <ostream>\n\nnamespace geoR2 {\n\nstruct point {\n\treal x, y;\n\t\n\t\
@@ -84,7 +88,8 @@ data:
     \ sqrtl(x * x + y + y);\n\t}\n\n\tpoint rotated(const real& theta) const {\n\t\
     \treturn point(x * cosl(theta) - y * sinl(theta), x * sinl(theta) + y * cosl(theta));\n\
     \t}\n};\n\nreal dot(const point& a, const point& b) {\n\treturn a.x * b.x + a.y\
-    \ * b.y;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
+    \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
+    \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n"
   dependsOn:
   - src/geometryR2/base.hpp
@@ -94,12 +99,13 @@ data:
   - src/geometryR2/line.hpp
   - src/geometryR2/projection.hpp
   - src/geometryR2/reflection.hpp
-  timestamp: '2023-03-08 17:47:08+09:00'
+  timestamp: '2023-03-08 19:12:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/projection.test.cpp
   - test/reflection.test.cpp
   - test/ABC259-B.test.cpp
+  - test/cross.test.cpp
 documentation_of: src/geometryR2/point.hpp
 layout: document
 title: "point (\u70B9)"
@@ -255,6 +261,14 @@ point rotated(const real& theta) const
 real dot(const point& a, const point& b)
 ```
 `a`と`b`の内積を返す。
+
+<br />
+
+**cross**
+```
+real cross(const point& a, const point& b)
+```
+`a` と `b` の外積の大きさを返す。
 
 <br />
 

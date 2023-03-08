@@ -19,6 +19,9 @@ data:
     path: test/ABC259-B.test.cpp
     title: test/ABC259-B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/cross.test.cpp
+    title: test/cross.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/projection.test.cpp
     title: test/projection.test.cpp
   - icon: ':heavy_check_mark:'
@@ -64,6 +67,7 @@ data:
   - test/projection.test.cpp
   - test/reflection.test.cpp
   - test/ABC259-B.test.cpp
+  - test/cross.test.cpp
 documentation_of: src/geometryR2/base.hpp
 layout: document
 title: "base (\u30D9\u30FC\u30B9)"
