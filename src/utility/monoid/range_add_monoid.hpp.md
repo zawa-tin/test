@@ -42,10 +42,10 @@ data:
   timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
   - test/lazy_segtree-AOJ-RAQRSQ.test.cpp
-  - test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+  - test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
   - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+  - test/lazy_segtree-AOJ-RUQRSQ.test.cpp
 documentation_of: src/utility/monoid/range_add_monoid.hpp
 layout: document
 title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"

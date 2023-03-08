@@ -70,8 +70,8 @@ data:
   timestamp: '2023-02-06 18:33:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/sqdecomp-LCRSQ.test.cpp
   - test/sqdecomp-AOJRmQ.test.cpp
+  - test/sqdecomp-LCRSQ.test.cpp
   - test/sqdecomp-AOJRSQ.test.cpp
 documentation_of: src/dataStructure/sqdecomp.hpp
 layout: document

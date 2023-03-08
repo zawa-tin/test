@@ -5,6 +5,9 @@ data:
     path: src/geometryR2/base.hpp
     title: "base (\u30D9\u30FC\u30B9)"
   - icon: ':heavy_check_mark:'
+    path: src/geometryR2/ccw.hpp
+    title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
     path: src/geometryR2/line.hpp
     title: "line (\u76F4\u7DDA)"
   - icon: ':heavy_check_mark:'
@@ -12,21 +15,22 @@ data:
     title: "point (\u70B9)"
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
-    path: src/geometryR2/reflection.hpp
-    title: "reflection (\u53CD\u5C04)"
+    path: src/geometryR2/relation.hpp
+    title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\
+      \u7F6E\u95A2\u4FC2)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/projection.test.cpp
-    title: test/projection.test.cpp
+    path: test/AOJCGL-2A.test.cpp
+    title: test/AOJCGL-2A.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/reflection.test.cpp
-    title: test/reflection.test.cpp
+    path: test/AOJCGL-2B.test.cpp
+    title: test/AOJCGL-2B.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/geometryR2/projection.hpp\"\n\n#line 2 \"src/geometryR2/line.hpp\"\
+  bundledCode: "#line 2 \"src/geometryR2/segment.hpp\"\n\n#line 2 \"src/geometryR2/ccw.hpp\"\
     \n\n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\
     \n\n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
     \ real PI = acosl(-1);\n\ninline real &eps() {\n\tstatic real EPS = 1e-14;\n\t\
@@ -62,50 +66,98 @@ data:
     \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
     \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
-    #line 4 \"src/geometryR2/line.hpp\"\n\n#include <cassert>\n\nnamespace geoR2 {\n\
-    \nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const\
-    \ point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid() const\
-    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\n} // namespace geo2d\n#line 5 \"\
-    src/geometryR2/projection.hpp\"\n\n#line 7 \"src/geometryR2/projection.hpp\"\n\
-    \nnamespace geoR2 {\n\npoint projection(const point& p, const line& l) {\n\tassert(l.isValid());\n\
-    \treal coeff = dot(l.b - l.a, p - l.a) / vec2(l.b - l.a).squareDistance();\n\t\
-    return coeff * l.b + (static_cast<real>(1) - coeff) * l.a;\n}\n\n} // namespace\
-    \ geoR2\n"
-  code: "#pragma once\n\n#include \"./line.hpp\"\n#include \"./point.hpp\"\n\n#include\
-    \ <cassert>\n\nnamespace geoR2 {\n\npoint projection(const point& p, const line&\
-    \ l) {\n\tassert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) / vec2(l.b\
-    \ - l.a).squareDistance();\n\treturn coeff * l.b + (static_cast<real>(1) - coeff)\
-    \ * l.a;\n}\n\n} // namespace geoR2\n"
+    #line 2 \"src/geometryR2/line.hpp\"\n\n#line 4 \"src/geometryR2/line.hpp\"\n\n\
+    #include <cassert>\n\nnamespace geoR2 {\n\nstruct line {\n\tpoint a, b;\n\n\t\
+    line() : a(0, 0), b(0, 0) {}\n\tline(const point& _a, const point& _b) : a(_a),\
+    \ b(_b) {}\n\n\tinline bool isValid() const {\n\t\treturn !equals(a, b);\n\t}\n\
+    \n};\n\n} // namespace geo2d\n#line 6 \"src/geometryR2/ccw.hpp\"\n\nnamespace\
+    \ geoR2 {\n\nenum class CCW {\n\tCOUNTER_CLOCKWISE,\n\tCLOCKWISE,\n\tONLINE_BACK,\n\
+    \tONLINE_FRONT,\n\tON_SEGMENT,\n};\n\nCCW ccw(const vec2& a, const vec2& b) {\n\
+    \tint outer = sgn(cross(a, b));\n\tif (outer == 1) {\n\t\treturn CCW::COUNTER_CLOCKWISE;\n\
+    \t}\n\telse if (outer == -1) {\n\t\treturn CCW::CLOCKWISE;\n\t}\n\telse if (sgn(dot(a,\
+    \ b)) == -1) {\n\t\treturn CCW::ONLINE_BACK;\n\t}\n\telse if (a.squareDistance()\
+    \ < b.squareDistance()) {\n\t\treturn CCW::ONLINE_FRONT;\n\t}\n\telse {\n\t\t\
+    return CCW::ON_SEGMENT;\n\t}\n}\n\n} // namespace geoR2\n#line 5 \"src/geometryR2/segment.hpp\"\
+    \n\nnamespace geoR2 {\n\nstruct segment {\n\n\tpoint e1, e2;\n\n\tsegment() :\
+    \ e1(), e2() {}\n\tsegment(const point& _e1, const point& _e2) : e1(_e1), e2(_e2)\
+    \ {}\n\n\tbool isValid() const {\n\t\treturn !equals(e1, e2);\n\t}\n};\n\n} //\
+    \ namespace R2\n"
+  code: "#pragma once\n\n#include \"./ccw.hpp\"\n#include \"./point.hpp\"\n\nnamespace\
+    \ geoR2 {\n\nstruct segment {\n\n\tpoint e1, e2;\n\n\tsegment() : e1(), e2() {}\n\
+    \tsegment(const point& _e1, const point& _e2) : e1(_e1), e2(_e2) {}\n\n\tbool\
+    \ isValid() const {\n\t\treturn !equals(e1, e2);\n\t}\n};\n\n} // namespace R2\n"
   dependsOn:
-  - src/geometryR2/line.hpp
+  - src/geometryR2/ccw.hpp
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
+  - src/geometryR2/line.hpp
   isVerificationFile: false
-  path: src/geometryR2/projection.hpp
+  path: src/geometryR2/segment.hpp
   requiredBy:
-  - src/geometryR2/reflection.hpp
+  - src/geometryR2/relation.hpp
   timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/projection.test.cpp
-  - test/reflection.test.cpp
-documentation_of: src/geometryR2/projection.hpp
+  - test/AOJCGL-2B.test.cpp
+  - test/AOJCGL-2A.test.cpp
+documentation_of: src/geometryR2/segment.hpp
 layout: document
-title: "projection (\u5C04\u5F71)"
+title: "segment (\u7DDA\u5206)"
 ---
 
 ## 概要
 
-点 $p$ から直線 $l$ に垂線を引いた交点を求める
+線分を管理する構造体
 
 ## 機能
 
+`namespace geoR2`上で定義される
+
+#### メンバ変数
+
+**e1**
 ```
-geoR2::point geoR2::projection(const geoR2::point& p, const geoR2::line& l)
+point e1
+```
+端点
+
+<br />
+
+**e2**
+```
+point e2
 ```
 
-`l` に対する`p`の射影を求める
+端点
 
-## 導出
+<br />
 
-TODO
+#### コンストラクタ
+
+```
+(1) segment()
+(2) segment(const point& _e1, const point& _e2)
+```
+
+**(1)**
+
+端点を両方とも原点で初期化する。これは線分として有効では無いので利用する際は値の再代入が必要です
+
+<br />
+
+**(2)**
+
+端点を $e_1, e_2$ で初期化する。$e_1\ =\ e_2$ である時は線分として有効で無いため色んな関数で`assert`に引っかかりまくります。かわいそう
+
+<br />
+
+#### メンバ関数
+
+**isValid**
+```
+bool isValid() const
+```
+
+線分が有効かを判定する。
+
+$e_1 \ne e_2$ なら`true`を返す。

@@ -6,6 +6,9 @@ data:
     title: "base (\u30D9\u30FC\u30B9)"
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: src/geometryR2/ccw.hpp
+    title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
     path: src/geometryR2/line.hpp
     title: "line (\u76F4\u7DDA)"
   - icon: ':heavy_check_mark:'
@@ -14,6 +17,13 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/reflection.hpp
     title: "reflection (\u53CD\u5C04)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometryR2/relation.hpp
+    title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\
+      \u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometryR2/segment.hpp
+    title: "segment (\u7DDA\u5206)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/ABC259-B.test.cpp
@@ -22,8 +32,11 @@ data:
     path: test/AOJCGL-2A.test.cpp
     title: test/AOJCGL-2A.test.cpp
   - icon: ':heavy_check_mark:'
-    path: test/cross.test.cpp
-    title: test/cross.test.cpp
+    path: test/AOJCGL-2B.test.cpp
+    title: test/AOJCGL-2B.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ccw.test.cpp
+    title: test/ccw.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/projection.test.cpp
     title: test/projection.test.cpp
@@ -99,17 +112,21 @@ data:
   isVerificationFile: false
   path: src/geometryR2/point.hpp
   requiredBy:
-  - src/geometryR2/line.hpp
-  - src/geometryR2/projection.hpp
   - src/geometryR2/reflection.hpp
+  - src/geometryR2/ccw.hpp
+  - src/geometryR2/projection.hpp
+  - src/geometryR2/line.hpp
+  - src/geometryR2/segment.hpp
+  - src/geometryR2/relation.hpp
   timestamp: '2023-03-08 19:12:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/projection.test.cpp
-  - test/AOJCGL-2A.test.cpp
-  - test/reflection.test.cpp
   - test/ABC259-B.test.cpp
-  - test/cross.test.cpp
+  - test/AOJCGL-2B.test.cpp
+  - test/AOJCGL-2A.test.cpp
+  - test/ccw.test.cpp
+  - test/projection.test.cpp
+  - test/reflection.test.cpp
 documentation_of: src/geometryR2/point.hpp
 layout: document
 title: "point (\u70B9)"

@@ -9,15 +9,31 @@ data:
     title: "point (\u70B9)"
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: src/geometryR2/ccw.hpp
+    title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
     path: src/geometryR2/projection.hpp
     title: "projection (\u5C04\u5F71)"
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/reflection.hpp
     title: "reflection (\u53CD\u5C04)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometryR2/relation.hpp
+    title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\
+      \u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometryR2/segment.hpp
+    title: "segment (\u7DDA\u5206)"
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/AOJCGL-2A.test.cpp
     title: test/AOJCGL-2A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJCGL-2B.test.cpp
+    title: test/AOJCGL-2B.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ccw.test.cpp
+    title: test/ccw.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/projection.test.cpp
     title: test/projection.test.cpp
@@ -68,32 +84,29 @@ data:
     #line 4 \"src/geometryR2/line.hpp\"\n\n#include <cassert>\n\nnamespace geoR2 {\n\
     \nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const\
     \ point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid() const\
-    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\nbool isOrthogonal(const line& l1,\
-    \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
-    \ sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const line& l1,\
-    \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
-    \ sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n"
+    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\n} // namespace geo2d\n"
   code: "#pragma once\n\n#include \"./point.hpp\"\n\n#include <cassert>\n\nnamespace\
     \ geoR2 {\n\nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\t\
     line(const point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid()\
-    \ const {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\nbool isOrthogonal(const line&\
-    \ l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\t\
-    return sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const line&\
-    \ l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\t\
-    return sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n"
+    \ const {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\n} // namespace geo2d\n"
   dependsOn:
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
   isVerificationFile: false
   path: src/geometryR2/line.hpp
   requiredBy:
-  - src/geometryR2/projection.hpp
   - src/geometryR2/reflection.hpp
-  timestamp: '2023-03-08 19:51:16+09:00'
+  - src/geometryR2/ccw.hpp
+  - src/geometryR2/projection.hpp
+  - src/geometryR2/segment.hpp
+  - src/geometryR2/relation.hpp
+  timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/projection.test.cpp
+  - test/AOJCGL-2B.test.cpp
   - test/AOJCGL-2A.test.cpp
+  - test/ccw.test.cpp
+  - test/projection.test.cpp
   - test/reflection.test.cpp
 documentation_of: src/geometryR2/line.hpp
 layout: document
@@ -136,31 +149,3 @@ bool isValid() cosnt
 ```
 
 直線が正しく定義されているかを判定する。すなわち $a\ne b$ だと`true`を返す。
-
-<br />
-
-#### 関数
-
-**isOrthogonal**
-```
-bool isOrthogonal(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が直交するかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue
-
-<br />
-
-**isParallel**
-```
-bool isParallel(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が平行であるかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue

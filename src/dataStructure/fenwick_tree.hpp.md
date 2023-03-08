@@ -70,17 +70,17 @@ data:
   isVerificationFile: false
   path: src/dataStructure/fenwick_tree.hpp
   requiredBy:
-  - src/dataStructure/fenwick_multiset.hpp
   - src/dataStructure/fenwick_set.hpp
+  - src/dataStructure/fenwick_multiset.hpp
   timestamp: '2023-01-29 05:23:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ARC075-E.test.cpp
-  - test/fenwick_tree2.test.cpp
   - test/fenwick_tree.test.cpp
-  - test/ABC186-F.test.cpp
   - test/ABC185-E.test.cpp
+  - test/fenwick_tree2.test.cpp
+  - test/ARC075-E.test.cpp
   - test/ARC033-C.test.cpp
+  - test/ABC186-F.test.cpp
 documentation_of: src/dataStructure/fenwick_tree.hpp
 layout: document
 title: "fenwick_tree (\u4E00\u70B9\u52A0\u7B97\u3001\u533A\u9593\u548C\u53D6\u5F97\

@@ -80,6 +80,9 @@ data:
       path: src/geometryR2/base.hpp
       title: "base (\u30D9\u30FC\u30B9)"
     - icon: ':heavy_check_mark:'
+      path: src/geometryR2/ccw.hpp
+      title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
+    - icon: ':heavy_check_mark:'
       path: src/geometryR2/line.hpp
       title: "line (\u76F4\u7DDA)"
     - icon: ':heavy_check_mark:'
@@ -91,6 +94,13 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/geometryR2/reflection.hpp
       title: "reflection (\u53CD\u5C04)"
+    - icon: ':heavy_check_mark:'
+      path: src/geometryR2/relation.hpp
+      title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\
+        \u7F6E\u95A2\u4FC2)"
+    - icon: ':heavy_check_mark:'
+      path: src/geometryR2/segment.hpp
+      title: "segment (\u7DDA\u5206)"
   - name: src/graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -364,6 +374,9 @@ data:
       path: test/AOJCGL-2A.test.cpp
       title: test/AOJCGL-2A.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/AOJCGL-2B.test.cpp
+      title: test/AOJCGL-2B.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
     - icon: ':heavy_check_mark:'
@@ -451,6 +464,9 @@ data:
       path: test/binary-search.test.cpp
       title: test/binary-search.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ccw.test.cpp
+      title: test/ccw.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/compression.test.cpp
       title: test/compression.test.cpp
     - icon: ':heavy_check_mark:'
@@ -459,9 +475,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/cross.test.cpp
-      title: test/cross.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/dualSegmentTree-AOJRAQ.test.cpp
       title: test/dualSegmentTree-AOJRAQ.test.cpp

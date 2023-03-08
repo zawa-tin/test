@@ -96,10 +96,10 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/segment_tree-AOJRSQ.test.cpp
-  - test/AGC005-B.test.cpp
   - test/segment_tree-AOJRmQ.test.cpp
-  - test/ALPC-J.test.cpp
   - test/segment_tree-RXORQ.test.cpp
+  - test/AGC005-B.test.cpp
+  - test/ALPC-J.test.cpp
 documentation_of: src/dataStructure/segment_tree.hpp
 layout: document
 title: "segment_tree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\u30B0\

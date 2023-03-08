@@ -85,8 +85,8 @@ data:
   timestamp: '2022-12-14 06:57:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/range-edge-graph1.test.cpp
   - test/range-edge-graph2.test.cpp
+  - test/range-edge-graph1.test.cpp
 documentation_of: src/graph/range-edge-graph.hpp
 layout: document
 title: "range edge graph (\u533A\u9593\u306B\u8FBA\u3092\u8CBC\u308B\u30C6\u30AF)"

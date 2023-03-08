@@ -46,14 +46,14 @@ data:
   timestamp: '2023-02-18 05:16:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/sqdecomp-LCRSQ.test.cpp
-  - test/segment_tree-AOJRSQ.test.cpp
-  - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
   - test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+  - test/segment_tree-AOJRSQ.test.cpp
+  - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+  - test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
+  - test/sqdecomp-LCRSQ.test.cpp
+  - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
   - test/dualSegmentTree-AOJRAQ.test.cpp
   - test/sqdecomp-AOJRSQ.test.cpp
-  - test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
-  - test/lazy_segtree-AOJ-RAQRmQ.test.cpp
 documentation_of: src/utility/monoid/add_monoid.hpp
 layout: document
 title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"

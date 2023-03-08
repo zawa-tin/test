@@ -5,14 +5,12 @@ data:
     path: src/geometryR2/base.hpp
     title: "base (\u30D9\u30FC\u30B9)"
   - icon: ':heavy_check_mark:'
-    path: src/geometryR2/ccw.hpp
-    title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
-  - icon: ':heavy_check_mark:'
     path: src/geometryR2/line.hpp
     title: "line (\u76F4\u7DDA)"
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/point.hpp
     title: "point (\u70B9)"
+  _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/relation.hpp
     title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\
@@ -20,18 +18,22 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/geometryR2/segment.hpp
     title: "segment (\u7DDA\u5206)"
-  _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/AOJCGL-2A.test.cpp
+    title: test/AOJCGL-2A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/AOJCGL-2B.test.cpp
+    title: test/AOJCGL-2B.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/ccw.test.cpp
+    title: test/ccw.test.cpp
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A
-    links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A
-  bundledCode: "#line 1 \"test/AOJCGL-2A.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A\"\
-    \n\n#line 2 \"src/geometryR2/line.hpp\"\n\n#line 2 \"src/geometryR2/point.hpp\"\
+    links: []
+  bundledCode: "#line 2 \"src/geometryR2/ccw.hpp\"\n\n#line 2 \"src/geometryR2/point.hpp\"\
     \n\n#line 2 \"src/geometryR2/base.hpp\"\n\n#include <cmath>\n\nnamespace geoR2\
     \ {\n\nusing real = long double;\n\nconst real PI = acosl(-1);\n\ninline real\
     \ &eps() {\n\tstatic real EPS = 1e-14;\n\treturn EPS;\n}\n\ninline void setEps(const\
@@ -67,67 +69,98 @@ data:
     }\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y - a.y *\
     \ b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
-    #line 4 \"src/geometryR2/line.hpp\"\n\n#include <cassert>\n\nnamespace geoR2 {\n\
-    \nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const\
-    \ point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid() const\
-    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\n} // namespace geo2d\n#line 2 \"\
-    src/geometryR2/relation.hpp\"\n\n#line 2 \"src/geometryR2/segment.hpp\"\n\n#line\
-    \ 2 \"src/geometryR2/ccw.hpp\"\n\n#line 6 \"src/geometryR2/ccw.hpp\"\n\nnamespace\
+    #line 2 \"src/geometryR2/line.hpp\"\n\n#line 4 \"src/geometryR2/line.hpp\"\n\n\
+    #include <cassert>\n\nnamespace geoR2 {\n\nstruct line {\n\tpoint a, b;\n\n\t\
+    line() : a(0, 0), b(0, 0) {}\n\tline(const point& _a, const point& _b) : a(_a),\
+    \ b(_b) {}\n\n\tinline bool isValid() const {\n\t\treturn !equals(a, b);\n\t}\n\
+    \n};\n\n} // namespace geo2d\n#line 6 \"src/geometryR2/ccw.hpp\"\n\nnamespace\
     \ geoR2 {\n\nenum class CCW {\n\tCOUNTER_CLOCKWISE,\n\tCLOCKWISE,\n\tONLINE_BACK,\n\
     \tONLINE_FRONT,\n\tON_SEGMENT,\n};\n\nCCW ccw(const vec2& a, const vec2& b) {\n\
     \tint outer = sgn(cross(a, b));\n\tif (outer == 1) {\n\t\treturn CCW::COUNTER_CLOCKWISE;\n\
     \t}\n\telse if (outer == -1) {\n\t\treturn CCW::CLOCKWISE;\n\t}\n\telse if (sgn(dot(a,\
     \ b)) == -1) {\n\t\treturn CCW::ONLINE_BACK;\n\t}\n\telse if (a.squareDistance()\
     \ < b.squareDistance()) {\n\t\treturn CCW::ONLINE_FRONT;\n\t}\n\telse {\n\t\t\
-    return CCW::ON_SEGMENT;\n\t}\n}\n\n} // namespace geoR2\n#line 5 \"src/geometryR2/segment.hpp\"\
-    \n\nnamespace geoR2 {\n\nstruct segment {\n\n\tpoint e1, e2;\n\n\tsegment() :\
-    \ e1(), e2() {}\n\tsegment(const point& _e1, const point& _e2) : e1(_e1), e2(_e2)\
-    \ {}\n\n\tbool isValid() const {\n\t\treturn !equals(e1, e2);\n\t}\n};\n\n} //\
-    \ namespace R2\n#line 7 \"src/geometryR2/relation.hpp\"\n\nnamespace geoR2 {\n\
-    namespace impl {\n\nint _ccw(const vec2& a, const vec2& b) {\n\tCCW value = ccw(a,\
-    \ b);\n\tif (value == CCW::COUNTER_CLOCKWISE) {\n\t\treturn 1;\n\t}\n\telse if\
-    \ (value == CCW::CLOCKWISE) {\n\t\treturn -1;\n\t}\n\telse if (value == CCW::ON_SEGMENT)\
-    \ {\n\t\treturn 0;\n\t}\n\telse if (value == CCW::ONLINE_BACK) {\n\t\treturn 2;\n\
-    \t}\n\telse {\n\t\treturn -2;\n\t}\n}\n\n} // namespace impl\n\nbool isOrthogonal(const\
-    \ line& l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\
-    \treturn sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const\
-    \ line& l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\
-    \treturn sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isIntersect(const\
-    \ segment& s1, const segment& s2) {\n\tassert(s1.isValid());\n\tassert(s2.isValid());\n\
-    \tvec2 v1(s1.e2 - s1.e1), v2(s2.e2 - s2.e1);\n\treturn \n\t\timpl::_ccw(v1, s2.e1\
-    \ - s1.e1) * impl::_ccw(v1, s2.e2 - s1.e1) <= 0 \n\t\tand\n\t\timpl::_ccw(v2,\
-    \ s1.e1 - s2.e1) * impl::_ccw(v2, s1.e2 - s2.e1) <= 0;\n}\n\n} // namespace geoR2\n\
-    #line 5 \"test/AOJCGL-2A.test.cpp\"\n\n#include <iostream>\n\nint main() {\n\t\
-    using namespace geoR2;\n\tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++)\
-    \ {\n\t\tline l1, l2;\n\t\tstd::cin >> l1.a >> l1.b >> l2.a >> l2.b;\n\t\tif (isParallel(l1,\
-    \ l2)) {\n\t\t\tstd::cout << 2 << std::endl;\n\t\t}\n\t\telse if (isOrthogonal(l1,\
-    \ l2)) {\n\t\t\tstd::cout << 1 << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout\
-    \ << 0 << std::endl;\n\t\t}\n\t}\n}\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A\"\
-    \n\n#include \"../src/geometryR2/line.hpp\"\n#include \"../src/geometryR2/relation.hpp\"\
-    \n\n#include <iostream>\n\nint main() {\n\tusing namespace geoR2;\n\tint q; std::cin\
-    \ >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tline l1, l2;\n\t\tstd::cin >>\
-    \ l1.a >> l1.b >> l2.a >> l2.b;\n\t\tif (isParallel(l1, l2)) {\n\t\t\tstd::cout\
-    \ << 2 << std::endl;\n\t\t}\n\t\telse if (isOrthogonal(l1, l2)) {\n\t\t\tstd::cout\
-    \ << 1 << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout << 0 << std::endl;\n\t\
-    \t}\n\t}\n}\n"
+    return CCW::ON_SEGMENT;\n\t}\n}\n\n} // namespace geoR2\n"
+  code: "#pragma once\n\n#include \"./point.hpp\"\n#include \"./line.hpp\"\n#include\
+    \ \"./base.hpp\"\n\nnamespace geoR2 {\n\nenum class CCW {\n\tCOUNTER_CLOCKWISE,\n\
+    \tCLOCKWISE,\n\tONLINE_BACK,\n\tONLINE_FRONT,\n\tON_SEGMENT,\n};\n\nCCW ccw(const\
+    \ vec2& a, const vec2& b) {\n\tint outer = sgn(cross(a, b));\n\tif (outer == 1)\
+    \ {\n\t\treturn CCW::COUNTER_CLOCKWISE;\n\t}\n\telse if (outer == -1) {\n\t\t\
+    return CCW::CLOCKWISE;\n\t}\n\telse if (sgn(dot(a, b)) == -1) {\n\t\treturn CCW::ONLINE_BACK;\n\
+    \t}\n\telse if (a.squareDistance() < b.squareDistance()) {\n\t\treturn CCW::ONLINE_FRONT;\n\
+    \t}\n\telse {\n\t\treturn CCW::ON_SEGMENT;\n\t}\n}\n\n} // namespace geoR2\n"
   dependsOn:
-  - src/geometryR2/line.hpp
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
-  - src/geometryR2/relation.hpp
+  - src/geometryR2/line.hpp
+  isVerificationFile: false
+  path: src/geometryR2/ccw.hpp
+  requiredBy:
   - src/geometryR2/segment.hpp
-  - src/geometryR2/ccw.hpp
-  isVerificationFile: true
-  path: test/AOJCGL-2A.test.cpp
-  requiredBy: []
+  - src/geometryR2/relation.hpp
   timestamp: '2023-03-08 21:36:18+09:00'
-  verificationStatus: TEST_ACCEPTED
-  verifiedWith: []
-documentation_of: test/AOJCGL-2A.test.cpp
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/AOJCGL-2B.test.cpp
+  - test/AOJCGL-2A.test.cpp
+  - test/ccw.test.cpp
+documentation_of: src/geometryR2/ccw.hpp
 layout: document
-redirect_from:
-- /verify/test/AOJCGL-2A.test.cpp
-- /verify/test/AOJCGL-2A.test.cpp.html
-title: test/AOJCGL-2A.test.cpp
+title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
 ---
+
+## 概要
+
+二次元平面上の２つのベクトル $\vec{a}, \vec{b}$ の位置関係を調べます。
+
+## 機能
+
+`namespace geoR2`上で定義されています。
+
+#### enum class
+
+**CCW**
+```
+enum class CCW {
+	COUNTER_CLOCKWISE,
+	CLOCKWISE,
+	ONLINE_BACK,
+	LNLINE_FRONT,
+	ON_SEGMENT,
+};
+```
+
+位置関係をこの5種類に分類します。意味はそれぞれ以下の通りです。
+
+**COUNTER_CLOCKWISE**
+
+$\vec{a}$ を反時計周りに $\theta\ (0\ <\ \theta\ <\ \pi )$ 回転すると$\vec{b}$ と向きが一致する
+
+
+**CLOCKWISE**
+
+$\vec{a}$ を時計周りに $\theta\ (0\ <\ \theta\ <\ \pi )$ 回転すると$\vec{b}$ と向きが一致する
+
+**ONLINE_BACK**
+
+$\vec{a}$ を $\pi$ 回転すると $\vec{b}$ と向きが一致する
+
+
+**ONLINE_FRONT**
+
+$k\vec{a} = \vec{b}\ (k > 1, k\in \mathbb{R})$ を満たす $k$ が存在する
+
+**ON_SEGMENT**
+
+$k\vec{a} = \vec{b}\ (0\ \le\ k\ \le\ 1, k\in \mathbb{R})$ を満たす $k$ が存在する
+
+<br />
+
+#### 関数
+
+**ccw**
+```
+CCW ccw(const vec2& a, const vec2& b)
+```
+
+$\vec{a}$ と $\vec{b}$ が前述の`CCW`でどの関係にあるかを返す。

@@ -5,6 +5,12 @@ data:
     path: src/geometryR2/base.hpp
     title: "base (\u30D9\u30FC\u30B9)"
   - icon: ':heavy_check_mark:'
+    path: src/geometryR2/ccw.hpp
+    title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"
+  - icon: ':heavy_check_mark:'
+    path: src/geometryR2/line.hpp
+    title: "line (\u76F4\u7DDA)"
+  - icon: ':heavy_check_mark:'
     path: src/geometryR2/point.hpp
     title: "point (\u70B9)"
   _extendedRequiredBy: []
@@ -17,7 +23,7 @@ data:
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C
     links:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C
-  bundledCode: "#line 1 \"test/cross.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C\"\
+  bundledCode: "#line 1 \"test/ccw.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C\"\
     \n\n#line 2 \"src/geometryR2/point.hpp\"\n\n#line 2 \"src/geometryR2/base.hpp\"\
     \n\n#include <cmath>\n\nnamespace geoR2 {\n\nusing real = long double;\n\nconst\
     \ real PI = acosl(-1);\n\ninline real &eps() {\n\tstatic real EPS = 1e-14;\n\t\
@@ -53,42 +59,55 @@ data:
     \ * b.y;\n}\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y\
     \ - a.y * b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
-    #line 4 \"test/cross.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\n\
-    int main() {\n\tusing namespace geoR2;\n\tpoint p0, p1; std::cin >> p0 >> p1;\n\
-    \tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p2; std::cin\
-    \ >> p2;\n\t\treal outer = cross(p1 - p0, p2 - p0);\n\t\treal inner = dot(p1 -\
-    \ p0, p2 - p0);\n\t\tif (sgn(outer) == 1) {\n\t\t\tstd::cout << \"COUNTER_CLOCKWISE\"\
-    \ << std::endl;\n\t\t}\n\t\telse if (sgn(outer) == -1) {\n\t\t\tstd::cout << \"\
-    CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(inner) == -1) {\n\t\t\tstd::cout\
-    \ << \"ONLINE_BACK\" << std::endl;\n\t\t}\n\t\telse if (point(p1 - p0).squareDistance()\
-    \ < point(p2 - p0).squareDistance()) {\n\t\t\tstd::cout << \"ONLINE_FRONT\" <<\
-    \ std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout << \"ON_SEGMENT\" << std::endl;\n\
-    \t\t}\n\t}\n}\n"
+    #line 2 \"src/geometryR2/ccw.hpp\"\n\n#line 2 \"src/geometryR2/line.hpp\"\n\n\
+    #line 4 \"src/geometryR2/line.hpp\"\n\n#include <cassert>\n\nnamespace geoR2 {\n\
+    \nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const\
+    \ point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid() const\
+    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\n} // namespace geo2d\n#line 6 \"\
+    src/geometryR2/ccw.hpp\"\n\nnamespace geoR2 {\n\nenum class CCW {\n\tCOUNTER_CLOCKWISE,\n\
+    \tCLOCKWISE,\n\tONLINE_BACK,\n\tONLINE_FRONT,\n\tON_SEGMENT,\n};\n\nCCW ccw(const\
+    \ vec2& a, const vec2& b) {\n\tint outer = sgn(cross(a, b));\n\tif (outer == 1)\
+    \ {\n\t\treturn CCW::COUNTER_CLOCKWISE;\n\t}\n\telse if (outer == -1) {\n\t\t\
+    return CCW::CLOCKWISE;\n\t}\n\telse if (sgn(dot(a, b)) == -1) {\n\t\treturn CCW::ONLINE_BACK;\n\
+    \t}\n\telse if (a.squareDistance() < b.squareDistance()) {\n\t\treturn CCW::ONLINE_FRONT;\n\
+    \t}\n\telse {\n\t\treturn CCW::ON_SEGMENT;\n\t}\n}\n\n} // namespace geoR2\n#line\
+    \ 5 \"test/ccw.test.cpp\"\n\n#include <iostream>\n#include <iomanip>\n\nint main()\
+    \ {\n\tusing namespace geoR2;\n\tpoint p0, p1; std::cin >> p0 >> p1;\n\tint q;\
+    \ std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p2; std::cin >>\
+    \ p2;\n\t\tauto value = ccw(p1 - p0, p2 - p0);\n\t\tif (value == CCW::COUNTER_CLOCKWISE)\
+    \ {\n\t\t\tstd::cout << \"COUNTER_CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if\
+    \ (value == CCW::CLOCKWISE) {\n\t\t\tstd::cout << \"CLOCKWISE\" << std::endl;\n\
+    \t\t}\n\t\telse if (value == CCW::ONLINE_BACK) {\n\t\t\tstd::cout << \"ONLINE_BACK\"\
+    \ << std::endl;\n\t\t}\n\t\telse if (value == CCW::ONLINE_FRONT) {\n\t\t\tstd::cout\
+    \ << \"ONLINE_FRONT\" << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout << \"\
+    ON_SEGMENT\" << std::endl;\n\t\t}\n\t}\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/1/CGL_1_C\"\
-    \n\n#include \"../src/geometryR2/point.hpp\"\n\n#include <iostream>\n#include\
-    \ <iomanip>\n\nint main() {\n\tusing namespace geoR2;\n\tpoint p0, p1; std::cin\
-    \ >> p0 >> p1;\n\tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\
-    \tpoint p2; std::cin >> p2;\n\t\treal outer = cross(p1 - p0, p2 - p0);\n\t\treal\
-    \ inner = dot(p1 - p0, p2 - p0);\n\t\tif (sgn(outer) == 1) {\n\t\t\tstd::cout\
-    \ << \"COUNTER_CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(outer) == -1)\
-    \ {\n\t\t\tstd::cout << \"CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (sgn(inner)\
-    \ == -1) {\n\t\t\tstd::cout << \"ONLINE_BACK\" << std::endl;\n\t\t}\n\t\telse\
-    \ if (point(p1 - p0).squareDistance() < point(p2 - p0).squareDistance()) {\n\t\
-    \t\tstd::cout << \"ONLINE_FRONT\" << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout\
-    \ << \"ON_SEGMENT\" << std::endl;\n\t\t}\n\t}\n}\n"
+    \n\n#include \"../src/geometryR2/point.hpp\"\n#include \"../src/geometryR2/ccw.hpp\"\
+    \n\n#include <iostream>\n#include <iomanip>\n\nint main() {\n\tusing namespace\
+    \ geoR2;\n\tpoint p0, p1; std::cin >> p0 >> p1;\n\tint q; std::cin >> q;\n\tfor\
+    \ (int _ = 0 ; _ < q ; _++) {\n\t\tpoint p2; std::cin >> p2;\n\t\tauto value =\
+    \ ccw(p1 - p0, p2 - p0);\n\t\tif (value == CCW::COUNTER_CLOCKWISE) {\n\t\t\tstd::cout\
+    \ << \"COUNTER_CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (value == CCW::CLOCKWISE)\
+    \ {\n\t\t\tstd::cout << \"CLOCKWISE\" << std::endl;\n\t\t}\n\t\telse if (value\
+    \ == CCW::ONLINE_BACK) {\n\t\t\tstd::cout << \"ONLINE_BACK\" << std::endl;\n\t\
+    \t}\n\t\telse if (value == CCW::ONLINE_FRONT) {\n\t\t\tstd::cout << \"ONLINE_FRONT\"\
+    \ << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout << \"ON_SEGMENT\" << std::endl;\n\
+    \t\t}\n\t}\n}\n"
   dependsOn:
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
+  - src/geometryR2/ccw.hpp
+  - src/geometryR2/line.hpp
   isVerificationFile: true
-  path: test/cross.test.cpp
+  path: test/ccw.test.cpp
   requiredBy: []
-  timestamp: '2023-03-08 19:12:48+09:00'
+  timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/cross.test.cpp
+documentation_of: test/ccw.test.cpp
 layout: document
 redirect_from:
-- /verify/test/cross.test.cpp
-- /verify/test/cross.test.cpp.html
-title: test/cross.test.cpp
+- /verify/test/ccw.test.cpp
+- /verify/test/ccw.test.cpp.html
+title: test/ccw.test.cpp
 ---

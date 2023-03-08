@@ -73,10 +73,10 @@ data:
   timestamp: '2022-08-03 12:30:08+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj_dpl_5_a.test.cpp
-  - test/gcdConvolution.test.cpp
   - test/CF856-D.test.cpp
   - test/matrix.test.cpp
+  - test/gcdConvolution.test.cpp
+  - test/aoj_dpl_5_a.test.cpp
   - test/EDPC-R.test.cpp
 documentation_of: src/math/modint.hpp
 layout: document

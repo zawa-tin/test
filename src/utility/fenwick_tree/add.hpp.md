@@ -42,16 +42,16 @@ data:
   isVerificationFile: false
   path: src/utility/fenwick_tree/add.hpp
   requiredBy:
-  - src/dataStructure/fenwick_multiset.hpp
   - src/dataStructure/fenwick_set.hpp
+  - src/dataStructure/fenwick_multiset.hpp
   timestamp: '2023-01-29 05:23:46+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ARC075-E.test.cpp
-  - test/fenwick_tree2.test.cpp
   - test/fenwick_tree.test.cpp
-  - test/ABC186-F.test.cpp
+  - test/fenwick_tree2.test.cpp
+  - test/ARC075-E.test.cpp
   - test/ARC033-C.test.cpp
+  - test/ABC186-F.test.cpp
 documentation_of: src/utility/fenwick_tree/add.hpp
 layout: document
 title: fenwick tree add structure

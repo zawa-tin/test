@@ -68,11 +68,11 @@ data:
   timestamp: '2023-03-04 23:54:34+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC254-D.test.cpp
+  - test/ABC292-C.test.cpp
   - test/ABC250-D.test.cpp
   - test/ABC177-E.test.cpp
+  - test/ABC254-D.test.cpp
   - test/ABC170-D.test.cpp
-  - test/ABC292-C.test.cpp
 documentation_of: src/math/linearSieve.hpp
 layout: document
 title: "linearSieve (\u7DDA\u5F62\u7BE9\u30FB\u7D20\u56E0\u6570\u5206\u89E3/\u7D04\

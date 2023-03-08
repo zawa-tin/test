@@ -80,10 +80,10 @@ data:
   timestamp: '2023-03-06 03:03:34+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC179-F.test.cpp
+  - test/practice90-037.test.cpp
   - test/ABC291-F.test.cpp
   - test/dualSegmentTree-AOJRAQ.test.cpp
-  - test/practice90-037.test.cpp
-  - test/ABC179-F.test.cpp
 documentation_of: src/dataStructure/dualSegmentTree.hpp
 layout: document
 title: "dualSegmentTree (\u533A\u9593\u66F4\u65B0\u4E00\u70B9\u53D6\u5F97\u30BB\u30B0\
