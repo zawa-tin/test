@@ -156,6 +156,14 @@ real dot(const point& a, const point& b)
 
 <br />
 
+**cross**
+```
+real cross(const point& a, const point& b)
+```
+`a` と `b` の外積の大きさを返す。
+
+<br />
+
 **equals**
 ```
 bool equals(const point& a, const point& b)
