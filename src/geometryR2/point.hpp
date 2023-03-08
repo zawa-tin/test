@@ -78,6 +78,10 @@ real dot(const point& a, const point& b) {
 	return a.x * b.x + a.y * b.y;
 }
 
+real cross(const point& a, const point& b) {
+	return a.x * b.y - a.y * b.x;
+}
+
 bool equals(const point& a, const point& b) {
 	return equals(a.x, b.x) and equals(a.y, b.y);
 }
