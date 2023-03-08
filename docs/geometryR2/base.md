@@ -1,12 +1,11 @@
 ---
 title: base (ベース)
-documentaion_of: //src/geometry2d/base.hpp
+documentation_of: //src/geometryR2/base.hpp
 ---
-
 
 ## 概要
 
-`geometry2d`に属するのほぼ全ての関数、classで利用されるであろうエイリアスや関数をまとめたファイル
+`geometryR2`に属するのほぼ全ての関数、classで利用されるであろうエイリアスや関数をまとめたファイル
 
 
 ## 機能
@@ -15,7 +14,7 @@ documentaion_of: //src/geometry2d/base.hpp
 
 **エイリアス**
 ```
-using realType = long double
+using real = long double
 ```
 
 値の型
@@ -24,7 +23,7 @@ using realType = long double
 
 **定数**
 ```
-constepxr realType PI = acosl(-1);
+const realType PI = acosl(-1);
 ```
 円周率
 
@@ -34,7 +33,7 @@ constepxr realType PI = acosl(-1);
 
 **eps**
 ```
-inline realType &eps()
+inline real &eps()
 ```
 現在のEPSを返します。初期状態では $10^{-14}$ に設定されています。
 
@@ -42,7 +41,7 @@ inline realType &eps()
 
 **setEps**
 ```
-inline void &setEps(realType value = 1e-14)
+inline void &setEps(real value = 1e-14)
 ```
 EPSを`value`の値に変更します
 
@@ -50,7 +49,7 @@ EPSを`value`の値に変更します
 
 **sgn**
 ```
-inline int sgn(realType value)
+inline int sgn(real value)
 ```
 `value`が負なら`-1`を正なら`1`を零なら`0`を返す
 
@@ -58,16 +57,20 @@ inline int sgn(realType value)
 
 **equals**
 ```
-inline bool equals(const realType& a, const realType& b)
+inline bool equals(const real& a, const real& b)
 ```
 
 引数に与えた実数`a, b`が等しいか判定する
 
+<br />
+
 **toRadian**
 ```
-realType toRadian(realType value)
+real toRadian(const real& value)
 ```
 引数`value`を弧度法にしたものを返す。
+
+<br />
 
 #### ユーザー定義リテラル
 
@@ -75,7 +78,7 @@ realType toRadian(realType value)
 
 **_rad**
 ```
-geo2d::realType operator"" _rad(unsigned long long value)
+geoR2::real operator"" _rad(unsigned long long value)
 ```
 
 `value`を弧度法にしたものを返す。

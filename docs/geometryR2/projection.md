@@ -1,6 +1,6 @@
 ---
 title: projection (射影)
-documentation_of: //src/geometry2d/projection.hpp
+documentation_of: //src/geometryR2/projection.hpp
 ---
 
 ## 概要
@@ -10,7 +10,7 @@ documentation_of: //src/geometry2d/projection.hpp
 ## 機能
 
 ```
-geo2d::point geo2d::projection(const point& p, const line& l)
+geoR2::point geoR2::projection(const geoR2::point& p, const geoR2::line& l)
 ```
 
 `l` に対する`p`の射影を求める
