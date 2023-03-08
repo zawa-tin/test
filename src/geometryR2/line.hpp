@@ -18,16 +18,4 @@ struct line {
 
 };
 
-bool isOrthogonal(const line& l1, const line& l2) {
-	assert(l1.isValid());
-	assert(l2.isValid());
-	return sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;
-}
-
-bool isParallel(const line& l1, const line& l2) {
-	assert(l1.isValid());
-	assert(l2.isValid());
-	return sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;
-}
-
 } // namespace geo2d

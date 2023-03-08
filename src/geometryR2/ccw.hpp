@@ -14,7 +14,7 @@ enum class CCW {
 	ON_SEGMENT,
 };
 
-CCW ccw(const vec2 a, const vec2 b) {
+CCW ccw(const vec2& a, const vec2& b) {
 	int outer = sgn(cross(a, b));
 	if (outer == 1) {
 		return CCW::COUNTER_CLOCKWISE;
