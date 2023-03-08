@@ -19,6 +19,9 @@ data:
     path: test/ABC259-B.test.cpp
     title: test/ABC259-B.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/AOJCGL-2A.test.cpp
+    title: test/AOJCGL-2A.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/cross.test.cpp
     title: test/cross.test.cpp
   - icon: ':heavy_check_mark:'
@@ -103,6 +106,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/projection.test.cpp
+  - test/AOJCGL-2A.test.cpp
   - test/reflection.test.cpp
   - test/ABC259-B.test.cpp
   - test/cross.test.cpp

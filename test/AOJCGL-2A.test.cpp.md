@@ -5,31 +5,23 @@ data:
     path: src/geometryR2/base.hpp
     title: "base (\u30D9\u30FC\u30B9)"
   - icon: ':heavy_check_mark:'
+    path: src/geometryR2/line.hpp
+    title: "line (\u76F4\u7DDA)"
+  - icon: ':heavy_check_mark:'
     path: src/geometryR2/point.hpp
     title: "point (\u70B9)"
-  _extendedRequiredBy:
-  - icon: ':heavy_check_mark:'
-    path: src/geometryR2/projection.hpp
-    title: "projection (\u5C04\u5F71)"
-  - icon: ':heavy_check_mark:'
-    path: src/geometryR2/reflection.hpp
-    title: "reflection (\u53CD\u5C04)"
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: test/AOJCGL-2A.test.cpp
-    title: test/AOJCGL-2A.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/projection.test.cpp
-    title: test/projection.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: test/reflection.test.cpp
-    title: test/reflection.test.cpp
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: hpp
+  _pathExtension: cpp
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
-    links: []
-  bundledCode: "#line 2 \"src/geometryR2/line.hpp\"\n\n#line 2 \"src/geometryR2/point.hpp\"\
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A
+    links:
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A
+  bundledCode: "#line 1 \"test/AOJCGL-2A.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A\"\
+    \n\n#line 2 \"src/geometryR2/line.hpp\"\n\n#line 2 \"src/geometryR2/point.hpp\"\
     \n\n#line 2 \"src/geometryR2/base.hpp\"\n\n#include <cmath>\n\nnamespace geoR2\
     \ {\n\nusing real = long double;\n\nconst real PI = acosl(-1);\n\ninline real\
     \ &eps() {\n\tstatic real EPS = 1e-14;\n\treturn EPS;\n}\n\ninline void setEps(const\
@@ -72,95 +64,34 @@ data:
     \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
     \ sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const line& l1,\
     \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
-    \ sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n"
-  code: "#pragma once\n\n#include \"./point.hpp\"\n\n#include <cassert>\n\nnamespace\
-    \ geoR2 {\n\nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\t\
-    line(const point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid()\
-    \ const {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\nbool isOrthogonal(const line&\
-    \ l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\t\
-    return sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const line&\
-    \ l1, const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\t\
-    return sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n"
+    \ sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n#line\
+    \ 4 \"test/AOJCGL-2A.test.cpp\"\n\n#include <iostream>\n\nint main() {\n\tusing\
+    \ namespace geoR2;\n\tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ < q ; _++) {\n\
+    \t\tline l1, l2;\n\t\tstd::cin >> l1.a >> l1.b >> l2.a >> l2.b;\n\t\tif (isParallel(l1,\
+    \ l2)) {\n\t\t\tstd::cout << 2 << std::endl;\n\t\t}\n\t\telse if (isOrthogonal(l1,\
+    \ l2)) {\n\t\t\tstd::cout << 1 << std::endl;\n\t\t}\n\t\telse {\n\t\t\tstd::cout\
+    \ << 0 << std::endl;\n\t\t}\n\t}\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/4/CGL/2/CGL_2_A\"\
+    \n\n#include \"../src/geometryR2/line.hpp\"\n\n#include <iostream>\n\nint main()\
+    \ {\n\tusing namespace geoR2;\n\tint q; std::cin >> q;\n\tfor (int _ = 0 ; _ <\
+    \ q ; _++) {\n\t\tline l1, l2;\n\t\tstd::cin >> l1.a >> l1.b >> l2.a >> l2.b;\n\
+    \t\tif (isParallel(l1, l2)) {\n\t\t\tstd::cout << 2 << std::endl;\n\t\t}\n\t\t\
+    else if (isOrthogonal(l1, l2)) {\n\t\t\tstd::cout << 1 << std::endl;\n\t\t}\n\t\
+    \telse {\n\t\t\tstd::cout << 0 << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
+  - src/geometryR2/line.hpp
   - src/geometryR2/point.hpp
   - src/geometryR2/base.hpp
-  isVerificationFile: false
-  path: src/geometryR2/line.hpp
-  requiredBy:
-  - src/geometryR2/projection.hpp
-  - src/geometryR2/reflection.hpp
+  isVerificationFile: true
+  path: test/AOJCGL-2A.test.cpp
+  requiredBy: []
   timestamp: '2023-03-08 19:51:16+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - test/projection.test.cpp
-  - test/AOJCGL-2A.test.cpp
-  - test/reflection.test.cpp
-documentation_of: src/geometryR2/line.hpp
+  verificationStatus: TEST_ACCEPTED
+  verifiedWith: []
+documentation_of: test/AOJCGL-2A.test.cpp
 layout: document
-title: "line (\u76F4\u7DDA)"
+redirect_from:
+- /verify/test/AOJCGL-2A.test.cpp
+- /verify/test/AOJCGL-2A.test.cpp.html
+title: test/AOJCGL-2A.test.cpp
 ---
-
-## 概要
-
-二次元平面上の直線を扱う構造体
-
-２つの異なる点 $a, b$ によって直線を定義する
-
-## 機能
-
-`namespace geoR2`下で定義されている
-
-#### コンストラクタ
-```
-(1)line()
-(2)line(const point& _a, const point& _b)
-```
-
-**(1)**
-
-$a$ と $b$ を原点で初期化する。これは直線として有効でないので利用する際は値の再代入が必要である。
-
-<br />
-
-**(2)**
-
-$a$ と $b$ を引数の値で初期化する
-
-<br />
-
-#### メンバ関数
-
-**isValid**
-```
-bool isValid() cosnt
-```
-
-直線が正しく定義されているかを判定する。すなわち $a\ne b$ だと`true`を返す。
-
-<br />
-
-#### 関数
-
-**isOrthogonal**
-```
-bool isOrthogonal(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が直交するかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue
-
-<br />
-
-**isParallel**
-```
-bool isParallel(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が平行であるかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue

@@ -361,6 +361,9 @@ data:
       path: test/AOJ0519.test.cpp
       title: test/AOJ0519.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/AOJCGL-2A.test.cpp
+      title: test/AOJCGL-2A.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ARC033-C.test.cpp
       title: test/ARC033-C.test.cpp
     - icon: ':heavy_check_mark:'

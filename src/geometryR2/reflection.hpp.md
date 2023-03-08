@@ -60,16 +60,21 @@ data:
     }\n\nreal cross(const point& a, const point& b) {\n\treturn a.x * b.y - a.y *\
     \ b.x;\n}\n\nbool equals(const point& a, const point& b) {\n\treturn equals(a.x,\
     \ b.x) and equals(a.y, b.y);\n}\n\nusing vec2 = point;\n\n} // namespace geoR2\n\
-    #line 4 \"src/geometryR2/line.hpp\"\n\nnamespace geoR2 {\n\nstruct line {\n\t\
-    point a, b;\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const point& _a, const point&\
-    \ _b) : a(_a), b(_b) {}\n\tbool isValid() const {\n\t\treturn !equals(a, b);\n\
-    \t}\n};\n\n} // namespace geo2d\n#line 5 \"src/geometryR2/projection.hpp\"\n\n\
-    #include <cassert>\n\nnamespace geoR2 {\n\npoint projection(const point& p, const\
-    \ line& l) {\n\tassert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) /\
-    \ vec2(l.b - l.a).squareDistance();\n\treturn coeff * l.b + (static_cast<real>(1)\
-    \ - coeff) * l.a;\n}\n\n} // namespace geoR2\n#line 4 \"src/geometryR2/reflection.hpp\"\
-    \n\nnamespace geoR2 {\n\npoint reflection(const point& p, const line& l) {\n\t\
-    return -p + static_cast<real>(2) * projection(p, l);\n}\n\n} // namespace geoR2\n"
+    #line 4 \"src/geometryR2/line.hpp\"\n\n#include <cassert>\n\nnamespace geoR2 {\n\
+    \nstruct line {\n\tpoint a, b;\n\n\tline() : a(0, 0), b(0, 0) {}\n\tline(const\
+    \ point& _a, const point& _b) : a(_a), b(_b) {}\n\n\tinline bool isValid() const\
+    \ {\n\t\treturn !equals(a, b);\n\t}\n\n};\n\nbool isOrthogonal(const line& l1,\
+    \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
+    \ sgn(dot(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\nbool isParallel(const line& l1,\
+    \ const line& l2) {\n\tassert(l1.isValid());\n\tassert(l2.isValid());\n\treturn\
+    \ sgn(cross(l1.b - l1.a, l2.b - l2.a)) == 0;\n}\n\n} // namespace geo2d\n#line\
+    \ 5 \"src/geometryR2/projection.hpp\"\n\n#line 7 \"src/geometryR2/projection.hpp\"\
+    \n\nnamespace geoR2 {\n\npoint projection(const point& p, const line& l) {\n\t\
+    assert(l.isValid());\n\treal coeff = dot(l.b - l.a, p - l.a) / vec2(l.b - l.a).squareDistance();\n\
+    \treturn coeff * l.b + (static_cast<real>(1) - coeff) * l.a;\n}\n\n} // namespace\
+    \ geoR2\n#line 4 \"src/geometryR2/reflection.hpp\"\n\nnamespace geoR2 {\n\npoint\
+    \ reflection(const point& p, const line& l) {\n\treturn -p + static_cast<real>(2)\
+    \ * projection(p, l);\n}\n\n} // namespace geoR2\n"
   code: "#pragma once\n\n#include \"./projection.hpp\"\n\nnamespace geoR2 {\n\npoint\
     \ reflection(const point& p, const line& l) {\n\treturn -p + static_cast<real>(2)\
     \ * projection(p, l);\n}\n\n} // namespace geoR2\n"
@@ -81,7 +86,7 @@ data:
   isVerificationFile: false
   path: src/geometryR2/reflection.hpp
   requiredBy: []
-  timestamp: '2023-03-08 19:12:48+09:00'
+  timestamp: '2023-03-08 19:51:16+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/reflection.test.cpp
