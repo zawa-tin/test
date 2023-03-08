@@ -39,31 +39,3 @@ bool isValid() cosnt
 ```
 
 直線が正しく定義されているかを判定する。すなわち $a\ne b$ だと`true`を返す。
-
-<br />
-
-#### 関数
-
-**isOrthogonal**
-```
-bool isOrthogonal(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が直交するかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue
-
-<br />
-
-**isParallel**
-```
-bool isParallel(const line& l1, const line& l2)
-```
-
-直線 $l1, l2$ が平行であるかを判定する
-
-**制約**
-- `l1.isValid()`がTrue
-- `l2.isValid()`がTrue
