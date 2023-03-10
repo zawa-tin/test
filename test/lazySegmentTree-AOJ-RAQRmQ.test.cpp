@@ -1,24 +1,24 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_H"
 
-#include "../src/utility/monoid/min_monoid.hpp"
-#include "../src/utility/monoid/add_monoid.hpp"
+#include "../src/utility/monoid/minMonoid.hpp"
+#include "../src/utility/monoid/addMonoid.hpp"
 
 struct action {
-	using value_monoid = zawa::min_monoid<long long>;
-	using operator_monoid = zawa::add_monoid<long long>;
-	static value_monoid::value_type mapping(const value_monoid::value_type& a, const operator_monoid::value_type& b) {
+	using valueMonoid = zawa::minMonoid<long long>;
+	using operatorMonoid = zawa::addMonoid<long long>;
+	static valueMonoid::valueType mapping(const valueMonoid::valueType& a, const operatorMonoid::valueType& b) {
 		return a + b;
 	}
 };
 
-#include "../src/dataStructure/lazy_segtree.hpp"
+#include "../src/dataStructure/lazySegmentTree.hpp"
 
 #include <iostream>
 #include <vector>
 
 int main() {
 	int n, q; std::cin >> n >> q;
-	zawa::lazy_segtree<action> S(std::vector(n, 0LL));
+	zawa::lazySegmentTree<action> S(std::vector(n, 0LL));
 	for (int _ = 0 ; _ < q ; _++) {
 		int type; std::cin >> type;
 		if (type == 0) {

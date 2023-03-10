@@ -14,11 +14,11 @@ xor演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 
 **メンバ**
 
-`using value_type = T`
+`using valueType = T`
 - データ構造で利用するために必要なエイリアス
 
-`static constexpr T identity`
+`static constexpr valueType identity`
 - 単位元、0
 
-`static value_type operation(const value_type& a, const value_type& b)`
+`static valueType operation(const valueType& a, const valueType& b)`
 - `a ^ b`

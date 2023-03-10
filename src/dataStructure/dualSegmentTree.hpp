@@ -8,7 +8,7 @@ namespace zawa {
 template <class monoid>
 class dualSegmentTree {
 private:
-	using O = typename monoid::value_type;
+	using O = typename monoid::valueType;
 	int N;
 	std::vector<O> dat;
 

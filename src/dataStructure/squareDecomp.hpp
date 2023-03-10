@@ -7,9 +7,9 @@
 namespace zawa {
 
 template <class monoid>
-class sqdecomp {
+class squareDecomp {
 private:
-	using T = typename monoid::value_type;
+	using T = typename monoid::valueType;
 	int square;
 	std::vector<T> dat;
 	std::vector<T> bucket;
@@ -24,25 +24,25 @@ private:
 	}
 
 public:
-	sqdecomp(const std::vector<T>& as) : square(std::sqrt(as.size() + 1)), dat(as), bucket(((int)as.size() + square - 1) / square, monoid::identity)  {
+	squareDecomp(const std::vector<T>& A) : square(std::sqrt(A.size() + 1)), dat(A), bucket(((int)A.size() + square - 1) / square, monoid::identity)  {
 		for (int i = 0 ; i < (int)dat.size() ; i++) {
 			bucket[i / square] = monoid::operation(dat[i], bucket[i / square]);
 		}
 	}
-	sqdecomp(int n) : square(std::sqrt(n + 1)), dat(n, monoid::identity), bucket((n + square - 1) / square, monoid::identity) {}
+	squareDecomp(int n) : square(std::sqrt(n + 1)), dat(n, monoid::identity), bucket((n + square - 1) / square, monoid::identity) {}
 
-	void update(int i, const T& x) {
+	void set(int i, const T& x) {
 		dat[i] = x;
 		update(i / square);
 	}
 
-	T action(int i, const T& x) {
+	T update(int i, const T& x) {
 		dat[i] = monoid::operation(dat[i], x);
 		update(i / square);
 		return dat[i];
 	}
 
-	T prod(int l, int r) {
+	T prod(int l, int r) const {
 		T res = monoid::identity;
 		for (int i = 0 ; i < (int)bucket.size() ; i++) {
 			int p = i * square, q = (i + 1) * square;
@@ -61,12 +61,12 @@ public:
 		return res;
 	}
 
-	std::vector<T> get_dat() {
+	inline std::vector<T> _dat() const {
 		return dat;
 	}
 	
-	std::vector<T> get_bucket(std::size_t i) {
-		return bucket[i];
+	inline std::vector<T> _bucket() const {
+		return bucket;
 	}
 
 };

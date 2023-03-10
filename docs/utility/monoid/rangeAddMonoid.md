@@ -1,6 +1,6 @@
 ---
-title: range_add_monoid (区間和モノイド)
-documentation_of: //src/utility/monoid/range_add_monoid.hpp
+title: rangeAddMonoid (区間和モノイド)
+documentation_of: //src/utility/monoid/rangeAddMonoid.hpp
 ---
 
 ## 概要
@@ -25,13 +25,13 @@ documentation_of: //src/utility/monoid/range_add_monoid.hpp
 
 `テンプレート引数 T` : `dat`の`T`に利用される
 
-`using value_type = dat<T>`
+`using valueType = dat<T>`
 - データ構造で利用するために必要なエイリアス
 
-`static constexpr value_type identity`
+`static constexpr valueType identity`
 - 単位元、 `value = 0`、`size = 0ULL`
 
-`static value_type opration(const value_type& a, const value_type& b)`
+`static valueType opration(const valueType& a, const valueType& b)`
 - 加法
 - `value = a.value + b.value`
 - `size = a.size + b.size`

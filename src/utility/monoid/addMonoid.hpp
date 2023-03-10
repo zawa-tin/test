@@ -3,11 +3,11 @@
 namespace zawa {
 
 template <class T>
-struct xorMonoid {
+struct addMonoid {
 	using valueType = T;
 	static constexpr valueType identity{};
 	static valueType operation(const valueType& a, const valueType& b) {
-		return (a ^ b);
+		return a + b;
 	}
 };
 
