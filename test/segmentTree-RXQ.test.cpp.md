@@ -6,8 +6,9 @@ data:
     title: "segmentTree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u6F14\u7B97\u30BB\
       \u30B0\u6728)"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/minMonoid.hpp
-    title: "minMonoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
+    path: src/utility/monoid/xorMonoid.hpp
+    title: "xorMonoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9\
+      )"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -15,16 +16,14 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
+    PROBLEM: https://atcoder.jp/contests/abc185/tasks/abc185_f
     links:
-    - https://atcoder.jp/contests/agc005/submissions/39569912
-    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
-  bundledCode: "#line 1 \"test/AGC005-B.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n\n#line 2 \"src/utility/monoid/minMonoid.hpp\"\n\n#include <algorithm>\n#include\
-    \ <limits>\n\nnamespace zawa {\n\ntemplate <class T>\nstruct minMonoid {\n\tusing\
-    \ valueType = T;\n\tstatic constexpr valueType identity = std::numeric_limits<valueType>::max();\n\
-    \tstatic valueType operation(const valueType& a, const valueType& b) {\n\t\treturn\
-    \ std::min(a, b);\n\t}\n};\n\n};\n#line 2 \"src/dataStructure/segmentTree.hpp\"\
+    - https://atcoder.jp/contests/abc185/tasks/abc185_f
+  bundledCode: "#line 1 \"test/segmentTree-RXQ.test.cpp\"\n#define PROBLEM \"https://atcoder.jp/contests/abc185/tasks/abc185_f\"\
+    \n\n#line 2 \"src/utility/monoid/xorMonoid.hpp\"\n\nnamespace zawa {\n\ntemplate\
+    \ <class T>\nstruct xorMonoid {\n\tusing valueType = T;\n\tstatic constexpr valueType\
+    \ identity{};\n\tstatic valueType operation(const valueType& a, const valueType&\
+    \ b) {\n\t\treturn (a ^ b);\n\t}\n};\n\n} // namespace zawa\n#line 2 \"src/dataStructure/segmentTree.hpp\"\
     \n\n#include <vector>\n#include <functional>\n\nnamespace zawa {\n\ntemplate <class\
     \ monoid>\nclass segmentTree {\nprivate:\n\tusing V = typename monoid::valueType;\n\
     \tstd::size_t N;\n\tstd::vector<V> dat;\n\npublic:\n\tsegmentTree() {}\n\tsegmentTree(int\
@@ -56,42 +55,34 @@ data:
     \ w;\n\t\t\t\t}\n\t\t\t\telse {\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\
     \t\twhile (R <<= 1, w >>= 1) {\n\t\t\tif (r - w >= 0 and f(monoid::operation(dat[R\
     \ - 1], v))) {\n\t\t\t\tv = monoid::operation(dat[--R], v);\n\t\t\t\tr -= w;\n\
-    \t\t\t}\n\t\t}\n\t\treturn r;\n\t}\t\n};\n\n} // namespace zawa\n#line 5 \"test/AGC005-B.test.cpp\"\
-    \n\n#include <iostream>\n#line 9 \"test/AGC005-B.test.cpp\"\n\nint main() {\n\t\
-    // int N; std::cin >> N;\n\t// std::vector a(N, 0);\n\t// for (auto& ai : a) {\n\
-    \t// \tstd::cin >> ai;\n\t// }\n\t// zawa::segmentTree<zawa::minMonoid<int>> seg(a);\n\
-    \t// long long ans = 0LL;\n\t// for (int i = 0 ; i < N ; i++) {\n\t// \tauto f\
-    \ = [&](int p) -> bool {\n\t// \t\treturn p >= a[i];\n\t// \t};\n\t// \tint l\
-    \ = seg.minLeft(i, f), r = seg.maxRight(i, f);\n\t// \tans += (long long)(i -\
-    \ l + 1) * (r - i) * a[i];\n\t// }\n\t// std::cout << ans << std::endl;\n\n\t\
-    std::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Grand Contest\
-    \ 005 - B Minimum Sum\n * https://atcoder.jp/contests/agc005/submissions/39569912\n\
-    \ */\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n\n#include \"../src/utility/monoid/minMonoid.hpp\"\n#include \"../src/dataStructure/segmentTree.hpp\"\
-    \n\n#include <iostream>\n#include <vector>\n#include <functional>\n\nint main()\
-    \ {\n\t// int N; std::cin >> N;\n\t// std::vector a(N, 0);\n\t// for (auto& ai\
-    \ : a) {\n\t// \tstd::cin >> ai;\n\t// }\n\t// zawa::segmentTree<zawa::minMonoid<int>>\
-    \ seg(a);\n\t// long long ans = 0LL;\n\t// for (int i = 0 ; i < N ; i++) {\n\t\
-    // \tauto f = [&](int p) -> bool {\n\t// \t\treturn p >= a[i];\n\t// \t};\n\t\
-    // \tint l = seg.minLeft(i, f), r = seg.maxRight(i, f);\n\t// \tans += (long long)(i\
-    \ - l + 1) * (r - i) * a[i];\n\t// }\n\t// std::cout << ans << std::endl;\n\n\t\
-    std::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Grand Contest\
-    \ 005 - B Minimum Sum\n * https://atcoder.jp/contests/agc005/submissions/39569912\n\
-    \ */\n"
+    \t\t\t}\n\t\t}\n\t\treturn r;\n\t}\t\n};\n\n} // namespace zawa\n#line 5 \"test/segmentTree-RXQ.test.cpp\"\
+    \n\n#include <iostream>\n#line 8 \"test/segmentTree-RXQ.test.cpp\"\n\nint main()\
+    \ {\n\tint N, Q; std::cin >> N >> Q;\n\tstd::vector A(N, 0);\n\tfor (auto& a :\
+    \ A) {\n\t\tstd::cin >> a;\n\t}\n\tzawa::segmentTree<zawa::xorMonoid<int>> seg(A);\n\
+    \tfor (int _ = 0 ; _ < Q ; _++) {\n\t\tint T, X, Y; std::cin >> T >> X >> Y;\n\
+    \t\tif (T == 1) {\n\t\t\tseg.update(X - 1, Y);\n\t\t}\n\t\tif (T == 2) {\n\t\t\
+    \tstd::cout << seg.prod(X - 1, Y) << std::endl;\n\t\t}\n\t}\n}\n"
+  code: "#define PROBLEM \"https://atcoder.jp/contests/abc185/tasks/abc185_f\"\n\n\
+    #include \"../src/utility/monoid/xorMonoid.hpp\"\n#include \"../src/dataStructure/segmentTree.hpp\"\
+    \n\n#include <iostream>\n#include <vector>\n\nint main() {\n\tint N, Q; std::cin\
+    \ >> N >> Q;\n\tstd::vector A(N, 0);\n\tfor (auto& a : A) {\n\t\tstd::cin >> a;\n\
+    \t}\n\tzawa::segmentTree<zawa::xorMonoid<int>> seg(A);\n\tfor (int _ = 0 ; _ <\
+    \ Q ; _++) {\n\t\tint T, X, Y; std::cin >> T >> X >> Y;\n\t\tif (T == 1) {\n\t\
+    \t\tseg.update(X - 1, Y);\n\t\t}\n\t\tif (T == 2) {\n\t\t\tstd::cout << seg.prod(X\
+    \ - 1, Y) << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
-  - src/utility/monoid/minMonoid.hpp
+  - src/utility/monoid/xorMonoid.hpp
   - src/dataStructure/segmentTree.hpp
   isVerificationFile: true
-  path: test/AGC005-B.test.cpp
+  path: test/segmentTree-RXQ.test.cpp
   requiredBy: []
-  timestamp: '2023-03-10 17:05:10+09:00'
+  timestamp: '2023-03-10 16:51:37+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/AGC005-B.test.cpp
+documentation_of: test/segmentTree-RXQ.test.cpp
 layout: document
 redirect_from:
-- /verify/test/AGC005-B.test.cpp
-- /verify/test/AGC005-B.test.cpp.html
-title: test/AGC005-B.test.cpp
+- /verify/test/segmentTree-RXQ.test.cpp
+- /verify/test/segmentTree-RXQ.test.cpp.html
+title: test/segmentTree-RXQ.test.cpp
 ---

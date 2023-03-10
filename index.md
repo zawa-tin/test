@@ -44,12 +44,12 @@ data:
       title: "fenwick_tree (\u4E00\u70B9\u52A0\u7B97\u3001\u533A\u9593\u548C\u53D6\
         \u5F97)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/lazy_segtree.hpp
-      title: "lazy_segtree (\u533A\u9593\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
+      path: src/dataStructure/lazySegmentTree.hpp
+      title: "lazySegmentTree (\u533A\u9593\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
         \u30B0\u6728)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/lazy_sqdecomp.hpp
-      title: "lazy_sqdecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\
+      path: src/dataStructure/lazySquareDecomp.hpp
+      title: "lazySquareDecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\
         \u5272)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/monotone_CHT.hpp
@@ -63,17 +63,17 @@ data:
       title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\
         Union Find\u6728)"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/segment_tree.hpp
-      title: "segment_tree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
+      path: src/dataStructure/segmentTree.hpp
+      title: "segmentTree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u6F14\u7B97\u30BB\
         \u30B0\u6728)"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/sparseTable.hpp
       title: "sparseTable ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\
         \u89E3\u7B54 )"
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/sqdecomp.hpp
-      title: "sqdecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\
-        \u30A8\u30EA)"
+      path: src/dataStructure/squareDecomp.hpp
+      title: "squareDecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\
+        \u30AF\u30A8\u30EA)"
   - name: src/geometryR2
     pages:
     - icon: ':heavy_check_mark:'
@@ -234,17 +234,17 @@ data:
   - name: src/utility/monoid
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/add_monoid.hpp
-      title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
+      path: src/utility/monoid/addMonoid.hpp
+      title: "addMonoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/max_monoid.hpp
-      title: "max_monoid (\u6700\u5927\u5024\u30E2\u30CE\u30A4\u30C9)"
+      path: src/utility/monoid/maxMonoid.hpp
+      title: "maxMonoid (\u6700\u5927\u5024\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/min_monoid.hpp
-      title: "min_monoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
+      path: src/utility/monoid/minMonoid.hpp
+      title: "minMonoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
-      path: src/utility/monoid/range_add_monoid.hpp
-      title: "range_add_monoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
+      path: src/utility/monoid/rangeAddMonoid.hpp
+      title: "rangeAddMonoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
     - icon: ':heavy_check_mark:'
       path: src/utility/monoid/xorMonoid.hpp
       title: "xorMonoid (\u6392\u4ED6\u7684\u8AD6\u7406\u548C\u30E2\u30CE\u30A4\u30C9\
@@ -506,29 +506,29 @@ data:
       path: test/kadane.test.cpp
       title: test/kadane.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
-      title: test/lazy_segtree-AOJ-RAQRSQ.test.cpp
+      path: test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
+      title: test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
-      title: test/lazy_segtree-AOJ-RAQRmQ.test.cpp
+      path: test/lazySegmentTree-AOJ-RAQRmQ.test.cpp
+      title: test/lazySegmentTree-AOJ-RAQRmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
-      title: test/lazy_segtree-AOJ-RUQRSQ.test.cpp
+      path: test/lazySegmentTree-AOJ-RUQRSQ.test.cpp
+      title: test/lazySegmentTree-AOJ-RUQRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
-      title: test/lazy_segtree-AOJ-RUQRmQ.test.cpp
+      path: test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
+      title: test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
-      title: test/lazy_sqdecomp-AOJ-RAQRSQ.test.cpp
+      path: test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
+      title: test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
-      title: test/lazy_sqdecomp-AOJ-RAQRmQ.test.cpp
+      path: test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
+      title: test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
-      title: test/lazy_sqdecomp-AOJ-RUQRSQ.test.cpp
+      path: test/lazySquareDecomp-AOJ-RUQRSQ.test.cpp
+      title: test/lazySquareDecomp-AOJ-RUQRSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
-      title: test/lazy_sqdecomp-AOJ-RUQRmQ.test.cpp
+      path: test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
+      title: test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/makebuc.test.cpp
       title: test/makebuc.test.cpp
@@ -590,14 +590,14 @@ data:
       path: test/rollinghash.test.cpp
       title: test/rollinghash.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment_tree-AOJRSQ.test.cpp
-      title: test/segment_tree-AOJRSQ.test.cpp
+      path: test/segmentTree-AOJ-RSQ.test.cpp
+      title: test/segmentTree-AOJ-RSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment_tree-AOJRmQ.test.cpp
-      title: test/segment_tree-AOJRmQ.test.cpp
+      path: test/segmentTree-AOJ-RmQ.test.cpp
+      title: test/segmentTree-AOJ-RmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/segment_tree-RXORQ.test.cpp
-      title: test/segment_tree-RXORQ.test.cpp
+      path: test/segmentTree-RXQ.test.cpp
+      title: test/segmentTree-RXQ.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/simple-bfs1.test.cpp
       title: test/simple-bfs1.test.cpp
@@ -623,14 +623,14 @@ data:
       path: test/sparseTable.test.cpp
       title: test/sparseTable.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sqdecomp-AOJRSQ.test.cpp
-      title: test/sqdecomp-AOJRSQ.test.cpp
+      path: test/squareDecomp-AOJ-RSQ.test.cpp
+      title: test/squareDecomp-AOJ-RSQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sqdecomp-AOJRmQ.test.cpp
-      title: test/sqdecomp-AOJRmQ.test.cpp
+      path: test/squareDecomp-AOJ-RmQ.test.cpp
+      title: test/squareDecomp-AOJ-RmQ.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/sqdecomp-LCRSQ.test.cpp
-      title: test/sqdecomp-LCRSQ.test.cpp
+      path: test/squareDecomp-LC-RSQ.test.cpp
+      title: test/squareDecomp-LC-RSQ.test.cpp
 layout: toppage
 ---
 [テンプレート一覧](./templates/index-template.md)

@@ -5,6 +5,9 @@ data:
     path: src/dataStructure/lazySegmentTree.hpp
     title: "lazySegmentTree (\u533A\u9593\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\
       \u30B0\u6728)"
+  - icon: ':heavy_check_mark:'
+    path: src/utility/monoid/minMonoid.hpp
+    title: "minMonoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -12,26 +15,23 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
     links:
-    - https://atcoder.jp/contests/practice2/submissions/39569424
-    - https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A
-  bundledCode: "#line 1 \"test/ALPC-L.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n\n// struct vData {\n// \tlong long zero, one, inv;\n// \tconstexpr vData(long\
-    \ long _zero = 0LL, long long _one = 0LL, long long _inv = 0LL) : zero(_zero),\
-    \ one(_one), inv(_inv) {}\n// };\n// \n// struct vM {\n// \tusing valueType =\
-    \ vData;\n// \tstatic constexpr vData identity{};\n// \tstatic vData operation(const\
-    \ vData& a, const vData& b) {\n// \t\treturn vData{\n// \t\t\ta.zero + b.zero,\
-    \ \n// \t\t\ta.one + b.one,\n// \t\t\ta.inv + b.inv + a.one * b.zero\n// \t\t\
-    };\n// \t}\n// };\n// \n// struct oM {\n// \tusing valueType = bool;\n// \tstatic\
-    \ constexpr bool identity{};\n// \tstatic bool operation(const bool& a, const\
-    \ bool& b) {\n// \t\treturn (a and !b) or (!a and b);\n// \t}\n// };\n// \n//\
-    \ struct action {\n// \tusing valueMonoid = vM;\n// \tusing operatorMonoid = oM;\n\
-    // \tstatic vData mapping(const vData& a, const bool& b) {\n// \t\tif (!b) {\n\
-    // \t\t\treturn a;\n// \t\t}\n// \t\telse {\n// \t\t\treturn vData{\n// \t\t\t\
-    \ta.one,\n// \t\t\t\ta.zero,\n// \t\t\t\ta.one * a.zero - a.inv\n// \t\t\t};\n\
-    // \t\t}\n// \t}\n// };\n\n#line 2 \"src/dataStructure/lazySegmentTree.hpp\"\n\
-    \n#include <vector>\n#include <cassert>\n\nnamespace zawa {\n\ntemplate <class\
+    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F
+  bundledCode: "#line 1 \"test/lazySegmentTree-AOJ-RUQRmQ.test.cpp\"\n#define PROBLEM\
+    \ \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\"\n\n#line\
+    \ 2 \"src/utility/monoid/minMonoid.hpp\"\n\n#include <algorithm>\n#include <limits>\n\
+    \nnamespace zawa {\n\ntemplate <class T>\nstruct minMonoid {\n\tusing valueType\
+    \ = T;\n\tstatic constexpr valueType identity = std::numeric_limits<valueType>::max();\n\
+    \tstatic valueType operation(const valueType& a, const valueType& b) {\n\t\treturn\
+    \ std::min(a, b);\n\t}\n};\n\n};\n#line 4 \"test/lazySegmentTree-AOJ-RUQRmQ.test.cpp\"\
+    \n\nstruct oM {\n\tusing valueType = int;\n\tstatic constexpr valueType identity\
+    \ = -1;\n\tstatic valueType operation(const valueType& a, const valueType& b)\
+    \ {\n\t\treturn b;\n\t}\n};\n\nstruct action {\n\tusing valueMonoid = zawa::minMonoid<int>;\n\
+    \tusing operatorMonoid = oM;\n\tstatic const valueMonoid::valueType mapping(const\
+    \ valueMonoid::valueType& a, const operatorMonoid::valueType& b) {\n\t\treturn\
+    \ (valueMonoid::valueType)b;\n\t}\n};\n\n#line 2 \"src/dataStructure/lazySegmentTree.hpp\"\
+    \n\n#include <vector>\n#include <cassert>\n\nnamespace zawa {\n\ntemplate <class\
     \ structure>\nclass lazySegmentTree {\n\t// valueMonoid prod\u306E\u6642\u306E\
     \u6F14\u7B97\n\tusing V = typename structure::valueMonoid::valueType;\n\t// operatorMonoid\
     \ update\u306E\u6642\u306E\u6F14\u7B97\n\tusing O = typename structure::operatorMonoid::valueType;\n\
@@ -103,57 +103,38 @@ data:
     \treturn vId;\n\t\t}\n\t\treturn prod(L, R, 0, powTwo, 1);\n\t}\n\n\t// @brief\
     \ \u30C7\u30D0\u30C3\u30B0\u7528\u3001dat\u3092\u8FD4\u3059\n\t// @return dat\n\
     \tinline std::vector<node> _dat() const {\n\t\treturn dat;\n\t}\n};\n\n} // namespace\
-    \ zawa\n#line 46 \"test/ALPC-L.test.cpp\"\n\n#include <iostream>\n#line 49 \"\
-    test/ALPC-L.test.cpp\"\n\nint main() {\n\t// std::cin.tie(nullptr);\n\t// std::ios::sync_with_stdio(false);\n\
-    \t// int n, q; std::cin >> n >> q;\n\t// std::vector<vData> A(n);\n\t// for (int\
-    \ i = 0 ; i < n ; i++) {\n\t// \tint x; std::cin >> x;\n\t// \tif (x == 0) {\n\
-    \t// \t\tA[i] = vData{ 1, 0, 0 };\n\t// \t}\n\t// \telse {\n\t// \t\tA[i] = vData{\
-    \ 0, 1, 0 };\n\t// \t}\n\t// }\n\t// zawa::lazySegmentTree<action> S(A);\n\t//\
-    \ for (int _ = 0 ; _ < q ; _++) {\n\t// \tint t, l, r; std::cin >> t >> l >> r;\n\
-    \t// \tl--;\n\t// \tif (t == 1) {\n\t// \t\tS.update(l, r, true);\n\t// \t}\n\t\
-    // \telse {\n\t// \t\tstd::cout << S.prod(l, r).inv << std::endl;\n\t// \t}\n\t\
-    // }\n\n\tstd::cout << \"Hello World\" << std::endl;\n}\n\n/*\n * AtCoder Library\
-    \ Practice Contest - L Lazy Segment Tree\n * https://atcoder.jp/contests/practice2/submissions/39569424\n\
-    \ */\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A\"\
-    \n\n// struct vData {\n// \tlong long zero, one, inv;\n// \tconstexpr vData(long\
-    \ long _zero = 0LL, long long _one = 0LL, long long _inv = 0LL) : zero(_zero),\
-    \ one(_one), inv(_inv) {}\n// };\n// \n// struct vM {\n// \tusing valueType =\
-    \ vData;\n// \tstatic constexpr vData identity{};\n// \tstatic vData operation(const\
-    \ vData& a, const vData& b) {\n// \t\treturn vData{\n// \t\t\ta.zero + b.zero,\
-    \ \n// \t\t\ta.one + b.one,\n// \t\t\ta.inv + b.inv + a.one * b.zero\n// \t\t\
-    };\n// \t}\n// };\n// \n// struct oM {\n// \tusing valueType = bool;\n// \tstatic\
-    \ constexpr bool identity{};\n// \tstatic bool operation(const bool& a, const\
-    \ bool& b) {\n// \t\treturn (a and !b) or (!a and b);\n// \t}\n// };\n// \n//\
-    \ struct action {\n// \tusing valueMonoid = vM;\n// \tusing operatorMonoid = oM;\n\
-    // \tstatic vData mapping(const vData& a, const bool& b) {\n// \t\tif (!b) {\n\
-    // \t\t\treturn a;\n// \t\t}\n// \t\telse {\n// \t\t\treturn vData{\n// \t\t\t\
-    \ta.one,\n// \t\t\t\ta.zero,\n// \t\t\t\ta.one * a.zero - a.inv\n// \t\t\t};\n\
-    // \t\t}\n// \t}\n// };\n\n#include \"../src/dataStructure/lazySegmentTree.hpp\"\
-    \n\n#include <iostream>\n#include <vector>\n\nint main() {\n\t// std::cin.tie(nullptr);\n\
-    \t// std::ios::sync_with_stdio(false);\n\t// int n, q; std::cin >> n >> q;\n\t\
-    // std::vector<vData> A(n);\n\t// for (int i = 0 ; i < n ; i++) {\n\t// \tint\
-    \ x; std::cin >> x;\n\t// \tif (x == 0) {\n\t// \t\tA[i] = vData{ 1, 0, 0 };\n\
-    \t// \t}\n\t// \telse {\n\t// \t\tA[i] = vData{ 0, 1, 0 };\n\t// \t}\n\t// }\n\
-    \t// zawa::lazySegmentTree<action> S(A);\n\t// for (int _ = 0 ; _ < q ; _++) {\n\
-    \t// \tint t, l, r; std::cin >> t >> l >> r;\n\t// \tl--;\n\t// \tif (t == 1)\
-    \ {\n\t// \t\tS.update(l, r, true);\n\t// \t}\n\t// \telse {\n\t// \t\tstd::cout\
-    \ << S.prod(l, r).inv << std::endl;\n\t// \t}\n\t// }\n\n\tstd::cout << \"Hello\
-    \ World\" << std::endl;\n}\n\n/*\n * AtCoder Library Practice Contest - L Lazy\
-    \ Segment Tree\n * https://atcoder.jp/contests/practice2/submissions/39569424\n\
-    \ */\n"
+    \ zawa\n#line 22 \"test/lazySegmentTree-AOJ-RUQRmQ.test.cpp\"\n\n#include <iostream>\n\
+    \nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::lazySegmentTree<action>\
+    \ S(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint type; std::cin >> type;\n\t\
+    \tif (type == 0) {\n\t\t\tint s, t, x; std::cin >> s >> t >> x;\n\t\t\tS.update(s,\
+    \ t + 1, x);\n\t\t}\n\t\tif (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\
+    \t\t\tstd::cout << S.prod(s, t + 1) << std::endl;\n\t\t}\n\t}\n}\n"
+  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_F\"\
+    \n\n#include \"../src/utility/monoid/minMonoid.hpp\"\n\nstruct oM {\n\tusing valueType\
+    \ = int;\n\tstatic constexpr valueType identity = -1;\n\tstatic valueType operation(const\
+    \ valueType& a, const valueType& b) {\n\t\treturn b;\n\t}\n};\n\nstruct action\
+    \ {\n\tusing valueMonoid = zawa::minMonoid<int>;\n\tusing operatorMonoid = oM;\n\
+    \tstatic const valueMonoid::valueType mapping(const valueMonoid::valueType& a,\
+    \ const operatorMonoid::valueType& b) {\n\t\treturn (valueMonoid::valueType)b;\n\
+    \t}\n};\n\n#include \"../src/dataStructure/lazySegmentTree.hpp\"\n\n#include <iostream>\n\
+    \nint main() {\n\tint n, q; std::cin >> n >> q;\n\tzawa::lazySegmentTree<action>\
+    \ S(n);\n\tfor (int _ = 0 ; _ < q ; _++) {\n\t\tint type; std::cin >> type;\n\t\
+    \tif (type == 0) {\n\t\t\tint s, t, x; std::cin >> s >> t >> x;\n\t\t\tS.update(s,\
+    \ t + 1, x);\n\t\t}\n\t\tif (type == 1) {\n\t\t\tint s, t; std::cin >> s >> t;\n\
+    \t\t\tstd::cout << S.prod(s, t + 1) << std::endl;\n\t\t}\n\t}\n}\n"
   dependsOn:
+  - src/utility/monoid/minMonoid.hpp
   - src/dataStructure/lazySegmentTree.hpp
   isVerificationFile: true
-  path: test/ALPC-L.test.cpp
+  path: test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
   requiredBy: []
-  timestamp: '2023-03-10 16:51:37+09:00'
+  timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: test/ALPC-L.test.cpp
+documentation_of: test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
 layout: document
 redirect_from:
-- /verify/test/ALPC-L.test.cpp
-- /verify/test/ALPC-L.test.cpp.html
-title: test/ALPC-L.test.cpp
+- /verify/test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
+- /verify/test/lazySegmentTree-AOJ-RUQRmQ.test.cpp.html
+title: test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
 ---

@@ -6,8 +6,8 @@ data:
     title: "dualSegmentTree (\u533A\u9593\u66F4\u65B0\u4E00\u70B9\u53D6\u5F97\u30BB\
       \u30B0\u6728)"
   - icon: ':heavy_check_mark:'
-    path: src/utility/monoid/add_monoid.hpp
-    title: "add_monoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
+    path: src/utility/monoid/addMonoid.hpp
+    title: "addMonoid (\u52A0\u6CD5\u30E2\u30CE\u30A4\u30C9)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
@@ -20,13 +20,13 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_E
   bundledCode: "#line 1 \"test/dualSegmentTree-AOJRAQ.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_E\"\n\n#line\
-    \ 2 \"src/utility/monoid/add_monoid.hpp\"\n\nnamespace zawa {\n\ntemplate <class\
-    \ T>\nstruct add_monoid {\n\tusing value_type = T;\n\tstatic constexpr T identity{};\n\
-    \tstatic T operation(const T& a, const T& b) {\n\t\treturn a + b;\n\t}\n};\n\n\
-    } // namespace zawa\n#line 2 \"src/dataStructure/dualSegmentTree.hpp\"\n\n#include\
-    \ <vector>\n#include <cassert>\n\nnamespace zawa {\n\ntemplate <class monoid>\n\
-    class dualSegmentTree {\nprivate:\n\tusing O = typename monoid::value_type;\n\t\
-    int N;\n\tstd::vector<O> dat;\n\n\tconstexpr int left(int v) const {\n\t\treturn\
+    \ 2 \"src/utility/monoid/addMonoid.hpp\"\n\nnamespace zawa {\n\ntemplate <class\
+    \ T>\nstruct addMonoid {\n\tusing valueType = T;\n\tstatic constexpr valueType\
+    \ identity{};\n\tstatic valueType operation(const valueType& a, const valueType&\
+    \ b) {\n\t\treturn a + b;\n\t}\n};\n\n} // namespace zawa\n#line 2 \"src/dataStructure/dualSegmentTree.hpp\"\
+    \n\n#include <vector>\n#include <cassert>\n\nnamespace zawa {\n\ntemplate <class\
+    \ monoid>\nclass dualSegmentTree {\nprivate:\n\tusing O = typename monoid::valueType;\n\
+    \tint N;\n\tstd::vector<O> dat;\n\n\tconstexpr int left(int v) const {\n\t\treturn\
     \ v << 1;\n\t}\n\n\tconstexpr int right(int v) const {\n\t\treturn v << 1 | 1;\n\
     \t}\n\n\tconstexpr int parent(int v) const {\n\t\treturn v >> 1;\n\t}\n\n\tinline\
     \ void propagate(int v) {\n\t\tif (left(v) < (int)dat.size()) {\n\t\t\tdat[left(v)]\
@@ -51,26 +51,26 @@ data:
     \ value);\n\t\t\t}\n\t\t}\n\t}\n\n\tinline std::vector<O> _dat() const {\n\t\t\
     return dat;\n\t}\n};\n\n} // namespace \n#line 5 \"test/dualSegmentTree-AOJRAQ.test.cpp\"\
     \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\t\n\t\
-    zawa::dualSegmentTree<zawa::add_monoid<int>> S(n);\n\tfor (int _ = 0 ; _ < q ;\
+    zawa::dualSegmentTree<zawa::addMonoid<int>> S(n);\n\tfor (int _ = 0 ; _ < q ;\
     \ _++) {\n\t\tint t; std::cin >> t;\n\t\tif (t == 0) {\n\t\t\tint s, t, x; std::cin\
     \ >> s >> t >> x;\n\t\t\ts--;\n\t\t\tS.update(s, t, x);\n\t\t}\n\t\telse {\n\t\
     \t\tint i; std::cin >> i;\n\t\t\tstd::cout << S[i - 1] << std::endl;\n\t\t}\n\t\
     }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/2/DSL_2_E\"\
-    \n\n#include \"../src/utility/monoid/add_monoid.hpp\"\n#include \"../src/dataStructure/dualSegmentTree.hpp\"\
+    \n\n#include \"../src/utility/monoid/addMonoid.hpp\"\n#include \"../src/dataStructure/dualSegmentTree.hpp\"\
     \n\n#include <iostream>\n\nint main() {\n\tint n, q; std::cin >> n >> q;\t\n\t\
-    zawa::dualSegmentTree<zawa::add_monoid<int>> S(n);\n\tfor (int _ = 0 ; _ < q ;\
+    zawa::dualSegmentTree<zawa::addMonoid<int>> S(n);\n\tfor (int _ = 0 ; _ < q ;\
     \ _++) {\n\t\tint t; std::cin >> t;\n\t\tif (t == 0) {\n\t\t\tint s, t, x; std::cin\
     \ >> s >> t >> x;\n\t\t\ts--;\n\t\t\tS.update(s, t, x);\n\t\t}\n\t\telse {\n\t\
     \t\tint i; std::cin >> i;\n\t\t\tstd::cout << S[i - 1] << std::endl;\n\t\t}\n\t\
     }\n}\n"
   dependsOn:
-  - src/utility/monoid/add_monoid.hpp
+  - src/utility/monoid/addMonoid.hpp
   - src/dataStructure/dualSegmentTree.hpp
   isVerificationFile: true
   path: test/dualSegmentTree-AOJRAQ.test.cpp
   requiredBy: []
-  timestamp: '2023-03-06 03:03:34+09:00'
+  timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/dualSegmentTree-AOJRAQ.test.cpp

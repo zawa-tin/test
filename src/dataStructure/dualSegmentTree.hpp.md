@@ -22,7 +22,7 @@ data:
     links: []
   bundledCode: "#line 2 \"src/dataStructure/dualSegmentTree.hpp\"\n\n#include <vector>\n\
     #include <cassert>\n\nnamespace zawa {\n\ntemplate <class monoid>\nclass dualSegmentTree\
-    \ {\nprivate:\n\tusing O = typename monoid::value_type;\n\tint N;\n\tstd::vector<O>\
+    \ {\nprivate:\n\tusing O = typename monoid::valueType;\n\tint N;\n\tstd::vector<O>\
     \ dat;\n\n\tconstexpr int left(int v) const {\n\t\treturn v << 1;\n\t}\n\n\tconstexpr\
     \ int right(int v) const {\n\t\treturn v << 1 | 1;\n\t}\n\n\tconstexpr int parent(int\
     \ v) const {\n\t\treturn v >> 1;\n\t}\n\n\tinline void propagate(int v) {\n\t\t\
@@ -49,7 +49,7 @@ data:
     return dat;\n\t}\n};\n\n} // namespace \n"
   code: "#pragma once\n\n#include <vector>\n#include <cassert>\n\nnamespace zawa {\n\
     \ntemplate <class monoid>\nclass dualSegmentTree {\nprivate:\n\tusing O = typename\
-    \ monoid::value_type;\n\tint N;\n\tstd::vector<O> dat;\n\n\tconstexpr int left(int\
+    \ monoid::valueType;\n\tint N;\n\tstd::vector<O> dat;\n\n\tconstexpr int left(int\
     \ v) const {\n\t\treturn v << 1;\n\t}\n\n\tconstexpr int right(int v) const {\n\
     \t\treturn v << 1 | 1;\n\t}\n\n\tconstexpr int parent(int v) const {\n\t\treturn\
     \ v >> 1;\n\t}\n\n\tinline void propagate(int v) {\n\t\tif (left(v) < (int)dat.size())\
@@ -77,7 +77,7 @@ data:
   isVerificationFile: false
   path: src/dataStructure/dualSegmentTree.hpp
   requiredBy: []
-  timestamp: '2023-03-06 03:03:34+09:00'
+  timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/ABC179-F.test.cpp
