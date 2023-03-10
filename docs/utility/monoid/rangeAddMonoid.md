@@ -21,7 +21,7 @@ documentation_of: //src/utility/monoid/rangeAddMonoid.hpp
 `std::size_t size`: 保持している区間の長さ
 
 
-#### range_add_monoid
+#### rangeAddMonoid
 
 `テンプレート引数 T` : `dat`の`T`に利用される
 
