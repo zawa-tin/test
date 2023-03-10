@@ -6,16 +6,16 @@
 namespace zawa {
 
 template <class monoid>
-class segment_tree {
+class segmentTree {
 private:
-	using T = typename monoid::value_type;
+	using V = typename monoid::valueType;
 	std::size_t N;
-	std::vector<T> dat;
+	std::vector<V> dat;
 
 public:
-	segment_tree() {}
-	segment_tree(int _N) : N(_N), dat(2 * _N, monoid::identity) {}
-	segment_tree(const std::vector<T>& A) : N(A.size()), dat(2 * N, monoid::identity) {
+	segmentTree() {}
+	segmentTree(int _N) : N(_N), dat(2 * _N, monoid::identity) {}
+	segmentTree(const std::vector<V>& A) : N(A.size()), dat(2 * N, monoid::identity) {
 		for (std::size_t i = 0 ; i < A.size() ; i++) {
 			dat[i + N] = A[i];
 		}
@@ -24,7 +24,7 @@ public:
 		}
 	}
 
-	void set(std::size_t pos, const T& value) {
+	void set(std::size_t pos, const V& value) {
 		pos += N;
 		dat[pos] = value;
 		while (pos >>= 1) {
@@ -32,7 +32,7 @@ public:
 		}
 	}
 
-	T action(std::size_t pos, const T& value) {
+	V update(std::size_t pos, const V& value) {
 		pos += N;
 		do {
 			dat[pos] = monoid::operation(dat[pos], value);
@@ -40,8 +40,8 @@ public:
 		return dat[pos];
 	}
 
-	T prod(std::size_t l, std::size_t r) const {
-		T left = monoid::identity, right = monoid::identity;
+	V prod(std::size_t l, std::size_t r) const {
+		V left = monoid::identity, right = monoid::identity;
 		for (l += N, r += N ; l < r ; l >>= 1, r >>= 1) {
 			if (l & 1) {
 				left = monoid::operation(left, dat[l++]);	
@@ -53,10 +53,10 @@ public:
 		return monoid::operation(left, right);
 	}
 
-	template <class function_type>
-	int max_right(int l, const function_type& f) const {
+	template <class functionType>
+	int maxRight(int l, const functionType& f) const {
 		int L = l + N, w = 1;
-		T v = monoid::identity;
+		V v = monoid::identity;
 		for ( ; l + w <= (int)N ; L >>= 1, w <<= 1) {
 			if (L & 1) {
 			   	if (f(monoid::operation(v, dat[L]))) {
@@ -77,10 +77,10 @@ public:
 		return l;
 	}
 
-	template <class function_type>
-	int min_left(int r, const function_type& f) const {	
+	template <class functionType>
+	int minLeft(int r, const functionType& f) const {	
 		int R = r + N, w = 1;
-		T v = monoid::identity;
+		V v = monoid::identity;
 		for ( ; r - w >= 0 ; R >>= 1, w <<= 1) {
 			if (R & 1) {
 				if (f(monoid::operation(dat[R - 1], v))) {

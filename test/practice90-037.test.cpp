@@ -1,14 +1,14 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/1/ITP1_1_A"
 
 #include "../src/dataStructure/dualSegmentTree.hpp"
-#include "../src/utility/monoid/max_monoid.hpp"
+#include "../src/utility/monoid/maxMonoid.hpp"
 
 #include <vector>
 #include <iostream>
 #include <algorithm>
 
-using seg = zawa::dualSegmentTree<zawa::max_monoid<long long>>;
-const long long inf = zawa::max_monoid<long long>::identity;
+using seg = zawa::dualSegmentTree<zawa::maxMonoid<long long>>;
+const long long inf = zawa::maxMonoid<long long>::identity;
 
 int main() {
 	// int W, N; std::cin >> W >> N;
@@ -33,6 +33,6 @@ int main() {
 }
 
 /*
- * 競プロ典型90問 - 037 Don't Leave the Spice
- * https://atcoder.jp/contests/typical90/submissions/39476719
+ * 競プロ典型90問 037 Don't Leave the Spice
+ * https://atcoder.jp/contests/typical90/submissions/39569356
  */

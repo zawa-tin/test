@@ -1,7 +1,11 @@
 ---
-title: sqdecomp (平方分割による区間クエリ)
-documentation_of: //src/dataStructure/sqdecomp.hpp
+title: squareDecomp (平方分割による区間クエリ)
+documentation_of: //src/dataStructure/squareDecomp.hpp
 ---
+
+## 前置き
+
+`segmentTree`で同じことがより高速にできるのでそちらをお使いください。こちらはドキュメントも更新していません。
 
 ## 概要
 

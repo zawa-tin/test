@@ -1,7 +1,10 @@
 ---
-title: lazy_sqdecomp (区間更新可能平方分割)
-documentation_of: //src/dataStructure/lazy_sqdecomp.hpp
+title: lazySquareDecomp (区間更新可能平方分割)
+documentation_of: //src/dataStructure/lazySquareDecomp.hpp
 ---
+
+## 前置き
+`lazySegmentTree`で同様の処理がより高速にできます。そちらをお使いください。ドキュメントの更新も止まってます。
 
 ## 概要
 
@@ -43,9 +46,9 @@ $N$ 要素の列に対して $\sqrt{N}$ の大きさのバケットを $\sqrt{N}
 
 `テンプレート引数 structure`について
 - 以下の機能をもたせた`struct`を用意してください
-	- `using value_monoid`: $(T, \oplus, \text{id}_T)$ を表現したモノイド構造体(後述)
-	- `using operator_monoid`: $(S, \times, \text{id}_S)$ を表現したモノイド構造体
-	- `static value_monoid::value_type mapping(const value_monoid::valye_type& v, const operator_monoid::value_type& x)` : $f_x(v)$ を返す関数、`const`参照や値渡しなどを用いること(引数の中身を変更しないように)
+	- `using valueMonoid`: $(T, \oplus, \text{id}_T)$ を表現したモノイド構造体(後述)
+	- `using operatorMonoid`: $(S, \times, \text{id}_S)$ を表現したモノイド構造体
+	- `static valueMonoid::valueType mapping(const value_monoid::valye_type& v, const operator_monoid::value_type& x)` : $f_x(v)$ を返す関数、`const`参照や値渡しなどを用いること(引数の中身を変更しないように)
 - モノイド構造体は以下の機能を持たせてください
 	- `using value_type` : $T$ や $S$ の型
 	- `static constexpr value_type identity` : $\text{id}_T$ や $\text{id}_S$ といった単位元

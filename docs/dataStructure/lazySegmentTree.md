@@ -1,6 +1,6 @@
 ---
-title: lazy_segtree (区間更新・区間和セグ木)
-documentation_of: //src/dataStructure/lazy_segtree.hpp
+title: lazySegmentTree (区間更新・区間和セグ木)
+documentation_of: //src/dataStructure/lazySegmentTree.hpp
 ---
 
 ## 概要
@@ -67,8 +67,8 @@ structure::operator_monoid::value_type -> Otype
 #### コンストラクタ
 
 ```
-(1) lazy_segtree<structure>(std::size_t _N)
-(2) lazy_segtree<structure>(const std::vector<Vtype>& A)
+(1) lazySegmentTree<structure>(std::size_t _N)
+(2) lazySegmentTree<structure>(const std::vector<Vtype>& A)
 ```
 
 (1) $A$ を長さ $N$ の各要素が`VM::identity`である列で初期化します
@@ -88,14 +88,14 @@ structure::operator_monoid::value_type -> Otype
 #### テンプレート引数structureについて
 
 以下の要件を満たす構造体を入れてください
-- `using value_monoid`: $(V, \oplus, \text{id}_V)$ を表現した構造体(後述)
-- `using operator_monoid`:  $(O, \times, \text{id}_O)$ を表現した構造体(後述)
+- `using valueMonoid`: $(V, \oplus, \text{id}_V)$ を表現した構造体(後述)
+- `using operatorMonoid`:  $(O, \times, \text{id}_O)$ を表現した構造体(後述)
 - `static VM mapping(const VM& a, const OM& b)`: $f_b (a)$ を返す関数
 
-`value_monoid`や`operator_monoid`を表現する構造体として以下の機能を要求します。
+`valueMonoid`や`operatorMonoid`を表現する構造体として以下の機能を要求します。
 - `using vale_type`: $V$ や $O$ の型
-- `static constexpr value_type identity`: $\text{id}_V$ や $\text{id}_O$
-- `static value_type operation(const value_type& a, const value_type& b)`: $a \oplus b$ や $a \times b$ を返す関数
+- `static constexpr valueType identity`: $\text{id}_V$ や $\text{id}_O$
+- `static valueType operation(const valueType& a, const valueType& b)`: $a \oplus b$ や $a \times b$ を返す関数
 
 実装例はテスト等を確認ください
 
@@ -133,13 +133,13 @@ $L\ \le\ R\ \le\ N$
 
 <br />
 
-**max_right**
+**maxRight**
 
 TODO
 
 <br />
 
-**min_left**
+**minLeft**
 
 TODO
 

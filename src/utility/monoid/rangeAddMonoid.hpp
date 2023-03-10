@@ -12,11 +12,11 @@ struct dat {
 };
 
 template <class T>
-struct range_add_monoid {
-	using value_type = dat<T>;
-	static constexpr value_type identity{};
-	static value_type operation(const value_type& a, const value_type& b) {
-		return value_type(a.value + b.value, a.size + b.size);
+struct rangeAddMonoid {
+	using valueType = dat<T>;
+	static constexpr valueType identity{};
+	static valueType operation(const valueType& a, const valueType& b) {
+		return valueType(a.value + b.value, a.size + b.size);
 	}
 };
 
