@@ -1,3 +1,5 @@
+#define PROBLEM "https://atcoder.jp/contests/abc185/tasks/abc185_f"
+
 #include "../src/utility/monoid/xorMonoid.hpp"
 #include "../src/dataStructure/segmentTree.hpp"
 

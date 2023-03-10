@@ -1,4 +1,4 @@
-#define PEOBLEM "https://atcoder.jp/contests/agc005/tasks/agc005_b"
+#define PROBLEM "https://atcoder.jp/contests/agc005/tasks/agc005_b"
 
 #include "../src/utility/monoid/minMonoid.hpp"
 #include "../src/dataStructure/segmentTree.hpp"
