@@ -1,3 +1,5 @@
+#define PROBLEM "https://atcoder.jp/contests/practice2/tasks/practice2_l"
+
 struct vData {
 	long long zero, one, inv;
 	constexpr vData(long long _zero = 0LL, long long _one = 0LL, long long _inv = 0LL) : zero(_zero), one(_one), inv(_inv) {}

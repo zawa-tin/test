@@ -1,3 +1,5 @@
+#define PROBLEM "https://atcoder.jp/contests/practice2/tasks/practice2_j"
+
 #include "../src/utility/monoid/maxMonoid.hpp"
 #include "../src/dataStructure/segmentTree.hpp"
 
