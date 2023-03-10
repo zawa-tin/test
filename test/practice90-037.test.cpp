@@ -28,6 +28,8 @@ int main() {
 	// 	}
 	// }
 	// std::cout << (dp[W] == inf ? -1LL : dp[W]) << std::endl;
+
+	std::cout << "Hello World" << std::endl;
 }
 
 /*
