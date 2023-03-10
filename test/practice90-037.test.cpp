@@ -1,3 +1,5 @@
+#define PROBLEM "https://atcoder.jp/contests/typical90/tasks/typical90_ak"
+
 #include "../src/dataStructure/dualSegmentTree.hpp"
 #include "../src/utility/monoid/maxMonoid.hpp"
 
