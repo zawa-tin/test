@@ -68,7 +68,7 @@ title: "rangeAddMonoid (\u533A\u9593\u548C\u30E2\u30CE\u30A4\u30C9)"
 `std::size_t size`: 保持している区間の長さ
 
 
-#### range_add_monoid
+#### rangeAddMonoid
 
 `テンプレート引数 T` : `dat`の`T`に利用される
 
