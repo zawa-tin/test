@@ -11,7 +11,7 @@ min演算の[モノイド](https://ja.wikipedia.org/wiki/%E3%83%A2%E3%83%8E%E3%8
 ## 機能
 
 ```
-zawa::min_monoid<T>
+zawa::minMonoid<T>
 ```
 `T`: `int` `long long` など`std::numeric_limits`が定義されているもの
 
