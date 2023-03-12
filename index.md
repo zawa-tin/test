@@ -223,6 +223,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/template/output.hpp
       title: "output (\u6A19\u6E96\u51FA\u529B)"
+    - icon: ':heavy_check_mark:'
+      path: src/template/reversed.hpp
+      title: reversed (reverse)
+    - icon: ':heavy_check_mark:'
+      path: src/template/sorted.hpp
+      title: "sorted (\u30BD\u30FC\u30C8\u5217\u3092\u8FD4\u3059)"
   - name: src/utility/fenwick_tree
     pages:
     - icon: ':heavy_check_mark:'
@@ -587,6 +593,9 @@ data:
       path: test/reflection.test.cpp
       title: test/reflection.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/reversed.test.cpp
+      title: test/reversed.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/rollinghash.test.cpp
       title: test/rollinghash.test.cpp
     - icon: ':heavy_check_mark:'
@@ -619,6 +628,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/simple-wf1.test.cpp
       title: test/simple-wf1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/sorted.test.cpp
+      title: test/sorted.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/sparseTable.test.cpp
       title: test/sparseTable.test.cpp
