@@ -95,11 +95,11 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/segmentTree-RXQ.test.cpp
-  - test/segmentTree-AOJ-RSQ.test.cpp
-  - test/segmentTree-AOJ-RmQ.test.cpp
   - test/AGC005-B.test.cpp
+  - test/segmentTree-AOJ-RmQ.test.cpp
+  - test/segmentTree-RXQ.test.cpp
   - test/ALPC-J.test.cpp
+  - test/segmentTree-AOJ-RSQ.test.cpp
 documentation_of: src/dataStructure/segmentTree.hpp
 layout: document
 title: "segmentTree (\u4E00\u70B9\u66F4\u65B0\u30FB\u533A\u9593\u6F14\u7B97\u30BB\u30B0\

@@ -75,9 +75,9 @@ data:
   timestamp: '2023-02-15 00:30:59+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC289-B.test.cpp
   - test/ABC282-D.test.cpp
   - test/ABC199-D.test.cpp
+  - test/ABC289-B.test.cpp
   - test/connectedComponents1.test.cpp
   - test/ABC284-C.test.cpp
 documentation_of: src/graph/simple/connectedComponents.hpp

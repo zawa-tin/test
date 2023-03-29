@@ -66,9 +66,9 @@ data:
   timestamp: '2023-03-04 20:28:25+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/simple-bipartite-judge1.test.cpp
   - test/ABC282-D.test.cpp
   - test/ABC199-D.test.cpp
+  - test/simple-bipartite-judge1.test.cpp
 documentation_of: src/graph/simple/bipartiteJudge.hpp
 layout: document
 title: "bipartiteJudge (\u4E8C\u90E8\u30B0\u30E9\u30D5\u5224\u5B9A)"

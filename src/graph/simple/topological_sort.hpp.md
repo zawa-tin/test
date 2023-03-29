@@ -67,9 +67,9 @@ data:
   timestamp: '2023-02-27 01:26:01+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC285-D.test.cpp
   - test/simple-topological_sort.test.cpp
   - test/AOJ0519.test.cpp
+  - test/ABC285-D.test.cpp
 documentation_of: src/graph/simple/topological_sort.hpp
 layout: document
 title: "topological_sort (\u30C8\u30DD\u30ED\u30B8\u30AB\u30EB\u30BD\u30FC\u30C8)"

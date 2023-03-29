@@ -101,9 +101,9 @@ data:
   timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJCGL-2B.test.cpp
   - test/AOJCGL-2A.test.cpp
   - test/ccw.test.cpp
+  - test/AOJCGL-2B.test.cpp
 documentation_of: src/geometryR2/ccw.hpp
 layout: document
 title: "ccw (\u30D9\u30AF\u30C8\u30EB\u306E\u4F4D\u7F6E\u95A2\u4FC2)"

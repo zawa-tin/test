@@ -70,9 +70,9 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/squareDecomp-AOJ-RmQ.test.cpp
   - test/squareDecomp-LC-RSQ.test.cpp
   - test/squareDecomp-AOJ-RSQ.test.cpp
-  - test/squareDecomp-AOJ-RmQ.test.cpp
 documentation_of: src/dataStructure/squareDecomp.hpp
 layout: document
 title: "squareDecomp (\u5E73\u65B9\u5206\u5272\u306B\u3088\u308B\u533A\u9593\u30AF\

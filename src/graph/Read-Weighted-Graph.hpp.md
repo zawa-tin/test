@@ -50,8 +50,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/simple-dijkstra1.test.cpp
-  - test/simple-wf1.test.cpp
   - test/Read-Weighted-Graph.test.cpp
+  - test/simple-wf1.test.cpp
   - test/simple-dijkstra2.test.cpp
 documentation_of: src/graph/Read-Weighted-Graph.hpp
 layout: document

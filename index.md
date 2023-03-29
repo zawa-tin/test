@@ -21,6 +21,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/algorithm/count-inv.hpp
       title: "count-inv (\u8EE2\u5012\u6570)"
+    - icon: ':heavy_check_mark:'
+      path: src/algorithm/mo.hpp
+      title: mo (Mo's Algorithm)
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
@@ -299,6 +302,9 @@ data:
       path: test/ABC170-D.test.cpp
       title: test/ABC170-D.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC174-F.test.cpp
+      title: test/ABC174-F.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC177-E.test.cpp
       title: test/ABC177-E.test.cpp
     - icon: ':heavy_check_mark:'
@@ -319,6 +325,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/ABC236-E.test.cpp
       title: test/ABC236-E.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC242-G.test.cpp
+      title: test/ABC242-G.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/ABC250-D.test.cpp
       title: test/ABC250-D.test.cpp
@@ -544,6 +553,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/miller-rabin.test.cpp
       title: test/miller-rabin.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/mo.test.cpp
+      title: test/mo.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/mobiusFunction.test.cpp
       title: test/mobiusFunction.test.cpp

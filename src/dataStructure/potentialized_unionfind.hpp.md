@@ -63,9 +63,9 @@ data:
   timestamp: '2022-12-05 12:46:01+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/potentialized_unionfind3.test.cpp
-  - test/potentialized_unionfind1.test.cpp
   - test/potentialized_unionfind2.test.cpp
+  - test/potentialized_unionfind1.test.cpp
+  - test/potentialized_unionfind3.test.cpp
 documentation_of: src/dataStructure/potentialized_unionfind.hpp
 layout: document
 title: "potentialized_unionfind (\u30DD\u30C6\u30F3\u30B7\u30E3\u30EB\u4ED8\u304D\

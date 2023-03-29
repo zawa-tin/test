@@ -47,13 +47,13 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
   - test/squareDecomp-LC-RSQ.test.cpp
-  - test/squareDecomp-AOJ-RSQ.test.cpp
-  - test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
   - test/lazySegmentTree-AOJ-RAQRmQ.test.cpp
-  - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
+  - test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
+  - test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
   - test/segmentTree-AOJ-RSQ.test.cpp
+  - test/squareDecomp-AOJ-RSQ.test.cpp
+  - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
   - test/dualSegmentTree-AOJRAQ.test.cpp
 documentation_of: src/utility/monoid/addMonoid.hpp
 layout: document

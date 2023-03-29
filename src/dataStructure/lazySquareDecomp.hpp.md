@@ -110,8 +110,8 @@ data:
   verifiedWith:
   - test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
   - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
-  - test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
   - test/lazySquareDecomp-AOJ-RUQRSQ.test.cpp
+  - test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
 documentation_of: src/dataStructure/lazySquareDecomp.hpp
 layout: document
 title: "lazySquareDecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\u5272\

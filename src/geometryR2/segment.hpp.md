@@ -98,8 +98,8 @@ data:
   timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJCGL-2B.test.cpp
   - test/AOJCGL-2A.test.cpp
+  - test/AOJCGL-2B.test.cpp
 documentation_of: src/geometryR2/segment.hpp
 layout: document
 title: "segment (\u7DDA\u5206)"

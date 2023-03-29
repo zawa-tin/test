@@ -56,10 +56,10 @@ data:
   timestamp: '2023-03-05 22:25:53+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/CF856-D.test.cpp
   - test/gcdConvolution.test.cpp
-  - test/primeSieve.test.cpp
   - test/mobiusFunction.test.cpp
+  - test/primeSieve.test.cpp
+  - test/CF856-D.test.cpp
 documentation_of: src/math/primeSieve.hpp
 layout: document
 title: "primeSieve (\u30A8\u30E9\u30C8\u30B9\u30C6\u30CD\u30B9\u306E\u7BE9\uFF09"

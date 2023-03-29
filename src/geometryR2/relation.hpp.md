@@ -122,8 +122,8 @@ data:
   timestamp: '2023-03-08 21:36:18+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJCGL-2B.test.cpp
   - test/AOJCGL-2A.test.cpp
+  - test/AOJCGL-2B.test.cpp
 documentation_of: src/geometryR2/relation.hpp
 layout: document
 title: "relation (\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u540C\u58EB\u306E\u4F4D\u7F6E\

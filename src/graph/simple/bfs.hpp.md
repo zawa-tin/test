@@ -39,8 +39,8 @@ data:
   timestamp: '2022-12-06 05:52:08+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/simple-bfs1.test.cpp
   - test/simple-bfs2.test.cpp
+  - test/simple-bfs1.test.cpp
   - test/ABC291-F.test.cpp
 documentation_of: src/graph/simple/bfs.hpp
 layout: document

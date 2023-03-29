@@ -52,10 +52,10 @@ data:
   verifiedWith:
   - test/input2.test.cpp
   - test/input1.test.cpp
-  - test/input3.test.cpp
-  - test/output3.test.cpp
   - test/output2.test.cpp
   - test/input5.test.cpp
+  - test/input3.test.cpp
+  - test/output3.test.cpp
   - test/input4.test.cpp
 documentation_of: src/template/input.hpp
 layout: document
