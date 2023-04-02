@@ -27,11 +27,12 @@ data:
   - name: src/dataStructure
     pages:
     - icon: ':heavy_check_mark:'
-      path: src/dataStructure/DSU.hpp
-      title: "DSU (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"
-    - icon: ':heavy_check_mark:'
       path: src/dataStructure/accum2d.hpp
       title: "accum2d (\u4E8C\u6B21\u5143\u7D2F\u7A4D\u548C)"
+    - icon: ':heavy_check_mark:'
+      path: src/dataStructure/disjointSetUnion.hpp
+      title: "disjointSetUnion (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\
+        \uFF09"
     - icon: ':heavy_check_mark:'
       path: src/dataStructure/dualSegmentTree.hpp
       title: "dualSegmentTree (\u533A\u9593\u66F4\u65B0\u4E00\u70B9\u53D6\u5F97\u30BB\
@@ -404,15 +405,6 @@ data:
       path: test/CF856-D.test.cpp
       title: test/CF856-D.test.cpp
     - icon: ':heavy_check_mark:'
-      path: test/DSU-unitTest.test.cpp
-      title: test/DSU-unitTest.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/DSU1.test.cpp
-      title: test/DSU1.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: test/DSU2.test.cpp
-      title: test/DSU2.test.cpp
-    - icon: ':heavy_check_mark:'
       path: test/Dijkstra1.test.cpp
       title: test/Dijkstra1.test.cpp
     - icon: ':heavy_check_mark:'
@@ -490,6 +482,15 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/count-inv.test.cpp
       title: test/count-inv.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/disjointSetUnion-test1.test.cpp
+      title: test/disjointSetUnion-test1.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/disjointSetUnion-test2.test.cpp
+      title: test/disjointSetUnion-test2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/disjointSetUnion-unitTest.test.cpp
+      title: test/disjointSetUnion-unitTest.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/dualSegmentTree-AOJRAQ.test.cpp
       title: test/dualSegmentTree-AOJRAQ.test.cpp
