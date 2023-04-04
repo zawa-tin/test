@@ -130,6 +130,9 @@ data:
       path: src/graph/range-edge-graph.hpp
       title: "range edge graph (\u533A\u9593\u306B\u8FBA\u3092\u8CBC\u308B\u30C6\u30AF\
         )"
+    - icon: ':heavy_check_mark:'
+      path: src/graph/rerooting.hpp
+      title: "rerooting (\u5168\u65B9\u4F4D\u6728DP)"
   - name: src/graph/simple
     pages:
     - icon: ':heavy_check_mark:'
@@ -324,6 +327,12 @@ data:
       path: test/ABC203-E.test.cpp
       title: test/ABC203-E.test.cpp
     - icon: ':heavy_check_mark:'
+      path: test/ABC220-F.test.cpp
+      title: test/ABC220-F.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/ABC222-F.test.cpp
+      title: test/ABC222-F.test.cpp
+    - icon: ':heavy_check_mark:'
       path: test/ABC236-E.test.cpp
       title: test/ABC236-E.test.cpp
     - icon: ':heavy_check_mark:'
@@ -386,6 +395,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/AOJ0519.test.cpp
       title: test/AOJ0519.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/AOJ1595.test.cpp
+      title: test/AOJ1595.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/AOJCGL-2A.test.cpp
       title: test/AOJCGL-2A.test.cpp
@@ -605,6 +617,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/reflection.test.cpp
       title: test/reflection.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/rerooting.test.cpp
+      title: test/rerooting.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/reversed.test.cpp
       title: test/reversed.test.cpp
