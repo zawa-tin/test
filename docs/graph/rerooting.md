@@ -145,3 +145,8 @@ vertex edge(vertex a, edge e, int x, int v)
 
 ドキュメントの書き方わからん！test.cppで使い方を確認してくれ未来の自分！！！
 
+## 参考
+
+- [ABC222 editorial](https://atcoder.jp/contests/abc222/editorial/2749)
+- [もうひとつの全方位木DP](https://ei1333.hateblo.jp/entry/2018/12/21/004022)
+
