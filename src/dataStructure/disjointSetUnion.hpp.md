@@ -57,8 +57,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/disjointSetUnion-test2.test.cpp
-  - test/disjointSetUnion-unitTest.test.cpp
   - test/disjointSetUnion-test1.test.cpp
+  - test/disjointSetUnion-unitTest.test.cpp
 documentation_of: src/dataStructure/disjointSetUnion.hpp
 layout: document
 title: "disjointSetUnion (\u4E92\u3044\u306B\u7D20\u306A\u96C6\u5408\u306E\u68EE\uFF09"

@@ -49,8 +49,8 @@ data:
   timestamp: '2023-03-06 15:21:58+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC125-C.test.cpp
   - test/sparseTable.test.cpp
+  - test/ABC125-C.test.cpp
 documentation_of: src/dataStructure/sparseTable.hpp
 layout: document
 title: "sparseTable ( $x \\oplus x\\ =\\ x$ \u306E\u533A\u9593\u30AF\u30A8\u30EA\u89E3\

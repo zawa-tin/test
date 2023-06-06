@@ -97,8 +97,8 @@ data:
   timestamp: '2023-04-04 17:31:56+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/AOJ1595.test.cpp
   - test/rerooting.test.cpp
+  - test/AOJ1595.test.cpp
   - test/ABC220-F.test.cpp
   - test/ABC222-F.test.cpp
 documentation_of: src/graph/rerooting.hpp

@@ -44,9 +44,9 @@ data:
   timestamp: '2023-03-30 00:09:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/ABC242-G.test.cpp
   - test/mo.test.cpp
   - test/ABC174-F.test.cpp
-  - test/ABC242-G.test.cpp
 documentation_of: src/algorithm/mo.hpp
 layout: document
 title: mo (Mo's Algorithm)

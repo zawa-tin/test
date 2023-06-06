@@ -108,10 +108,10 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
   - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
-  - test/lazySquareDecomp-AOJ-RUQRSQ.test.cpp
   - test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
+  - test/lazySquareDecomp-AOJ-RUQRSQ.test.cpp
+  - test/lazySquareDecomp-AOJ-RAQRSQ.test.cpp
 documentation_of: src/dataStructure/lazySquareDecomp.hpp
 layout: document
 title: "lazySquareDecomp (\u533A\u9593\u66F4\u65B0\u53EF\u80FD\u5E73\u65B9\u5206\u5272\

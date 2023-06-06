@@ -77,8 +77,8 @@ data:
   timestamp: '2023-01-19 10:12:43+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/matrix.test.cpp
   - test/EDPC-R.test.cpp
+  - test/matrix.test.cpp
 documentation_of: src/math/matrix.hpp
 layout: document
 title: "matrix (\u884C\u5217)"

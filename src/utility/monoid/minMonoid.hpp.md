@@ -52,15 +52,15 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/squareDecomp-AOJ-RmQ.test.cpp
-  - test/AGC005-B.test.cpp
-  - test/segmentTree-AOJ-RmQ.test.cpp
   - test/lazySegmentTree-AOJ-RAQRmQ.test.cpp
-  - test/ABC179-F.test.cpp
-  - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
   - test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
-  - test/ABC291-F.test.cpp
+  - test/lazySquareDecomp-AOJ-RAQRmQ.test.cpp
   - test/lazySquareDecomp-AOJ-RUQRmQ.test.cpp
+  - test/AGC005-B.test.cpp
+  - test/squareDecomp-AOJ-RmQ.test.cpp
+  - test/segmentTree-AOJ-RmQ.test.cpp
+  - test/ABC291-F.test.cpp
+  - test/ABC179-F.test.cpp
 documentation_of: src/utility/monoid/minMonoid.hpp
 layout: document
 title: "minMonoid (\u6700\u5C0F\u5024\u30E2\u30CE\u30A4\u30C9)"

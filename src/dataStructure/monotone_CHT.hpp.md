@@ -90,8 +90,8 @@ data:
   timestamp: '2023-02-22 23:27:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/EDPC-Z.test.cpp
   - test/ABC289-G.test.cpp
+  - test/EDPC-Z.test.cpp
 documentation_of: src/dataStructure/monotone_CHT.hpp
 layout: document
 title: "monotone_CHT (\u8FFD\u52A0\u76F4\u7DDA\u306E\u50BE\u304D\u304C\u5358\u8ABF\

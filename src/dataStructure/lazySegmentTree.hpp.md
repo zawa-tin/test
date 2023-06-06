@@ -180,11 +180,11 @@ data:
   timestamp: '2023-03-10 16:33:31+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ALPC-L.test.cpp
   - test/lazySegmentTree-AOJ-RAQRmQ.test.cpp
-  - test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
   - test/lazySegmentTree-AOJ-RUQRmQ.test.cpp
   - test/lazySegmentTree-AOJ-RUQRSQ.test.cpp
+  - test/ALPC-L.test.cpp
+  - test/lazySegmentTree-AOJ-RAQRSQ.test.cpp
 documentation_of: src/dataStructure/lazySegmentTree.hpp
 layout: document
 title: "lazySegmentTree (\u533A\u9593\u66F4\u65B0\u30FB\u533A\u9593\u548C\u30BB\u30B0\

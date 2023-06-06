@@ -73,8 +73,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/Dijkstra1.test.cpp
-  - test/Dijkstra3.test.cpp
   - test/Dijkstra2.test.cpp
+  - test/Dijkstra3.test.cpp
 documentation_of: src/graph/Dijkstra.hpp
 layout: document
 title: "Dijkstra (\u30C0\u30A4\u30AF\u30B9\u30C8\u30E9\u6CD5)"

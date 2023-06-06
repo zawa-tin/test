@@ -36,10 +36,10 @@ data:
   timestamp: '2023-01-21 14:21:32+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC236-E.test.cpp
+  - test/binary-search.test.cpp
   - test/ABC203-E.test.cpp
   - test/ABC250-D.test.cpp
-  - test/binary-search.test.cpp
+  - test/ABC236-E.test.cpp
 documentation_of: src/template/binary-search.hpp
 layout: document
 title: "binary-seach (\u6574\u6570\u4E8C\u5206\u63A2\u7D22)"

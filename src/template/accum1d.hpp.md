@@ -44,10 +44,10 @@ data:
   timestamp: '2023-01-19 16:06:43+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/ABC267-C.test.cpp
-  - test/ARC075-E.test.cpp
   - test/accum1d2.test.cpp
+  - test/ABC267-C.test.cpp
   - test/accum1d.test.cpp
+  - test/ARC075-E.test.cpp
 documentation_of: src/template/accum1d.hpp
 layout: document
 title: "accum1d (\u7D2F\u7A4D\u548C)"
