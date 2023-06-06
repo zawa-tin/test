@@ -2,6 +2,9 @@
 [![GitHub Pages](https://img.shields.io/static/v1?label=GitHub+Pages&message=+&color=brightgreen&logo=github)](https://zawa-tin.github.io/zawatins-library/) 
 # zawatins-llibrary
 
+設計等がひどかったのもあってこのライブラリは閉じます。
+現在移行作業中 -> https://github.com/zawa-tin/cp-documentation
+
 - 環境: C++17
     - `g++ -std=c++17 -Wall hoge.cpp`でwarningやcompile errorをださないようにしています
 
